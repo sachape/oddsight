@@ -97,10 +97,15 @@
 
 html {
   scroll-behavior: smooth;
+  /* Empêche tout débordement horizontal (ex. la largeur de la sidebar) de
+     rendre la page scrollable latéralement. `clip` ne crée pas de conteneur de
+     scroll → ne casse pas les éléments sticky (header, ticker). */
+  overflow-x: clip;
 }
 
 body {
   margin: 0;
+  overflow-x: clip;
   background-color: #fbfbfd; /* blanc cassé Apple */
   color: var(--foreground);
   font-family: var(--font-sans);
