@@ -1,0 +1,163 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  /* Palette claire "Apple" : blancs + gris très doux */
+  --color-pitch-950: #f5f5f7;
+  --color-pitch-900: #ffffff;
+  --color-pitch-850: #f5f5f7;
+  --color-pitch-800: #f0f0f2;
+  --color-pitch-700: #e8e8ed;
+
+  /* Accent vert (lisible sur fond clair) */
+  --color-edge-300: #34e29b;
+  --color-edge-400: #16c784;
+  --color-edge-500: #12b577;
+  --color-edge-600: #0a8f5f;
+  --color-teal-400: #2dd4bf;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter', system-ui, sans-serif;
+}
+
+/* --- Tokens shadcn (thème clair) ------------------------------------------- */
+:root {
+  --radius: 1rem;
+  --background: #f5f5f7;
+  --foreground: #1d1d1f;
+  --card: #ffffff;
+  --card-foreground: #1d1d1f;
+  --popover: #ffffff;
+  --popover-foreground: #1d1d1f;
+  --primary: #1d1d1f;
+  --primary-foreground: #ffffff;
+  --secondary: #f0f0f2;
+  --secondary-foreground: #1d1d1f;
+  --muted: #f0f0f2;
+  --muted-foreground: #6e6e73;
+  --accent: #eef0f2;
+  --accent-foreground: #1d1d1f;
+  --destructive: #e5484d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.08);
+  --input: rgba(0, 0, 0, 0.12);
+  --ring: #12b577;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #1d1d1f;
+  --sidebar-primary: #12b577;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f0f0f2;
+  --sidebar-accent-foreground: #1d1d1f;
+  --sidebar-border: rgba(0, 0, 0, 0.07);
+  --sidebar-ring: #12b577;
+  color-scheme: light;
+}
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 8px);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: #fbfbfd; /* blanc cassé Apple */
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  letter-spacing: -0.014em;
+}
+
+h1, h2, h3 { letter-spacing: -0.025em; }
+
+/* Surfaces "Apple" : blanc, ombre diffuse, quasi sans bordure --------------- */
+@layer components {
+  .surface {
+    background: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.035);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.02), 0 12px 32px -16px rgba(17, 24, 39, 0.12);
+  }
+  .surface-hover {
+    transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s;
+  }
+  .surface-hover:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.03), 0 24px 48px -20px rgba(17, 24, 39, 0.22);
+  }
+  /* Grands chiffres : noir profond (la couleur primaire), pas de vert */
+  .text-gradient {
+    color: #1d1d1f;
+  }
+}
+
+/* Boutons & contrôles : transition fluide + retour tactile (feel Apple) */
+button { transition: transform 0.15s ease, background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease; }
+button:active:not(:disabled) { transform: scale(0.97); }
+
+/* Motion --------------------------------------------------------------------- */
+@keyframes barGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+.bar-grow { transform-origin: left; animation: barGrow 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes fadeUp { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+.fade-up { animation: fadeUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+@keyframes pulseDot {
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(18, 181, 119, 0.4); }
+  50% { opacity: 0.7; box-shadow: 0 0 0 5px rgba(18, 181, 119, 0); }
+}
+.pulse-dot { animation: pulseDot 2s ease-in-out infinite; }
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.14);
+  border-radius: 99px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.24); background-clip: padding-box; }
+
+@media (prefers-reduced-motion: reduce) {
+  .bar-grow, .fade-up, .pulse-dot { animation: none; }
+}

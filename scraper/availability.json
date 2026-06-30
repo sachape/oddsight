@@ -1,0 +1,11 @@
+{
+  "_doc": {
+    "but": "Flux de disponibilité des joueurs (blessures + suspensions). VIDE par défaut : ne JAMAIS inventer d'absents — une donnée fausse dégrade les prédictions. À remplir uniquement avec des infos vérifiées, manuellement ou via une API live (ex. API-Football endpoint /injuries).",
+    "format": "\"Équipe\": [ { \"name\", \"status\": \"injury|suspension\", \"pos\": \"GK|DEF|MID|FWD\", \"importance\": 0..1 } ]",
+    "status": "injury = blessé · suspension = suspendu (cartons)",
+    "pos": "GK gardien · DEF défenseur · MID milieu · FWD attaquant",
+    "importance": "0.2 = remplaçant · 0.5 = titulaire · 0.8 = cadre · 1.0 = star indispensable",
+    "exemple": "\"France\": [ { \"name\": \"...\", \"status\": \"injury\", \"pos\": \"FWD\", \"importance\": 0.7 } ]",
+    "maj": null
+  }
+}
