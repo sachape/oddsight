@@ -158,6 +158,12 @@ button:active:not(:disabled) { transform: scale(0.97); }
 }
 ::-webkit-scrollbar-thumb:hover { background: rgba(0, 0, 0, 0.24); background-clip: padding-box; }
 
+/* Ticker des matchs (style cours de marché) -------------------------------- */
+@keyframes tickerScroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.ticker-track { animation: tickerScroll 60s linear infinite; will-change: transform; }
+.ticker-track:hover { animation-play-state: paused; }
+
 @media (prefers-reduced-motion: reduce) {
   .bar-grow, .fade-up, .pulse-dot { animation: none; }
+  .ticker-track { animation: none; }
 }

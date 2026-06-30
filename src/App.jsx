@@ -16,6 +16,7 @@ import Suivi from './components/Suivi.jsx'
 import JourneeSelect from './components/JourneeSelect.jsx'
 import Tennis from './components/Tennis.jsx'
 import TennisValue from './components/TennisValue.jsx'
+import MatchTicker from './components/MatchTicker.jsx'
 import {
   Sidebar, SidebarContent, SidebarFooter, SidebarGroup, SidebarGroupContent,
   SidebarGroupLabel, SidebarHeader, SidebarInset, SidebarMenu, SidebarMenuButton,
@@ -288,12 +289,7 @@ export default function App() {
           )}
         </main>
 
-        <footer className="border-t border-black/[0.06] py-6 text-center text-xs text-muted-foreground">
-          <p className="mx-auto max-w-xl px-4 leading-relaxed">
-            OddSight · Outil informatif — les pronostics ne sont pas des garanties.
-            Jouer comporte des risques (endettement, dépendance). 18+
-          </p>
-        </footer>
+        <MatchTicker predictions={data?.predictions} />
       </SidebarInset>
     </SidebarProvider>
   )
