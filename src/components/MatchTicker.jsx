@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
+import { createPortal } from 'react-dom'
 import { X } from 'lucide-react'
 import { flag } from '../flags.js'
 import PredictionCard from './PredictionCard.jsx'
@@ -72,7 +73,8 @@ function MatchModal({ p, onClose }) {
   }, [onClose])
 
   const isFootball = !!p.markets
-  return (
+  // Portal vers <body> : sinon le backdrop-blur du footer piège ce `fixed`.
+  return createPortal(
     <div
       className="fixed inset-0 z-50 flex items-end justify-center bg-black/30 p-0 backdrop-blur-sm sm:items-center sm:p-4"
       onClick={onClose}
@@ -96,7 +98,8 @@ function MatchModal({ p, onClose }) {
         </div>
         {isFootball ? <div className="p-3"><PredictionCard p={p} index={0} /></div> : <TennisPanel p={p} />}
       </div>
-    </div>
+    </div>,
+    document.body,
   )
 }
 
