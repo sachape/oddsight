@@ -17,7 +17,7 @@
   --color-edge-600: #0a8f5f;
   --color-teal-400: #2dd4bf;
 
-  --font-sans: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'SF Pro Text', 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inconsolata', ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, Consolas, monospace;
 }
 
 /* --- Tokens shadcn (thème clair) ------------------------------------------- */
@@ -107,10 +107,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  letter-spacing: -0.014em;
+  letter-spacing: 0;
 }
 
-h1, h2, h3 { letter-spacing: -0.025em; }
+h1, h2, h3 { letter-spacing: -0.01em; }
 
 /* Surfaces "Apple" : blanc, ombre diffuse, quasi sans bordure --------------- */
 @layer components {
