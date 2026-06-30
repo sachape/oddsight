@@ -8,10 +8,46 @@ import { writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { buildModel } from './engine.mjs'
+import { fetchEspnResults } from './espn.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(__dirname, '../src/data/ligue1.json')
-const ASOF = '2026-07-01'
+// Date de référence = aujourd'hui (avance seule) ; surchargée par ODDSIGHT_TODAY.
+const ASOF = process.env.ODDSIGHT_TODAY || new Date().toISOString().slice(0, 10)
+// Source de résultats live : ESPN (fra.1). Noms ESPN -> noms courts du dataset.
+const ESPN_LEAGUE = 'fra.1'
+const SEASON_START = '2026-08-01'
+const ESPN_MAP = {
+  'AJ Auxerre': 'Auxerre', 'AS Monaco': 'Monaco', 'Angers': 'Angers', 'Brest': 'Brest',
+  'Le Havre AC': 'Le Havre', 'Le Mans': 'Le Mans', 'Lens': 'Lens', 'Lille': 'Lille',
+  'Lorient': 'Lorient', 'Lyon': 'Lyon', 'Marseille': 'Marseille', 'Nice': 'Nice',
+  'Paris FC': 'Paris FC', 'Paris Saint-Germain': 'Paris-SG', 'Stade Rennais': 'Rennes',
+  'Strasbourg': 'Strasbourg', 'Toulouse': 'Toulouse', 'Troyes': 'Troyes',
+}
+const espnShort = (n) => ESPN_MAP[n] || n
+
+// Attache les scores ESPN terminés aux affiches correspondantes (par paire dom-ext).
+// Le moteur bascule alors ces matchs de « à venir » vers « joué » automatiquement.
+async function injectEspnResults(fixtures, asOf) {
+  let results
+  try {
+    results = await fetchEspnResults({ league: ESPN_LEAGUE, from: SEASON_START, to: asOf })
+  } catch (e) {
+    console.warn(`  ⚠ ESPN indisponible (${e.message}) — résultats live ignorés`)
+    return 0
+  }
+  const byPair = new Map()
+  for (const r of results) byPair.set(`${espnShort(r.home)}|${espnShort(r.away)}`, r)
+  let injected = 0
+  let unmatched = 0
+  for (const f of fixtures) {
+    const r = byPair.get(`${f.team1}|${f.team2}`)
+    if (r) { f.score = { ft: r.ft }; injected++; byPair.delete(`${f.team1}|${f.team2}`) }
+  }
+  unmatched = byPair.size
+  if (unmatched) console.warn(`  ⚠ ${unmatched} résultats ESPN sans affiche correspondante (noms à mapper ?)`)
+  return injected
+}
 const TRAIN = 'https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/fr.1.json'
 const BASE = 'https://www.lequipe.fr/Football/ligue-1/page-calendrier-resultats'
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36'
@@ -114,6 +150,10 @@ async function main() {
   }
   console.log(`✓ ${ok} journées complètes · ${fixtures.length} affiches`)
 
+  console.log(`→ Résultats live ESPN (${ESPN_LEAGUE}) depuis ${SEASON_START}…`)
+  const injected = await injectEspnResults(fixtures, ASOF)
+  console.log(`✓ ${injected} résultats réels injectés (matchs joués)`)
+
   const model = buildModel({
     matches: fixtures, trainMatches, elo: {}, asOf: ASOF, format: 'league', maxUpcoming: Infinity,
   })
@@ -123,7 +163,7 @@ async function main() {
     tournament: 'Ligue 1 2026-27',
     generatedAt: new Date().toISOString(),
     asOf: ASOF,
-    sources: ['openfootball fr.1 2025-26 (entraînement)', "L'Équipe (calendrier 2026-27)", 'Elo interne'],
+    sources: ['openfootball fr.1 2025-26 (entraînement)', "L'Équipe (calendrier 2026-27)", 'ESPN (résultats live)', 'Elo interne'],
     ...model,
   }
   mkdirSync(dirname(OUT), { recursive: true })
