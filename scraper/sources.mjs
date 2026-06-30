@@ -35,25 +35,34 @@ export async function fetchMatches() {
   return { name: data.name, matches: data.matches || [] }
 }
 
-// Renvoie { "France": 2123, ... } pour les 48 équipes
+// Renvoie { "France": 2123, ... } pour les 48 équipes.
+// Fail-soft : si eloratings est injoignable (anti-bot/HTTP), on renvoie {} et le
+// moteur retombe sur l'Elo interne (engine.mjs) — le pipeline ne meurt pas pour ça.
 export async function fetchElo() {
-  const res = await fetch(ELO_TSV, { headers: { 'User-Agent': 'Mozilla/5.0' } })
-  if (!res.ok) throw new Error(`eloratings injoignable (HTTP ${res.status})`)
-  const text = await res.text()
-  const byCode = {}
-  for (const line of text.split('\n')) {
-    const c = line.split('\t')
-    if (c.length > 3) {
-      const code = c[2]
-      const elo = parseInt(c[3], 10)
-      if (code && Number.isFinite(elo)) byCode[code] = elo
+  try {
+    const res = await fetch(ELO_TSV, {
+      headers: { 'User-Agent': 'Mozilla/5.0', Accept: 'text/tab-separated-values,text/plain,*/*' },
+    })
+    if (!res.ok) throw new Error(`HTTP ${res.status}`)
+    const text = await res.text()
+    const byCode = {}
+    for (const line of text.split('\n')) {
+      const c = line.split('\t')
+      if (c.length > 3) {
+        const code = c[2]
+        const elo = parseInt(c[3], 10)
+        if (code && Number.isFinite(elo)) byCode[code] = elo
+      }
     }
+    const byTeam = {}
+    for (const [team, code] of Object.entries(ELO_CODE)) {
+      if (byCode[code] != null) byTeam[team] = byCode[code]
+    }
+    return byTeam
+  } catch (e) {
+    console.warn(`⚠ eloratings indisponible (${e.message}) — repli sur l'Elo interne`)
+    return {}
   }
-  const byTeam = {}
-  for (const [team, code] of Object.entries(ELO_CODE)) {
-    if (byCode[code] != null) byTeam[team] = byCode[code]
-  }
-  return byTeam
 }
 
 // Charge le flux de disponibilité (blessures/suspensions). Renvoie { team: [players] }.
