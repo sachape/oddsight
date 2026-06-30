@@ -223,7 +223,7 @@ export default function App() {
     <SidebarProvider>
       <AppSidebar tab={tab2} setTab={setTab} compId={compId} setCompId={setCompId} data={data} loading={loading} sport={comp.sport} />
 
-      <SidebarInset className="bg-transparent">
+      <SidebarInset className="min-w-0 bg-transparent">
         <header className="sticky top-0 z-10 flex h-16 shrink-0 items-center gap-3 border-b border-black/[0.06] bg-white/75 px-4 backdrop-blur-xl">
           <SidebarTrigger className="-ml-1 text-[#1d1d1f]" />
           <div className="flex flex-1 flex-col">
