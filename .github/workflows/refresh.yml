@@ -22,12 +22,19 @@ jobs:
 
       - run: npm ci
 
-      # Régénère chaque dataset (date de référence = aujourd'hui automatiquement)
+      # Régénère chaque dataset (date de référence = aujourd'hui automatiquement).
+      # Fail-soft : si une source d'une compète est down, on garde son dernier
+      # dataset commité et on déploie quand même (les autres sont rafraîchies).
       - run: npm run scrape          # Coupe du Monde 2026
+        continue-on-error: true
       - run: npm run scrape:ligue1   # Ligue 1
+        continue-on-error: true
       - run: npm run scrape:pl       # Premier League
+        continue-on-error: true
       - run: npm run scrape:sa       # Serie A
+        continue-on-error: true
       - run: npm run scrape:tennis   # Tennis
+        continue-on-error: true
 
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only
