@@ -6,7 +6,7 @@ name: Refresh predictions
 
 on:
   schedule:
-    - cron: '0 5 * * *'   # tous les jours à 05:00 UTC (07:00 Paris)
+    - cron: '0 * * * *'   # toutes les heures, à l'heure pile (UTC)
   workflow_dispatch: {}   # bouton « Run workflow » pour lancer à la main
 
 jobs:
