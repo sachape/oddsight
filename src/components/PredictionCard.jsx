@@ -228,9 +228,12 @@ export default function PredictionCard({ p, index }) {
             </div>
           )}
 
-          {/* Scores probables */}
+          {/* Fourchette de scores — marché plat, aucun score ne domine */}
           <div className="rounded-xl bg-pitch-850 p-3">
-            <p className="mb-2 text-[11px] uppercase tracking-wide text-[#86868b]">Scores les plus probables</p>
+            <p className="mb-2 flex items-center justify-between text-[11px] uppercase tracking-wide text-[#86868b]">
+              <span>Fourchette de scores</span>
+              <span className="normal-case text-[#a1a1a6]">marché très ouvert</span>
+            </p>
             <div className="flex gap-2">
               {p.topScores.map((s) => (
                 <div key={s.score} className="flex-1 rounded-lg bg-white px-2 py-1.5 text-center ring-1 ring-black/[0.05]">
@@ -239,6 +242,9 @@ export default function PredictionCard({ p, index }) {
                 </div>
               ))}
             </div>
+            <p className="mt-2 text-center text-[11px] text-[#86868b]">
+              Aucun score ne se détache — {p.topScores[0]?.p}% au mieux.
+            </p>
           </div>
 
           {/* Cotes estimées */}
