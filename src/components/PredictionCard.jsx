@@ -68,6 +68,36 @@ function Gauge({ label, value }) {
   )
 }
 
+// Total de buts sur les 3 lignes (1,5 / 2,5 / 3,5) : colonnes Plus / Moins
+function GoalLines({ over }) {
+  return (
+    <div>
+      <div className="mb-1 flex items-center justify-between text-[11px] uppercase tracking-wide text-[#86868b]">
+        <span>Total de buts</span>
+        <span className="flex gap-2.5 normal-case text-[10px] text-[#a1a1a6]">
+          <span className="w-10 text-right">Plus</span>
+          <span className="w-10 text-right">Moins</span>
+        </span>
+      </div>
+      <div className="space-y-1">
+        {['1.5', '2.5', '3.5'].map((l) => {
+          const o = over[l]
+          const strong = o.over >= o.under
+          return (
+            <div key={l} className="flex items-center justify-between text-xs tabular-nums">
+              <span className="text-[#6e6e73]">{l.replace('.', ',')} but{l === '1.5' ? '' : 's'}</span>
+              <span className="flex gap-2.5">
+                <span className={`w-10 text-right ${strong ? 'font-semibold text-[#1d1d1f]' : 'text-[#86868b]'}`}>{o.over}%</span>
+                <span className={`w-10 text-right ${!strong ? 'font-semibold text-[#1d1d1f]' : 'text-[#86868b]'}`}>{o.under}%</span>
+              </span>
+            </div>
+          )
+        })}
+      </div>
+    </div>
+  )
+}
+
 function Absents({ list }) {
   if (!list?.length) return <span className="text-[11px] text-[#86868b]">Effectif complet</span>
   return (
@@ -154,11 +184,7 @@ export default function PredictionCard({ p, index }) {
               a={{ name: 'Oui', p: p.markets.btts.yes }}
               b={{ name: 'Non', p: p.markets.btts.no }}
             />
-            <SplitBar
-              label="Total de buts"
-              a={{ name: '+2,5', p: p.markets.over['2.5'].over }}
-              b={{ name: '−2,5', p: p.markets.over['2.5'].under }}
-            />
+            <GoalLines over={p.markets.over} />
           </div>
           <div>
             <div className="mb-1.5 text-[11px] uppercase tracking-wide text-[#86868b]">Double chance</div>

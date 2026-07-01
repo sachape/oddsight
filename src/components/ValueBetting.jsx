@@ -17,8 +17,12 @@ function selectionsFor(p) {
   rows.push({ key: '2', label: `${p.team2} gagne (90 min)`, prob: p.pWin2 })
   rows.push({ key: 'btts_y', label: 'Les deux marquent — Oui', prob: p.markets.btts.yes })
   rows.push({ key: 'btts_n', label: 'Les deux marquent — Non', prob: p.markets.btts.no })
+  rows.push({ key: 'o15', label: '+1,5 but', prob: p.markets.over['1.5'].over })
+  rows.push({ key: 'u15', label: '−1,5 but', prob: p.markets.over['1.5'].under })
   rows.push({ key: 'o25', label: '+2,5 buts', prob: p.markets.over['2.5'].over })
   rows.push({ key: 'u25', label: '−2,5 buts', prob: p.markets.over['2.5'].under })
+  rows.push({ key: 'o35', label: '+3,5 buts', prob: p.markets.over['3.5'].over })
+  rows.push({ key: 'u35', label: '−3,5 buts', prob: p.markets.over['3.5'].under })
   return rows
 }
 
