@@ -1,97 +1,325 @@
-import { useState } from 'react'
+// Guide du parieur — définitions, formules, exemples, glossaire.
+// Contenu éducatif (pas d'explication de notre méthode interne).
 
-// Articles d'éducation au pari (pas d'explication de notre méthode)
-const ARTICLES = [
-  {
-    icon: '🎯',
-    title: 'Comprendre les cotes',
-    body: [
-      'Une cote, c’est une probabilité déguisée. Une cote de 2,00 = ~50% de chances selon le bookmaker. Pour convertir : probabilité ≈ 1 ÷ cote.',
-      'Plus la cote est basse, plus l’issue est jugée probable (et moins elle rapporte). Une cote de 1,30 paie peu mais « passe » souvent ; une cote de 4,00 paie gros mais rarement.',
-      'Astuce : compare toujours la cote proposée à ta propre estimation. Si tu penses qu’une équipe a plus de chances que ce que la cote suggère, c’est peut-être un bon pari.',
-    ],
-  },
-  {
-    icon: '💰',
-    title: 'Gérer sa bankroll',
-    body: [
-      'Ta bankroll, c’est l’argent que tu peux te permettre de perdre — jamais l’argent du loyer.',
-      'Règle d’or : ne mise que 1 à 5% de ta bankroll par pari. Ça t’évite de tout perdre sur une mauvaise série.',
-      'Ne « cours pas après tes pertes » : après une défaite, on ne double pas la mise pour se refaire. C’est le piège n°1.',
-      'Garde des mises régulières (en « unités ») plutôt que de miser au feeling selon ton humeur.',
-    ],
-  },
-  {
-    icon: '📈',
-    title: 'C’est quoi la « value » ?',
-    body: [
-      'Parier sur le favori ne suffit pas à gagner sur le long terme : tout le monde le fait, et les cotes sont basses.',
-      'La value, c’est parier quand la cote proposée est plus haute que la probabilité réelle de l’issue. C’est le seul moyen d’être gagnant sur la durée.',
-      'Exemple : tu estimes une victoire à 50% (cote juste 2,00) et le bookmaker propose 2,30 → c’est une value.',
-      'Sur un pari isolé tu peux perdre ; c’est la somme de paris de valeur, sur des centaines de matchs, qui paie.',
-    ],
-  },
-  {
-    icon: '⚠️',
-    title: 'Les erreurs classiques',
-    body: [
-      'Trop de matchs dans un combiné : chaque match ajoute du risque. Un combiné de 8 matchs « sûrs » a en réalité peu de chances de passer.',
-      'Le biais du favori : miser systématiquement sur les gros clubs à petite cote rapporte peu et ne compense pas les surprises.',
-      'Parier sous émotion (sur son équipe de cœur, énervé après une perte) : décide à froid, avec des chiffres.',
-      'Chercher le « pari sûr » : il n’existe pas. Même à 90%, on perd 1 fois sur 10.',
-    ],
-  },
-  {
-    icon: '🛡️',
-    title: 'Jouer responsable',
-    body: [
-      'Fixe-toi un budget et un temps de jeu AVANT de commencer, et tiens-t’y.',
-      'Le jeu doit rester un plaisir, pas une source de revenus ni un moyen de se refaire.',
-      'Signaux d’alerte : tu mises plus que prévu, tu joues pour récupérer des pertes, tu caches ton jeu.',
-      'Besoin d’aide ? Joueurs Info Service : 09 74 75 13 13 (appel non surtaxé, 7j/7).',
-    ],
-  },
-]
-
-function Article({ a }) {
-  const [open, setOpen] = useState(false)
+function P({ children }) {
+  return <p className="text-sm leading-relaxed text-[#6e6e73]">{children}</p>
+}
+function Formula({ children }) {
   return (
-    <div className="surface surface-hover rounded-2xl">
-      <button
-        onClick={() => setOpen((o) => !o)}
-        className="flex w-full items-center gap-3 p-4 text-left"
-      >
-        <span className="text-xl">{a.icon}</span>
-        <span className="flex-1 font-semibold text-[#1d1d1f]">{a.title}</span>
-        <span className={`text-[#86868b] transition-transform ${open ? 'rotate-180' : ''}`}>▾</span>
-      </button>
-      {open && (
-        <div className="fade-up space-y-2 border-t border-black/[0.06] px-4 pb-4 pt-3">
-          {a.body.map((para, i) => (
-            <p key={i} className="text-sm leading-relaxed text-[#6e6e73]">{para}</p>
+    <div className="my-1 rounded-lg bg-pitch-850 px-3 py-2 text-sm font-semibold tabular-nums text-[#1d1d1f]">
+      {children}
+    </div>
+  )
+}
+function Example({ children }) {
+  return (
+    <div className="my-1 rounded-lg border-l-2 border-edge-500/50 bg-edge-500/[0.06] px-3 py-2 text-sm leading-relaxed text-[#1d1d1f]">
+      <span className="text-[10px] font-semibold uppercase tracking-wide text-edge-600">Exemple</span>
+      <div className="mt-0.5">{children}</div>
+    </div>
+  )
+}
+function Note({ children }) {
+  return (
+    <div className="my-1 rounded-lg border-l-2 border-amber-400/50 bg-amber-50 px-3 py-2 text-sm leading-relaxed text-amber-900">
+      {children}
+    </div>
+  )
+}
+function Sub({ children }) {
+  return <h3 className="mt-4 mb-1 text-sm font-semibold text-[#1d1d1f]">{children}</h3>
+}
+function Section({ id, icon, title, children }) {
+  return (
+    <section id={id} className="surface scroll-mt-24 rounded-2xl p-5">
+      <h2 className="mb-3 flex items-center gap-2 text-base font-bold text-[#1d1d1f]">
+        <span className="text-lg">{icon}</span>{title}
+      </h2>
+      <div className="space-y-2">{children}</div>
+    </section>
+  )
+}
+
+// Petit tableau générique (aligné, monospace)
+function Table({ head, rows }) {
+  return (
+    <div className="my-2 overflow-hidden rounded-lg ring-1 ring-black/[0.06]">
+      <div className="flex bg-pitch-850 px-3 py-1.5 text-[10px] uppercase tracking-wide text-[#86868b]">
+        {head.map((h, i) => (
+          <span key={i} className={i === 0 ? 'flex-1' : 'w-24 text-right'}>{h}</span>
+        ))}
+      </div>
+      {rows.map((r, i) => (
+        <div key={i} className="flex border-t border-black/[0.05] px-3 py-1.5 text-sm">
+          {r.map((c, j) => (
+            <span
+              key={j}
+              className={j === 0 ? 'flex-1 text-[#1d1d1f]' : 'w-24 text-right tabular-nums text-[#6e6e73]'}
+            >
+              {c}
+            </span>
           ))}
         </div>
-      )}
+      ))}
     </div>
   )
 }
 
+function Market({ name, desc, ex }) {
+  return (
+    <div className="border-t border-black/[0.06] py-2 first:border-t-0">
+      <div className="text-sm font-semibold text-[#1d1d1f]">{name}</div>
+      <div className="text-sm leading-relaxed text-[#6e6e73]">{desc}</div>
+      {ex && <div className="mt-0.5 text-[13px] text-[#86868b]">↳ {ex}</div>}
+    </div>
+  )
+}
+
+const TOC = [
+  { id: 'bases', label: 'Les bases' },
+  { id: 'marge', label: 'Marge & cote juste' },
+  { id: 'marches', label: 'Types de paris' },
+  { id: 'value', label: 'La value' },
+  { id: 'bankroll', label: 'Bankroll' },
+  { id: 'combines', label: 'Combinés' },
+  { id: 'erreurs', label: 'Erreurs' },
+  { id: 'oddsight', label: 'Lire OddSight' },
+  { id: 'responsable', label: 'Jeu responsable' },
+  { id: 'glossaire', label: 'Glossaire' },
+]
+
+const GLOSSARY = [
+  ['Cote (décimale)', 'Multiplicateur de la mise. Gain total = mise × cote.'],
+  ['Mise', 'Somme engagée sur un pari.'],
+  ['Gain net', 'Bénéfice réel : mise × (cote − 1).'],
+  ['Probabilité implicite', 'Chance suggérée par une cote : 1 ÷ cote.'],
+  ['Cote juste', 'Cote sans marge, reflétant la vraie probabilité : 100 ÷ proba(%).'],
+  ['Value', 'Pari où la cote proposée dépasse la cote juste.'],
+  ['Espérance (EV)', 'Gain moyen attendu par euro : proba × cote − 1.'],
+  ['Bankroll', 'Budget total dédié au jeu, que l’on peut se permettre de perdre.'],
+  ['Unité', 'Fraction fixe de la bankroll misée par pari (1 à 5 %).'],
+  ['Mise à plat (flat)', 'Miser toujours la même unité, quel que soit le pari.'],
+  ['ROI / Yield', 'Rentabilité : bénéfice ÷ total misé (en %).'],
+  ['Marge (overround)', 'Commission du bookmaker : somme des probas implicites au-dessus de 100 %.'],
+  ['1N2', 'Résultat du match sur 90 min : 1 = domicile, N = nul, 2 = extérieur.'],
+  ['Double chance', 'On couvre 2 des 3 issues (1X, 12, X2). Cote plus basse.'],
+  ['Draw no bet (DNB)', 'Nul = mise remboursée.'],
+  ['BTTS', '« Les deux équipes marquent » : Oui / Non.'],
+  ['Over / Under', 'Plus / moins de X buts (1,5 · 2,5 · 3,5…).'],
+  ['Handicap', 'Avance ou retard fictif de buts donné à une équipe.'],
+  ['Combiné (parlay)', 'Plusieurs paris en un : les cotes se multiplient, les chances aussi.'],
+  ['Cash out', 'Clôturer un pari avant la fin pour sécuriser un gain / limiter la perte.'],
+  ['Live', 'Pari pendant le match, cotes qui bougent en temps réel.'],
+  ['Variance', 'Fluctuations dues au hasard sur le court terme.'],
+]
+
 export default function HowItWorks() {
   return (
     <div className="mx-auto max-w-2xl space-y-3">
-      <div className="surface rounded-2xl p-4 text-sm leading-relaxed text-[#1d1d1f]">
-        <b>Mieux parier, c’est d’abord comprendre.</b> Quelques bases pour parier plus
-        intelligemment et garder le contrôle.
+      <div className="surface rounded-2xl p-5">
+        <h1 className="text-lg font-bold text-[#1d1d1f]">Le guide du parieur</h1>
+        <p className="mt-1 text-sm leading-relaxed text-[#6e6e73]">
+          Tout ce qu’il faut comprendre pour parier plus intelligemment et garder le contrôle :
+          les cotes, les marchés, la value, la bankroll, et comment lire OddSight.
+        </p>
+        <nav className="mt-3 flex flex-wrap gap-1.5">
+          {TOC.map((t) => (
+            <a
+              key={t.id}
+              href={`#${t.id}`}
+              className="rounded-full bg-pitch-800 px-2.5 py-1 text-xs font-medium text-[#1d1d1f] transition-colors hover:bg-pitch-700"
+            >
+              {t.label}
+            </a>
+          ))}
+        </nav>
       </div>
 
-      {ARTICLES.map((a) => (
-        <Article key={a.title} a={a} />
-      ))}
+      {/* ---------------------------------------------------------------- */}
+      <Section id="bases" icon="🎯" title="Les bases : lire une cote">
+        <P>
+          Une cote (format décimal, celui utilisé en France) est un <b>multiplicateur</b> et une
+          <b> probabilité déguisée</b>. Deux formules suffisent :
+        </P>
+        <Formula>Gain total = mise × cote &nbsp;·&nbsp; Gain net = mise × (cote − 1)</Formula>
+        <Formula>Probabilité implicite = 1 ÷ cote</Formula>
+        <Example>
+          10 € sur une cote de <b>2,50</b> → gain total <b>25 €</b>, soit <b>+15 €</b> de bénéfice.
+          Cette cote suppose 1 ÷ 2,50 = <b>40 %</b> de chances.
+        </Example>
+        <P>
+          Cote basse = issue jugée probable, petit gain. Cote haute = peu probable, gros gain.
+        </P>
+        <Table
+          head={['Cote', 'Proba', 'Gain net /10 €']}
+          rows={[
+            ['1,20', '83 %', '+2 €'],
+            ['1,50', '67 %', '+5 €'],
+            ['2,00', '50 %', '+10 €'],
+            ['3,00', '33 %', '+20 €'],
+            ['5,00', '20 %', '+40 €'],
+            ['10,0', '10 %', '+90 €'],
+          ]}
+        />
+      </Section>
+
+      <Section id="marge" icon="🏦" title="La marge du bookmaker & la « cote juste »">
+        <P>
+          Si tu additionnes les probabilités implicites des issues d’un match, tu dépasses 100 %.
+          Ce surplus, c’est la <b>marge</b> (overround) : la commission du bookmaker.
+        </P>
+        <Example>
+          Un 1N2 à <b>2,10 / 3,40 / 3,60</b> → 47,6 % + 29,4 % + 27,8 % = <b>104,8 %</b>.
+          La marge est de <b>4,8 %</b> : sur 100 € joués, le book en garde ~5 en moyenne.
+        </Example>
+        <P>
+          La <b>cote juste</b> retire cette marge : c’est la cote qui reflète la vraie probabilité,
+          sans commission. OddSight affiche des cotes justes pour que tu puisses les comparer aux
+          cotes de ton opérateur.
+        </P>
+        <Formula>Cote juste = 100 ÷ probabilité réelle (%)</Formula>
+      </Section>
+
+      <Section id="marches" icon="🧩" title="Les types de paris (marchés)">
+        <P>Au-delà du simple résultat, il existe de nombreux marchés :</P>
+        <div>
+          <Market name="Résultat 1N2" desc="Qui gagne sur 90 min : 1 (domicile), N (nul), 2 (extérieur)." ex="La prolongation et les tirs au but ne comptent pas." />
+          <Market name="Double chance" desc="On couvre 2 issues sur 3 : 1X (dom. ou nul), 12 (pas de nul), X2 (nul ou ext.). Plus sûr, mais cote plus basse." />
+          <Market name="Draw no bet (DNB)" desc="On mise sur une équipe ; si match nul, la mise est remboursée." />
+          <Market name="Les deux marquent (BTTS)" desc="Les deux équipes marquent au moins un but : Oui / Non." ex="Un 2-0 = Non ; un 1-1 ou 2-1 = Oui." />
+          <Market name="Plus / Moins de buts (Over/Under)" desc="Nombre total de buts au-dessus / en-dessous d’une ligne (1,5 · 2,5 · 3,5)." ex="+2,5 buts = il faut 3 buts ou plus. Un 2-1 (3 buts) gagne, un 1-1 (2 buts) perd." />
+          <Market name="Handicap" desc="On donne une avance/un retard fictif de buts à une équipe pour équilibrer les cotes." ex="Handicap −1 sur le favori : il doit gagner par 2 buts d’écart minimum." />
+          <Market name="Score exact" desc="Le score final précis. Marché très ouvert : même le score le plus probable dépasse rarement ~12 %." />
+          <Market name="Mi-temps / fin de match" desc="Résultat à la pause combiné au résultat final." />
+          <Market name="Buteur" desc="Un joueur marque (à tout moment, premier, dernier…)." />
+        </div>
+      </Section>
+
+      <Section id="value" icon="📈" title="La value & l’espérance de gain">
+        <P>
+          Parier sur le favori ne suffit pas : tout le monde le fait et les cotes sont basses.
+          Gagner sur la durée, c’est trouver de la <b>value</b> : une cote proposée
+          <b> supérieure</b> à la cote juste.
+        </P>
+        <Formula>Espérance (EV) par euro = probabilité × cote − 1</Formula>
+        <P>Si l’EV est positive, le pari est rentable sur le long terme.</P>
+        <Example>
+          Tu estimes une issue à <b>55 %</b> (cote juste 1,82). Ton opérateur propose <b>2,00</b>.
+          EV = 0,55 × 2,00 − 1 = <b>+0,10</b> → <b>+10 % de value</b>. À jouer.
+        </Example>
+        <Note>
+          La value ne garantit pas de gagner <i>ce</i> pari. C’est la <b>somme</b> de paris de
+          valeur, sur des centaines de matchs, qui paie. Sur peu de paris, le hasard (variance)
+          domine.
+        </Note>
+      </Section>
+
+      <Section id="bankroll" icon="💰" title="Gérer sa bankroll">
+        <P>
+          Ta <b>bankroll</b> est le budget que tu dédies au jeu — jamais l’argent du loyer ou des
+          courses. On la gère par <b>unités</b>.
+        </P>
+        <Sub>La mise en unités</Sub>
+        <P>
+          1 unité = un pourcentage fixe de ta bankroll. Prudent : 1 %. Équilibré : 2-3 %.
+          Agressif : 5 % max. Tu mises en unités, pas au feeling.
+        </P>
+        <Example>
+          Bankroll de 200 € · profil équilibré (3 %) → 1 unité = <b>6 €</b>. Tu mises 6 € par pari,
+          quelle que soit ton envie du moment.
+        </Example>
+        <Sub>Suivre sa rentabilité</Sub>
+        <Formula>ROI (yield) = bénéfice net ÷ total misé × 100</Formula>
+        <P>Un yield de <b>+5 %</b> tenu sur la durée est déjà excellent chez les pros.</P>
+        <Note>
+          <b>Ne cours jamais après tes pertes.</b> Doubler la mise pour « se refaire » (martingale)
+          mène à la ruine : une série de pertes arrive toujours.
+        </Note>
+      </Section>
+
+      <Section id="combines" icon="🧱" title="Les combinés (parlays)">
+        <P>
+          Un combiné regroupe plusieurs paris : <b>toutes</b> les sélections doivent gagner. Les
+          cotes se multiplient — mais les probabilités aussi.
+        </P>
+        <Formula>Cote combinée = cote₁ × cote₂ × … &nbsp;·&nbsp; Proba = proba₁ × proba₂ × …</Formula>
+        <Example>
+          3 matchs « sûrs » à <b>1,80</b> chacun → cote combinée 1,80³ = <b>×5,83</b>, mais la
+          probabilité réelle n’est que 0,556³ ≈ <b>17 %</b>. Ça « passe » 1 fois sur 6.
+        </Example>
+        <P>
+          Chaque match ajouté multiplie le gain <i>et</i> divise les chances. C’est pour ça que les
+          bookmakers adorent les combinés : la marge se cumule à chaque sélection.
+        </P>
+        <P>
+          Les <b>paris systèmes</b> (2/3, 3/4…) permettent de gagner même avec une sélection
+          perdante, en échange d’une mise plus élevée.
+        </P>
+      </Section>
+
+      <Section id="erreurs" icon="⚠️" title="Les erreurs classiques">
+        <div>
+          <Market name="Trop de sélections dans un combiné" desc="8 matchs « sûrs » = très peu de chances que tout passe. Vise court." />
+          <Market name="Ignorer la marge" desc="Parier sans comparer à la cote juste, c’est jouer perdant d’avance." />
+          <Market name="Le biais du favori" desc="Miser systématiquement les petites cotes rapporte peu et ne couvre pas les surprises." />
+          <Market name="Parier sous émotion" desc="Sur son équipe de cœur, ou énervé après une perte. Décide à froid, avec des chiffres." />
+          <Market name="Chercher le pari sûr" desc="Il n’existe pas. Même à 90 %, on perd 1 fois sur 10." />
+          <Market name="Sur-miser" desc="Mettre 30 % de sa bankroll sur un « coup sûr » : une seule perte et tout s’effondre." />
+        </div>
+      </Section>
+
+      <Section id="oddsight" icon="🧭" title="Comment lire OddSight">
+        <div>
+          <Market name="« Plus probable » + confiance" desc="L’issue 1N2 la plus probable selon le modèle, avec un niveau : Élevée, Modérée, Faible, ou Serré (match indécis)." />
+          <Market name="Cote juste" desc="Notre probabilité convertie en cote, sans marge. Si la cote de ton opérateur est au-dessus → c’est une value." />
+          <Market name="Onglet Value & cotes" desc="Saisis les cotes de ton book : on te dit en direct si c’est une value (✓), neutre, ou à éviter." />
+          <Market name="Fourchette de scores" desc="Le score exact est un marché très ouvert : on montre les scores plausibles et leur faible probabilité, sans en survendre un." />
+          <Market name="Combinés & Bankroll" desc="Le combiné le plus probable pour viser ×2 / ×3, et une répartition de mise selon ta bankroll et ton profil de risque." />
+          <Market name="Mon suivi" desc="Enregistre tes paris pour voir ta courbe de gains, ton taux de réussite et ton ROI réels." />
+        </div>
+        <Note>
+          OddSight calcule ses probabilités à partir de stats réelles (Poisson + Dixon-Coles), pas
+          d’intuition. Mais aucun modèle ne prédit l’avenir : ce sont des probabilités, pas des
+          garanties.
+        </Note>
+      </Section>
+
+      <Section id="responsable" icon="🛡️" title="Jouer responsable">
+        <P>
+          Le jeu doit rester un <b>plaisir</b>, jamais une source de revenus ni un moyen de se
+          refaire.
+        </P>
+        <Sub>Les bons réflexes</Sub>
+        <P>
+          Fixe un budget <i>et</i> un temps de jeu AVANT de commencer, et tiens-t’y. Ne joue que ce
+          que tu peux perdre sans conséquence.
+        </P>
+        <Sub>Les signaux d’alerte</Sub>
+        <P>
+          Tu mises plus que prévu · tu joues pour récupérer des pertes · tu caches ton jeu à tes
+          proches · tu y penses sans arrêt · tu empruntes pour parier.
+        </P>
+        <Note>
+          Besoin d’aide ? <b>Joueurs Info Service : 09 74 75 13 13</b> (non surtaxé, 7j/7, anonyme).
+          Les opérateurs agréés (ANJ) proposent aussi limites de dépôt, modération et auto-exclusion.
+          Réservé aux <b>18 ans et plus</b>.
+        </Note>
+      </Section>
+
+      <Section id="glossaire" icon="📖" title="Glossaire express">
+        <dl className="divide-y divide-black/[0.06]">
+          {GLOSSARY.map(([term, def]) => (
+            <div key={term} className="py-2">
+              <dt className="text-sm font-semibold text-[#1d1d1f]">{term}</dt>
+              <dd className="text-sm leading-relaxed text-[#6e6e73]">{def}</dd>
+            </div>
+          ))}
+        </dl>
+      </Section>
 
       <div className="rounded-2xl border border-amber-400/30 bg-amber-50 p-4 text-xs leading-relaxed text-amber-800">
-        ⚠️ Jouer comporte des risques : endettement, isolement, dépendance. OddSight est un
-        outil d’information, pas un conseil en investissement. 18+. Joueurs Info Service :
-        09 74 75 13 13.
+        ⚠️ Jouer comporte des risques : endettement, isolement, dépendance. OddSight est un outil
+        d’information, pas un conseil en investissement. 18+. Joueurs Info Service : 09 74 75 13 13.
       </div>
     </div>
   )
