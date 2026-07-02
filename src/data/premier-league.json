@@ -1,6 +1,6 @@
 {
   "tournament": "Premier League 2026-27",
-  "generatedAt": "2026-07-02T17:25:36.509Z",
+  "generatedAt": "2026-07-02T21:27:03.286Z",
   "asOf": "2026-07-01",
   "sources": [
     "openfootball en.1 (entraînement)",
@@ -63272,6 +63272,18 @@
             "logLoss": 0.995,
             "brier": 0.598,
             "n": 106
+          }
+        },
+        "market": {
+          "model": {
+            "logLoss": 1.021,
+            "brier": 0.614,
+            "n": 353
+          },
+          "market": {
+            "logLoss": 0.99,
+            "brier": 0.591,
+            "n": 353
           }
         },
         "calibrationApplied": true

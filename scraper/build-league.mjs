@@ -9,6 +9,9 @@ import { writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { buildModel } from './engine.mjs'
+import { fetchMarketOdds } from './market.mjs'
+
+const MARKET_BASE = 'https://www.football-data.co.uk/mmz4281/2526/'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/124 Safari/537.36'
@@ -19,6 +22,7 @@ const LEAGUES = {
   pl: {
     out: 'premier-league.json', tournament: 'Premier League 2026-27',
     of: 'en.1', path: 'championnat-d-angleterre', journees: 38, j1: '2026-08-15',
+    mkt: 'E0', mktName: { "Nott'm Forest": 'Nottingham Forest' },
     name: {
       'AFC Bournemouth': 'Bournemouth', 'Arsenal FC': 'Arsenal', 'Aston Villa FC': 'Aston Villa',
       'Brentford FC': 'Brentford', 'Brighton & Hove Albion FC': 'Brighton', 'Burnley FC': 'Burnley',
@@ -41,6 +45,7 @@ const LEAGUES = {
   sa: {
     out: 'serie-a.json', tournament: 'Serie A 2026-27',
     of: 'it.1', path: 'championnat-d-italie', journees: 38, j1: '2026-08-22',
+    mkt: 'I1', mktName: {},
     name: {
       'AC Milan': 'Milan', 'AC Pisa 1909': 'Pisa', 'ACF Fiorentina': 'Fiorentina', 'AS Roma': 'Roma',
       'Atalanta BC': 'Atalanta', 'Bologna FC 1909': 'Bologna', 'Cagliari Calcio': 'Cagliari',
@@ -123,7 +128,10 @@ async function main() {
   }
   console.log(`✓ ${ok} journées complètes · ${fixtures.length} affiches`)
 
-  const model = buildModel({ matches: fixtures, trainMatches, elo: {}, asOf: ASOF, format: 'league', maxUpcoming: Infinity })
+  const market = cfg.mkt ? await fetchMarketOdds(MARKET_BASE + cfg.mkt + '.csv', cfg.mktName || {}) : null
+  console.log(`✓ ${market?.size || 0} matchs avec cote marché`)
+
+  const model = buildModel({ matches: fixtures, trainMatches, elo: {}, asOf: ASOF, format: 'league', maxUpcoming: Infinity, market })
   console.log(`✓ ${model.counts.upcoming} pronos · track record ${model.history.summary.result.pct}% (1N2)`)
 
   const OUT = resolve(__dirname, `../src/data/${cfg.out}`)

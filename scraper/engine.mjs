@@ -662,7 +662,7 @@ function computeInternalElo(played, teams, format) {
   for (const n in R) if (teams[n]) teams[n].elo = Math.round(R[n])
 }
 
-export function backtest({ matches, elo, format = 'cup' }) {
+export function backtest({ matches, elo, format = 'cup', market = null }) {
   // Tous les matchs avec score (chaque prono est rejoué avec uniquement les matchs antérieurs)
   const played = matches
     .filter(hasScore)
@@ -679,6 +679,8 @@ export function backtest({ matches, elo, format = 'cup' }) {
   const eloRows = []   // baseline Elo seul
   const baseRows = []  // baseline taux historiques (naïf)
   const relPairs = []  // { x: proba du pick, y: réussite 0/1 }
+  const mktModelRows = [] // modèle, SEULEMENT sur les matchs où on a la cote marché
+  const mktRows = []      // marché (cotes de clôture dé-marginées), même sous-ensemble
   let n1 = 0, nX = 0, n2 = 0 // compteurs d'issues DÉJÀ vues (base-rate point-in-time)
 
   const idxOf = (a) => (a === '1' ? 0 : a === 'X' ? 1 : 2)
@@ -705,6 +707,13 @@ export function backtest({ matches, elo, format = 'cup' }) {
     const ms = mp[0] + mp[1] + mp[2] || 1
     mp = mp.map((x) => x / ms)
     modelRows.push({ probs: mp, actualIdx: ai })
+
+    // -- Comparaison au MARCHÉ (cotes de clôture) sur les matchs disponibles --
+    const mk = market?.get(`${m.date}|${m.team1}|${m.team2}`)
+    if (mk) {
+      mktModelRows.push({ probs: mp, actualIdx: ai })
+      mktRows.push({ probs: mk.probs, actualIdx: ai })
+    }
 
     // -- Baseline « taux historiques » (avant CE match) --
     const N = n1 + nX + n2
@@ -791,6 +800,10 @@ export function backtest({ matches, elo, format = 'cup' }) {
     baselineRate: scoreSet(baseRows),
     calibration: reliability(relPairs),
     holdout: { raw: modelOOS, calibrated: calibratedOOS }, // out-of-sample (30 % final)
+    // Modèle vs marché SUR LE MÊME sous-ensemble (comparaison honnête) :
+    market: mktRows.length >= 20
+      ? { model: scoreSet(mktModelRows), market: scoreSet(mktRows) }
+      : null,
   }
 
   return {
@@ -810,7 +823,7 @@ export function backtest({ matches, elo, format = 'cup' }) {
 
 export function buildModel({
   matches, trainMatches = [], elo, availability = {}, asOf,
-  format = 'cup', maxUpcoming = Infinity,
+  format = 'cup', maxUpcoming = Infinity, market = null,
 }) {
   // Profil d'hyperparamètres selon le format (coupe vs championnat).
   Object.assign(TUNABLE, format === 'league' ? PROFILES.league : PROFILES.cup)
@@ -887,7 +900,7 @@ export function buildModel({
   }
 
   // Track record + métriques + carte de calibration (rejoué point-in-time).
-  const history = backtest({ matches: hasTrain ? trainMatches : matches, elo, format })
+  const history = backtest({ matches: hasTrain ? trainMatches : matches, elo, format, market })
 
   // On n'active la calibration QUE si elle améliore (ou n'aggrave pas) le log-loss
   // out-of-sample (30 % final). Garantie « pas de régression » de qualité.

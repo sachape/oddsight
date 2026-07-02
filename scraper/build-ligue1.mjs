@@ -9,11 +9,14 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { buildModel } from './engine.mjs'
 import { fetchEspnResults } from './espn.mjs'
+import { fetchMarketOdds } from './market.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(__dirname, '../src/data/ligue1.json')
 // Date de référence = aujourd'hui (avance seule) ; surchargée par ODDSIGHT_TODAY.
 const ASOF = process.env.ODDSIGHT_TODAY || new Date().toISOString().slice(0, 10)
+// Cotes de clôture réelles (benchmark marché), saison d'entraînement 2025-26.
+const MARKET_URL = 'https://www.football-data.co.uk/mmz4281/2526/F1.csv'
 // Source de résultats live : ESPN (fra.1). Noms ESPN -> noms courts du dataset.
 const ESPN_LEAGUE = 'fra.1'
 const SEASON_START = '2026-08-01'
@@ -154,8 +157,13 @@ async function main() {
   const injected = await injectEspnResults(fixtures, ASOF)
   console.log(`✓ ${injected} résultats réels injectés (matchs joués)`)
 
+  // Cotes de clôture réelles (benchmark marché) — noms football-data -> dataset
+  console.log('→ Cotes de clôture (football-data.co.uk)…')
+  const market = await fetchMarketOdds(MARKET_URL, { 'Paris SG': 'Paris-SG' })
+  console.log(`✓ ${market.size} matchs avec cote marché`)
+
   const model = buildModel({
-    matches: fixtures, trainMatches, elo: {}, asOf: ASOF, format: 'league', maxUpcoming: Infinity,
+    matches: fixtures, trainMatches, elo: {}, asOf: ASOF, format: 'league', maxUpcoming: Infinity, market,
   })
   console.log(`✓ ${model.counts.upcoming} pronos · track record ${model.history.summary.result.pct}% (1N2)`)
 

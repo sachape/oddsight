@@ -36,6 +36,28 @@ function ModelQuality({ metrics: m }) {
         {m.calibrationApplied && ' Probabilités recalibrées sur l’historique.'}
       </p>
 
+      {m.market && (
+        <div className="mt-3 flex items-center justify-between gap-3 rounded-xl bg-pitch-850 px-3 py-2.5">
+          <div className="min-w-0">
+            <div className="text-[11px] font-semibold uppercase tracking-wide text-[#86868b]">Face au marché</div>
+            <div className="text-[11px] text-[#6e6e73]">
+              cotes de clôture réelles · {m.market.market.n} matchs
+            </div>
+          </div>
+          <div className="flex shrink-0 items-center gap-3 text-center">
+            <div>
+              <div className="text-sm font-bold tabular-nums text-[#1d1d1f]">{m.market.model.logLoss}</div>
+              <div className="text-[10px] text-[#86868b]">modèle</div>
+            </div>
+            <span className="text-[#c7c7cc]">vs</span>
+            <div>
+              <div className="text-sm font-bold tabular-nums text-[#1d1d1f]">{m.market.market.logLoss}</div>
+              <div className="text-[10px] text-[#86868b]">marché</div>
+            </div>
+          </div>
+        </div>
+      )}
+
       {m.calibration?.length > 0 && (
         <div className="mt-3 border-t border-black/[0.06] pt-3">
           <div className="mb-1.5 text-[11px] uppercase tracking-wide text-[#86868b]">
