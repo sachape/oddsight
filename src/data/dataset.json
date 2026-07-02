@@ -1,6 +1,6 @@
 {
   "tournament": "World Cup 2026",
-  "generatedAt": "2026-07-02T17:21:33.803Z",
+  "generatedAt": "2026-07-02T21:46:37.531Z",
   "asOf": "2026-07-02",
   "sources": [
     "openfootball/worldcup.json",
@@ -29,7 +29,7 @@
       "gapg": 0,
       "formStr": "W W W",
       "clutch": 0.13,
-      "attAdj": 1.31,
+      "attAdj": 1.32,
       "defAdj": 0.5,
       "momentum": 0.6,
       "absents": [],
@@ -56,7 +56,7 @@
       "gapg": 1,
       "formStr": "D W L",
       "clutch": 0.5,
-      "attAdj": 0.67,
+      "attAdj": 0.68,
       "defAdj": 0.8,
       "momentum": 0.28,
       "absents": [],
@@ -84,7 +84,7 @@
       "formStr": "W L L",
       "clutch": 0.5,
       "attAdj": 0.76,
-      "defAdj": 0.97,
+      "defAdj": 0.96,
       "momentum": -0.58,
       "absents": [],
       "availAtt": 1,
@@ -111,7 +111,7 @@
       "formStr": "L D L",
       "clutch": 0,
       "attAdj": 0.83,
-      "defAdj": 1.22,
+      "defAdj": 1.21,
       "momentum": -0.47,
       "absents": [],
       "availAtt": 1,
@@ -137,7 +137,7 @@
       "gapg": 0.75,
       "formStr": "W L W",
       "clutch": 0.56,
-      "attAdj": 1.12,
+      "attAdj": 1.13,
       "defAdj": 0.71,
       "momentum": 0.1,
       "absents": [],
@@ -191,7 +191,7 @@
       "gapg": 1,
       "formStr": "W L W",
       "clutch": 0.2,
-      "attAdj": 1.43,
+      "attAdj": 1.44,
       "defAdj": 0.81,
       "momentum": 0.22,
       "absents": [],
@@ -246,7 +246,7 @@
       "formStr": "D L L",
       "clutch": 0.5,
       "attAdj": 0.83,
-      "defAdj": 1.6,
+      "defAdj": 1.59,
       "momentum": -0.06,
       "absents": [],
       "availAtt": 1,
@@ -299,7 +299,7 @@
       "gapg": 0.5,
       "formStr": "W W W",
       "clutch": 0.11,
-      "attAdj": 1.35,
+      "attAdj": 1.36,
       "defAdj": 0.69,
       "momentum": 0.41,
       "absents": [],
@@ -354,7 +354,7 @@
       "formStr": "L L L",
       "clutch": 0,
       "attAdj": 0.92,
-      "defAdj": 1.37,
+      "defAdj": 1.36,
       "momentum": -0.23,
       "absents": [],
       "availAtt": 1,
@@ -461,8 +461,8 @@
       "gapg": 1.25,
       "formStr": "W L D",
       "clutch": 0.27,
-      "attAdj": 1.3,
-      "defAdj": 1.14,
+      "attAdj": 1.31,
+      "defAdj": 1.13,
       "momentum": -0.32,
       "absents": [],
       "availAtt": 1,
@@ -489,7 +489,7 @@
       "formStr": "L D L",
       "clutch": 0,
       "attAdj": 0.69,
-      "defAdj": 1.27,
+      "defAdj": 1.26,
       "momentum": 0.11,
       "absents": [],
       "availAtt": 1,
@@ -569,8 +569,8 @@
       "gapg": 1.25,
       "formStr": "W W D",
       "clutch": 0.09,
-      "attAdj": 1.28,
-      "defAdj": 0.94,
+      "attAdj": 1.29,
+      "defAdj": 0.93,
       "momentum": 0.03,
       "absents": [],
       "availAtt": 1,
@@ -596,8 +596,8 @@
       "gapg": 1.25,
       "formStr": "W D L",
       "clutch": 0.25,
-      "attAdj": 1.1,
-      "defAdj": 0.92,
+      "attAdj": 1.11,
+      "defAdj": 0.91,
       "momentum": -0.35,
       "absents": [],
       "availAtt": 1,
@@ -623,7 +623,7 @@
       "gapg": 2.5,
       "formStr": "L D L",
       "clutch": 0.29,
-      "attAdj": 0.84,
+      "attAdj": 0.85,
       "defAdj": 1.23,
       "momentum": -0.05,
       "absents": [],
@@ -651,7 +651,7 @@
       "formStr": "L L L",
       "clutch": 0,
       "attAdj": 0.82,
-      "defAdj": 1.67,
+      "defAdj": 1.66,
       "momentum": -0.3,
       "absents": [],
       "availAtt": 1,
@@ -678,7 +678,7 @@
       "formStr": "D W D",
       "clutch": 0.63,
       "attAdj": 1.17,
-      "defAdj": 0.85,
+      "defAdj": 0.84,
       "momentum": -0.16,
       "absents": [],
       "availAtt": 1,
@@ -704,7 +704,7 @@
       "gapg": 1,
       "formStr": "D W D",
       "clutch": 0.2,
-      "attAdj": 1.03,
+      "attAdj": 1.04,
       "defAdj": 0.91,
       "momentum": 0.29,
       "absents": [],
@@ -758,8 +758,8 @@
       "gapg": 3.33,
       "formStr": "D L L",
       "clutch": 0.25,
-      "attAdj": 1.04,
-      "defAdj": 1.6,
+      "attAdj": 1.05,
+      "defAdj": 1.59,
       "momentum": -0.1,
       "absents": [],
       "availAtt": 1,
@@ -770,24 +770,24 @@
       "name": "Spain",
       "group": "Group H",
       "elo": 2144,
-      "played": 3,
-      "w": 2,
+      "played": 4,
+      "w": 3,
       "d": 1,
       "l": 0,
-      "gf": 5,
+      "gf": 8,
       "ga": 0,
-      "wsum": 1.7540482482720445,
-      "lateFor": 0,
+      "wsum": 3.0540482482720446,
+      "lateFor": 1,
       "lateAgainst": 0,
-      "lastDate": "2026-06-26",
-      "points": 7,
-      "gfpg": 1.67,
+      "lastDate": "2026-07-02",
+      "points": 10,
+      "gfpg": 2,
       "gapg": 0,
-      "formStr": "D W W",
-      "clutch": 0,
-      "attAdj": 1.12,
-      "defAdj": 0.61,
-      "momentum": -0.07,
+      "formStr": "W W W",
+      "clutch": 0.13,
+      "attAdj": 1.26,
+      "defAdj": 0.47,
+      "momentum": 0.25,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
@@ -812,7 +812,7 @@
       "gapg": 0.67,
       "formStr": "D D D",
       "clutch": 0,
-      "attAdj": 0.8,
+      "attAdj": 0.81,
       "defAdj": 0.82,
       "momentum": 0.38,
       "absents": [],
@@ -839,8 +839,8 @@
       "gapg": 1.67,
       "formStr": "D L D",
       "clutch": 0,
-      "attAdj": 0.68,
-      "defAdj": 1.04,
+      "attAdj": 0.69,
+      "defAdj": 1,
       "momentum": 0.15,
       "absents": [],
       "availAtt": 1,
@@ -866,8 +866,8 @@
       "gapg": 1.33,
       "formStr": "D D L",
       "clutch": 0.33,
-      "attAdj": 0.93,
-      "defAdj": 1.07,
+      "attAdj": 0.94,
+      "defAdj": 1.06,
       "momentum": -0.46,
       "absents": [],
       "availAtt": 1,
@@ -893,7 +893,7 @@
       "gapg": 0.5,
       "formStr": "W W W",
       "clutch": 0.23,
-      "attAdj": 1.56,
+      "attAdj": 1.57,
       "defAdj": 0.58,
       "momentum": 0.24,
       "absents": [],
@@ -920,7 +920,7 @@
       "gapg": 2,
       "formStr": "L W D",
       "clutch": 0.3,
-      "attAdj": 1.44,
+      "attAdj": 1.45,
       "defAdj": 1.02,
       "momentum": 0.08,
       "absents": [],
@@ -948,7 +948,7 @@
       "formStr": "L L L",
       "clutch": 0,
       "attAdj": 0.68,
-      "defAdj": 1.45,
+      "defAdj": 1.44,
       "momentum": -0.23,
       "absents": [],
       "availAtt": 1,
@@ -974,7 +974,7 @@
       "gapg": 2,
       "formStr": "W L W",
       "clutch": 0.3,
-      "attAdj": 1.42,
+      "attAdj": 1.43,
       "defAdj": 1.09,
       "momentum": 0.24,
       "absents": [],
@@ -1001,7 +1001,7 @@
       "gapg": 0.33,
       "formStr": "W W W",
       "clutch": 0.38,
-      "attAdj": 1.26,
+      "attAdj": 1.22,
       "defAdj": 0.74,
       "momentum": 0.19,
       "absents": [],
@@ -1028,8 +1028,8 @@
       "gapg": 2.33,
       "formStr": "L W D",
       "clutch": 0.4,
-      "attAdj": 1.09,
-      "defAdj": 1.24,
+      "attAdj": 1.05,
+      "defAdj": 1.36,
       "momentum": 0.2,
       "absents": [],
       "availAtt": 1,
@@ -1040,24 +1040,24 @@
       "name": "Austria",
       "group": "Group J",
       "elo": 1836,
-      "played": 3,
+      "played": 4,
       "w": 1,
       "d": 1,
-      "l": 1,
+      "l": 2,
       "gf": 6,
-      "ga": 6,
-      "wsum": 1.843077841389901,
+      "ga": 9,
+      "wsum": 3.1430778413899008,
       "lateFor": 3,
-      "lateAgainst": 2,
-      "lastDate": "2026-06-27",
+      "lateAgainst": 3,
+      "lastDate": "2026-07-02",
       "points": 4,
-      "gfpg": 2,
-      "gapg": 2,
-      "formStr": "W L D",
+      "gfpg": 1.5,
+      "gapg": 2.25,
+      "formStr": "L D L",
       "clutch": 0.5,
-      "attAdj": 1.1,
-      "defAdj": 1.19,
-      "momentum": -0.04,
+      "attAdj": 0.82,
+      "defAdj": 1.32,
+      "momentum": -0.25,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
@@ -1082,8 +1082,8 @@
       "gapg": 2.67,
       "formStr": "L L L",
       "clutch": 0,
-      "attAdj": 0.93,
-      "defAdj": 1.29,
+      "attAdj": 0.92,
+      "defAdj": 1.38,
       "momentum": -0.35,
       "absents": [],
       "availAtt": 1,
@@ -1109,7 +1109,7 @@
       "gapg": 0.33,
       "formStr": "D W D",
       "clutch": 0.17,
-      "attAdj": 0.97,
+      "attAdj": 0.98,
       "defAdj": 0.67,
       "momentum": -0.08,
       "absents": [],
@@ -1136,7 +1136,7 @@
       "gapg": 1.25,
       "formStr": "L W L",
       "clutch": 0.4,
-      "attAdj": 0.94,
+      "attAdj": 0.95,
       "defAdj": 0.99,
       "momentum": 0.05,
       "absents": [],
@@ -1163,8 +1163,8 @@
       "gapg": 3.67,
       "formStr": "L L L",
       "clutch": 0,
-      "attAdj": 0.84,
-      "defAdj": 1.81,
+      "attAdj": 0.85,
+      "defAdj": 1.8,
       "momentum": -0.45,
       "absents": [],
       "availAtt": 1,
@@ -1190,7 +1190,7 @@
       "gapg": 0.33,
       "formStr": "W W D",
       "clutch": 0.5,
-      "attAdj": 0.83,
+      "attAdj": 0.84,
       "defAdj": 0.68,
       "momentum": 0.14,
       "absents": [],
@@ -1217,7 +1217,7 @@
       "gapg": 0.75,
       "formStr": "D W W",
       "clutch": 0.38,
-      "attAdj": 1.24,
+      "attAdj": 1.25,
       "defAdj": 0.72,
       "momentum": -0.04,
       "absents": [],
@@ -1244,7 +1244,7 @@
       "gapg": 1.67,
       "formStr": "L W W",
       "clutch": 0.2,
-      "attAdj": 1.24,
+      "attAdj": 1.25,
       "defAdj": 1,
       "momentum": 0.08,
       "absents": [],
@@ -1272,7 +1272,7 @@
       "formStr": "W D L",
       "clutch": 0.5,
       "attAdj": 0.81,
-      "defAdj": 0.8,
+      "defAdj": 0.79,
       "momentum": 0.5,
       "absents": [],
       "availAtt": 1,
@@ -1299,7 +1299,7 @@
       "formStr": "L L L",
       "clutch": 0,
       "attAdj": 0.6,
-      "defAdj": 0.98,
+      "defAdj": 0.97,
       "momentum": -0.52,
       "absents": [],
       "availAtt": 1,
@@ -1328,7 +1328,7 @@
         "gapg": 0,
         "formStr": "W W W",
         "clutch": 0.13,
-        "attAdj": 1.31,
+        "attAdj": 1.32,
         "defAdj": 0.5,
         "momentum": 0.6,
         "absents": [],
@@ -1355,7 +1355,7 @@
         "gapg": 1,
         "formStr": "D W L",
         "clutch": 0.5,
-        "attAdj": 0.67,
+        "attAdj": 0.68,
         "defAdj": 0.8,
         "momentum": 0.28,
         "absents": [],
@@ -1383,7 +1383,7 @@
         "formStr": "W L L",
         "clutch": 0.5,
         "attAdj": 0.76,
-        "defAdj": 0.97,
+        "defAdj": 0.96,
         "momentum": -0.58,
         "absents": [],
         "availAtt": 1,
@@ -1410,7 +1410,7 @@
         "formStr": "L D L",
         "clutch": 0,
         "attAdj": 0.83,
-        "defAdj": 1.22,
+        "defAdj": 1.21,
         "momentum": -0.47,
         "absents": [],
         "availAtt": 1,
@@ -1438,7 +1438,7 @@
         "gapg": 0.75,
         "formStr": "W L W",
         "clutch": 0.56,
-        "attAdj": 1.12,
+        "attAdj": 1.13,
         "defAdj": 0.71,
         "momentum": 0.1,
         "absents": [],
@@ -1520,7 +1520,7 @@
         "formStr": "D L L",
         "clutch": 0.5,
         "attAdj": 0.83,
-        "defAdj": 1.6,
+        "defAdj": 1.59,
         "momentum": -0.06,
         "absents": [],
         "availAtt": 1,
@@ -1548,7 +1548,7 @@
         "gapg": 1,
         "formStr": "W L W",
         "clutch": 0.2,
-        "attAdj": 1.43,
+        "attAdj": 1.44,
         "defAdj": 0.81,
         "momentum": 0.22,
         "absents": [],
@@ -1658,7 +1658,7 @@
         "gapg": 0.5,
         "formStr": "W W W",
         "clutch": 0.11,
-        "attAdj": 1.35,
+        "attAdj": 1.36,
         "defAdj": 0.69,
         "momentum": 0.41,
         "absents": [],
@@ -1740,7 +1740,7 @@
         "formStr": "L L L",
         "clutch": 0,
         "attAdj": 0.92,
-        "defAdj": 1.37,
+        "defAdj": 1.36,
         "momentum": -0.23,
         "absents": [],
         "availAtt": 1,
@@ -1768,8 +1768,8 @@
         "gapg": 1.25,
         "formStr": "W L D",
         "clutch": 0.27,
-        "attAdj": 1.3,
-        "defAdj": 1.14,
+        "attAdj": 1.31,
+        "defAdj": 1.13,
         "momentum": -0.32,
         "absents": [],
         "availAtt": 1,
@@ -1850,7 +1850,7 @@
         "formStr": "L D L",
         "clutch": 0,
         "attAdj": 0.69,
-        "defAdj": 1.27,
+        "defAdj": 1.26,
         "momentum": 0.11,
         "absents": [],
         "availAtt": 1,
@@ -1878,8 +1878,8 @@
         "gapg": 1.25,
         "formStr": "W W D",
         "clutch": 0.09,
-        "attAdj": 1.28,
-        "defAdj": 0.94,
+        "attAdj": 1.29,
+        "defAdj": 0.93,
         "momentum": 0.03,
         "absents": [],
         "availAtt": 1,
@@ -1905,8 +1905,8 @@
         "gapg": 1.25,
         "formStr": "W D L",
         "clutch": 0.25,
-        "attAdj": 1.1,
-        "defAdj": 0.92,
+        "attAdj": 1.11,
+        "defAdj": 0.91,
         "momentum": -0.35,
         "absents": [],
         "availAtt": 1,
@@ -1932,7 +1932,7 @@
         "gapg": 2.5,
         "formStr": "L D L",
         "clutch": 0.29,
-        "attAdj": 0.84,
+        "attAdj": 0.85,
         "defAdj": 1.23,
         "momentum": -0.05,
         "absents": [],
@@ -1960,7 +1960,7 @@
         "formStr": "L L L",
         "clutch": 0,
         "attAdj": 0.82,
-        "defAdj": 1.67,
+        "defAdj": 1.66,
         "momentum": -0.3,
         "absents": [],
         "availAtt": 1,
@@ -1989,7 +1989,7 @@
         "formStr": "D W D",
         "clutch": 0.63,
         "attAdj": 1.17,
-        "defAdj": 0.85,
+        "defAdj": 0.84,
         "momentum": -0.16,
         "absents": [],
         "availAtt": 1,
@@ -2015,7 +2015,7 @@
         "gapg": 1,
         "formStr": "D W D",
         "clutch": 0.2,
-        "attAdj": 1.03,
+        "attAdj": 1.04,
         "defAdj": 0.91,
         "momentum": 0.29,
         "absents": [],
@@ -2069,8 +2069,8 @@
         "gapg": 3.33,
         "formStr": "D L L",
         "clutch": 0.25,
-        "attAdj": 1.04,
-        "defAdj": 1.6,
+        "attAdj": 1.05,
+        "defAdj": 1.59,
         "momentum": -0.1,
         "absents": [],
         "availAtt": 1,
@@ -2083,24 +2083,24 @@
         "name": "Spain",
         "group": "Group H",
         "elo": 2144,
-        "played": 3,
-        "w": 2,
+        "played": 4,
+        "w": 3,
         "d": 1,
         "l": 0,
-        "gf": 5,
+        "gf": 8,
         "ga": 0,
-        "wsum": 1.7540482482720445,
-        "lateFor": 0,
+        "wsum": 3.0540482482720446,
+        "lateFor": 1,
         "lateAgainst": 0,
-        "lastDate": "2026-06-26",
-        "points": 7,
-        "gfpg": 1.67,
+        "lastDate": "2026-07-02",
+        "points": 10,
+        "gfpg": 2,
         "gapg": 0,
-        "formStr": "D W W",
-        "clutch": 0,
-        "attAdj": 1.12,
-        "defAdj": 0.61,
-        "momentum": -0.07,
+        "formStr": "W W W",
+        "clutch": 0.13,
+        "attAdj": 1.26,
+        "defAdj": 0.47,
+        "momentum": 0.25,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
@@ -2125,7 +2125,7 @@
         "gapg": 0.67,
         "formStr": "D D D",
         "clutch": 0,
-        "attAdj": 0.8,
+        "attAdj": 0.81,
         "defAdj": 0.82,
         "momentum": 0.38,
         "absents": [],
@@ -2152,8 +2152,8 @@
         "gapg": 1.33,
         "formStr": "D D L",
         "clutch": 0.33,
-        "attAdj": 0.93,
-        "defAdj": 1.07,
+        "attAdj": 0.94,
+        "defAdj": 1.06,
         "momentum": -0.46,
         "absents": [],
         "availAtt": 1,
@@ -2179,8 +2179,8 @@
         "gapg": 1.67,
         "formStr": "D L D",
         "clutch": 0,
-        "attAdj": 0.68,
-        "defAdj": 1.04,
+        "attAdj": 0.69,
+        "defAdj": 1,
         "momentum": 0.15,
         "absents": [],
         "availAtt": 1,
@@ -2208,7 +2208,7 @@
         "gapg": 0.5,
         "formStr": "W W W",
         "clutch": 0.23,
-        "attAdj": 1.56,
+        "attAdj": 1.57,
         "defAdj": 0.58,
         "momentum": 0.24,
         "absents": [],
@@ -2235,7 +2235,7 @@
         "gapg": 2,
         "formStr": "W L W",
         "clutch": 0.3,
-        "attAdj": 1.42,
+        "attAdj": 1.43,
         "defAdj": 1.09,
         "momentum": 0.24,
         "absents": [],
@@ -2262,7 +2262,7 @@
         "gapg": 2,
         "formStr": "L W D",
         "clutch": 0.3,
-        "attAdj": 1.44,
+        "attAdj": 1.45,
         "defAdj": 1.02,
         "momentum": 0.08,
         "absents": [],
@@ -2290,7 +2290,7 @@
         "formStr": "L L L",
         "clutch": 0,
         "attAdj": 0.68,
-        "defAdj": 1.45,
+        "defAdj": 1.44,
         "momentum": -0.23,
         "absents": [],
         "availAtt": 1,
@@ -2318,40 +2318,13 @@
         "gapg": 0.33,
         "formStr": "W W W",
         "clutch": 0.38,
-        "attAdj": 1.26,
+        "attAdj": 1.22,
         "defAdj": 0.74,
         "momentum": 0.19,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
         "eloRank": 1
-      },
-      {
-        "name": "Austria",
-        "group": "Group J",
-        "elo": 1836,
-        "played": 3,
-        "w": 1,
-        "d": 1,
-        "l": 1,
-        "gf": 6,
-        "ga": 6,
-        "wsum": 1.843077841389901,
-        "lateFor": 3,
-        "lateAgainst": 2,
-        "lastDate": "2026-06-27",
-        "points": 4,
-        "gfpg": 2,
-        "gapg": 2,
-        "formStr": "W L D",
-        "clutch": 0.5,
-        "attAdj": 1.1,
-        "defAdj": 1.19,
-        "momentum": -0.04,
-        "absents": [],
-        "availAtt": 1,
-        "availDef": 1,
-        "eloRank": 20
       },
       {
         "name": "Algeria",
@@ -2372,13 +2345,40 @@
         "gapg": 2.33,
         "formStr": "L W D",
         "clutch": 0.4,
-        "attAdj": 1.09,
-        "defAdj": 1.24,
+        "attAdj": 1.05,
+        "defAdj": 1.36,
         "momentum": 0.2,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
         "eloRank": 25
+      },
+      {
+        "name": "Austria",
+        "group": "Group J",
+        "elo": 1836,
+        "played": 4,
+        "w": 1,
+        "d": 1,
+        "l": 2,
+        "gf": 6,
+        "ga": 9,
+        "wsum": 3.1430778413899008,
+        "lateFor": 3,
+        "lateAgainst": 3,
+        "lastDate": "2026-07-02",
+        "points": 4,
+        "gfpg": 1.5,
+        "gapg": 2.25,
+        "formStr": "L D L",
+        "clutch": 0.5,
+        "attAdj": 0.82,
+        "defAdj": 1.32,
+        "momentum": -0.25,
+        "absents": [],
+        "availAtt": 1,
+        "availDef": 1,
+        "eloRank": 20
       },
       {
         "name": "Jordan",
@@ -2399,8 +2399,8 @@
         "gapg": 2.67,
         "formStr": "L L L",
         "clutch": 0,
-        "attAdj": 0.93,
-        "defAdj": 1.29,
+        "attAdj": 0.92,
+        "defAdj": 1.38,
         "momentum": -0.35,
         "absents": [],
         "availAtt": 1,
@@ -2428,7 +2428,7 @@
         "gapg": 0.33,
         "formStr": "W W D",
         "clutch": 0.5,
-        "attAdj": 0.83,
+        "attAdj": 0.84,
         "defAdj": 0.68,
         "momentum": 0.14,
         "absents": [],
@@ -2455,7 +2455,7 @@
         "gapg": 0.33,
         "formStr": "D W D",
         "clutch": 0.17,
-        "attAdj": 0.97,
+        "attAdj": 0.98,
         "defAdj": 0.67,
         "momentum": -0.08,
         "absents": [],
@@ -2482,7 +2482,7 @@
         "gapg": 1.25,
         "formStr": "L W L",
         "clutch": 0.4,
-        "attAdj": 0.94,
+        "attAdj": 0.95,
         "defAdj": 0.99,
         "momentum": 0.05,
         "absents": [],
@@ -2509,8 +2509,8 @@
         "gapg": 3.67,
         "formStr": "L L L",
         "clutch": 0,
-        "attAdj": 0.84,
-        "defAdj": 1.81,
+        "attAdj": 0.85,
+        "defAdj": 1.8,
         "momentum": -0.45,
         "absents": [],
         "availAtt": 1,
@@ -2538,7 +2538,7 @@
         "gapg": 0.75,
         "formStr": "D W W",
         "clutch": 0.38,
-        "attAdj": 1.24,
+        "attAdj": 1.25,
         "defAdj": 0.72,
         "momentum": -0.04,
         "absents": [],
@@ -2565,7 +2565,7 @@
         "gapg": 1.67,
         "formStr": "L W W",
         "clutch": 0.2,
-        "attAdj": 1.24,
+        "attAdj": 1.25,
         "defAdj": 1,
         "momentum": 0.08,
         "absents": [],
@@ -2593,7 +2593,7 @@
         "formStr": "W D L",
         "clutch": 0.5,
         "attAdj": 0.81,
-        "defAdj": 0.8,
+        "defAdj": 0.79,
         "momentum": 0.5,
         "absents": [],
         "availAtt": 1,
@@ -2620,7 +2620,7 @@
         "formStr": "L L L",
         "clutch": 0,
         "attAdj": 0.6,
-        "defAdj": 0.98,
+        "defAdj": 0.97,
         "momentum": -0.52,
         "absents": [],
         "availAtt": 1,
@@ -2638,39 +2638,39 @@
       "isKnockout": true,
       "team1": "Portugal",
       "team2": "Croatia",
-      "xg1": 1.55,
-      "xg2": 1.24,
-      "pWin1": 36.5,
-      "pDraw": 31.8,
-      "pWin2": 31.8,
-      "pQual1": 53,
-      "pQual2": 47,
+      "xg1": 1.7,
+      "xg2": 1.17,
+      "pWin1": 35,
+      "pDraw": 32.5,
+      "pWin2": 32.5,
+      "pQual1": 52,
+      "pQual2": 48,
       "topScores": [
         {
           "score": "1-1",
-          "p": 12.3
+          "p": 11.8
         },
         {
           "score": "2-1",
-          "p": 9.1
+          "p": 9.6
         },
         {
           "score": "1-0",
-          "p": 9
+          "p": 9.1
         }
       ],
       "odds": {
-        "win1": 2.59,
-        "draw": 2.97,
-        "win2": 2.97
+        "win1": 2.69,
+        "draw": 2.9,
+        "win2": 2.9
       },
       "pick": "Portugal",
-      "pickProb": 53,
+      "pickProb": 52,
       "confidence": "Faible",
       "tight": false,
       "blend": {
-        "data": 38.7,
-        "elo": 61.3
+        "data": 5.9,
+        "elo": 94.1
       },
       "drivers": [
         {
@@ -2682,8 +2682,8 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 0.97,
-          "v2": 1.24,
+          "v1": 0.98,
+          "v2": 1.25,
           "betterHigh": true,
           "favorsPick": false
         },
@@ -2721,33 +2721,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 56.5,
-          "no": 43.5
+          "yes": 56.9,
+          "no": 43.1
         },
         "over": {
           "1.5": {
-            "over": 77.2,
-            "under": 22.8
+            "over": 78.6,
+            "under": 21.4
           },
           "2.5": {
-            "over": 52.8,
-            "under": 47.2
+            "over": 54.7,
+            "under": 45.3
           },
           "3.5": {
-            "over": 30.6,
-            "under": 69.4
+            "over": 32.3,
+            "under": 67.7
           }
         },
         "doubleChance": {
-          "12": 68.2,
-          "1X": 68.2,
-          "X2": 63.5
+          "12": 67.5,
+          "1X": 67.5,
+          "X2": 65
         },
         "cleanSheet": {
-          "team1": 28.8,
-          "team2": 21.3
+          "team1": 31.1,
+          "team2": 18.3
         },
-        "totalGoals": 2.79
+        "totalGoals": 2.87
       },
       "absents": {
         "team1": [],
@@ -2777,152 +2777,6 @@
       }
     },
     {
-      "id": "2026-07-02-Spain-Austria",
-      "date": "2026-07-02",
-      "round": "Round of 32",
-      "ground": "Los Angeles (Inglewood)",
-      "isKnockout": true,
-      "team1": "Spain",
-      "team2": "Austria",
-      "xg1": 2.06,
-      "xg2": 0.84,
-      "pWin1": 77.5,
-      "pDraw": 14,
-      "pWin2": 8.5,
-      "pQual1": 85.6,
-      "pQual2": 14.4,
-      "topScores": [
-        {
-          "score": "2-0",
-          "p": 11.7
-        },
-        {
-          "score": "1-0",
-          "p": 11
-        },
-        {
-          "score": "1-1",
-          "p": 9.9
-        }
-      ],
-      "odds": {
-        "win1": 1.22,
-        "draw": 6.72,
-        "win2": 11.09
-      },
-      "pick": "Spain",
-      "pickProb": 85.6,
-      "confidence": "Élevée",
-      "tight": false,
-      "blend": {
-        "data": 36.9,
-        "elo": 63.1
-      },
-      "drivers": [
-        {
-          "label": "Elo mondial",
-          "v1": 2144,
-          "v2": 1836,
-          "betterHigh": true,
-          "favorsPick": true
-        },
-        {
-          "label": "Attaque ajustée",
-          "v1": 1.12,
-          "v2": 1.1,
-          "betterHigh": true,
-          "favorsPick": true
-        },
-        {
-          "label": "Défense ajustée",
-          "v1": 0.61,
-          "v2": 1.19,
-          "betterHigh": false,
-          "favorsPick": true
-        },
-        {
-          "label": "Repos (jours)",
-          "v1": 6,
-          "v2": 5,
-          "betterHigh": true,
-          "favorsPick": true
-        },
-        {
-          "label": "Momentum",
-          "v1": -0.07,
-          "v2": -0.04,
-          "betterHigh": true,
-          "favorsPick": false
-        },
-        {
-          "label": "Finition tardive",
-          "v1": 0,
-          "v2": 0.5,
-          "betterHigh": true,
-          "favorsPick": false
-        }
-      ],
-      "reasons": [
-        "Spain a un meilleur Elo (2144 vs 1836)"
-      ],
-      "markets": {
-        "btts": {
-          "yes": 49.9,
-          "no": 50.1
-        },
-        "over": {
-          "1.5": {
-            "over": 78.9,
-            "under": 21.1
-          },
-          "2.5": {
-            "over": 55.4,
-            "under": 44.6
-          },
-          "3.5": {
-            "over": 33.1,
-            "under": 66.9
-          }
-        },
-        "doubleChance": {
-          "12": 86,
-          "1X": 91.5,
-          "X2": 22.5
-        },
-        "cleanSheet": {
-          "team1": 43.3,
-          "team2": 12.7
-        },
-        "totalGoals": 2.9
-      },
-      "absents": {
-        "team1": [],
-        "team2": []
-      },
-      "factors": {
-        "form": [
-          "D W W",
-          "W L D"
-        ],
-        "attack": [
-          1.67,
-          2
-        ],
-        "defense": [
-          0,
-          2
-        ],
-        "elo": [
-          2144,
-          1836
-        ],
-        "rest": [
-          6,
-          5
-        ]
-      }
-    },
-    {
       "id": "2026-07-02-Switzerland-Algeria",
       "date": "2026-07-02",
       "round": "Round of 32",
@@ -2930,39 +2784,39 @@
       "isKnockout": true,
       "team1": "Switzerland",
       "team2": "Algeria",
-      "xg1": 2.06,
-      "xg2": 1.26,
-      "pWin1": 69,
-      "pDraw": 15.5,
-      "pWin2": 15.5,
-      "pQual1": 77.2,
-      "pQual2": 22.8,
+      "xg1": 1.95,
+      "xg2": 1.02,
+      "pWin1": 47.8,
+      "pDraw": 28.3,
+      "pWin2": 23.9,
+      "pQual1": 62.9,
+      "pQual2": 37.1,
       "topScores": [
         {
           "score": "1-1",
-          "p": 9.7
+          "p": 10.7
         },
         {
           "score": "2-1",
-          "p": 9.7
+          "p": 9.9
         },
         {
           "score": "2-0",
-          "p": 7.7
+          "p": 9.8
         }
       ],
       "odds": {
-        "win1": 1.37,
-        "draw": 6.08,
-        "win2": 6.08
+        "win1": 1.97,
+        "draw": 3.34,
+        "win2": 3.95
       },
       "pick": "Switzerland",
-      "pickProb": 77.2,
-      "confidence": "Élevée",
+      "pickProb": 62.9,
+      "confidence": "Modérée",
       "tight": false,
       "blend": {
-        "data": 34.3,
-        "elo": 65.7
+        "data": 5,
+        "elo": 95
       },
       "drivers": [
         {
@@ -2975,14 +2829,14 @@
         {
           "label": "Attaque ajustée",
           "v1": 1.36,
-          "v2": 1.09,
+          "v2": 1.05,
           "betterHigh": true,
           "favorsPick": true
         },
         {
           "label": "Défense ajustée",
           "v1": 0.93,
-          "v2": 1.24,
+          "v2": 1.36,
           "betterHigh": false,
           "favorsPick": true
         },
@@ -3015,33 +2869,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 62.9,
-          "no": 37.1
+          "yes": 55.2,
+          "no": 44.8
         },
         "over": {
           "1.5": {
-            "over": 84.8,
-            "under": 15.2
+            "over": 80,
+            "under": 20
           },
           "2.5": {
-            "over": 64.5,
-            "under": 35.5
+            "over": 56.9,
+            "under": 43.1
           },
           "3.5": {
-            "over": 42.5,
-            "under": 57.5
+            "over": 34.5,
+            "under": 65.5
           }
         },
         "doubleChance": {
-          "12": 84.5,
-          "1X": 84.5,
-          "X2": 31
+          "12": 71.7,
+          "1X": 76.1,
+          "X2": 52.2
         },
         "cleanSheet": {
-          "team1": 28.4,
-          "team2": 12.7
+          "team1": 36.2,
+          "team2": 14.3
         },
-        "totalGoals": 3.32
+        "totalGoals": 2.96
       },
       "absents": {
         "team1": [],
@@ -3078,39 +2932,39 @@
       "isKnockout": true,
       "team1": "Argentina",
       "team2": "Cape Verde",
-      "xg1": 2.24,
-      "xg2": 0.49,
-      "pWin1": 90.1,
-      "pDraw": 9.9,
+      "xg1": 2.56,
+      "xg2": 0.28,
+      "pWin1": 89.6,
+      "pDraw": 10.4,
       "pWin2": 0,
-      "pQual1": 95.8,
-      "pQual2": 4.2,
+      "pQual1": 95.6,
+      "pQual2": 4.4,
       "topScores": [
         {
           "score": "2-0",
-          "p": 16.4
-        },
-        {
-          "score": "1-0",
-          "p": 14.3
+          "p": 19.2
         },
         {
           "score": "3-0",
-          "p": 12.2
+          "p": 16.3
+        },
+        {
+          "score": "1-0",
+          "p": 14.8
         }
       ],
       "odds": {
         "win1": 1.05,
-        "draw": 9.53,
+        "draw": 9.03,
         "win2": null
       },
       "pick": "Argentina",
-      "pickProb": 95.8,
+      "pickProb": 95.6,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
-        "data": 36.9,
-        "elo": 63.1
+        "data": 5.5,
+        "elo": 94.5
       },
       "drivers": [
         {
@@ -3122,8 +2976,8 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 1.26,
-          "v2": 0.8,
+          "v1": 1.22,
+          "v2": 0.81,
           "betterHigh": true,
           "favorsPick": true
         },
@@ -3161,33 +3015,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 34.9,
-          "no": 65.1
+          "yes": 22.6,
+          "no": 77.4
         },
         "over": {
           "1.5": {
-            "over": 76,
-            "under": 24
+            "over": 77.7,
+            "under": 22.3
           },
           "2.5": {
-            "over": 51.4,
-            "under": 48.6
+            "over": 53.8,
+            "under": 46.2
           },
           "3.5": {
-            "over": 29.3,
-            "under": 70.7
+            "over": 31.5,
+            "under": 68.5
           }
         },
         "doubleChance": {
-          "12": 90.1,
+          "12": 89.6,
           "1X": 100,
-          "X2": 9.9
+          "X2": 10.4
         },
         "cleanSheet": {
-          "team1": 61.3,
-          "team2": 10.6
+          "team1": 75.7,
+          "team2": 7.8
         },
-        "totalGoals": 2.73
+        "totalGoals": 2.83
       },
       "absents": {
         "team1": [],
@@ -3224,39 +3078,39 @@
       "isKnockout": true,
       "team1": "Colombia",
       "team2": "Ghana",
-      "xg1": 1.89,
-      "xg2": 0.63,
-      "pWin1": 77.5,
-      "pDraw": 14,
-      "pWin2": 8.5,
-      "pQual1": 85.6,
-      "pQual2": 14.4,
+      "xg1": 2.54,
+      "xg2": 0.27,
+      "pWin1": 89.6,
+      "pDraw": 10.4,
+      "pWin2": 0,
+      "pQual1": 95.6,
+      "pQual2": 4.4,
       "topScores": [
         {
-          "score": "1-0",
-          "p": 14.9
-        },
-        {
           "score": "2-0",
-          "p": 14.4
+          "p": 19.3
         },
         {
-          "score": "1-1",
-          "p": 9.9
+          "score": "3-0",
+          "p": 16.4
+        },
+        {
+          "score": "1-0",
+          "p": 15
         }
       ],
       "odds": {
-        "win1": 1.22,
-        "draw": 6.72,
-        "win2": 11.09
+        "win1": 1.05,
+        "draw": 9.03,
+        "win2": null
       },
       "pick": "Colombia",
-      "pickProb": 85.6,
+      "pickProb": 95.6,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
-        "data": 38.7,
-        "elo": 61.3
+        "data": 5.9,
+        "elo": 94.1
       },
       "drivers": [
         {
@@ -3268,7 +3122,7 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 0.83,
+          "v1": 0.84,
           "v2": 0.81,
           "betterHigh": true,
           "favorsPick": true
@@ -3276,7 +3130,7 @@
         {
           "label": "Défense ajustée",
           "v1": 0.68,
-          "v2": 0.8,
+          "v2": 0.79,
           "betterHigh": false,
           "favorsPick": true
         },
@@ -3307,33 +3161,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 39.9,
-          "no": 60.1
+          "yes": 22.4,
+          "no": 77.6
         },
         "over": {
           "1.5": {
-            "over": 72.1,
-            "under": 27.9
+            "over": 77.4,
+            "under": 22.6
           },
           "2.5": {
-            "over": 46.1,
-            "under": 53.9
+            "over": 53.4,
+            "under": 46.6
           },
           "3.5": {
-            "over": 24.7,
-            "under": 75.3
+            "over": 31.2,
+            "under": 68.8
           }
         },
         "doubleChance": {
-          "12": 86,
-          "1X": 91.5,
-          "X2": 22.5
+          "12": 89.6,
+          "1X": 100,
+          "X2": 10.4
         },
         "cleanSheet": {
-          "team1": 53.5,
-          "team2": 15
+          "team1": 76,
+          "team2": 7.9
         },
-        "totalGoals": 2.52
+        "totalGoals": 2.82
       },
       "absents": {
         "team1": [],
@@ -3370,39 +3224,39 @@
       "isKnockout": true,
       "team1": "Australia",
       "team2": "Egypt",
-      "xg1": 1.41,
-      "xg2": 1.26,
-      "pWin1": 36.5,
-      "pDraw": 31.8,
-      "pWin2": 31.8,
-      "pQual1": 52.8,
-      "pQual2": 47.2,
+      "xg1": 1.61,
+      "xg2": 1.24,
+      "pWin1": 34,
+      "pDraw": 33,
+      "pWin2": 33,
+      "pQual1": 51,
+      "pQual2": 49,
       "topScores": [
         {
           "score": "1-1",
-          "p": 12.8
-        },
-        {
-          "score": "1-0",
-          "p": 9.2
+          "p": 12.1
         },
         {
           "score": "2-1",
-          "p": 8.7
+          "p": 9.3
+        },
+        {
+          "score": "1-0",
+          "p": 8.8
         }
       ],
       "odds": {
-        "win1": 2.59,
-        "draw": 2.97,
-        "win2": 2.97
+        "win1": 2.77,
+        "draw": 2.86,
+        "win2": 2.86
       },
       "pick": "Australia",
-      "pickProb": 52.8,
+      "pickProb": 51,
       "confidence": "Faible",
       "tight": false,
       "blend": {
-        "data": 35.1,
-        "elo": 64.9
+        "data": 5.1,
+        "elo": 94.9
       },
       "drivers": [
         {
@@ -3415,7 +3269,7 @@
         {
           "label": "Attaque ajustée",
           "v1": 0.76,
-          "v2": 1.03,
+          "v2": 1.04,
           "betterHigh": true,
           "favorsPick": false
         },
@@ -3453,33 +3307,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 54.7,
-          "no": 45.3
+          "yes": 57.4,
+          "no": 42.6
         },
         "over": {
           "1.5": {
-            "over": 75.1,
-            "under": 24.9
+            "over": 78.3,
+            "under": 21.7
           },
           "2.5": {
-            "over": 49.9,
-            "under": 50.1
+            "over": 54.2,
+            "under": 45.8
           },
           "3.5": {
-            "over": 27.9,
-            "under": 72.1
+            "over": 31.9,
+            "under": 68.1
           }
         },
         "doubleChance": {
-          "12": 68.2,
-          "1X": 68.2,
-          "X2": 63.5
+          "12": 67,
+          "1X": 67,
+          "X2": 66
         },
         "cleanSheet": {
-          "team1": 28.2,
-          "team2": 24.5
+          "team1": 29,
+          "team2": 20
         },
-        "totalGoals": 2.67
+        "totalGoals": 2.85
       },
       "absents": {
         "team1": [],
@@ -3516,39 +3370,39 @@
       "isKnockout": true,
       "team1": "Paraguay",
       "team2": "France",
-      "xg1": 0.71,
-      "xg2": 1.96,
-      "pWin1": 8.5,
-      "pDraw": 14,
-      "pWin2": 77.5,
-      "pQual1": 14.4,
-      "pQual2": 85.6,
+      "xg1": 0.45,
+      "xg2": 2.37,
+      "pWin1": 0,
+      "pDraw": 10.4,
+      "pWin2": 89.6,
+      "pQual1": 4.4,
+      "pQual2": 95.6,
       "topScores": [
         {
           "score": "0-2",
-          "p": 13.3
+          "p": 16.7
         },
         {
           "score": "0-1",
-          "p": 13.2
+          "p": 13.8
         },
         {
-          "score": "1-1",
-          "p": 10
+          "score": "0-3",
+          "p": 13.2
         }
       ],
       "odds": {
-        "win1": 11.09,
-        "draw": 6.72,
-        "win2": 1.22
+        "win1": null,
+        "draw": 9.03,
+        "win2": 1.05
       },
       "pick": "France",
-      "pickProb": 85.6,
+      "pickProb": 95.6,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
-        "data": 47.6,
-        "elo": 52.4
+        "data": 8.3,
+        "elo": 91.7
       },
       "drivers": [
         {
@@ -3561,7 +3415,7 @@
         {
           "label": "Attaque ajustée",
           "v1": 0.77,
-          "v2": 1.56,
+          "v2": 1.57,
           "betterHigh": true,
           "favorsPick": true
         },
@@ -3599,33 +3453,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 44.1,
-          "no": 55.9
+          "yes": 33.3,
+          "no": 66.7
         },
         "over": {
           "1.5": {
-            "over": 75,
-            "under": 25
+            "over": 77.6,
+            "under": 22.4
           },
           "2.5": {
-            "over": 49.9,
-            "under": 50.1
+            "over": 53.7,
+            "under": 46.3
           },
           "3.5": {
-            "over": 28,
-            "under": 72
+            "over": 31.4,
+            "under": 68.6
           }
         },
         "doubleChance": {
-          "12": 86,
-          "1X": 22.5,
-          "X2": 91.5
+          "12": 89.6,
+          "1X": 10.4,
+          "X2": 100
         },
         "cleanSheet": {
-          "team1": 14.1,
-          "team2": 49.1
+          "team1": 9.3,
+          "team2": 63.6
         },
-        "totalGoals": 2.67
+        "totalGoals": 2.83
       },
       "absents": {
         "team1": [],
@@ -3662,8 +3516,8 @@
       "isKnockout": true,
       "team1": "Canada",
       "team2": "Morocco",
-      "xg1": 1.39,
-      "xg2": 1.4,
+      "xg1": 1.26,
+      "xg2": 1.59,
       "pWin1": 33.3,
       "pDraw": 33.3,
       "pWin2": 33.3,
@@ -3672,15 +3526,15 @@
       "topScores": [
         {
           "score": "1-1",
-          "p": 12.4
+          "p": 12.2
         },
         {
           "score": "1-2",
-          "p": 8.4
+          "p": 9.2
         },
         {
-          "score": "2-1",
-          "p": 8.3
+          "score": "0-1",
+          "p": 8.6
         }
       ],
       "odds": {
@@ -3693,8 +3547,8 @@
       "confidence": "Faible",
       "tight": false,
       "blend": {
-        "data": 46.5,
-        "elo": 53.5
+        "data": 8,
+        "elo": 92
       },
       "drivers": [
         {
@@ -3706,7 +3560,7 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 1.12,
+          "v1": 1.13,
           "v2": 1.1,
           "betterHigh": true,
           "favorsPick": false
@@ -3746,21 +3600,21 @@
       ],
       "markets": {
         "btts": {
-          "yes": 57.1,
-          "no": 42.9
+          "yes": 57.7,
+          "no": 42.3
         },
         "over": {
           "1.5": {
-            "over": 77.2,
-            "under": 22.8
+            "over": 78.4,
+            "under": 21.6
           },
           "2.5": {
-            "over": 52.9,
-            "under": 47.1
+            "over": 54.3,
+            "under": 45.7
           },
           "3.5": {
-            "over": 30.6,
-            "under": 69.4
+            "over": 32,
+            "under": 68
           }
         },
         "doubleChance": {
@@ -3769,10 +3623,10 @@
           "X2": 66.7
         },
         "cleanSheet": {
-          "team1": 24.6,
-          "team2": 24.9
+          "team1": 20.4,
+          "team2": 28.3
         },
-        "totalGoals": 2.79
+        "totalGoals": 2.85
       },
       "absents": {
         "team1": [],
@@ -3809,39 +3663,39 @@
       "isKnockout": true,
       "team1": "Brazil",
       "team2": "Norway",
-      "xg1": 1.94,
-      "xg2": 1.33,
-      "pWin1": 54.3,
-      "pDraw": 14.9,
-      "pWin2": 30.8,
-      "pQual1": 62.1,
-      "pQual2": 37.9,
+      "xg1": 1.8,
+      "xg2": 1.14,
+      "pWin1": 43.2,
+      "pDraw": 28.4,
+      "pWin2": 28.4,
+      "pQual1": 58.1,
+      "pQual2": 41.9,
       "topScores": [
         {
           "score": "1-1",
-          "p": 10.2
+          "p": 11.4
         },
         {
           "score": "2-1",
-          "p": 9.5
+          "p": 9.8
         },
         {
-          "score": "2-0",
-          "p": 7.1
+          "score": "1-0",
+          "p": 8.9
         }
       ],
       "odds": {
-        "win1": 1.74,
-        "draw": 6.34,
-        "win2": 3.06
+        "win1": 2.18,
+        "draw": 3.32,
+        "win2": 3.32
       },
       "pick": "Brazil",
-      "pickProb": 62.1,
+      "pickProb": 58.1,
       "confidence": "Modérée",
       "tight": false,
       "blend": {
-        "data": 47.5,
-        "elo": 52.5
+        "data": 8.3,
+        "elo": 91.7
       },
       "drivers": [
         {
@@ -3853,8 +3707,8 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 1.35,
-          "v2": 1.42,
+          "v1": 1.36,
+          "v2": 1.43,
           "betterHigh": true,
           "favorsPick": false
         },
@@ -3894,33 +3748,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 63.4,
-          "no": 36.6
+          "yes": 57.4,
+          "no": 42.6
         },
         "over": {
           "1.5": {
-            "over": 84.2,
-            "under": 15.8
+            "over": 79.8,
+            "under": 20.2
           },
           "2.5": {
-            "over": 63.5,
-            "under": 36.5
+            "over": 56.4,
+            "under": 43.6
           },
           "3.5": {
-            "over": 41.4,
-            "under": 58.6
+            "over": 34.1,
+            "under": 65.9
           }
         },
         "doubleChance": {
-          "12": 85.1,
-          "1X": 69.2,
-          "X2": 45.7
+          "12": 71.6,
+          "1X": 71.6,
+          "X2": 56.8
         },
         "cleanSheet": {
-          "team1": 26.4,
-          "team2": 14.4
+          "team1": 31.9,
+          "team2": 16.5
         },
-        "totalGoals": 3.27
+        "totalGoals": 2.95
       },
       "absents": {
         "team1": [],
@@ -3957,39 +3811,39 @@
       "isKnockout": true,
       "team1": "Mexico",
       "team2": "England",
-      "xg1": 1.41,
-      "xg2": 1.24,
-      "pWin1": 36.5,
-      "pDraw": 31.8,
-      "pWin2": 31.8,
-      "pQual1": 51.5,
-      "pQual2": 48.5,
+      "xg1": 1.32,
+      "xg2": 1.51,
+      "pWin1": 33.3,
+      "pDraw": 33.3,
+      "pWin2": 33.3,
+      "pQual1": 49.1,
+      "pQual2": 50.9,
       "topScores": [
         {
           "score": "1-1",
-          "p": 12.9
+          "p": 12.3
         },
         {
-          "score": "1-0",
-          "p": 9.5
+          "score": "1-2",
+          "p": 8.9
         },
         {
-          "score": "2-1",
-          "p": 8.7
+          "score": "0-1",
+          "p": 8.3
         }
       ],
       "odds": {
-        "win1": 2.59,
-        "draw": 2.97,
-        "win2": 2.97
+        "win1": 2.83,
+        "draw": 2.83,
+        "win2": 2.83
       },
-      "pick": "Mexico",
-      "pickProb": 51.5,
+      "pick": "England",
+      "pickProb": 50.9,
       "confidence": "Faible",
       "tight": false,
       "blend": {
-        "data": 47.4,
-        "elo": 52.6
+        "data": 8.3,
+        "elo": 91.7
       },
       "drivers": [
         {
@@ -3997,77 +3851,76 @@
           "v1": 1943,
           "v2": 2046,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
-          "v1": 1.31,
-          "v2": 1.24,
+          "v1": 1.32,
+          "v2": 1.25,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Défense ajustée",
           "v1": 0.5,
           "v2": 0.72,
           "betterHigh": false,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Repos (jours)",
           "v1": 5,
           "v2": 4,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Momentum",
           "v1": 0.6,
           "v2": -0.04,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Finition tardive",
           "v1": 0.13,
           "v2": 0.38,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         }
       ],
       "reasons": [
-        "Mexico a un meilleur Elo (1943 vs 2046)",
-        "Mexico est en pleine dynamique (W W W)"
+        "England a un meilleur Elo (2046 vs 1943)"
       ],
       "markets": {
         "btts": {
-          "yes": 54.2,
-          "no": 45.8
+          "yes": 57.7,
+          "no": 42.3
         },
         "over": {
           "1.5": {
-            "over": 74.7,
-            "under": 25.3
+            "over": 78,
+            "under": 22
           },
           "2.5": {
-            "over": 49.4,
-            "under": 50.6
+            "over": 53.8,
+            "under": 46.2
           },
           "3.5": {
-            "over": 27.5,
-            "under": 72.5
+            "over": 31.5,
+            "under": 68.5
           }
         },
         "doubleChance": {
-          "12": 68.2,
-          "1X": 68.2,
-          "X2": 63.5
+          "12": 66.7,
+          "1X": 66.7,
+          "X2": 66.7
         },
         "cleanSheet": {
-          "team1": 29,
-          "team2": 24.4
+          "team1": 22,
+          "team2": 26.8
         },
-        "totalGoals": 2.65
+        "totalGoals": 2.83
       },
       "absents": {
         "team1": [],
@@ -4104,39 +3957,39 @@
       "isKnockout": true,
       "team1": "USA",
       "team2": "Belgium",
-      "xg1": 1.56,
-      "xg2": 1.49,
-      "pWin1": 33.7,
-      "pDraw": 33.1,
-      "pWin2": 33.1,
-      "pQual1": 49.4,
-      "pQual2": 50.6,
+      "xg1": 1.31,
+      "xg2": 1.59,
+      "pWin1": 33.3,
+      "pDraw": 33.3,
+      "pWin2": 33.3,
+      "pQual1": 49.1,
+      "pQual2": 50.9,
       "topScores": [
         {
           "score": "1-1",
-          "p": 11.4
-        },
-        {
-          "score": "2-1",
-          "p": 8.6
+          "p": 12
         },
         {
           "score": "1-2",
-          "p": 8.2
+          "p": 9.1
+        },
+        {
+          "score": "0-1",
+          "p": 8.1
         }
       ],
       "odds": {
-        "win1": 2.8,
-        "draw": 2.85,
-        "win2": 2.85
+        "win1": 2.83,
+        "draw": 2.83,
+        "win2": 2.83
       },
       "pick": "Belgium",
-      "pickProb": 50.6,
+      "pickProb": 50.9,
       "confidence": "Faible",
       "tight": false,
       "blend": {
-        "data": 48.6,
-        "elo": 51.4
+        "data": 8.7,
+        "elo": 91.3
       },
       "drivers": [
         {
@@ -4148,7 +4001,7 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 1.43,
+          "v1": 1.44,
           "v2": 1.17,
           "betterHigh": true,
           "favorsPick": false
@@ -4156,7 +4009,7 @@
         {
           "label": "Défense ajustée",
           "v1": 0.81,
-          "v2": 0.85,
+          "v2": 0.84,
           "betterHigh": false,
           "favorsPick": false
         },
@@ -4187,33 +4040,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 61.6,
-          "no": 38.4
+          "yes": 58.8,
+          "no": 41.2
         },
         "over": {
           "1.5": {
-            "over": 81.3,
-            "under": 18.7
+            "over": 79.2,
+            "under": 20.8
           },
           "2.5": {
-            "over": 58.8,
-            "under": 41.2
+            "over": 55.5,
+            "under": 44.5
           },
           "3.5": {
-            "over": 36.4,
-            "under": 63.6
+            "over": 33.1,
+            "under": 66.9
           }
         },
         "doubleChance": {
-          "12": 66.9,
-          "1X": 66.9,
-          "X2": 66.3
+          "12": 66.7,
+          "1X": 66.7,
+          "X2": 66.7
         },
         "cleanSheet": {
-          "team1": 22.6,
-          "team2": 21
+          "team1": 20.4,
+          "team2": 26.9
         },
-        "totalGoals": 3.05
+        "totalGoals": 2.9
       },
       "absents": {
         "team1": [],
@@ -4244,6 +4097,14 @@
     }
   ],
   "results": [
+    {
+      "date": "2026-07-02",
+      "round": "Round of 32",
+      "group": null,
+      "team1": "Spain",
+      "team2": "Austria",
+      "score": "3 - 0"
+    },
     {
       "date": "2026-07-01",
       "round": "Round of 32",
@@ -4917,28 +4778,44 @@
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Argentina se qualifie",
-          "prob": 95.8,
-          "odds": 0.98
-        },
-        {
-          "match": "Spain – Austria",
-          "date": "2026-07-02",
-          "market": "Qualification",
-          "sel": "Spain se qualifie",
-          "prob": 85.6,
-          "odds": 1.1
+          "prob": 95.6,
+          "odds": 0.99
         },
         {
           "match": "Colombia – Ghana",
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Colombia se qualifie",
-          "prob": 85.6,
-          "odds": 1.1
+          "prob": 95.6,
+          "odds": 0.99
+        },
+        {
+          "match": "Paraguay – France",
+          "date": "2026-07-04",
+          "market": "Qualification",
+          "sel": "France se qualifie",
+          "prob": 95.6,
+          "odds": 0.99
+        },
+        {
+          "match": "Switzerland – Algeria",
+          "date": "2026-07-02",
+          "market": "Total buts",
+          "sel": "+1,5 but",
+          "prob": 80,
+          "odds": 1.18
+        },
+        {
+          "match": "Brazil – Norway",
+          "date": "2026-07-05",
+          "market": "Total buts",
+          "sel": "+1,5 but",
+          "prob": 79.8,
+          "odds": 1.18
         }
       ],
-      "odds": 1.19,
-      "prob": 70.2
+      "odds": 1.35,
+      "prob": 55.8
     },
     "safe": {
       "legs": [
@@ -4947,52 +4824,44 @@
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Argentina se qualifie",
-          "prob": 95.8,
-          "odds": 0.98
-        },
-        {
-          "match": "Spain – Austria",
-          "date": "2026-07-02",
-          "market": "Qualification",
-          "sel": "Spain se qualifie",
-          "prob": 85.6,
-          "odds": 1.1
+          "prob": 95.6,
+          "odds": 0.99
         },
         {
           "match": "Colombia – Ghana",
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Colombia se qualifie",
-          "prob": 85.6,
-          "odds": 1.1
+          "prob": 95.6,
+          "odds": 0.99
         },
         {
           "match": "Paraguay – France",
           "date": "2026-07-04",
           "market": "Qualification",
           "sel": "France se qualifie",
-          "prob": 85.6,
-          "odds": 1.1
+          "prob": 95.6,
+          "odds": 0.99
         },
         {
           "match": "Switzerland – Algeria",
           "date": "2026-07-02",
           "market": "Qualification",
           "sel": "Switzerland se qualifie",
-          "prob": 77.2,
-          "odds": 1.22
+          "prob": 62.9,
+          "odds": 1.5
         },
         {
           "match": "Brazil – Norway",
           "date": "2026-07-05",
           "market": "Qualification",
           "sel": "Brazil se qualifie",
-          "prob": 62.1,
-          "odds": 1.52
+          "prob": 58.1,
+          "odds": 1.62
         }
       ],
-      "odds": 2.42,
-      "prob": 28.8
+      "odds": 2.36,
+      "prob": 31.9
     },
     "bold": {
       "legs": [
@@ -5001,60 +4870,52 @@
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Argentina se qualifie",
-          "prob": 95.8,
-          "odds": 0.98
-        },
-        {
-          "match": "Spain – Austria",
-          "date": "2026-07-02",
-          "market": "Qualification",
-          "sel": "Spain se qualifie",
-          "prob": 85.6,
-          "odds": 1.1
+          "prob": 95.6,
+          "odds": 0.99
         },
         {
           "match": "Colombia – Ghana",
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Colombia se qualifie",
-          "prob": 85.6,
-          "odds": 1.1
+          "prob": 95.6,
+          "odds": 0.99
         },
         {
           "match": "Paraguay – France",
           "date": "2026-07-04",
           "market": "Qualification",
           "sel": "France se qualifie",
-          "prob": 85.6,
-          "odds": 1.1
+          "prob": 95.6,
+          "odds": 0.99
         },
         {
           "match": "Switzerland – Algeria",
           "date": "2026-07-02",
           "market": "Qualification",
           "sel": "Switzerland se qualifie",
-          "prob": 77.2,
-          "odds": 1.22
+          "prob": 62.9,
+          "odds": 1.5
         },
         {
           "match": "Brazil – Norway",
           "date": "2026-07-05",
           "market": "Qualification",
           "sel": "Brazil se qualifie",
-          "prob": 62.1,
-          "odds": 1.52
+          "prob": 58.1,
+          "odds": 1.62
         },
         {
           "match": "Portugal – Croatia",
           "date": "2026-07-02",
           "market": "Qualification",
           "sel": "Portugal se qualifie",
-          "prob": 53,
-          "odds": 1.78
+          "prob": 52,
+          "odds": 1.81
         }
       ],
-      "odds": 4.31,
-      "prob": 15.3
+      "odds": 4.27,
+      "prob": 16.6
     }
   },
   "valuePicks": {
@@ -5070,204 +4931,225 @@
         "round": "Round of 32"
       },
       {
-        "sel": "Spain ou nul",
-        "prob": 91.5,
-        "fairOdds": 1.09,
-        "match": "Spain – Austria",
-        "date": "2026-07-02",
-        "round": "Round of 32"
-      },
-      {
         "sel": "Colombia ou nul",
-        "prob": 91.5,
-        "fairOdds": 1.09,
-        "match": "Colombia – Ghana",
-        "date": "2026-07-03",
-        "round": "Round of 32"
-      }
-    ],
-    "balanced": [
-      {
-        "sel": "Spain qualifié",
-        "prob": 85.6,
-        "fairOdds": 1.17,
-        "match": "Spain – Austria",
-        "date": "2026-07-02",
-        "round": "Round of 32"
-      },
-      {
-        "sel": "Colombia qualifié",
-        "prob": 85.6,
-        "fairOdds": 1.17,
+        "prob": 100,
+        "fairOdds": 1,
         "match": "Colombia – Ghana",
         "date": "2026-07-03",
         "round": "Round of 32"
       },
       {
-        "sel": "France qualifié",
-        "prob": 85.6,
-        "fairOdds": 1.17,
+        "sel": "nul ou France",
+        "prob": 100,
+        "fairOdds": 1,
         "match": "Paraguay – France",
         "date": "2026-07-04",
         "round": "Round of 16"
       }
     ],
-    "value": [
+    "balanced": [
       {
-        "sel": "+2,5 buts",
-        "prob": 64.5,
-        "fairOdds": 1.55,
+        "sel": "+1,5 but",
+        "prob": 80,
+        "fairOdds": 1.25,
         "match": "Switzerland – Algeria",
         "date": "2026-07-02",
         "round": "Round of 32"
       },
       {
-        "sel": "−3,5 buts",
-        "prob": 63.6,
-        "fairOdds": 1.57,
+        "sel": "+1,5 but",
+        "prob": 79.8,
+        "fairOdds": 1.25,
+        "match": "Brazil – Norway",
+        "date": "2026-07-05",
+        "round": "Round of 16"
+      },
+      {
+        "sel": "+1,5 but",
+        "prob": 79.2,
+        "fairOdds": 1.26,
+        "match": "USA – Belgium",
+        "date": "2026-07-06",
+        "round": "Round of 16"
+      }
+    ],
+    "value": [
+      {
+        "sel": "Switzerland qualifié",
+        "prob": 62.9,
+        "fairOdds": 1.59,
+        "match": "Switzerland – Algeria",
+        "date": "2026-07-02",
+        "round": "Round of 32"
+      },
+      {
+        "sel": "Les deux marquent — Oui",
+        "prob": 58.8,
+        "fairOdds": 1.7,
         "match": "USA – Belgium",
         "date": "2026-07-06",
         "round": "Round of 16"
       },
       {
-        "sel": "nul ou Croatia",
-        "prob": 63.5,
-        "fairOdds": 1.57,
-        "match": "Portugal – Croatia",
-        "date": "2026-07-02",
-        "round": "Round of 32"
+        "sel": "Brazil qualifié",
+        "prob": 58.1,
+        "fairOdds": 1.72,
+        "match": "Brazil – Norway",
+        "date": "2026-07-05",
+        "round": "Round of 16"
       }
     ]
   },
   "history": {
     "summary": {
-      "total": 82,
+      "total": 83,
       "result": {
-        "correct": 52,
-        "pct": 63.4
+        "correct": 53,
+        "pct": 63.9
       },
       "btts": {
-        "correct": 44,
-        "pct": 53.7
+        "correct": 52,
+        "pct": 62.7
       },
       "ou25": {
         "correct": 44,
-        "pct": 53.7
+        "pct": 53
       },
       "metrics": {
         "model": {
-          "logLoss": 0.855,
-          "brier": 0.5,
-          "n": 82
+          "logLoss": 0.772,
+          "brier": 0.455,
+          "n": 83
         },
         "baselineElo": {
-          "logLoss": 0.826,
-          "brier": 0.494,
-          "n": 82
+          "logLoss": 0.822,
+          "brier": 0.491,
+          "n": 83
         },
         "baselineRate": {
-          "logLoss": 1.096,
-          "brier": 0.661,
-          "n": 82
+          "logLoss": 1.092,
+          "brier": 0.658,
+          "n": 83
         },
         "calibration": [
           {
             "range": "40-50%",
-            "predicted": 45.4,
-            "observed": 38.9,
-            "n": 18
+            "predicted": 45.5,
+            "observed": 33.3,
+            "n": 15
           },
           {
             "range": "50-60%",
-            "predicted": 54.3,
-            "observed": 69.6,
-            "n": 23
+            "predicted": 57,
+            "observed": 54.5,
+            "n": 11
           },
           {
             "range": "60-70%",
-            "predicted": 63.5,
-            "observed": 76.5,
-            "n": 17
+            "predicted": 64.6,
+            "observed": 63.6,
+            "n": 11
           },
           {
             "range": "70-80%",
-            "predicted": 74,
-            "observed": 84.6,
-            "n": 13
+            "predicted": 74.7,
+            "observed": 75,
+            "n": 16
           },
           {
             "range": "80-90%",
-            "predicted": 84.2,
-            "observed": 66.7,
-            "n": 6
+            "predicted": 85.5,
+            "observed": 85.2,
+            "n": 27
           }
         ],
         "holdout": {
           "raw": {
-            "logLoss": 0.823,
-            "brier": 0.465,
+            "logLoss": 0.651,
+            "brier": 0.359,
             "n": 25
           },
           "calibrated": {
-            "logLoss": 0.766,
-            "brier": 0.432,
+            "logLoss": 0.651,
+            "brier": 0.363,
             "n": 25
           }
         },
+        "market": null,
         "calibrationApplied": true
       }
     },
     "calibrationMap": {
       "xs": [
-        0.016,
-        0.10800000000000003,
-        0.109,
-        0.1968031968031968,
-        0.197,
-        0.23423423423423423,
-        0.23423423423423426,
-        0.24824824824824826,
-        0.249,
-        0.39,
-        0.398,
-        0.47,
-        0.4805194805194805,
-        0.509,
-        0.516,
-        0.5225225225225225,
-        0.524,
-        0.562,
-        0.5715715715715717,
-        0.622,
-        0.632,
-        0.857
+        0.012,
+        0.1011011011011011,
+        0.10300000000000001,
+        0.15215215215215214,
+        0.15284715284715283,
+        0.22399999999999998,
+        0.2247752247752248,
+        0.24375624375624377,
+        0.24600000000000002,
+        0.449,
+        0.46399999999999997,
+        0.502,
+        0.548,
+        0.6186186186186187,
+        0.6343656343656344,
+        0.723,
+        0.7262737262737262,
+        0.7762237762237761,
+        0.777,
+        0.873,
+        0.8740000000000001,
+        0.89
       ],
       "ys": [
         0,
         0,
-        0.09090909090909091,
-        0.09090909090909091,
-        0.15,
-        0.15,
-        0.2857142857142857,
-        0.2857142857142857,
-        0.3111111111111111,
-        0.3111111111111111,
-        0.35714285714285715,
-        0.35714285714285715,
-        0.5,
-        0.5,
-        0.6,
-        0.6,
-        0.6666666666666666,
-        0.6666666666666666,
-        0.7692307692307693,
-        0.7692307692307693,
-        0.8275862068965517,
-        0.8275862068965517
+        0.1,
+        0.1,
+        0.23076923076923078,
+        0.23076923076923078,
+        0.2727272727272727,
+        0.2727272727272727,
+        0.34782608695652173,
+        0.34782608695652173,
+        0.375,
+        0.375,
+        0.46153846153846156,
+        0.46153846153846156,
+        0.7142857142857143,
+        0.7142857142857143,
+        0.8333333333333334,
+        0.8333333333333334,
+        0.8571428571428571,
+        0.8571428571428571,
+        1,
+        1
       ]
     },
     "matches": [
+      {
+        "date": "2026-07-02",
+        "group": null,
+        "team1": "Spain",
+        "team2": "Austria",
+        "score": "3 - 0",
+        "predicted": "1",
+        "predLabel": "Spain",
+        "prob": 80.6,
+        "actual": "1",
+        "hit": true,
+        "btts": {
+          "pred": "Non",
+          "hit": true
+        },
+        "ou25": {
+          "pred": "+2,5",
+          "hit": true
+        }
+      },
       {
         "date": "2026-07-01",
         "group": null,
@@ -5276,7 +5158,7 @@
         "score": "2 - 2",
         "predicted": "1",
         "predLabel": "Belgium",
-        "prob": 42.5,
+        "prob": 50.2,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5296,12 +5178,12 @@
         "score": "2 - 0",
         "predicted": "1",
         "predLabel": "USA",
-        "prob": 58.2,
+        "prob": 72.7,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -5316,7 +5198,7 @@
         "score": "2 - 1",
         "predicted": "1",
         "predLabel": "England",
-        "prob": 64.2,
+        "prob": 83.7,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -5336,7 +5218,7 @@
         "score": "2 - 0",
         "predicted": "1",
         "predLabel": "Mexico",
-        "prob": 51.6,
+        "prob": 57.1,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -5344,8 +5226,8 @@
           "hit": false
         },
         "ou25": {
-          "pred": "−2,5",
-          "hit": true
+          "pred": "+2,5",
+          "hit": false
         }
       },
       {
@@ -5356,12 +5238,12 @@
         "score": "1 - 2",
         "predicted": "2",
         "predLabel": "Norway",
-        "prob": 46.4,
+        "prob": 65.2,
         "actual": "2",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": true
+          "pred": "Non",
+          "hit": false
         },
         "ou25": {
           "pred": "+2,5",
@@ -5376,12 +5258,12 @@
         "score": "3 - 0",
         "predicted": "1",
         "predLabel": "France",
-        "prob": 73.3,
+        "prob": 86.5,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -5396,7 +5278,7 @@
         "score": "2 - 1",
         "predicted": "1",
         "predLabel": "Brazil",
-        "prob": 50.7,
+        "prob": 58.4,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -5416,7 +5298,7 @@
         "score": "1 - 1",
         "predicted": "1",
         "predLabel": "Netherlands",
-        "prob": 45,
+        "prob": 49,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5436,7 +5318,7 @@
         "score": "1 - 1",
         "predicted": "1",
         "predLabel": "Germany",
-        "prob": 46.6,
+        "prob": 49.7,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5456,12 +5338,12 @@
         "score": "0 - 1",
         "predicted": "2",
         "predLabel": "Canada",
-        "prob": 57.2,
+        "prob": 74.2,
         "actual": "2",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -5476,12 +5358,12 @@
         "score": "2 - 1",
         "predicted": "1",
         "predLabel": "Croatia",
-        "prob": 57.1,
+        "prob": 81.8,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": true
+          "pred": "Non",
+          "hit": false
         },
         "ou25": {
           "pred": "+2,5",
@@ -5496,7 +5378,7 @@
         "score": "0 - 2",
         "predicted": "2",
         "predLabel": "England",
-        "prob": 70,
+        "prob": 86.5,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -5516,7 +5398,7 @@
         "score": "3 - 1",
         "predicted": "1",
         "predLabel": "DR Congo",
-        "prob": 48.8,
+        "prob": 48.3,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -5536,7 +5418,7 @@
         "score": "0 - 0",
         "predicted": "1",
         "predLabel": "Colombia",
-        "prob": 37.4,
+        "prob": 38.8,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5556,7 +5438,7 @@
         "score": "1 - 3",
         "predicted": "2",
         "predLabel": "Argentina",
-        "prob": 83.3,
+        "prob": 86.9,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -5576,7 +5458,7 @@
         "score": "3 - 3",
         "predicted": "2",
         "predLabel": "Austria",
-        "prob": 41.8,
+        "prob": 44.5,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5596,12 +5478,12 @@
         "score": "5 - 0",
         "predicted": "1",
         "predLabel": "Senegal",
-        "prob": 60.5,
+        "prob": 73.5,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -5616,7 +5498,7 @@
         "score": "1 - 4",
         "predicted": "2",
         "predLabel": "France",
-        "prob": 54.8,
+        "prob": 66,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -5636,12 +5518,12 @@
         "score": "0 - 1",
         "predicted": "2",
         "predLabel": "Spain",
-        "prob": 64.2,
+        "prob": 79.6,
         "actual": "2",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -5656,7 +5538,7 @@
         "score": "0 - 0",
         "predicted": "1",
         "predLabel": "Cape Verde",
-        "prob": 45.1,
+        "prob": 41.4,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5676,7 +5558,7 @@
         "score": "1 - 5",
         "predicted": "2",
         "predLabel": "Belgium",
-        "prob": 65.3,
+        "prob": 86.4,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -5694,9 +5576,9 @@
         "team1": "Egypt",
         "team2": "Iran",
         "score": "1 - 1",
-        "predicted": "1",
-        "predLabel": "Egypt",
-        "prob": 38.8,
+        "predicted": "2",
+        "predLabel": "Iran",
+        "prob": 39.9,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5716,7 +5598,7 @@
         "score": "1 - 3",
         "predicted": "2",
         "predLabel": "Netherlands",
-        "prob": 79.8,
+        "prob": 87.2,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -5736,7 +5618,7 @@
         "score": "1 - 1",
         "predicted": "1",
         "predLabel": "Japan",
-        "prob": 56.2,
+        "prob": 60.5,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5756,7 +5638,7 @@
         "score": "2 - 1",
         "predicted": "2",
         "predLabel": "Germany",
-        "prob": 49.6,
+        "prob": 43.4,
         "actual": "1",
         "hit": false,
         "btts": {
@@ -5776,12 +5658,12 @@
         "score": "0 - 2",
         "predicted": "2",
         "predLabel": "Ivory Coast",
-        "prob": 63.2,
+        "prob": 77.7,
         "actual": "2",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -5796,7 +5678,7 @@
         "score": "0 - 0",
         "predicted": "1",
         "predLabel": "Paraguay",
-        "prob": 38.4,
+        "prob": 40.4,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5816,7 +5698,7 @@
         "score": "3 - 2",
         "predicted": "2",
         "predLabel": "USA",
-        "prob": 50.9,
+        "prob": 39.3,
         "actual": "1",
         "hit": false,
         "btts": {
@@ -5836,7 +5718,7 @@
         "score": "4 - 2",
         "predicted": "1",
         "predLabel": "Morocco",
-        "prob": 71.7,
+        "prob": 87,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -5856,7 +5738,7 @@
         "score": "0 - 3",
         "predicted": "2",
         "predLabel": "Brazil",
-        "prob": 61.7,
+        "prob": 77.5,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -5876,7 +5758,7 @@
         "score": "3 - 1",
         "predicted": "1",
         "predLabel": "Bosnia & Herzegovina",
-        "prob": 54.3,
+        "prob": 65.4,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -5896,7 +5778,7 @@
         "score": "2 - 1",
         "predicted": "1",
         "predLabel": "Switzerland",
-        "prob": 40.2,
+        "prob": 49.4,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -5916,7 +5798,7 @@
         "score": "1 - 0",
         "predicted": "2",
         "predLabel": "South Korea",
-        "prob": 50.4,
+        "prob": 60.9,
         "actual": "1",
         "hit": false,
         "btts": {
@@ -5936,7 +5818,7 @@
         "score": "0 - 3",
         "predicted": "2",
         "predLabel": "Mexico",
-        "prob": 67,
+        "prob": 82,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -5956,12 +5838,12 @@
         "score": "0 - 1",
         "predicted": "2",
         "predLabel": "Croatia",
-        "prob": 57.7,
+        "prob": 72.2,
         "actual": "2",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -5976,7 +5858,7 @@
         "score": "0 - 0",
         "predicted": "1",
         "predLabel": "England",
-        "prob": 74.9,
+        "prob": 86.2,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5996,12 +5878,12 @@
         "score": "1 - 0",
         "predicted": "1",
         "predLabel": "Colombia",
-        "prob": 63.6,
+        "prob": 78.9,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -6016,12 +5898,12 @@
         "score": "5 - 0",
         "predicted": "1",
         "predLabel": "Portugal",
-        "prob": 66.8,
+        "prob": 85.4,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -6036,7 +5918,7 @@
         "score": "1 - 2",
         "predicted": "2",
         "predLabel": "Algeria",
-        "prob": 49.1,
+        "prob": 59.8,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -6056,12 +5938,12 @@
         "score": "2 - 0",
         "predicted": "1",
         "predLabel": "Argentina",
-        "prob": 64.1,
+        "prob": 80.4,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -6076,7 +5958,7 @@
         "score": "3 - 2",
         "predicted": "1",
         "predLabel": "Norway",
-        "prob": 51.9,
+        "prob": 54.8,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6096,7 +5978,7 @@
         "score": "3 - 0",
         "predicted": "1",
         "predLabel": "France",
-        "prob": 83.4,
+        "prob": 86.6,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6116,12 +5998,12 @@
         "score": "2 - 2",
         "predicted": "1",
         "predLabel": "Uruguay",
-        "prob": 54.7,
+        "prob": 68.6,
         "actual": "X",
         "hit": false,
         "btts": {
-          "pred": "Oui",
-          "hit": true
+          "pred": "Non",
+          "hit": false
         },
         "ou25": {
           "pred": "+2,5",
@@ -6136,7 +6018,7 @@
         "score": "4 - 0",
         "predicted": "1",
         "predLabel": "Spain",
-        "prob": 77.9,
+        "prob": 86.4,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6156,7 +6038,7 @@
         "score": "1 - 3",
         "predicted": "2",
         "predLabel": "Egypt",
-        "prob": 54.7,
+        "prob": 67.1,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -6176,7 +6058,7 @@
         "score": "0 - 0",
         "predicted": "1",
         "predLabel": "Belgium",
-        "prob": 49.3,
+        "prob": 58.4,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6196,12 +6078,12 @@
         "score": "0 - 4",
         "predicted": "2",
         "predLabel": "Japan",
-        "prob": 68.6,
+        "prob": 82.2,
         "actual": "2",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -6216,12 +6098,12 @@
         "score": "5 - 1",
         "predicted": "1",
         "predLabel": "Netherlands",
-        "prob": 52.4,
+        "prob": 71.1,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": true
+          "pred": "Non",
+          "hit": false
         },
         "ou25": {
           "pred": "+2,5",
@@ -6236,7 +6118,7 @@
         "score": "0 - 0",
         "predicted": "1",
         "predLabel": "Ecuador",
-        "prob": 72.1,
+        "prob": 86.7,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6256,7 +6138,7 @@
         "score": "2 - 1",
         "predicted": "1",
         "predLabel": "Germany",
-        "prob": 52.5,
+        "prob": 63.6,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6276,7 +6158,7 @@
         "score": "0 - 1",
         "predicted": "1",
         "predLabel": "Turkey",
-        "prob": 39,
+        "prob": 41.2,
         "actual": "2",
         "hit": false,
         "btts": {
@@ -6296,7 +6178,7 @@
         "score": "2 - 0",
         "predicted": "1",
         "predLabel": "USA",
-        "prob": 43.1,
+        "prob": 46.4,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6316,7 +6198,7 @@
         "score": "3 - 0",
         "predicted": "1",
         "predLabel": "Brazil",
-        "prob": 78.2,
+        "prob": 85.7,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6336,7 +6218,7 @@
         "score": "0 - 1",
         "predicted": "2",
         "predLabel": "Morocco",
-        "prob": 48.1,
+        "prob": 57.4,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -6356,12 +6238,12 @@
         "score": "6 - 0",
         "predicted": "1",
         "predLabel": "Canada",
-        "prob": 70.2,
+        "prob": 86.1,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -6376,12 +6258,12 @@
         "score": "4 - 1",
         "predicted": "1",
         "predLabel": "Switzerland",
-        "prob": 59.6,
+        "prob": 79.1,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": true
+          "pred": "Non",
+          "hit": false
         },
         "ou25": {
           "pred": "+2,5",
@@ -6396,12 +6278,12 @@
         "score": "1 - 0",
         "predicted": "1",
         "predLabel": "Mexico",
-        "prob": 60.4,
+        "prob": 76.2,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -6416,7 +6298,7 @@
         "score": "1 - 1",
         "predicted": "1",
         "predLabel": "Czech Republic",
-        "prob": 47,
+        "prob": 54.9,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6436,7 +6318,7 @@
         "score": "1 - 0",
         "predicted": "2",
         "predLabel": "Panama",
-        "prob": 45.9,
+        "prob": 49.6,
         "actual": "1",
         "hit": false,
         "btts": {
@@ -6456,7 +6338,7 @@
         "score": "4 - 2",
         "predicted": "1",
         "predLabel": "England",
-        "prob": 51.8,
+        "prob": 58.1,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6476,7 +6358,7 @@
         "score": "1 - 3",
         "predicted": "2",
         "predLabel": "Colombia",
-        "prob": 74.3,
+        "prob": 86.8,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -6496,12 +6378,12 @@
         "score": "1 - 1",
         "predicted": "1",
         "predLabel": "Portugal",
-        "prob": 66.3,
+        "prob": 77.7,
         "actual": "X",
         "hit": false,
         "btts": {
-          "pred": "Oui",
-          "hit": true
+          "pred": "Non",
+          "hit": false
         },
         "ou25": {
           "pred": "+2,5",
@@ -6516,12 +6398,12 @@
         "score": "3 - 1",
         "predicted": "1",
         "predLabel": "Austria",
-        "prob": 58.8,
+        "prob": 68.2,
         "actual": "1",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": true
+          "pred": "Non",
+          "hit": false
         },
         "ou25": {
           "pred": "+2,5",
@@ -6536,7 +6418,7 @@
         "score": "3 - 0",
         "predicted": "1",
         "predLabel": "Argentina",
-        "prob": 74.3,
+        "prob": 87.4,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6556,7 +6438,7 @@
         "score": "1 - 4",
         "predicted": "2",
         "predLabel": "Norway",
-        "prob": 75.2,
+        "prob": 88,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -6576,7 +6458,7 @@
         "score": "3 - 1",
         "predicted": "1",
         "predLabel": "France",
-        "prob": 70,
+        "prob": 82.5,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6596,7 +6478,7 @@
         "score": "1 - 1",
         "predicted": "2",
         "predLabel": "Uruguay",
-        "prob": 62.2,
+        "prob": 72.3,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6616,7 +6498,7 @@
         "score": "0 - 0",
         "predicted": "1",
         "predLabel": "Spain",
-        "prob": 85.7,
+        "prob": 86.4,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6636,7 +6518,7 @@
         "score": "2 - 2",
         "predicted": "1",
         "predLabel": "Iran",
-        "prob": 60.7,
+        "prob": 70.3,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6656,7 +6538,7 @@
         "score": "1 - 1",
         "predicted": "1",
         "predLabel": "Belgium",
-        "prob": 54.5,
+        "prob": 61.8,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6676,7 +6558,7 @@
         "score": "5 - 1",
         "predicted": "1",
         "predLabel": "Sweden",
-        "prob": 54.9,
+        "prob": 63.5,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6696,7 +6578,7 @@
         "score": "2 - 2",
         "predicted": "1",
         "predLabel": "Netherlands",
-        "prob": 44.9,
+        "prob": 49.1,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6716,7 +6598,7 @@
         "score": "1 - 0",
         "predicted": "2",
         "predLabel": "Ecuador",
-        "prob": 52,
+        "prob": 59.3,
         "actual": "1",
         "hit": false,
         "btts": {
@@ -6736,7 +6618,7 @@
         "score": "7 - 1",
         "predicted": "1",
         "predLabel": "Germany",
-        "prob": 85.6,
+        "prob": 87.2,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6756,7 +6638,7 @@
         "score": "2 - 0",
         "predicted": "2",
         "predLabel": "Turkey",
-        "prob": 42.6,
+        "prob": 44.9,
         "actual": "1",
         "hit": false,
         "btts": {
@@ -6776,12 +6658,12 @@
         "score": "0 - 1",
         "predicted": "2",
         "predLabel": "Scotland",
-        "prob": 60.7,
+        "prob": 70.6,
         "actual": "2",
         "hit": true,
         "btts": {
-          "pred": "Oui",
-          "hit": false
+          "pred": "Non",
+          "hit": true
         },
         "ou25": {
           "pred": "+2,5",
@@ -6796,7 +6678,7 @@
         "score": "1 - 1",
         "predicted": "1",
         "predLabel": "Brazil",
-        "prob": 52.2,
+        "prob": 58.8,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6816,7 +6698,7 @@
         "score": "1 - 1",
         "predicted": "2",
         "predLabel": "Switzerland",
-        "prob": 85.2,
+        "prob": 87.3,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6836,7 +6718,7 @@
         "score": "4 - 1",
         "predicted": "1",
         "predLabel": "USA",
-        "prob": 39.8,
+        "prob": 41.4,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6856,7 +6738,7 @@
         "score": "1 - 1",
         "predicted": "1",
         "predLabel": "Canada",
-        "prob": 60.5,
+        "prob": 70.9,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6876,7 +6758,7 @@
         "score": "2 - 1",
         "predicted": "1",
         "predLabel": "South Korea",
-        "prob": 41.1,
+        "prob": 43.1,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6896,7 +6778,7 @@
         "score": "2 - 0",
         "predicted": "1",
         "predLabel": "Mexico",
-        "prob": 82.2,
+        "prob": 89,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6912,7 +6794,7 @@
   },
   "counts": {
     "teams": 48,
-    "played": 82,
-    "upcoming": 11
+    "played": 83,
+    "upcoming": 10
   }
 }

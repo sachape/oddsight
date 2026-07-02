@@ -28,8 +28,11 @@ const POS_DEF = { GK: 1.0, DEF: 1.0, MID: 0.4, FWD: 0.1 }
 // le log-loss walk-forward (`npm run tune`, validé OOS sur la Ligue 1 2025-26).
 // buildModel sélectionne le profil ; le tuner mute TUNABLE directement.
 const PROFILES = {
-  cup:    { halfLife: 14, koBonus: 1.3, rho: -0.04, supCoef: 0.45, blendK: 3, homeF: 1.12, awayF: 0.9,  momentumW: 0.05, clutchW: 0.04 },
-  league: { halfLife: 60, koBonus: 1.3, rho: 0.0,   supCoef: 0.30, blendK: 3, homeF: 1.05, awayF: 0.95, momentumW: 0.08, clutchW: 0.04 },
+  // cup : peu de matchs/équipe -> la couche stats est bruitée, on s'appuie surtout
+  // sur l'Elo (blendK élevé, supCoef fort) et on coupe momentum/finition (net-négatifs).
+  // Validé : bat la baseline Elo sur la CM (0.77 vs 0.82), vs 0.85 avant (ablation).
+  cup:    { halfLife: 14, koBonus: 1.3, rho: -0.05, supCoef: 0.65, blendK: 30, homeF: 1.12, awayF: 0.9,  momentumW: 0,    clutchW: 0 },
+  league: { halfLife: 60, koBonus: 1.3, rho: 0.0,   supCoef: 0.30, blendK: 3,  homeF: 1.05, awayF: 0.95, momentumW: 0.08, clutchW: 0.04 },
 }
 export const TUNABLE = { ...PROFILES.cup } // profil actif (lu par predict/recency)
 
