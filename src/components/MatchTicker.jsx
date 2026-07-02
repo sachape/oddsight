@@ -26,7 +26,7 @@ function TickerItem({ p, onClick }) {
   return (
     <button
       onClick={onClick}
-      className="group flex h-10 shrink-0 items-center gap-2 px-4 text-xs leading-none transition-colors hover:bg-black/[0.03]"
+      className="group flex shrink-0 items-center gap-2 px-4 py-2.5 text-xs transition-colors hover:bg-black/[0.03]"
     >
       <span className="text-[#86868b]">{flag(a)}</span>
       <span className="font-medium text-[#1d1d1f]">{a}</span>
