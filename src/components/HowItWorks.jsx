@@ -156,6 +156,11 @@ export default function HowItWorks() {
             <a
               key={t.id}
               href={`#${t.id}`}
+              onClick={(e) => {
+                // Scroll doux sans polluer l'URL avec un hash (#tennis, #value…)
+                e.preventDefault()
+                document.getElementById(t.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }}
               className={`rounded-full px-2.5 py-1 text-xs font-medium transition-colors lg:rounded-lg lg:px-3 lg:py-1.5 ${
                 active === t.id
                   ? 'bg-edge-500/12 text-edge-700 lg:bg-edge-500/10'

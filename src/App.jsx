@@ -32,23 +32,23 @@ import { Skeleton } from '@/components/ui/skeleton'
 const dataCache = new Map()
 
 function useCompetitionData(comp) {
-  const [data, setData] = useState(() => dataCache.get(comp.id) ?? null)
-  const [loading, setLoading] = useState(() => Boolean(comp.load) && !dataCache.has(comp.id))
+  const [, setTick] = useState(0)
+  // Donnée dérivée directement du cache de la compète COURANTE : on ne sert
+  // jamais la donnée d'une autre compète pendant une transition (sinon un
+  // composant sport-spécifique, ex. Tennis, reçoit des données football → crash).
+  const cached = comp.load ? dataCache.get(comp.id) ?? null : null
 
   useEffect(() => {
-    if (!comp.load) { setData(null); setLoading(false); return }
-    const cached = dataCache.get(comp.id)
-    if (cached) { setData(cached); setLoading(false); return }
-    setData(null); setLoading(true)
+    if (!comp.load || dataCache.has(comp.id)) return
     let cancelled = false
     comp.load().then((mod) => {
       dataCache.set(comp.id, mod.default)
-      if (!cancelled) { setData(mod.default); setLoading(false) }
+      if (!cancelled) setTick((t) => t + 1) // re-render quand la donnée est prête
     })
     return () => { cancelled = true }
   }, [comp.id, comp.load])
 
-  return { data, loading }
+  return { data: cached, loading: Boolean(comp.load) && !cached }
 }
 
 const ALL = ['football', 'tennis', 'basket']
