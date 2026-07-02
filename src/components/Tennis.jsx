@@ -27,6 +27,20 @@ function Player({ name, rank, side }) {
 
 function TennisCard({ p, index }) {
   const w1 = p.pick === p.player1
+  // Marchés dérivés de la distribution des scores en sets
+  const setTotals = []
+  let favStraight = 0 // proba que le favori gagne sans perdre de set
+  {
+    const m = new Map()
+    for (const s of p.sets || []) {
+      const [a, b] = s.score.split('-').map(Number)
+      m.set(a + b, (m.get(a + b) || 0) + s.p)
+      if (Math.min(a, b) === 0 && (s.w === 1) === w1) favStraight += s.p
+    }
+    setTotals.push(...[...m.entries()].sort((x, y) => x[0] - y[0]))
+  }
+  const underdog = w1 ? p.player2 : p.player1
+  const underdogSet = Math.round((100 - favStraight) * 10) / 10
   return (
     <article
       className="fade-up surface surface-hover rounded-2xl p-4"
@@ -79,6 +93,22 @@ function TennisCard({ p, index }) {
         </div>
       )}
 
+      {/* Nombre de sets + l'outsider prend un set */}
+      {setTotals.length > 0 && (
+        <div className="mt-3 rounded-xl bg-pitch-850 p-3">
+          <div className="mb-1.5 text-[11px] uppercase tracking-wide text-[#86868b]">Nombre de sets</div>
+          <div className="space-y-1.5">
+            {setTotals.map(([n, prob]) => (
+              <Gauge key={n} label={`Match en ${n} sets`} value={Math.round(prob * 10) / 10} />
+            ))}
+          </div>
+          <div className="mt-2 flex items-center justify-between border-t border-black/[0.06] pt-2 text-[11px]">
+            <span className="truncate text-[#6e6e73]">{underdog} prend au moins un set</span>
+            <span className="ml-2 shrink-0 font-semibold tabular-nums text-[#1d1d1f]">{underdogSet}%</span>
+          </div>
+        </div>
+      )}
+
       <p className="mt-2 text-center text-[11px] text-muted-foreground">
         Cotes estimées — {p.pick} : <b className="text-[#1d1d1f]">{w1 ? p.odds.win1 : p.odds.win2}</b>
         {' · '}adversaire : <b className="text-[#1d1d1f]">{w1 ? p.odds.win2 : p.odds.win1}</b>
@@ -108,8 +138,8 @@ export default function Tennis({ data }) {
   return (
     <div>
       <div className="surface mb-6 rounded-2xl p-4 text-sm leading-relaxed text-[#1d1d1f]">
-        🎾 <b>{data.tournament}</b> — probabilité de victoire et score en sets probable pour
-        chaque match. Pas de nul : un seul vainqueur.
+        🎾 <b>{data.tournament}</b> — probabilité de victoire, score en sets, nombre de sets et
+        chance pour l’outsider de prendre un set. Pas de nul : un seul vainqueur.
       </div>
 
       <div className="mb-5 flex justify-center gap-2">

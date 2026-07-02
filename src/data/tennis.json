@@ -1,339 +1,44 @@
 {
   "sport": "tennis",
   "tournament": "Wimbledon",
-  "generatedAt": "2026-06-30T10:29:16.269Z",
-  "asOf": "2026-06-30",
+  "generatedAt": "2026-07-02T16:58:22.151Z",
+  "asOf": "2026-07-02",
   "sources": [
     "ESPN (scoreboard + classements ATP/WTA)"
   ],
   "counts": {
-    "upcoming": 192
+    "upcoming": 74
   },
   "predictions": [
     {
-      "id": "177307",
+      "id": "177369",
       "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Jaime Faria",
-      "player2": "Sho Shimabukuro",
-      "rank1": 98,
-      "rank2": 90,
-      "pts1": 660,
-      "pts2": 691,
-      "pWin1": 45.8,
-      "pWin2": 54.2,
-      "pick": "Sho Shimabukuro",
-      "pickProb": 54.2,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.06,
-        "win2": 1.74
-      },
-      "fair": {
-        "win1": 2.18,
-        "win2": 1.85
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 20.4,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 19.5,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 17.8,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 17.1,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 14.2,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 10.9,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177333",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Harry Wendelken",
-      "player2": "Valentin Royer",
-      "rank1": null,
-      "rank2": 75,
-      "pts1": 250,
-      "pts2": 798,
-      "pWin1": 35.6,
-      "pWin2": 64.4,
-      "pick": "Valentin Royer",
-      "pickProb": 64.4,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.65,
-        "win2": 1.46
-      },
-      "fair": {
-        "win1": 2.81,
-        "win2": 1.55
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 24.5,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.6,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 19.3,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 15.1,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 13,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 7.5,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177358",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Alejandro Tabilo",
-      "player2": "Kamil Majchrzak",
-      "rank1": 33,
-      "rank2": 45,
-      "pts1": 1428,
-      "pts2": 1032,
-      "pWin1": 37.8,
-      "pWin2": 62.2,
-      "pick": "Kamil Majchrzak",
-      "pickProb": 62.2,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.49,
-        "win2": 1.52
-      },
-      "fair": {
-        "win1": 2.64,
-        "win2": 1.61
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 23.6,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.5,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 18.1,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 15.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 13.9,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 8.2,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177364",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Giovanni Mpetshi Perricard",
-      "player2": "Yannick Hanfmann",
-      "rank1": 83,
-      "rank2": 56,
-      "pts1": 710,
-      "pts2": 949,
-      "pWin1": 53.1,
-      "pWin2": 46.9,
-      "pick": "Giovanni Mpetshi Perricard",
-      "pickProb": 53.1,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 1.78,
-        "win2": 2.01
-      },
-      "fair": {
-        "win1": 1.88,
-        "win2": 2.13
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 20,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 19.3,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 18.1,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 17.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 13.8,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 11.3,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177368",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Titouan Droguet",
-      "player2": "Adrian Mannarino",
-      "rank1": 116,
-      "rank2": 40,
-      "pts1": 534,
-      "pts2": 1139,
-      "pWin1": 46.8,
-      "pWin2": 53.2,
-      "pick": "Adrian Mannarino",
-      "pickProb": 53.2,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.02,
-        "win2": 1.77
-      },
-      "fair": {
-        "win1": 2.14,
-        "win2": 1.88
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 20,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 19.3,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.1,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 17.5,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 13.8,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 11.3,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177306",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Arthur Fery",
-      "player2": "Damir Dzumhur",
-      "rank1": 114,
-      "rank2": 105,
-      "pts1": 547,
-      "pts2": 604,
-      "pWin1": 55.5,
-      "pWin2": 44.5,
-      "pick": "Arthur Fery",
-      "pickProb": 55.5,
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Arthur Fils",
+      "player2": "Matteo Berrettini",
+      "rank1": 24,
+      "rank2": 51,
+      "pts1": 1940,
+      "pts2": 985,
+      "pWin1": 55.4,
+      "pWin2": 44.6,
+      "pick": "Arthur Fils",
+      "pickProb": 55.4,
       "confidence": "Faible",
       "odds": {
         "win1": 1.7,
-        "win2": 2.12
+        "win2": 2.11
       },
       "fair": {
-        "win1": 1.8,
-        "win2": 2.25
+        "win1": 1.81,
+        "win2": 2.24
       },
       "bestOf": 5,
       "sets": [
         {
           "score": "3-1",
-          "p": 21,
+          "p": 20.9,
           "w": 1
         },
         {
@@ -343,808 +48,159 @@
         },
         {
           "score": "2-3",
-          "p": 17.5,
+          "p": 17.6,
           "w": 2
         },
         {
           "score": "1-3",
-          "p": 16.5,
+          "p": 16.6,
           "w": 2
         },
         {
           "score": "3-0",
-          "p": 14.9,
+          "p": 14.8,
           "w": 1
         },
         {
           "score": "0-3",
-          "p": 10.4,
+          "p": 10.5,
           "w": 2
         }
       ],
       "basis": "elo"
     },
     {
-      "id": "177317",
+      "id": "177375",
       "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Ben Shelton",
-      "player2": "Otto Virtanen",
-      "rank1": 5,
-      "rank2": 140,
-      "pts1": 4160,
-      "pts2": 432,
-      "pWin1": 73.3,
-      "pWin2": 26.7,
-      "pick": "Ben Shelton",
-      "pickProb": 73.3,
-      "confidence": "Modérée",
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Flavio Cobolli",
+      "player2": "James Duckworth",
+      "rank1": 10,
+      "rank2": 79,
+      "pts1": 3460,
+      "pts2": 748,
+      "pWin1": 76.2,
+      "pWin2": 23.8,
+      "pick": "Flavio Cobolli",
+      "pickProb": 76.2,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 1.29,
-        "win2": 3.53
+        "win1": 1.24,
+        "win2": 3.96
       },
       "fair": {
-        "win1": 1.36,
-        "win2": 3.74
+        "win1": 1.31,
+        "win2": 4.2
       },
       "bestOf": 5,
       "sets": [
         {
           "score": "3-1",
-          "p": 27.8,
+          "p": 28.7,
           "w": 1
         },
         {
           "score": "3-0",
-          "p": 25,
+          "p": 27.2,
           "w": 1
         },
         {
           "score": "3-2",
-          "p": 20.5,
+          "p": 20.2,
           "w": 1
         },
         {
           "score": "2-3",
+          "p": 11,
+          "w": 2
+        },
+        {
+          "score": "1-3",
+          "p": 8.5,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 4.4,
+          "w": 2
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "177383",
+      "category": "Men's Singles",
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Alex Molcan",
+      "player2": "Jiri Lehecka",
+      "rank1": 101,
+      "rank2": 14,
+      "pts1": 639,
+      "pts2": 2360,
+      "pWin1": 26.8,
+      "pWin2": 73.2,
+      "pick": "Jiri Lehecka",
+      "pickProb": 73.2,
+      "confidence": "Modérée",
+      "odds": {
+        "win1": 3.52,
+        "win2": 1.29
+      },
+      "fair": {
+        "win1": 3.73,
+        "win2": 1.37
+      },
+      "bestOf": 5,
+      "sets": [
+        {
+          "score": "1-3",
+          "p": 27.7,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 24.9,
+          "w": 2
+        },
+        {
+          "score": "2-3",
+          "p": 20.5,
+          "w": 2
+        },
+        {
+          "score": "3-2",
           "p": 12.1,
-          "w": 2
+          "w": 1
         },
         {
-          "score": "1-3",
+          "score": "3-1",
           "p": 9.6,
-          "w": 2
+          "w": 1
         },
         {
-          "score": "0-3",
+          "score": "3-0",
           "p": 5.1,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177326",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Alexander Bublik",
-      "player2": "Thanasi Kokkinakis",
-      "rank1": 11,
-      "rank2": null,
-      "pts1": 2620,
-      "pts2": 250,
-      "pWin1": 86.8,
-      "pWin2": 13.2,
-      "pick": "Alexander Bublik",
-      "pickProb": 86.8,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.09,
-        "win2": 7.12
-      },
-      "fair": {
-        "win1": 1.15,
-        "win2": 7.55
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-0",
-          "p": 38,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 31.4,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 17.3,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 6.6,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 4.6,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 2.1,
-          "w": 2
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177327",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Vilius Gaubas",
-      "player2": "Kyrian Jacquet",
-      "rank1": 129,
-      "rank2": 139,
-      "pts1": 474,
-      "pts2": 433,
-      "pWin1": 38.3,
-      "pWin2": 61.7,
-      "pick": "Kyrian Jacquet",
-      "pickProb": 61.7,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.47,
-        "win2": 1.53
-      },
-      "fair": {
-        "win1": 2.61,
-        "win2": 1.62
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 23.4,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.5,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 17.9,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 15.9,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 14.1,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 8.3,
           "w": 1
         }
       ],
       "basis": "elo"
     },
     {
-      "id": "177339",
+      "id": "177370",
       "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Jacob Fearnley",
-      "player2": "Alex Michelsen",
-      "rank1": null,
-      "rank2": 46,
-      "pts1": 250,
-      "pts2": 1025,
-      "pWin1": 28,
-      "pWin2": 72,
-      "pick": "Alex Michelsen",
-      "pickProb": 72,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3.37,
-        "win2": 1.31
-      },
-      "fair": {
-        "win1": 3.57,
-        "win2": 1.39
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 27.3,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 24.1,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.6,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 12.5,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 10.1,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 5.4,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177343",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Quentin Halys",
-      "player2": "Matteo Arnaldi",
-      "rank1": 95,
-      "rank2": 35,
-      "pts1": 666,
-      "pts2": 1349,
-      "pWin1": 46.8,
-      "pWin2": 53.2,
-      "pick": "Matteo Arnaldi",
-      "pickProb": 53.2,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.01,
-        "win2": 1.77
-      },
-      "fair": {
-        "win1": 2.14,
-        "win2": 1.88
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 20,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 19.3,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.1,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 17.5,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 13.8,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 11.3,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177344",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Jack Pinnington Jones",
-      "player2": "Brandon Nakashima",
-      "rank1": 138,
-      "rank2": 31,
-      "pts1": 434,
-      "pts2": 1485,
-      "pWin1": 21.8,
-      "pWin2": 78.2,
-      "pick": "Brandon Nakashima",
-      "pickProb": 78.2,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 4.33,
-        "win2": 1.21
-      },
-      "fair": {
-        "win1": 4.59,
-        "win2": 1.28
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 29.4,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 28.9,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 19.9,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 10.2,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 7.7,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 3.9,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177350",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Roman Andres Burruchaga",
-      "player2": "Alex de Minaur",
-      "rank1": 65,
-      "rank2": 6,
-      "pts1": 875,
-      "pts2": 4110,
-      "pWin1": 16.4,
-      "pWin2": 83.6,
-      "pick": "Alex de Minaur",
-      "pickProb": 83.6,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 5.75,
-        "win2": 1.13
-      },
-      "fair": {
-        "win1": 6.1,
-        "win2": 1.2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "0-3",
-          "p": 34.2,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 30.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.6,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 8,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 5.7,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 2.7,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177352",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Rinky Hijikata",
-      "player2": "Jesper de Jong",
-      "rank1": 82,
-      "rank2": 73,
-      "pts1": 717,
-      "pts2": 808,
-      "pWin1": 69.8,
-      "pWin2": 30.2,
-      "pick": "Rinky Hijikata",
-      "pickProb": 69.8,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.35,
-        "win2": 3.12
-      },
-      "fair": {
-        "win1": 1.43,
-        "win2": 3.31
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 26.5,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 22.6,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 20.7,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 13.3,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 10.9,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 6,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177359",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Zachary Svajda",
-      "player2": "Pablo Llamas Ruiz",
-      "rank1": 66,
-      "rank2": 119,
-      "pts1": 855,
-      "pts2": 525,
-      "pWin1": 62.3,
-      "pWin2": 37.7,
-      "pick": "Zachary Svajda",
-      "pickProb": 62.3,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.51,
-        "win2": 2.5
-      },
-      "fair": {
-        "win1": 1.6,
-        "win2": 2.65
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 23.6,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 20.5,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 18.2,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 15.7,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 13.8,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 8.1,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177305",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Zizou Bergs",
-      "player2": "Ugo Humbert",
-      "rank1": 37,
-      "rank2": 30,
-      "pts1": 1250,
-      "pts2": 1575,
-      "pWin1": 41.9,
-      "pWin2": 58.1,
-      "pick": "Ugo Humbert",
-      "pickProb": 58.1,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.25,
-        "win2": 1.62
-      },
-      "fair": {
-        "win1": 2.39,
-        "win2": 1.72
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 22,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.1,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 16.9,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 16,
-          "w": 2
-        },
-        {
-          "score": "3-1",
-          "p": 15.5,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 9.5,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177316",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Dusan Lajovic",
-      "player2": "Taylor Fritz",
-      "rank1": null,
-      "rank2": 7,
-      "pts1": 250,
-      "pts2": 3765,
-      "pWin1": 10.7,
-      "pWin2": 89.3,
-      "pick": "Taylor Fritz",
-      "pickProb": 89.3,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 8.84,
-        "win2": 1.06
-      },
-      "fair": {
-        "win1": 9.37,
-        "win2": 1.12
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "0-3",
-          "p": 41.7,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 31.6,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 16,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 5.4,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 3.6,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 1.6,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177319",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Gabriel Diallo",
-      "player2": "Benjamin Bonzi",
-      "rank1": 88,
-      "rank2": 93,
-      "pts1": 695,
-      "pts2": 673,
-      "pWin1": 44.4,
-      "pWin2": 55.6,
-      "pick": "Benjamin Bonzi",
-      "pickProb": 55.6,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.12,
-        "win2": 1.7
-      },
-      "fair": {
-        "win1": 2.25,
-        "win2": 1.8
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 21,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 19.7,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 17.5,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 16.5,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 14.9,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 10.4,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177337",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Francisco Cerundolo",
-      "player2": "Jaume Munar",
-      "rank1": 21,
-      "rank2": 44,
-      "pts1": 2110,
-      "pts2": 1075,
-      "pWin1": 75,
-      "pWin2": 25,
-      "pick": "Francisco Cerundolo",
-      "pickProb": 75,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.26,
-        "win2": 3.77
-      },
-      "fair": {
-        "win1": 1.33,
-        "win2": 3.99
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 28.3,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 26.3,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 20.4,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 11.4,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 8.9,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 4.7,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177311",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Tomas Martin Etcheverry",
-      "player2": "Lorenzo Sonego",
-      "rank1": 32,
-      "rank2": 69,
-      "pts1": 1460,
-      "pts2": 843,
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Grigor Dimitrov",
+      "player2": "Jakub Mensik",
+      "rank1": 146,
+      "rank2": 18,
+      "pts1": 407,
+      "pts2": 2255,
       "pWin1": 42.3,
       "pWin2": 57.7,
-      "pick": "Lorenzo Sonego",
+      "pick": "Jakub Mensik",
       "pickProb": 57.7,
       "confidence": "Faible",
       "odds": {
@@ -1191,28 +247,440 @@
       "basis": "elo"
     },
     {
-      "id": "177321",
+      "id": "177387",
       "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Mackenzie McDonald",
-      "player2": "Patrick Kypson",
-      "rank1": 145,
-      "rank2": 113,
-      "pts1": 409,
-      "pts2": 548,
-      "pWin1": 58.4,
-      "pWin2": 41.6,
-      "pick": "Mackenzie McDonald",
-      "pickProb": 58.4,
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Jan Choinski",
+      "player2": "Frances Tiafoe",
+      "rank1": 100,
+      "rank2": 19,
+      "pts1": 657,
+      "pts2": 2180,
+      "pWin1": 15.9,
+      "pWin2": 84.1,
+      "pick": "Frances Tiafoe",
+      "pickProb": 84.1,
+      "confidence": "Élevée",
+      "odds": {
+        "win1": 5.93,
+        "win2": 1.12
+      },
+      "fair": {
+        "win1": 6.28,
+        "win2": 1.19
+      },
+      "bestOf": 5,
+      "sets": [
+        {
+          "score": "0-3",
+          "p": 34.7,
+          "w": 2
+        },
+        {
+          "score": "1-3",
+          "p": 31,
+          "w": 2
+        },
+        {
+          "score": "2-3",
+          "p": 18.4,
+          "w": 2
+        },
+        {
+          "score": "3-2",
+          "p": 7.8,
+          "w": 1
+        },
+        {
+          "score": "3-1",
+          "p": 5.5,
+          "w": 1
+        },
+        {
+          "score": "3-0",
+          "p": 2.6,
+          "w": 1
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "177386",
+      "category": "Men's Singles",
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Alexander Bublik",
+      "player2": "Kyrian Jacquet",
+      "rank1": 11,
+      "rank2": 139,
+      "pts1": 2620,
+      "pts2": 433,
+      "pWin1": 74.9,
+      "pWin2": 25.1,
+      "pick": "Alexander Bublik",
+      "pickProb": 74.9,
+      "confidence": "Modérée",
+      "odds": {
+        "win1": 1.26,
+        "win2": 3.75
+      },
+      "fair": {
+        "win1": 1.34,
+        "win2": 3.98
+      },
+      "bestOf": 5,
+      "sets": [
+        {
+          "score": "3-1",
+          "p": 28.3,
+          "w": 1
+        },
+        {
+          "score": "3-0",
+          "p": 26.2,
+          "w": 1
+        },
+        {
+          "score": "3-2",
+          "p": 20.4,
+          "w": 1
+        },
+        {
+          "score": "2-3",
+          "p": 11.5,
+          "w": 2
+        },
+        {
+          "score": "1-3",
+          "p": 9,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 4.7,
+          "w": 2
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "177605",
+      "category": "Women's Singles",
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Maria Sakkari",
+      "player2": "Kamilla Rakhimova",
+      "rank1": 43,
+      "rank2": 70,
+      "pts1": 1240,
+      "pts2": 966,
+      "pWin1": 55.8,
+      "pWin2": 44.2,
+      "pick": "Maria Sakkari",
+      "pickProb": 55.8,
       "confidence": "Faible",
       "odds": {
-        "win1": 1.62,
+        "win1": 1.69,
+        "win2": 2.13
+      },
+      "fair": {
+        "win1": 1.79,
+        "win2": 2.26
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "2-0",
+          "p": 29,
+          "w": 1
+        },
+        {
+          "score": "2-1",
+          "p": 26.8,
+          "w": 1
+        },
+        {
+          "score": "1-2",
+          "p": 22.9,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 21.3,
+          "w": 2
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "177614",
+      "category": "Women's Singles",
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Maria Timofeeva",
+      "player2": "Elise Mertens",
+      "rank1": 95,
+      "rank2": 27,
+      "pts1": 810,
+      "pts2": 1758,
+      "pWin1": 14,
+      "pWin2": 86,
+      "pick": "Elise Mertens",
+      "pickProb": 86,
+      "confidence": "Élevée",
+      "odds": {
+        "win1": 6.73,
+        "win2": 1.1
+      },
+      "fair": {
+        "win1": 7.13,
+        "win2": 1.16
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "0-2",
+          "p": 58.4,
+          "w": 2
+        },
+        {
+          "score": "1-2",
+          "p": 27.5,
+          "w": 2
+        },
+        {
+          "score": "2-1",
+          "p": 8.5,
+          "w": 1
+        },
+        {
+          "score": "2-0",
+          "p": 5.5,
+          "w": 1
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "177617",
+      "category": "Women's Singles",
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Linda Noskova",
+      "player2": "Camila Osorio",
+      "rank1": 12,
+      "rank2": 68,
+      "pts1": 3359,
+      "pts2": 988,
+      "pWin1": 78.6,
+      "pWin2": 21.4,
+      "pick": "Linda Noskova",
+      "pickProb": 78.6,
+      "confidence": "Élevée",
+      "odds": {
+        "win1": 1.2,
+        "win2": 4.4
+      },
+      "fair": {
+        "win1": 1.27,
+        "win2": 4.67
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "2-0",
+          "p": 49.2,
+          "w": 1
+        },
+        {
+          "score": "2-1",
+          "p": 29.4,
+          "w": 1
+        },
+        {
+          "score": "1-2",
+          "p": 12.5,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 8.9,
+          "w": 2
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "177620",
+      "category": "Women's Singles",
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Kimberly Birrell",
+      "player2": "Sorana Cirstea",
+      "rank1": 72,
+      "rank2": 18,
+      "pts1": 939,
+      "pts2": 2415,
+      "pWin1": 37.8,
+      "pWin2": 62.2,
+      "pick": "Sorana Cirstea",
+      "pickProb": 62.2,
+      "confidence": "Modérée",
+      "odds": {
+        "win1": 2.5,
+        "win2": 1.52
+      },
+      "fair": {
+        "win1": 2.65,
+        "win2": 1.61
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "0-2",
+          "p": 33.9,
+          "w": 2
+        },
+        {
+          "score": "1-2",
+          "p": 28.3,
+          "w": 2
+        },
+        {
+          "score": "2-1",
+          "p": 20.3,
+          "w": 1
+        },
+        {
+          "score": "2-0",
+          "p": 17.4,
+          "w": 1
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "177613",
+      "category": "Women's Singles",
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Elena Rybakina",
+      "player2": "Catherine McNally",
+      "rank1": 2,
+      "rank2": 50,
+      "pts1": 8143,
+      "pts2": 1136,
+      "pWin1": 82.9,
+      "pWin2": 17.1,
+      "pick": "Elena Rybakina",
+      "pickProb": 82.9,
+      "confidence": "Élevée",
+      "odds": {
+        "win1": 1.14,
+        "win2": 5.5
+      },
+      "fair": {
+        "win1": 1.21,
+        "win2": 5.83
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "2-0",
+          "p": 54.3,
+          "w": 1
+        },
+        {
+          "score": "2-1",
+          "p": 28.6,
+          "w": 1
+        },
+        {
+          "score": "1-2",
+          "p": 10.2,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 6.9,
+          "w": 2
+        }
+      ],
+      "basis": "points"
+    },
+    {
+      "id": "177602",
+      "category": "Women's Singles",
+      "round": "Round 2",
+      "date": "2026-07-02",
+      "player1": "Viktorija Golubic",
+      "player2": "Jasmine Paolini",
+      "rank1": 62,
+      "rank2": 17,
+      "pts1": 1028,
+      "pts2": 2423,
+      "pWin1": 39.1,
+      "pWin2": 60.9,
+      "pick": "Jasmine Paolini",
+      "pickProb": 60.9,
+      "confidence": "Faible",
+      "odds": {
+        "win1": 2.41,
+        "win2": 1.55
+      },
+      "fair": {
+        "win1": 2.56,
+        "win2": 1.64
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "0-2",
+          "p": 32.9,
+          "w": 2
+        },
+        {
+          "score": "1-2",
+          "p": 28,
+          "w": 2
+        },
+        {
+          "score": "2-1",
+          "p": 20.9,
+          "w": 1
+        },
+        {
+          "score": "2-0",
+          "p": 18.2,
+          "w": 1
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "177470",
+      "category": "Men's Singles",
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Joao Fonseca",
+      "player2": "Roman Safiullin",
+      "rank1": 27,
+      "rank2": 132,
+      "pts1": 1710,
+      "pts2": 458,
+      "pWin1": 58.5,
+      "pWin2": 41.5,
+      "pick": "Joao Fonseca",
+      "pickProb": 58.5,
+      "confidence": "Faible",
+      "odds": {
+        "win1": 1.61,
         "win2": 2.27
       },
       "fair": {
         "win1": 1.71,
-        "win2": 2.4
+        "win2": 2.41
       },
       "bestOf": 5,
       "sets": [
@@ -1250,388 +718,211 @@
       "basis": "elo"
     },
     {
-      "id": "177341",
+      "id": "177466",
       "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Marcos Giron",
-      "player2": "Corentin Moutet",
-      "rank1": 92,
-      "rank2": 39,
-      "pts1": 680,
-      "pts2": 1163,
-      "pWin1": 46.3,
-      "pWin2": 53.7,
-      "pick": "Corentin Moutet",
-      "pickProb": 53.7,
-      "confidence": "Faible",
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Daniil Medvedev",
+      "player2": "Jan-Lennard Struff",
+      "rank1": 9,
+      "rank2": 74,
+      "pts1": 3580,
+      "pts2": 804,
+      "pWin1": 76.8,
+      "pWin2": 23.2,
+      "pick": "Daniil Medvedev",
+      "pickProb": 76.8,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 2.04,
-        "win2": 1.76
+        "win1": 1.23,
+        "win2": 4.06
       },
       "fair": {
-        "win1": 2.16,
-        "win2": 1.86
+        "win1": 1.3,
+        "win2": 4.3
       },
       "bestOf": 5,
       "sets": [
         {
-          "score": "1-3",
-          "p": 20.2,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 19.4,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18,
-          "w": 1
-        },
-        {
           "score": "3-1",
-          "p": 17.3,
+          "p": 28.9,
           "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 14,
-          "w": 2
         },
         {
           "score": "3-0",
-          "p": 11.1,
+          "p": 27.7,
           "w": 1
+        },
+        {
+          "score": "3-2",
+          "p": 20.1,
+          "w": 1
+        },
+        {
+          "score": "2-3",
+          "p": 10.8,
+          "w": 2
+        },
+        {
+          "score": "1-3",
+          "p": 8.3,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 4.2,
+          "w": 2
         }
       ],
-      "basis": "elo"
+      "basis": "points"
     },
     {
-      "id": "177361",
+      "id": "177474",
       "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Toby Samuel",
-      "player2": "Jakub Mensik",
-      "rank1": 123,
-      "rank2": 18,
-      "pts1": 515,
-      "pts2": 2255,
-      "pWin1": 33.2,
-      "pWin2": 66.8,
-      "pick": "Jakub Mensik",
-      "pickProb": 66.8,
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Shintaro Mochizuki",
+      "player2": "Rafael Jodar",
+      "rank1": null,
+      "rank2": 26,
+      "pts1": 250,
+      "pts2": 1839,
+      "pWin1": 26.2,
+      "pWin2": 73.8,
+      "pick": "Rafael Jodar",
+      "pickProb": 73.8,
       "confidence": "Modérée",
       "odds": {
-        "win1": 2.84,
-        "win2": 1.41
+        "win1": 3.6,
+        "win2": 1.28
       },
       "fair": {
-        "win1": 3.01,
-        "win2": 1.5
+        "win1": 3.81,
+        "win2": 1.36
       },
       "bestOf": 5,
       "sets": [
         {
           "score": "1-3",
-          "p": 25.4,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.7,
+          "p": 27.9,
           "w": 2
         },
         {
           "score": "0-3",
-          "p": 20.7,
+          "p": 25.3,
+          "w": 2
+        },
+        {
+          "score": "2-3",
+          "p": 20.5,
           "w": 2
         },
         {
           "score": "3-2",
-          "p": 14.3,
+          "p": 11.9,
           "w": 1
         },
         {
           "score": "3-1",
-          "p": 12.1,
+          "p": 9.4,
           "w": 1
         },
         {
           "score": "3-0",
-          "p": 6.8,
+          "p": 4.9,
           "w": 1
         }
       ],
       "basis": "elo"
     },
     {
-      "id": "177362",
+      "id": "177473",
       "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Arthur Fils",
-      "player2": "Raphael Collignon",
-      "rank1": 24,
-      "rank2": 43,
-      "pts1": 1940,
-      "pts2": 1091,
-      "pWin1": 60.5,
-      "pWin2": 39.5,
-      "pick": "Arthur Fils",
-      "pickProb": 60.5,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 1.56,
-        "win2": 2.39
-      },
-      "fair": {
-        "win1": 1.65,
-        "win2": 2.53
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 22.9,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 20.3,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 17.2,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 16.2,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 14.6,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 8.7,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177365",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Billy Harris",
-      "player2": "Karen Khachanov",
-      "rank1": null,
-      "rank2": 22,
-      "pts1": 250,
-      "pts2": 2080,
-      "pWin1": 23.1,
-      "pWin2": 76.9,
-      "pick": "Karen Khachanov",
-      "pickProb": 76.9,
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Novak Djokovic",
+      "player2": "Arthur Rinderknech",
+      "rank1": 8,
+      "rank2": 28,
+      "pts1": 3760,
+      "pts2": 1683,
+      "pWin1": 83.4,
+      "pWin2": 16.6,
+      "pick": "Novak Djokovic",
+      "pickProb": 83.4,
       "confidence": "Élevée",
       "odds": {
-        "win1": 4.08,
-        "win2": 1.23
+        "win1": 1.13,
+        "win2": 5.67
       },
       "fair": {
-        "win1": 4.32,
-        "win2": 1.3
+        "win1": 1.2,
+        "win2": 6.01
       },
       "bestOf": 5,
       "sets": [
-        {
-          "score": "1-3",
-          "p": 29,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 27.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.1,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 10.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 8.2,
-          "w": 1
-        },
         {
           "score": "3-0",
-          "p": 4.2,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177331",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Alexander Zverev",
-      "player2": "Alexander Blockx",
-      "rank1": 3,
-      "rank2": 36,
-      "pts1": 7190,
-      "pts2": 1275,
-      "pWin1": 77.6,
-      "pWin2": 22.4,
-      "pick": "Alexander Zverev",
-      "pickProb": 77.6,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.22,
-        "win2": 4.21
-      },
-      "fair": {
-        "win1": 1.29,
-        "win2": 4.46
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 29.2,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 28.4,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 20,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 10.4,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 7.9,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 4,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177309",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Terence Atmane",
-      "player2": "Frances Tiafoe",
-      "rank1": 52,
-      "rank2": 19,
-      "pts1": 982,
-      "pts2": 2180,
-      "pWin1": 16.7,
-      "pWin2": 83.3,
-      "pick": "Frances Tiafoe",
-      "pickProb": 83.3,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 5.65,
-        "win2": 1.13
-      },
-      "fair": {
-        "win1": 5.99,
-        "win2": 1.2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "0-3",
           "p": 33.9,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 30.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.7,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 8.1,
           "w": 1
         },
         {
           "score": "3-1",
-          "p": 5.8,
+          "p": 30.8,
           "w": 1
         },
         {
-          "score": "3-0",
-          "p": 2.8,
+          "score": "3-2",
+          "p": 18.6,
           "w": 1
+        },
+        {
+          "score": "2-3",
+          "p": 8.1,
+          "w": 2
+        },
+        {
+          "score": "1-3",
+          "p": 5.8,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 2.8,
+          "w": 2
         }
       ],
       "basis": "elo"
     },
     {
-      "id": "177314",
+      "id": "177472",
       "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Jan Choinski",
-      "player2": "Vit Kopriva",
-      "rank1": 100,
-      "rank2": 64,
-      "pts1": 657,
-      "pts2": 893,
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Marton Fucsovics",
+      "player2": "Alejandro Davidovich Fokina",
+      "rank1": 76,
+      "rank2": 23,
+      "pts1": 781,
+      "pts2": 2060,
       "pWin1": 37.7,
       "pWin2": 62.3,
-      "pick": "Vit Kopriva",
+      "pick": "Alejandro Davidovich Fokina",
       "pickProb": 62.3,
       "confidence": "Modérée",
       "odds": {
-        "win1": 2.51,
+        "win1": 2.5,
         "win2": 1.51
       },
       "fair": {
-        "win1": 2.66,
+        "win1": 2.65,
         "win2": 1.6
       },
       "bestOf": 5,
       "sets": [
         {
           "score": "1-3",
-          "p": 23.7,
+          "p": 23.6,
           "w": 2
         },
         {
@@ -1651,586 +942,213 @@
         },
         {
           "score": "3-1",
-          "p": 13.8,
+          "p": 13.9,
           "w": 1
         },
         {
           "score": "3-0",
-          "p": 8.1,
+          "p": 8.2,
           "w": 1
         }
       ],
       "basis": "elo"
     },
     {
-      "id": "177328",
+      "id": "177467",
       "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Daniel Altmaier",
-      "player2": "Alex Molcan",
-      "rank1": 61,
-      "rank2": 101,
-      "pts1": 924,
-      "pts2": 639,
-      "pWin1": 48.1,
-      "pWin2": 51.9,
-      "pick": "Alex Molcan",
-      "pickProb": 51.9,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.96,
-        "win2": 1.82
-      },
-      "fair": {
-        "win1": 2.08,
-        "win2": 1.93
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 19.5,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 19.1,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.4,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 13.3,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 11.8,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177366",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Flavio Cobolli",
-      "player2": "Mariano Navone",
-      "rank1": 10,
-      "rank2": 38,
-      "pts1": 3460,
-      "pts2": 1165,
-      "pWin1": 73.3,
-      "pWin2": 26.7,
-      "pick": "Flavio Cobolli",
-      "pickProb": 73.3,
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Tommy Paul",
+      "player2": "Hubert Hurkacz",
+      "rank1": 25,
+      "rank2": 96,
+      "pts1": 1925,
+      "pts2": 665,
+      "pWin1": 64.1,
+      "pWin2": 35.9,
+      "pick": "Tommy Paul",
+      "pickProb": 64.1,
       "confidence": "Modérée",
       "odds": {
-        "win1": 1.29,
-        "win2": 3.54
+        "win1": 1.47,
+        "win2": 2.63
       },
       "fair": {
-        "win1": 1.36,
-        "win2": 3.75
+        "win1": 1.56,
+        "win2": 2.79
       },
       "bestOf": 5,
       "sets": [
         {
           "score": "3-1",
-          "p": 27.8,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 25,
+          "p": 24.3,
           "w": 1
         },
         {
           "score": "3-2",
-          "p": 20.5,
+          "p": 20.6,
+          "w": 1
+        },
+        {
+          "score": "3-0",
+          "p": 19.2,
           "w": 1
         },
         {
           "score": "2-3",
-          "p": 12.1,
+          "p": 15.1,
           "w": 2
         },
         {
           "score": "1-3",
-          "p": 9.6,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 5.1,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177367",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "James Duckworth",
-      "player2": "Tallon Griekspoor",
-      "rank1": 79,
-      "rank2": 58,
-      "pts1": 748,
-      "pts2": 935,
-      "pWin1": 26.1,
-      "pWin2": 73.9,
-      "pick": "Tallon Griekspoor",
-      "pickProb": 73.9,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3.61,
-        "win2": 1.28
-      },
-      "fair": {
-        "win1": 3.83,
-        "win2": 1.35
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 28,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 25.4,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.5,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 11.8,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 9.3,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 4.9,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177329",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Alexei Popyrin",
-      "player2": "Jiri Lehecka",
-      "rank1": 103,
-      "rank2": 14,
-      "pts1": 630,
-      "pts2": 2360,
-      "pWin1": 22.7,
-      "pWin2": 77.3,
-      "pick": "Jiri Lehecka",
-      "pickProb": 77.3,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 4.16,
-        "win2": 1.22
-      },
-      "fair": {
-        "win1": 4.41,
-        "win2": 1.29
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 29.1,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 28.2,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.1,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 10.5,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 8,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 4.1,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177360",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Grigor Dimitrov",
-      "player2": "Dane Sweeny",
-      "rank1": 146,
-      "rank2": 127,
-      "pts1": 407,
-      "pts2": 493,
-      "pWin1": 84.9,
-      "pWin2": 15.1,
-      "pick": "Grigor Dimitrov",
-      "pickProb": 84.9,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.11,
-        "win2": 6.25
-      },
-      "fair": {
-        "win1": 1.18,
-        "win2": 6.63
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-0",
-          "p": 35.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 31.1,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 18.1,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 7.4,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 5.2,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 2.5,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177363",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Matteo Berrettini",
-      "player2": "Stan Wawrinka",
-      "rank1": 51,
-      "rank2": 109,
-      "pts1": 985,
-      "pts2": 563,
-      "pWin1": 70.2,
-      "pWin2": 29.8,
-      "pick": "Matteo Berrettini",
-      "pickProb": 70.2,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.34,
-        "win2": 3.17
-      },
-      "fair": {
-        "win1": 1.42,
-        "win2": 3.36
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 26.7,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 22.9,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 20.7,
-          "w": 1
-        },
-        {
-          "score": "2-3",
           "p": 13.1,
           "w": 2
         },
         {
-          "score": "1-3",
-          "p": 10.7,
-          "w": 2
-        },
-        {
           "score": "0-3",
-          "p": 5.9,
+          "p": 7.6,
           "w": 2
         }
       ],
       "basis": "elo"
     },
     {
-      "id": "177560",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Clara Tauson",
-      "player2": "Maria Sakkari",
-      "rank1": 25,
-      "rank2": 43,
-      "pts1": 1804,
-      "pts2": 1240,
-      "pWin1": 52.6,
-      "pWin2": 47.4,
-      "pick": "Clara Tauson",
-      "pickProb": 52.6,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.79,
-        "win2": 1.99
-      },
-      "fair": {
-        "win1": 1.9,
-        "win2": 2.11
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 26.8,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 25.8,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 24.1,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 23.3,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177537",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Marie Bouzkova",
-      "player2": "Talia Gibson",
-      "rank1": 23,
-      "rank2": 58,
-      "pts1": 1849,
-      "pts2": 1056,
-      "pWin1": 73.1,
-      "pWin2": 26.9,
-      "pick": "Marie Bouzkova",
-      "pickProb": 73.1,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.29,
-        "win2": 3.5
-      },
-      "fair": {
-        "win1": 1.37,
-        "win2": 3.71
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 43.5,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 29.6,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 15.3,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 11.6,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177538",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Tyra Caterina Grant",
-      "player2": "Katie Boulter",
-      "rank1": null,
-      "rank2": 60,
-      "pts1": 250,
-      "pts2": 1047,
-      "pWin1": 21.7,
-      "pWin2": 78.3,
-      "pick": "Katie Boulter",
-      "pickProb": 78.3,
+      "id": "177478",
+      "category": "Men's Singles",
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Jenson Brooksby",
+      "player2": "Jannik Sinner",
+      "rank1": 81,
+      "rank2": 1,
+      "pts1": 720,
+      "pts2": 13450,
+      "pWin1": 6.8,
+      "pWin2": 93.2,
+      "pick": "Jannik Sinner",
+      "pickProb": 93.2,
       "confidence": "Élevée",
       "odds": {
-        "win1": 4.35,
-        "win2": 1.21
+        "win1": 13.85,
+        "win2": 1.01
       },
       "fair": {
-        "win1": 4.61,
-        "win2": 1.28
+        "win1": 14.69,
+        "win2": 1.07
       },
-      "bestOf": 3,
+      "bestOf": 5,
       "sets": [
         {
-          "score": "0-2",
-          "p": 48.9,
+          "score": "0-3",
+          "p": 48.8,
           "w": 2
         },
         {
-          "score": "1-2",
-          "p": 29.4,
+          "score": "1-3",
+          "p": 31.1,
           "w": 2
         },
         {
-          "score": "2-1",
-          "p": 12.7,
+          "score": "2-3",
+          "p": 13.2,
+          "w": 2
+        },
+        {
+          "score": "3-2",
+          "p": 3.6,
           "w": 1
         },
         {
-          "score": "2-0",
-          "p": 9.1,
+          "score": "3-1",
+          "p": 2.3,
+          "w": 1
+        },
+        {
+          "score": "3-0",
+          "p": 1,
           "w": 1
         }
       ],
       "basis": "elo"
     },
     {
-      "id": "177551",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Robin Montgomery",
-      "player2": "Jasmine Paolini",
-      "rank1": null,
-      "rank2": 17,
-      "pts1": 250,
-      "pts2": 2423,
-      "pWin1": 47.7,
-      "pWin2": 52.3,
-      "pick": "Jasmine Paolini",
-      "pickProb": 52.3,
-      "confidence": "Serré",
+      "id": "177480",
+      "category": "Men's Singles",
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Michael Zheng",
+      "player2": "Felix Auger-Aliassime",
+      "rank1": 144,
+      "rank2": 4,
+      "pts1": 410,
+      "pts2": 4390,
+      "pWin1": 13,
+      "pWin2": 87,
+      "pick": "Felix Auger-Aliassime",
+      "pickProb": 87,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 1.98,
-        "win2": 1.8
+        "win1": 7.23,
+        "win2": 1.08
       },
       "fair": {
-        "win1": 2.1,
-        "win2": 1.91
+        "win1": 7.66,
+        "win2": 1.15
       },
-      "bestOf": 3,
+      "bestOf": 5,
       "sets": [
         {
-          "score": "0-2",
-          "p": 26.6,
+          "score": "0-3",
+          "p": 38.3,
           "w": 2
         },
         {
-          "score": "1-2",
-          "p": 25.7,
+          "score": "1-3",
+          "p": 31.5,
           "w": 2
         },
         {
-          "score": "2-1",
-          "p": 24.2,
+          "score": "2-3",
+          "p": 17.2,
+          "w": 2
+        },
+        {
+          "score": "3-2",
+          "p": 6.5,
           "w": 1
         },
         {
-          "score": "2-0",
-          "p": 23.5,
+          "score": "3-1",
+          "p": 4.5,
+          "w": 1
+        },
+        {
+          "score": "3-0",
+          "p": 2.1,
           "w": 1
         }
       ],
-      "basis": "elo"
+      "basis": "points"
     },
     {
-      "id": "177553",
+      "id": "177698",
       "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Kamilla Rakhimova",
-      "player2": "Anhelina Kalinina",
-      "rank1": 70,
-      "rank2": 66,
-      "pts1": 966,
-      "pts2": 1008,
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Anna Kalinskaya",
+      "player2": "Belinda Bencic",
+      "rank1": 20,
+      "rank2": 11,
+      "pts1": 2240,
+      "pts2": 3385,
       "pWin1": 40.5,
       "pWin2": 59.5,
-      "pick": "Anhelina Kalinina",
+      "pick": "Belinda Bencic",
       "pickProb": 59.5,
       "confidence": "Faible",
       "odds": {
         "win1": 2.33,
-        "win2": 1.59
+        "win2": 1.58
       },
       "fair": {
         "win1": 2.47,
@@ -2262,2874 +1180,19 @@
       "basis": "elo"
     },
     {
-      "id": "177564",
+      "id": "177688",
       "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Madison Keys",
-      "player2": "Kayla Day",
-      "rank1": 22,
-      "rank2": 137,
-      "pts1": 1854,
-      "pts2": 563,
-      "pWin1": 91.9,
-      "pWin2": 8.1,
-      "pick": "Madison Keys",
-      "pickProb": 91.9,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.03,
-        "win2": 11.69
-      },
-      "fair": {
-        "win1": 1.09,
-        "win2": 12.4
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 68.2,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 23.8,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 5,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 3,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177565",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Katie Swan",
-      "player2": "Irina-Camelia Begu",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "Katie Swan",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177570",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Karolina Pliskova",
-      "player2": "Tereza Valentova",
-      "rank1": 73,
-      "rank2": 54,
-      "pts1": 936,
-      "pts2": 1094,
-      "pWin1": 65.3,
-      "pWin2": 34.7,
-      "pick": "Karolina Pliskova",
-      "pickProb": 65.3,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.45,
-        "win2": 2.72
-      },
-      "fair": {
-        "win1": 1.53,
-        "win2": 2.88
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 36.4,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 28.9,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 19,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 15.7,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177572",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Sofia Kenin",
-      "player2": "Petra Marcinko",
-      "rank1": 105,
-      "rank2": 47,
-      "pts1": 734,
-      "pts2": 1184,
-      "pWin1": 45.1,
-      "pWin2": 54.9,
-      "pick": "Petra Marcinko",
-      "pickProb": 54.9,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.09,
-        "win2": 1.72
-      },
-      "fair": {
-        "win1": 2.22,
-        "win2": 1.82
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 28.4,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 26.5,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 23.2,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 21.8,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177574",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Lina Gjorcheska",
-      "player2": "Amanda Anisimova",
-      "rank1": null,
-      "rank2": 6,
-      "pts1": 250,
-      "pts2": 5523,
-      "pWin1": 12,
-      "pWin2": 88,
-      "pick": "Amanda Anisimova",
-      "pickProb": 88,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 7.89,
-        "win2": 1.07
-      },
-      "fair": {
-        "win1": 8.36,
-        "win2": 1.14
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 61.5,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 26.5,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 7.3,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 4.7,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177540",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Maria Timofeeva",
-      "player2": "Beatriz Haddad Maia",
-      "rank1": 95,
-      "rank2": 134,
-      "pts1": 810,
-      "pts2": 567,
-      "pWin1": 29.8,
-      "pWin2": 70.2,
-      "pick": "Beatriz Haddad Maia",
-      "pickProb": 70.2,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3.17,
-        "win2": 1.34
-      },
-      "fair": {
-        "win1": 3.36,
-        "win2": 1.42
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 40.7,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.5,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 16.7,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 13.1,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177554",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Viktorija Golubic",
-      "player2": "Iryna Shymanovich",
-      "rank1": 62,
-      "rank2": null,
-      "pts1": 1028,
-      "pts2": 250,
-      "pWin1": 75.5,
-      "pWin2": 24.5,
-      "pick": "Viktorija Golubic",
-      "pickProb": 75.5,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.25,
-        "win2": 3.85
-      },
-      "fair": {
-        "win1": 1.32,
-        "win2": 4.08
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 45.9,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 29.6,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 14.1,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 10.4,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177581",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Alina Korneeva",
-      "player2": "Kimberly Birrell",
-      "rank1": 98,
-      "rank2": 72,
-      "pts1": 806,
-      "pts2": 939,
-      "pWin1": 37,
-      "pWin2": 63,
-      "pick": "Kimberly Birrell",
-      "pickProb": 63,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.55,
-        "win2": 1.5
-      },
-      "fair": {
-        "win1": 2.71,
-        "win2": 1.59
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 34.6,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 28.5,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 20,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 17,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177569",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Iga Swiatek",
-      "player2": "Taylor Townsend",
-      "rank1": 3,
-      "rank2": 79,
-      "pts1": 6409,
-      "pts2": 911,
-      "pWin1": 84.1,
-      "pWin2": 15.9,
-      "pick": "Iga Swiatek",
-      "pickProb": 84.1,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.12,
-        "win2": 5.93
-      },
-      "fair": {
-        "win1": 1.19,
-        "win2": 6.28
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 55.9,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 28.2,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 9.5,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 6.4,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177550",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Leolia Jeanjean",
-      "player2": "Veronika Erjavec",
-      "rank1": 132,
-      "rank2": 89,
-      "pts1": 577,
-      "pts2": 841,
-      "pWin1": 43.9,
-      "pWin2": 56.1,
-      "pick": "Veronika Erjavec",
-      "pickProb": 56.1,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.15,
-        "win2": 1.68
-      },
-      "fair": {
-        "win1": 2.28,
-        "win2": 1.78
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 29.2,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 26.8,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 22.8,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 21.1,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177555",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Paula Badosa",
-      "player2": "Emma Navarro",
-      "rank1": 141,
-      "rank2": 26,
-      "pts1": 546,
-      "pts2": 1784,
-      "pWin1": 32.5,
-      "pWin2": 67.5,
-      "pick": "Emma Navarro",
-      "pickProb": 67.5,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.9,
-        "win2": 1.4
-      },
-      "fair": {
-        "win1": 3.08,
-        "win2": 1.48
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 38.3,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.2,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 18,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 14.5,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177557",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Anna Blinkova",
-      "player2": "Yuliia Starodubtseva",
-      "rank1": 114,
-      "rank2": 55,
-      "pts1": 675,
-      "pts2": 1077,
-      "pWin1": 51.1,
-      "pWin2": 48.9,
-      "pick": "Anna Blinkova",
-      "pickProb": 51.1,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.85,
-        "win2": 1.93
-      },
-      "fair": {
-        "win1": 1.96,
-        "win2": 2.04
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 25.7,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 25.3,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 24.6,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 24.3,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177558",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Sinja Kraus",
-      "player2": "Oksana Selekhmeteva",
-      "rank1": 93,
-      "rank2": 91,
-      "pts1": 818,
-      "pts2": 835,
-      "pWin1": 59.1,
-      "pWin2": 40.9,
-      "pick": "Sinja Kraus",
-      "pickProb": 59.1,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 1.6,
-        "win2": 2.3
-      },
-      "fair": {
-        "win1": 1.69,
-        "win2": 2.44
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 31.4,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 27.6,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 21.6,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 19.3,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177559",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Daria Snigur",
-      "player2": "Elina Svitolina",
-      "rank1": 77,
-      "rank2": 8,
-      "pts1": 928,
-      "pts2": 4471,
-      "pWin1": 22.7,
-      "pWin2": 77.3,
-      "pick": "Elina Svitolina",
-      "pickProb": 77.3,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 4.16,
-        "win2": 1.22
-      },
-      "fair": {
-        "win1": 4.41,
-        "win2": 1.29
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 47.8,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.5,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 13.2,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 9.5,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177562",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Renata Zarazua",
-      "player2": "Alexandra Eala",
-      "rank1": 75,
-      "rank2": 32,
-      "pts1": 935,
-      "pts2": 1436,
-      "pWin1": 18.4,
-      "pWin2": 81.6,
-      "pick": "Alexandra Eala",
-      "pickProb": 81.6,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 5.12,
-        "win2": 1.16
-      },
-      "fair": {
-        "win1": 5.43,
-        "win2": 1.23
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 52.7,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 28.9,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 10.9,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 7.5,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177531",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Elena Rybakina",
-      "player2": "Lois Boisson",
-      "rank1": 2,
-      "rank2": null,
-      "pts1": 8143,
-      "pts2": 250,
-      "pWin1": 90.1,
-      "pWin2": 9.9,
-      "pick": "Elena Rybakina",
-      "pickProb": 90.1,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.05,
-        "win2": 9.56
-      },
-      "fair": {
-        "win1": 1.11,
-        "win2": 10.14
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 64.9,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 25.2,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 6.1,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 3.8,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177541",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Laura Siegemund",
-      "player2": "Elise Mertens",
-      "rank1": 40,
-      "rank2": 27,
-      "pts1": 1272,
-      "pts2": 1758,
-      "pWin1": 33.9,
-      "pWin2": 66.1,
-      "pick": "Elise Mertens",
-      "pickProb": 66.1,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.78,
-        "win2": 1.43
-      },
-      "fair": {
-        "win1": 2.95,
-        "win2": 1.51
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 37.1,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 18.6,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 15.3,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177548",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Catherine McNally",
-      "player2": "Elena-Gabriela Ruse",
-      "rank1": 50,
-      "rank2": 71,
-      "pts1": 1136,
-      "pts2": 941,
-      "pWin1": 53.8,
-      "pWin2": 46.2,
-      "pick": "Catherine McNally",
-      "pickProb": 53.8,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 1.75,
-        "win2": 2.04
-      },
-      "fair": {
-        "win1": 1.86,
-        "win2": 2.16
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 27.6,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 26.2,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 23.7,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 22.6,
-          "w": 2
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177567",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Sara Bejlek",
-      "player2": "Sorana Cirstea",
-      "rank1": 45,
-      "rank2": 18,
-      "pts1": 1208,
-      "pts2": 2415,
-      "pWin1": 28.5,
-      "pWin2": 71.5,
-      "pick": "Sorana Cirstea",
-      "pickProb": 71.5,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3.31,
-        "win2": 1.32
-      },
-      "fair": {
-        "win1": 3.5,
-        "win2": 1.4
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 41.9,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.6,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 16.1,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 12.4,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177545",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Simona Waltert",
-      "player2": "Camila Osorio",
-      "rank1": 90,
-      "rank2": 68,
-      "pts1": 836,
-      "pts2": 988,
-      "pWin1": 28.7,
-      "pWin2": 71.3,
-      "pick": "Camila Osorio",
-      "pickProb": 71.3,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3.29,
-        "win2": 1.32
-      },
-      "fair": {
-        "win1": 3.49,
-        "win2": 1.4
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 41.8,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.5,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 16.2,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177546",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Liudmila Samsonova",
-      "player2": "Polina Kudermetova",
-      "rank1": 41,
-      "rank2": 113,
-      "pts1": 1270,
-      "pts2": 678,
-      "pWin1": 66.6,
-      "pWin2": 33.4,
-      "pick": "Liudmila Samsonova",
-      "pickProb": 66.6,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.42,
-        "win2": 2.82
-      },
-      "fair": {
-        "win1": 1.5,
-        "win2": 2.99
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 37.5,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 29.1,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 18.4,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 15,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177547",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Eva Lys",
-      "player2": "Diana Shnaider",
-      "rank1": 76,
-      "rank2": 15,
-      "pts1": 931,
-      "pts2": 2458,
-      "pWin1": 38.3,
-      "pWin2": 61.7,
-      "pick": "Diana Shnaider",
-      "pickProb": 61.7,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.46,
-        "win2": 1.53
-      },
-      "fair": {
-        "win1": 2.61,
-        "win2": 1.62
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 33.5,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 28.2,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 20.6,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 17.8,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177549",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Mariam Bolkvadze",
-      "player2": "Ajla Tomljanovic",
-      "rank1": null,
-      "rank2": 94,
-      "pts1": 250,
-      "pts2": 815,
-      "pWin1": 16.2,
-      "pWin2": 83.8,
-      "pick": "Ajla Tomljanovic",
-      "pickProb": 83.8,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 5.83,
-        "win2": 1.13
-      },
-      "fair": {
-        "win1": 6.18,
-        "win2": 1.19
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 55.5,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 28.3,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 9.7,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 6.5,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177552",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Marta Kostyuk",
-      "player2": "Nadia Podoroska",
-      "rank1": 13,
-      "rank2": null,
-      "pts1": 3156,
-      "pts2": 250,
-      "pWin1": 88.4,
-      "pWin2": 11.6,
-      "pick": "Marta Kostyuk",
-      "pickProb": 88.4,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.07,
-        "win2": 8.12
-      },
-      "fair": {
-        "win1": 1.13,
-        "win2": 8.6
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 62,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 26.4,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 7.1,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 4.5,
-          "w": 2
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177556",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Donna Vekic",
-      "player2": "Ashlyn Krueger",
-      "rank1": 34,
-      "rank2": 102,
-      "pts1": 1386,
-      "pts2": 787,
-      "pWin1": 51.7,
-      "pWin2": 48.3,
-      "pick": "Donna Vekic",
-      "pickProb": 51.7,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.82,
-        "win2": 1.95
-      },
-      "fair": {
-        "win1": 1.93,
-        "win2": 2.07
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 26.1,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 25.6,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 24.4,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 23.9,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177561",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Maya Joint",
-      "player2": "Serena Williams",
-      "rank1": 87,
-      "rank2": null,
-      "pts1": 847,
-      "pts2": 250,
-      "pWin1": 72.6,
-      "pWin2": 27.4,
-      "pick": "Maya Joint",
-      "pickProb": 72.6,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.3,
-        "win2": 3.45
-      },
-      "fair": {
-        "win1": 1.38,
-        "win2": 3.65
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 43,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 29.6,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 15.5,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 11.8,
-          "w": 2
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177543",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-06-30",
-      "player1": "Linda Noskova",
-      "player2": "Ella Seidel",
-      "rank1": 12,
-      "rank2": 100,
-      "pts1": 3359,
-      "pts2": 797,
-      "pWin1": 87.5,
-      "pWin2": 12.5,
-      "pick": "Linda Noskova",
-      "pickProb": 87.5,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.08,
-        "win2": 7.56
-      },
-      "fair": {
-        "win1": 1.14,
-        "win2": 8.02
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 60.7,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 26.8,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 7.6,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 4.9,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177376",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Martin Damm",
-      "player2": "Arthur Rinderknech",
-      "rank1": 106,
-      "rank2": 28,
-      "pts1": 603,
-      "pts2": 1683,
-      "pWin1": 52.1,
-      "pWin2": 47.9,
-      "pick": "Martin Damm",
-      "pickProb": 52.1,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.81,
-        "win2": 1.97
-      },
-      "fair": {
-        "win1": 1.92,
-        "win2": 2.09
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 19.6,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 19.2,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 18.3,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 17.9,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 13.4,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 11.7,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177377",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Joao Fonseca",
-      "player2": "TBD",
-      "rank1": 27,
-      "rank2": null,
-      "pts1": 1710,
-      "pts2": 250,
-      "pWin1": 82.3,
-      "pWin2": 17.7,
-      "pick": "Joao Fonseca",
-      "pickProb": 82.3,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.15,
-        "win2": 5.34
-      },
-      "fair": {
-        "win1": 1.21,
-        "win2": 5.66
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-0",
-          "p": 32.8,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 30.5,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 18.9,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 8.5,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 6.2,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 3,
-          "w": 2
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177379",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Novak Djokovic",
-      "player2": "Stefanos Tsitsipas",
-      "rank1": 8,
-      "rank2": 87,
-      "pts1": 3760,
-      "pts2": 700,
-      "pWin1": 81,
-      "pWin2": 19,
-      "pick": "Novak Djokovic",
-      "pickProb": 81,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.17,
-        "win2": 4.96
-      },
-      "fair": {
-        "win1": 1.23,
-        "win2": 5.26
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-0",
-          "p": 31.5,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 30.2,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 19.3,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 9.1,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 6.7,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 3.3,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177388",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Pablo Carreno Busta",
-      "player2": "Rafael Jodar",
-      "rank1": 71,
-      "rank2": 26,
-      "pts1": 834,
-      "pts2": 1839,
-      "pWin1": 35.8,
-      "pWin2": 64.2,
-      "pick": "Rafael Jodar",
-      "pickProb": 64.2,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.63,
-        "win2": 1.47
-      },
-      "fair": {
-        "win1": 2.79,
-        "win2": 1.56
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 24.4,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.6,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 19.2,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 15.1,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 13.1,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 7.6,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177389",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Ignacio Buse",
-      "player2": "Jenson Brooksby",
-      "rank1": 34,
-      "rank2": 81,
-      "pts1": 1375,
-      "pts2": 720,
-      "pWin1": 49.7,
-      "pWin2": 50.3,
-      "pick": "Jenson Brooksby",
-      "pickProb": 50.3,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.9,
-        "win2": 1.87
-      },
-      "fair": {
-        "win1": 2.01,
-        "win2": 1.99
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.9,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.6,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.6,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.4,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177390",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Sebastian Ofner",
-      "player2": "Hubert Hurkacz",
-      "rank1": 110,
-      "rank2": 96,
-      "pts1": 557,
-      "pts2": 665,
-      "pWin1": 40.8,
-      "pWin2": 59.2,
-      "pick": "Hubert Hurkacz",
-      "pickProb": 59.2,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.31,
-        "win2": 1.59
-      },
-      "fair": {
-        "win1": 2.45,
-        "win2": 1.69
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 22.4,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.2,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 16.6,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 16.6,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 15.1,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 9.1,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177391",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Ethan Quinn",
-      "player2": "Shintaro Mochizuki",
-      "rank1": 47,
-      "rank2": null,
-      "pts1": 1021,
-      "pts2": 250,
-      "pWin1": 75.2,
-      "pWin2": 24.8,
-      "pick": "Ethan Quinn",
-      "pickProb": 75.2,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.25,
-        "win2": 3.8
-      },
-      "fair": {
-        "win1": 1.33,
-        "win2": 4.03
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 28.4,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 26.4,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 20.4,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 11.4,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 8.9,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 4.6,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177392",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Nuno Borges",
-      "player2": "Jannik Sinner",
-      "rank1": 48,
-      "rank2": 1,
-      "pts1": 1020,
-      "pts2": 13450,
-      "pWin1": 7.6,
-      "pWin2": 92.4,
-      "pick": "Jannik Sinner",
-      "pickProb": 92.4,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 12.34,
-        "win2": 1.02
-      },
-      "fair": {
-        "win1": 13.08,
-        "win2": 1.08
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "0-3",
-          "p": 47,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 31.4,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 13.9,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 4,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 2.6,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 1.1,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177393",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Michael Zheng",
-      "player2": "Nicolas Mejia",
-      "rank1": 144,
-      "rank2": null,
-      "pts1": 410,
-      "pts2": 250,
-      "pWin1": 60.3,
-      "pWin2": 39.7,
-      "pick": "Michael Zheng",
-      "pickProb": 60.3,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 1.56,
-        "win2": 2.38
-      },
-      "fair": {
-        "win1": 1.66,
-        "win2": 2.52
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 22.8,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 20.3,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 17.1,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 16.3,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 14.6,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 8.8,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177394",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Jan-Lennard Struff",
-      "player2": "TBD",
-      "rank1": 74,
-      "rank2": null,
-      "pts1": 804,
-      "pts2": 250,
-      "pWin1": 71.8,
-      "pWin2": 28.2,
-      "pick": "Jan-Lennard Struff",
-      "pickProb": 71.8,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.31,
-        "win2": 3.35
-      },
-      "fair": {
-        "win1": 1.39,
-        "win2": 3.55
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 27.2,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 23.9,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 20.6,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 12.6,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 10.1,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 5.4,
-          "w": 2
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177395",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Tommy Paul",
-      "player2": "SoonWoo Kwon",
-      "rank1": 25,
-      "rank2": null,
-      "pts1": 1925,
-      "pts2": 250,
-      "pWin1": 83.7,
-      "pWin2": 16.3,
-      "pick": "Tommy Paul",
-      "pickProb": 83.7,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.13,
-        "win2": 5.77
-      },
-      "fair": {
-        "win1": 1.2,
-        "win2": 6.12
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-0",
-          "p": 34.3,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 30.9,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 18.5,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 8,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 5.7,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 2.7,
-          "w": 2
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177396",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Dino Prizmic",
-      "player2": "Felix Auger-Aliassime",
-      "rank1": 89,
-      "rank2": 4,
-      "pts1": 691,
-      "pts2": 4390,
-      "pWin1": 18.6,
-      "pWin2": 81.4,
-      "pick": "Felix Auger-Aliassime",
-      "pickProb": 81.4,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 5.08,
-        "win2": 1.16
-      },
-      "fair": {
-        "win1": 5.39,
-        "win2": 1.23
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "0-3",
-          "p": 31.9,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 30.3,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 19.2,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 8.9,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 6.5,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 3.2,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177397",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Daniil Medvedev",
-      "player2": "Daniel Merida",
-      "rank1": 9,
-      "rank2": 84,
-      "pts1": 3580,
-      "pts2": 706,
-      "pWin1": 78.6,
-      "pWin2": 21.4,
-      "pick": "Daniil Medvedev",
-      "pickProb": 78.6,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.2,
-        "win2": 4.4
-      },
-      "fair": {
-        "win1": 1.27,
-        "win2": 4.66
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 29.5,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 29.2,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 19.8,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 10.1,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 7.6,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 3.8,
-          "w": 2
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177398",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Fabian Marozsan",
-      "player2": "Alejandro Davidovich Fokina",
-      "rank1": 53,
-      "rank2": 23,
-      "pts1": 970,
-      "pts2": 2060,
-      "pWin1": 32.3,
-      "pWin2": 67.7,
-      "pick": "Alejandro Davidovich Fokina",
-      "pickProb": 67.7,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.92,
-        "win2": 1.39
-      },
-      "fair": {
-        "win1": 3.09,
-        "win2": 1.48
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 25.7,
-          "w": 2
-        },
-        {
-          "score": "0-3",
-          "p": 21.2,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 20.7,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 14,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 11.7,
-          "w": 1
-        },
-        {
-          "score": "3-0",
-          "p": 6.6,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177399",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Botic Van De Zandschulp",
-      "player2": "Roman Safiullin",
-      "rank1": 54,
-      "rank2": 132,
-      "pts1": 969,
-      "pts2": 458,
-      "pWin1": 45.4,
-      "pWin2": 54.6,
-      "pick": "Roman Safiullin",
-      "pickProb": 54.6,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.08,
-        "win2": 1.73
-      },
-      "fair": {
-        "win1": 2.2,
-        "win2": 1.83
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 20.6,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 19.6,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 17.8,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 16.9,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 14.4,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 10.8,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177400",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Learner Tien",
-      "player2": "Marton Fucsovics",
-      "rank1": 17,
-      "rank2": 76,
-      "pts1": 2270,
-      "pts2": 781,
-      "pWin1": 52.4,
-      "pWin2": 47.6,
-      "pick": "Learner Tien",
-      "pickProb": 52.4,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.8,
-        "win2": 1.98
-      },
-      "fair": {
-        "win1": 1.91,
-        "win2": 2.1
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "3-1",
-          "p": 19.7,
-          "w": 1
-        },
-        {
-          "score": "3-2",
-          "p": 19.2,
-          "w": 1
-        },
-        {
-          "score": "2-3",
-          "p": 18.2,
-          "w": 2
-        },
-        {
-          "score": "1-3",
-          "p": 17.8,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 13.5,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 11.6,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177590",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Antonia Ruzic",
-      "player2": "Jelena Ostapenko",
-      "rank1": 61,
-      "rank2": 31,
-      "pts1": 1041,
-      "pts2": 1472,
-      "pWin1": 27.2,
-      "pWin2": 72.8,
-      "pick": "Jelena Ostapenko",
-      "pickProb": 72.8,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3.46,
-        "win2": 1.3
-      },
-      "fair": {
-        "win1": 3.67,
-        "win2": 1.37
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 43.2,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.6,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 15.5,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 11.8,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177591",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "McCartney Kessler",
-      "player2": "Aryna Sabalenka",
-      "rank1": 57,
-      "rank2": 1,
-      "pts1": 1065,
-      "pts2": 9090,
-      "pWin1": 15.5,
-      "pWin2": 84.5,
-      "pick": "Aryna Sabalenka",
-      "pickProb": 84.5,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 6.07,
-        "win2": 1.12
-      },
-      "fair": {
-        "win1": 6.44,
-        "win2": 1.18
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 56.4,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 28.1,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 9.3,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 6.2,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177592",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Jessica Bouzas Maneiro",
-      "player2": "Dayana Yastremska",
-      "rank1": 52,
-      "rank2": 67,
-      "pts1": 1124,
-      "pts2": 995,
-      "pWin1": 43.1,
-      "pWin2": 56.9,
-      "pick": "Dayana Yastremska",
-      "pickProb": 56.9,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.19,
-        "win2": 1.66
-      },
-      "fair": {
-        "win1": 2.32,
-        "win2": 1.76
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 29.8,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 27.1,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 22.5,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 20.6,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177593",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
+      "round": "Round 3",
+      "date": "2026-07-03",
       "player1": "Iva Jovic",
-      "player2": "Tatjana Maria",
-      "rank1": 16,
-      "rank2": 96,
-      "pts1": 2436,
-      "pts2": 809,
-      "pWin1": 65.3,
-      "pWin2": 34.7,
-      "pick": "Iva Jovic",
-      "pickProb": 65.3,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.44,
-        "win2": 2.72
-      },
-      "fair": {
-        "win1": 1.53,
-        "win2": 2.88
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 36.4,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 28.9,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 19,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 15.7,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177594",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Lanlana Tararudee",
       "player2": "Ekaterina Alexandrova",
-      "rank1": 99,
+      "rank1": 16,
       "rank2": 19,
-      "pts1": 799,
+      "pts1": 2436,
       "pts2": 2411,
-      "pWin1": 23.3,
-      "pWin2": 76.7,
-      "pick": "Ekaterina Alexandrova",
-      "pickProb": 76.7,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 4.05,
-        "win2": 1.23
-      },
-      "fair": {
-        "win1": 4.29,
-        "win2": 1.3
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 47.2,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.5,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 13.5,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 9.8,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177595",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Nikola Bartunkova",
-      "player2": "Katerina Siniakova",
-      "rank1": 48,
-      "rank2": 36,
-      "pts1": 1140,
-      "pts2": 1338,
-      "pWin1": 42.3,
-      "pWin2": 57.7,
-      "pick": "Katerina Siniakova",
-      "pickProb": 57.7,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.23,
-        "win2": 1.64
-      },
-      "fair": {
-        "win1": 2.36,
-        "win2": 1.73
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 30.4,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 27.3,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 22.2,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 20.1,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177596",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Mananchaya Sawangkaew",
-      "player2": "Alycia Parks",
-      "rank1": null,
-      "rank2": 81,
-      "pts1": 250,
-      "pts2": 905,
-      "pWin1": 65.4,
-      "pWin2": 34.6,
-      "pick": "Mananchaya Sawangkaew",
-      "pickProb": 65.4,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.44,
-        "win2": 2.73
-      },
-      "fair": {
-        "win1": 1.53,
-        "win2": 2.89
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 36.5,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 28.9,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 18.9,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 15.7,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177597",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Sara Sorribes Tormo",
-      "player2": "Jessica Pegula",
-      "rank1": null,
-      "rank2": 4,
-      "pts1": 250,
-      "pts2": 5881,
-      "pWin1": 10.8,
-      "pWin2": 89.2,
-      "pick": "Jessica Pegula",
-      "pickProb": 89.2,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 8.73,
-        "win2": 1.06
-      },
-      "fair": {
-        "win1": 9.25,
-        "win2": 1.12
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 63.3,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25.9,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 6.6,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 4.2,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177598",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Mirra Andreeva",
-      "player2": "Barbora Krejcikova",
-      "rank1": 5,
-      "rank2": 38,
-      "pts1": 5653,
-      "pts2": 1320,
-      "pWin1": 54.2,
-      "pWin2": 45.8,
-      "pick": "Mirra Andreeva",
-      "pickProb": 54.2,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 1.74,
-        "win2": 2.06
-      },
-      "fair": {
-        "win1": 1.85,
-        "win2": 2.18
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 27.9,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 26.3,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 23.5,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 22.3,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177599",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Daria Kasatkina",
-      "player2": "Janice Tjen",
-      "rank1": 65,
-      "rank2": 42,
-      "pts1": 1009,
-      "pts2": 1247,
-      "pWin1": 68.4,
-      "pWin2": 31.6,
-      "pick": "Daria Kasatkina",
-      "pickProb": 68.4,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.38,
-        "win2": 2.99
-      },
-      "fair": {
-        "win1": 1.46,
-        "win2": 3.17
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 39.1,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 29.3,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 17.5,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 14,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177600",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Zhang Shuai",
-      "player2": "Karolina Muchova",
-      "rank1": 64,
-      "rank2": 9,
-      "pts1": 1015,
-      "pts2": 3878,
-      "pWin1": 25.5,
-      "pWin2": 74.5,
-      "pick": "Karolina Muchova",
-      "pickProb": 74.5,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3.7,
-        "win2": 1.27
-      },
-      "fair": {
-        "win1": 3.92,
-        "win2": 1.34
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 44.9,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.6,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 14.6,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 10.9,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177601",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Naomi Osaka",
-      "player2": "Anastasia Gasanova",
-      "rank1": 14,
-      "rank2": null,
-      "pts1": 2846,
-      "pts2": 250,
-      "pWin1": 88.9,
-      "pWin2": 11.1,
-      "pick": "Naomi Osaka",
-      "pickProb": 88.9,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 1.06,
-        "win2": 8.49
-      },
-      "fair": {
-        "win1": 1.13,
-        "win2": 9
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 62.8,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 26.1,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 6.8,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 4.3,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177609",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Anna Kalinskaya",
-      "player2": "Diane Parry",
-      "rank1": 20,
-      "rank2": 49,
-      "pts1": 2240,
-      "pts2": 1139,
       "pWin1": 58.4,
       "pWin2": 41.6,
-      "pick": "Anna Kalinskaya",
+      "pick": "Iva Jovic",
       "pickProb": 58.4,
       "confidence": "Faible",
       "odds": {
@@ -5166,2743 +1229,298 @@
       "basis": "elo"
     },
     {
-      "id": "177610",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Wang Xinyu",
-      "player2": "Belinda Bencic",
-      "rank1": 39,
-      "rank2": 11,
-      "pts1": 1276,
-      "pts2": 3385,
-      "pWin1": 31.4,
-      "pWin2": 68.6,
-      "pick": "Belinda Bencic",
-      "pickProb": 68.6,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3,
-        "win2": 1.38
-      },
-      "fair": {
-        "win1": 3.18,
-        "win2": 1.46
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 39.3,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.3,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 17.5,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 13.9,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177611",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Coco Gauff",
-      "player2": "Solana Sierra",
-      "rank1": 7,
-      "rank2": 56,
-      "pts1": 4879,
-      "pts2": 1067,
-      "pWin1": 74.8,
-      "pWin2": 25.2,
-      "pick": "Coco Gauff",
-      "pickProb": 74.8,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.26,
-        "win2": 3.74
-      },
-      "fair": {
-        "win1": 1.34,
-        "win2": 3.97
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 45.2,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 29.6,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 14.5,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 10.8,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177612",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-01",
-      "player1": "Claire Liu",
-      "player2": "Zeynep Sonmez",
-      "rank1": 146,
-      "rank2": 51,
-      "pts1": 526,
-      "pts2": 1134,
-      "pWin1": 26.3,
-      "pWin2": 73.7,
-      "pick": "Zeynep Sonmez",
-      "pickProb": 73.7,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3.59,
-        "win2": 1.28
-      },
-      "fair": {
-        "win1": 3.81,
-        "win2": 1.36
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 44.1,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.6,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 15,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 11.3,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "177369",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177370",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177371",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177372",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177373",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177374",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177375",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177378",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177380",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177381",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177382",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177383",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177384",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177385",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177386",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177387",
-      "category": "Men's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177602",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177603",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177604",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177605",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177606",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177607",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177608",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177613",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177614",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177615",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177616",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177617",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177618",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177619",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177620",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177621",
-      "category": "Women's Singles",
-      "round": "Round 2",
-      "date": "2026-07-02",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177466",
-      "category": "Men's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177467",
-      "category": "Men's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177470",
-      "category": "Men's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177472",
-      "category": "Men's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177473",
-      "category": "Men's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177474",
-      "category": "Men's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177478",
-      "category": "Men's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177480",
-      "category": "Men's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 5,
-      "sets": [
-        {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "3-1",
-          "p": 18.7,
-          "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177622",
-      "category": "Women's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177688",
-      "category": "Women's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177689",
-      "category": "Women's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "177690",
-      "category": "Women's Singles",
-      "round": "Round 3",
-      "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
-      "odds": {
-        "win1": 1.89,
-        "win2": 1.89
-      },
-      "fair": {
-        "win1": 2,
-        "win2": 2
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 25,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
       "id": "177696",
       "category": "Women's Singles",
       "round": "Round 3",
       "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Jessica Bouzas Maneiro",
+      "player2": "Jessica Pegula",
+      "rank1": 52,
+      "rank2": 4,
+      "pts1": 1124,
+      "pts2": 5881,
+      "pWin1": 16.8,
+      "pWin2": 83.2,
+      "pick": "Jessica Pegula",
+      "pickProb": 83.2,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 5.62,
+        "win2": 1.13
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 5.96,
+        "win2": 1.2
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 25,
+          "p": 54.7,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 25,
+          "p": 28.5,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 25,
+          "p": 10,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 25,
+          "p": 6.8,
           "w": 1
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177697",
       "category": "Women's Singles",
       "round": "Round 3",
       "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Naomi Osaka",
+      "player2": "Daria Kasatkina",
+      "rank1": 14,
+      "rank2": 65,
+      "pts1": 2846,
+      "pts2": 1009,
+      "pWin1": 67.5,
+      "pWin2": 32.5,
+      "pick": "Naomi Osaka",
+      "pickProb": 67.5,
+      "confidence": "Modérée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 1.4,
+        "win2": 2.9
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 1.48,
+        "win2": 3.07
       },
       "bestOf": 3,
       "sets": [
         {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
+          "score": "2-0",
+          "p": 38.3,
+          "w": 1
         },
         {
           "score": "2-1",
-          "p": 25,
+          "p": 29.2,
           "w": 1
         },
         {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
+          "score": "1-2",
+          "p": 18,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 14.5,
+          "w": 2
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
-      "id": "177698",
+      "id": "177622",
       "category": "Women's Singles",
       "round": "Round 3",
       "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
+      "player1": "Mananchaya Sawangkaew",
+      "player2": "Karolina Muchova",
       "rank1": null,
-      "rank2": null,
+      "rank2": 9,
       "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "pts2": 3878,
+      "pWin1": 18.3,
+      "pWin2": 81.7,
+      "pick": "Karolina Muchova",
+      "pickProb": 81.7,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 5.15,
+        "win2": 1.15
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 5.46,
+        "win2": 1.22
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 25,
+          "p": 52.8,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 25,
+          "p": 28.9,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 25,
+          "p": 10.9,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 25,
+          "p": 7.5,
           "w": 1
         }
       ],
-      "basis": "points"
+      "basis": "elo"
+    },
+    {
+      "id": "177689",
+      "category": "Women's Singles",
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Barbora Krejcikova",
+      "player2": "Nikola Bartunkova",
+      "rank1": 38,
+      "rank2": 48,
+      "pts1": 1320,
+      "pts2": 1140,
+      "pWin1": 63.1,
+      "pWin2": 36.9,
+      "pick": "Barbora Krejcikova",
+      "pickProb": 63.1,
+      "confidence": "Modérée",
+      "odds": {
+        "win1": 1.49,
+        "win2": 2.56
+      },
+      "fair": {
+        "win1": 1.58,
+        "win2": 2.71
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "2-0",
+          "p": 34.6,
+          "w": 1
+        },
+        {
+          "score": "2-1",
+          "p": 28.5,
+          "w": 1
+        },
+        {
+          "score": "1-2",
+          "p": 19.9,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 16.9,
+          "w": 2
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "177690",
+      "category": "Women's Singles",
+      "round": "Round 3",
+      "date": "2026-07-03",
+      "player1": "Jelena Ostapenko",
+      "player2": "Aryna Sabalenka",
+      "rank1": 31,
+      "rank2": 1,
+      "pts1": 1472,
+      "pts2": 9090,
+      "pWin1": 22.2,
+      "pWin2": 77.8,
+      "pick": "Aryna Sabalenka",
+      "pickProb": 77.8,
+      "confidence": "Élevée",
+      "odds": {
+        "win1": 4.24,
+        "win2": 1.21
+      },
+      "fair": {
+        "win1": 4.5,
+        "win2": 1.29
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "0-2",
+          "p": 48.3,
+          "w": 2
+        },
+        {
+          "score": "1-2",
+          "p": 29.5,
+          "w": 2
+        },
+        {
+          "score": "2-1",
+          "p": 12.9,
+          "w": 1
+        },
+        {
+          "score": "2-0",
+          "p": 9.3,
+          "w": 1
+        }
+      ],
+      "basis": "elo"
     },
     {
       "id": "177709",
       "category": "Women's Singles",
       "round": "Round 3",
       "date": "2026-07-03",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Coco Gauff",
+      "player2": "Claire Liu",
+      "rank1": 7,
+      "rank2": 146,
+      "pts1": 4879,
+      "pts2": 526,
+      "pWin1": 85.5,
+      "pWin2": 14.5,
+      "pick": "Coco Gauff",
+      "pickProb": 85.5,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 1.1,
+        "win2": 6.53
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 1.17,
+        "win2": 6.92
       },
       "bestOf": 3,
       "sets": [
         {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
+          "score": "2-0",
+          "p": 57.8,
+          "w": 1
         },
         {
           "score": "2-1",
-          "p": 25,
+          "p": 27.7,
           "w": 1
         },
         {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
+          "score": "1-2",
+          "p": 8.7,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 5.7,
+          "w": 2
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177464",
@@ -7968,118 +1586,118 @@
       "category": "Men's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Lorenzo Sonego",
+      "player2": "Taylor Fritz",
+      "rank1": 69,
+      "rank2": 7,
+      "pts1": 843,
+      "pts2": 3765,
+      "pWin1": 21.2,
+      "pWin2": 78.8,
+      "pick": "Taylor Fritz",
+      "pickProb": 78.8,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 4.45,
+        "win2": 1.2
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 4.72,
+        "win2": 1.27
       },
       "bestOf": 5,
       "sets": [
         {
           "score": "1-3",
-          "p": 18.8,
+          "p": 29.6,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 29.4,
           "w": 2
         },
         {
           "score": "2-3",
-          "p": 18.8,
+          "p": 19.8,
           "w": 2
         },
         {
           "score": "3-2",
-          "p": 18.7,
+          "p": 10,
           "w": 1
         },
         {
           "score": "3-1",
-          "p": 18.7,
+          "p": 7.5,
           "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
         },
         {
           "score": "3-0",
-          "p": 12.5,
+          "p": 3.7,
           "w": 1
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177469",
       "category": "Men's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Alexander Zverev",
+      "player2": "Marcos Giron",
+      "rank1": 3,
+      "rank2": 92,
+      "pts1": 7190,
+      "pts2": 680,
+      "pWin1": 84.3,
+      "pWin2": 15.7,
+      "pick": "Alexander Zverev",
+      "pickProb": 84.3,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 1.12,
+        "win2": 6
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 1.19,
+        "win2": 6.36
       },
       "bestOf": 5,
       "sets": [
         {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
+          "score": "3-0",
+          "p": 35,
           "w": 1
         },
         {
           "score": "3-1",
-          "p": 18.7,
+          "p": 31,
           "w": 1
         },
         {
-          "score": "0-3",
-          "p": 12.5,
+          "score": "3-2",
+          "p": 18.3,
+          "w": 1
+        },
+        {
+          "score": "2-3",
+          "p": 7.7,
           "w": 2
         },
         {
-          "score": "3-0",
-          "p": 12.5,
-          "w": 1
+          "score": "1-3",
+          "p": 5.5,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 2.6,
+          "w": 2
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177471",
@@ -8145,59 +1763,59 @@
       "category": "Men's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Arthur Fery",
+      "player2": "Zizou Bergs",
+      "rank1": 114,
+      "rank2": 37,
+      "pts1": 547,
+      "pts2": 1250,
+      "pWin1": 33.5,
+      "pWin2": 66.5,
+      "pick": "Zizou Bergs",
+      "pickProb": 66.5,
+      "confidence": "Modérée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 2.82,
+        "win2": 1.42
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 2.99,
+        "win2": 1.5
       },
       "bestOf": 5,
       "sets": [
         {
           "score": "1-3",
-          "p": 18.8,
+          "p": 25.3,
           "w": 2
         },
         {
           "score": "2-3",
-          "p": 18.8,
+          "p": 20.7,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 20.6,
           "w": 2
         },
         {
           "score": "3-2",
-          "p": 18.7,
+          "p": 14.4,
           "w": 1
         },
         {
           "score": "3-1",
-          "p": 18.7,
+          "p": 12.2,
           "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
         },
         {
           "score": "3-0",
-          "p": 12.5,
+          "p": 6.9,
           "w": 1
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177477",
@@ -8205,54 +1823,54 @@
       "round": "Round 3",
       "date": "2026-07-04",
       "player1": "TBD",
-      "player2": "TBD",
+      "player2": "Karen Khachanov",
       "rank1": null,
-      "rank2": null,
+      "rank2": 22,
       "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "pts2": 2080,
+      "pWin1": 15.5,
+      "pWin2": 84.5,
+      "pick": "Karen Khachanov",
+      "pickProb": 84.5,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 6.08,
+        "win2": 1.12
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 6.45,
+        "win2": 1.18
       },
       "bestOf": 5,
       "sets": [
         {
+          "score": "0-3",
+          "p": 35.2,
+          "w": 2
+        },
+        {
           "score": "1-3",
-          "p": 18.8,
+          "p": 31,
           "w": 2
         },
         {
           "score": "2-3",
-          "p": 18.8,
+          "p": 18.2,
           "w": 2
         },
         {
           "score": "3-2",
-          "p": 18.7,
+          "p": 7.6,
           "w": 1
         },
         {
           "score": "3-1",
-          "p": 18.7,
+          "p": 5.4,
           "w": 1
         },
         {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
-        },
-        {
           "score": "3-0",
-          "p": 12.5,
+          "p": 2.5,
           "w": 1
         }
       ],
@@ -8263,115 +1881,115 @@
       "category": "Men's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Zachary Svajda",
+      "player2": "Alex de Minaur",
+      "rank1": 66,
+      "rank2": 6,
+      "pts1": 855,
+      "pts2": 4110,
+      "pWin1": 26.6,
+      "pWin2": 73.4,
+      "pick": "Alex de Minaur",
+      "pickProb": 73.4,
+      "confidence": "Modérée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 3.55,
+        "win2": 1.28
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 3.77,
+        "win2": 1.36
       },
       "bestOf": 5,
       "sets": [
         {
           "score": "1-3",
-          "p": 18.8,
+          "p": 27.8,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 25.1,
           "w": 2
         },
         {
           "score": "2-3",
-          "p": 18.8,
+          "p": 20.5,
           "w": 2
         },
         {
           "score": "3-2",
-          "p": 18.7,
+          "p": 12,
           "w": 1
         },
         {
           "score": "3-1",
-          "p": 18.7,
+          "p": 9.5,
           "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
         },
         {
           "score": "3-0",
-          "p": 12.5,
+          "p": 5,
           "w": 1
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177487",
       "category": "Men's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
+      "player1": "Jaume Munar",
       "player2": "TBD",
-      "rank1": null,
+      "rank1": 44,
       "rank2": null,
-      "pts1": 250,
+      "pts1": 1075,
       "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "pWin1": 76.3,
+      "pWin2": 23.7,
+      "pick": "Jaume Munar",
+      "pickProb": 76.3,
+      "confidence": "Élevée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 1.24,
+        "win2": 3.97
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 1.31,
+        "win2": 4.21
       },
       "bestOf": 5,
       "sets": [
         {
-          "score": "1-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "2-3",
-          "p": 18.8,
-          "w": 2
-        },
-        {
-          "score": "3-2",
-          "p": 18.7,
-          "w": 1
-        },
-        {
           "score": "3-1",
-          "p": 18.7,
+          "p": 28.8,
           "w": 1
-        },
-        {
-          "score": "0-3",
-          "p": 12.5,
-          "w": 2
         },
         {
           "score": "3-0",
-          "p": 12.5,
+          "p": 27.3,
           "w": 1
+        },
+        {
+          "score": "3-2",
+          "p": 20.2,
+          "w": 1
+        },
+        {
+          "score": "2-3",
+          "p": 11,
+          "w": 2
+        },
+        {
+          "score": "1-3",
+          "p": 8.4,
+          "w": 2
+        },
+        {
+          "score": "0-3",
+          "p": 4.3,
+          "w": 2
         }
       ],
       "basis": "points"
@@ -8430,147 +2048,147 @@
       "category": "Women's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Ashlyn Krueger",
+      "player2": "Daria Snigur",
+      "rank1": 102,
+      "rank2": 77,
+      "pts1": 787,
+      "pts2": 928,
+      "pWin1": 60.1,
+      "pWin2": 39.9,
+      "pick": "Ashlyn Krueger",
+      "pickProb": 60.1,
+      "confidence": "Faible",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 1.57,
+        "win2": 2.36
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 1.66,
+        "win2": 2.5
       },
       "bestOf": 3,
       "sets": [
         {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
+          "score": "2-0",
+          "p": 32.2,
+          "w": 1
         },
         {
           "score": "2-1",
-          "p": 25,
+          "p": 27.9,
           "w": 1
         },
         {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
+          "score": "1-2",
+          "p": 21.2,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 18.7,
+          "w": 2
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177693",
       "category": "Women's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Marie Bouzkova",
+      "player2": "Liudmila Samsonova",
+      "rank1": 23,
+      "rank2": 41,
+      "pts1": 1849,
+      "pts2": 1270,
+      "pWin1": 57.5,
+      "pWin2": 42.5,
+      "pick": "Marie Bouzkova",
+      "pickProb": 57.5,
+      "confidence": "Faible",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 1.64,
+        "win2": 2.22
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 1.74,
+        "win2": 2.35
       },
       "bestOf": 3,
       "sets": [
         {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
+          "score": "2-0",
+          "p": 30.3,
+          "w": 1
         },
         {
           "score": "2-1",
-          "p": 25,
+          "p": 27.2,
           "w": 1
         },
         {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
+          "score": "1-2",
+          "p": 22.3,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 20.2,
+          "w": 2
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177694",
       "category": "Women's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Madison Keys",
+      "player2": "Amanda Anisimova",
+      "rank1": 22,
+      "rank2": 6,
+      "pts1": 1854,
+      "pts2": 5523,
+      "pWin1": 60.6,
+      "pWin2": 39.4,
+      "pick": "Madison Keys",
+      "pickProb": 60.6,
+      "confidence": "Faible",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 1.56,
+        "win2": 2.39
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 1.65,
+        "win2": 2.54
       },
       "bestOf": 3,
       "sets": [
         {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
+          "score": "2-0",
+          "p": 32.6,
+          "w": 1
         },
         {
           "score": "2-1",
-          "p": 25,
+          "p": 28,
           "w": 1
         },
         {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
+          "score": "1-2",
+          "p": 21,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 18.4,
+          "w": 2
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177695",
@@ -8626,98 +2244,98 @@
       "category": "Women's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Marta Kostyuk",
+      "player2": "Emma Navarro",
+      "rank1": 13,
+      "rank2": 26,
+      "pts1": 3156,
+      "pts2": 1784,
+      "pWin1": 44.8,
+      "pWin2": 55.2,
+      "pick": "Emma Navarro",
+      "pickProb": 55.2,
+      "confidence": "Faible",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 2.11,
+        "win2": 1.71
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 2.23,
+        "win2": 1.81
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 25,
+          "p": 28.6,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 25,
+          "p": 26.6,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 25,
+          "p": 23.1,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 25,
+          "p": 21.6,
           "w": 1
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177708",
       "category": "Women's Singles",
       "round": "Round 3",
       "date": "2026-07-04",
-      "player1": "TBD",
-      "player2": "TBD",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 50,
-      "pWin2": 50,
-      "pick": "TBD",
-      "pickProb": 50,
-      "confidence": "Serré",
+      "player1": "Iga Swiatek",
+      "player2": "Alexandra Eala",
+      "rank1": 3,
+      "rank2": 32,
+      "pts1": 6409,
+      "pts2": 1436,
+      "pWin1": 65.9,
+      "pWin2": 34.1,
+      "pick": "Iga Swiatek",
+      "pickProb": 65.9,
+      "confidence": "Modérée",
       "odds": {
-        "win1": 1.89,
-        "win2": 1.89
+        "win1": 1.43,
+        "win2": 2.77
       },
       "fair": {
-        "win1": 2,
-        "win2": 2
+        "win1": 1.52,
+        "win2": 2.93
       },
       "bestOf": 3,
       "sets": [
         {
-          "score": "0-2",
-          "p": 25,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 25,
-          "w": 2
+          "score": "2-0",
+          "p": 36.9,
+          "w": 1
         },
         {
           "score": "2-1",
-          "p": 25,
+          "p": 29,
           "w": 1
         },
         {
-          "score": "2-0",
-          "p": 25,
-          "w": 1
+          "score": "1-2",
+          "p": 18.7,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 15.4,
+          "w": 2
         }
       ],
-      "basis": "points"
+      "basis": "elo"
     },
     {
       "id": "177710",
