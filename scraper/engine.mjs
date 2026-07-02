@@ -10,7 +10,7 @@
 //   7. Finition (timing des buts) .... équipes qui marquent tard
 // puis loi de Poisson + correction Dixon-Coles -> probabilités de chaque score.
 
-import { scoreSet, reliability, fitIsotonic, applyIsotonic } from './metrics.mjs'
+import { scoreSet, reliability, fitIsotonic, applyIsotonic, logLossSample } from './metrics.mjs'
 
 const HOSTS = new Set(['United States', 'USA', 'Canada', 'Mexico'])
 
@@ -804,6 +804,33 @@ export function backtest({ matches, elo, format = 'cup', market = null }) {
     market: mktRows.length >= 20
       ? { model: scoreSet(mktModelRows), market: scoreSet(mktRows) }
       : null,
+  }
+
+  // Blend prior : p = w·modèle + (1−w)·marché. w optimisé sur 70 % (train),
+  // ÉVALUÉ sur les 30 % suivants (test, OOS) → gain honnête, pas d'overfit.
+  if (metrics.market && mktRows.length >= 40) {
+    const rows = mktModelRows.map((r, i) => ({ mp: r.probs, mkp: mktRows[i].probs, ai: r.actualIdx }))
+    const split = Math.floor(rows.length * 0.7)
+    const train = rows.slice(0, split), test = rows.slice(split)
+    // log-loss du blend : la proba de l'issue réelle suffit (mp et mkp somment à 1)
+    const ll = (set, w) => {
+      let s = 0
+      for (const r of set) s += logLossSample(w * r.mp[r.ai] + (1 - w) * r.mkp[r.ai])
+      return s / set.length
+    }
+    let bestW = 1, bestLL = Infinity
+    for (let w = 0; w <= 1.0001; w += 0.05) {
+      const v = ll(train, w)
+      if (v < bestLL) { bestLL = v; bestW = w }
+    }
+    const r3 = (x) => Math.round(x * 1000) / 1000
+    metrics.market.blend = {
+      w: Math.round(bestW * 100) / 100,
+      modelOOS: r3(ll(test, 1)),
+      marketOOS: r3(ll(test, 0)),
+      blendOOS: r3(ll(test, bestW)),
+      n: test.length,
+    }
   }
 
   return {

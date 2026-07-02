@@ -1,6 +1,6 @@
 {
   "tournament": "Ligue 1 2026-27",
-  "generatedAt": "2026-07-02T21:18:56.967Z",
+  "generatedAt": "2026-07-02T21:41:05.843Z",
   "asOf": "2026-07-02",
   "sources": [
     "openfootball fr.1 2025-26 (entraînement)",
@@ -51434,6 +51434,13 @@
             "logLoss": 0.944,
             "brier": 0.558,
             "n": 282
+          },
+          "blend": {
+            "w": 0,
+            "modelOOS": 0.99,
+            "marketOOS": 0.974,
+            "blendOOS": 0.974,
+            "n": 85
           }
         },
         "calibrationApplied": false
