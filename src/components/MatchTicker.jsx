@@ -26,7 +26,7 @@ function TickerItem({ p, onClick }) {
   return (
     <button
       onClick={onClick}
-      className="group flex shrink-0 items-center gap-2 px-4 py-2 text-xs transition-colors hover:bg-black/[0.03]"
+      className="group flex h-10 shrink-0 items-center gap-2 px-4 text-xs leading-none transition-colors hover:bg-black/[0.03]"
     >
       <span className="text-[#86868b]">{flag(a)}</span>
       <span className="font-medium text-[#1d1d1f]">{a}</span>
@@ -115,7 +115,7 @@ export default function MatchTicker({ predictions }) {
             <span className="pulse-dot size-1.5 rounded-full bg-edge-400" />
             {data.label}
           </div>
-          <div className="relative min-w-0 flex-1 overflow-hidden">
+          <div className="relative min-w-0 flex-1 overflow-x-clip">
             {/* dégradés de bord pour un défilé propre */}
             <div className="pointer-events-none absolute inset-y-0 left-0 z-10 w-8 bg-gradient-to-r from-white to-transparent" />
             <div className="pointer-events-none absolute inset-y-0 right-0 z-10 w-8 bg-gradient-to-l from-white to-transparent" />
