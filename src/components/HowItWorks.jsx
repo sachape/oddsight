@@ -1,5 +1,23 @@
 // Guide du parieur — définitions, formules, exemples, glossaire.
 // Contenu éducatif (pas d'explication de notre méthode interne).
+import { useEffect, useState } from 'react'
+
+// Surligne dans le sommaire la section actuellement à l'écran.
+function useScrollSpy(ids) {
+  const [active, setActive] = useState(ids[0])
+  useEffect(() => {
+    const obs = new IntersectionObserver(
+      (entries) => {
+        const vis = entries.filter((e) => e.isIntersecting)
+        if (vis.length) setActive(vis[0].target.id)
+      },
+      { rootMargin: '-15% 0px -75% 0px' },
+    )
+    ids.forEach((id) => { const el = document.getElementById(id); if (el) obs.observe(el) })
+    return () => obs.disconnect()
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  return active
+}
 
 function P({ children }) {
   return <p className="text-sm leading-relaxed text-[#6e6e73]">{children}</p>
@@ -125,29 +143,42 @@ const GLOSSARY = [
 ]
 
 export default function HowItWorks() {
+  const active = useScrollSpy(TOC.map((t) => t.id))
   return (
-    <div className="mx-auto max-w-2xl space-y-3">
-      <div className="surface rounded-2xl p-5">
-        <h1 className="text-lg font-bold text-[#1d1d1f]">Le guide du parieur</h1>
-        <p className="mt-1 text-sm leading-relaxed text-[#6e6e73]">
-          Tout ce qu’il faut comprendre pour parier plus intelligemment et garder le contrôle :
-          les cotes, les marchés, la value, la bankroll, et comment lire OddSight.
-        </p>
-        <nav className="mt-3 flex flex-wrap gap-1.5">
+    <div className="mx-auto max-w-4xl lg:grid lg:grid-cols-[190px_1fr] lg:items-start lg:gap-8">
+      {/* Sommaire — chips en haut sur mobile, colonne fixe sur desktop */}
+      <aside className="mb-4 lg:mb-0 lg:sticky lg:top-20">
+        <div className="mb-2 hidden text-[11px] font-semibold uppercase tracking-wide text-[#86868b] lg:block">
+          Sommaire
+        </div>
+        <nav className="flex flex-wrap gap-1.5 lg:flex-col lg:gap-0.5">
           {TOC.map((t) => (
             <a
               key={t.id}
               href={`#${t.id}`}
-              className="rounded-full bg-pitch-800 px-2.5 py-1 text-xs font-medium text-[#1d1d1f] transition-colors hover:bg-pitch-700"
+              className={`rounded-full px-2.5 py-1 text-xs font-medium transition-colors lg:rounded-lg lg:px-3 lg:py-1.5 ${
+                active === t.id
+                  ? 'bg-edge-500/12 text-edge-700 lg:bg-edge-500/10'
+                  : 'bg-pitch-800 text-[#1d1d1f] hover:bg-pitch-700 lg:bg-transparent lg:text-[#6e6e73] lg:hover:bg-pitch-800 lg:hover:text-[#1d1d1f]'
+              }`}
             >
               {t.label}
             </a>
           ))}
         </nav>
-      </div>
+      </aside>
 
-      {/* ---------------------------------------------------------------- */}
-      <Section id="bases" icon="🎯" title="Les bases : lire une cote">
+      {/* Contenu qui défile */}
+      <div className="min-w-0 space-y-3">
+        <div className="surface rounded-2xl p-5">
+          <h1 className="text-lg font-bold text-[#1d1d1f]">Le guide du parieur</h1>
+          <p className="mt-1 text-sm leading-relaxed text-[#6e6e73]">
+            Tout ce qu’il faut comprendre pour parier plus intelligemment et garder le contrôle :
+            les cotes, les marchés, la value, la bankroll, et comment lire OddSight.
+          </p>
+        </div>
+
+        <Section id="bases" icon="🎯" title="Les bases : lire une cote">
         <P>
           Une cote (format décimal, celui utilisé en France) est un <b>multiplicateur</b> et une
           <b> probabilité déguisée</b>. Deux formules suffisent :
@@ -444,9 +475,10 @@ export default function HowItWorks() {
         </dl>
       </Section>
 
-      <div className="rounded-2xl border border-amber-400/30 bg-amber-50 p-4 text-xs leading-relaxed text-amber-800">
-        ⚠️ Jouer comporte des risques : endettement, isolement, dépendance. OddSight est un outil
-        d’information, pas un conseil en investissement. 18+. Joueurs Info Service : 09 74 75 13 13.
+        <div className="rounded-2xl border border-amber-400/30 bg-amber-50 p-4 text-xs leading-relaxed text-amber-800">
+          ⚠️ Jouer comporte des risques : endettement, isolement, dépendance. OddSight est un outil
+          d’information, pas un conseil en investissement. 18+. Joueurs Info Service : 09 74 75 13 13.
+        </div>
       </div>
     </div>
   )
