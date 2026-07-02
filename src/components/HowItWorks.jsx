@@ -186,11 +186,13 @@ export default function HowItWorks() {
         <Formula>Gain total = mise × cote &nbsp;·&nbsp; Gain net = mise × (cote − 1)</Formula>
         <Formula>Probabilité implicite = 1 ÷ cote</Formula>
         <Example>
-          10 € sur une cote de <b>2,50</b> → gain total <b>25 €</b>, soit <b>+15 €</b> de bénéfice.
-          Cette cote suppose 1 ÷ 2,50 = <b>40 %</b> de chances.
+          Tu mises <b>10 €</b> sur la victoire de <b>Lille</b> à la cote <b>2,50</b>. Lille gagne :
+          tu récupères 10 × 2,50 = <b>25 €</b>, soit <b>+15 €</b> de bénéfice. Cette cote suppose
+          1 ÷ 2,50 = <b>40 %</b> de chances.
         </Example>
         <P>
-          Cote basse = issue jugée probable, petit gain. Cote haute = peu probable, gros gain.
+          Cote basse = issue jugée probable, petit gain (le PSG à domicile à 1,30). Cote haute = peu
+          probable, gros gain (un promu qui va gagner au Parc à 9,00).
         </P>
         <Table
           head={['Cote', 'Proba', 'Gain net /10 €']}
@@ -224,6 +226,10 @@ export default function HowItWorks() {
             ['3,00', '2/1', '+200', '33 %'],
           ]}
         />
+        <Example>
+          Le PSG favori à <b>1,50</b> chez ton opérateur français s’écrirait <b>1/2</b> sur un site
+          anglais et <b>−200</b> sur un site américain. Trois écritures, exactement le même pari.
+        </Example>
       </Section>
 
       <Section id="marge" icon="🏦" title="La marge du bookmaker & la « cote juste »">
@@ -232,8 +238,10 @@ export default function HowItWorks() {
           Ce surplus, c’est la <b>marge</b> (overround) : la commission du bookmaker.
         </P>
         <Example>
-          Un 1N2 à <b>2,10 / 3,40 / 3,60</b> → 47,6 % + 29,4 % + 27,8 % = <b>104,8 %</b>.
-          La marge est de <b>4,8 %</b> : sur 100 € joués, le book en garde ~5 en moyenne.
+          Sur <b>Marseille – Lyon</b>, ton opérateur affiche <b>2,10 / 3,40 / 3,60</b> (1/N/2).
+          Probabilités implicites : 47,6 % + 29,4 % + 27,8 % = <b>104,8 %</b>. Le surplus de
+          <b> 4,8 %</b>, c’est la marge : sur 100 € joués sur ce match, le book garde ~5 € en moyenne,
+          quel que soit le résultat.
         </Example>
         <P>
           La <b>cote juste</b> retire cette marge : c’est la cote qui reflète la vraie probabilité,
@@ -241,6 +249,10 @@ export default function HowItWorks() {
           cotes de ton opérateur.
         </P>
         <Formula>Cote juste = 100 ÷ probabilité réelle (%)</Formula>
+        <Example>
+          Le modèle donne Marseille vainqueur à <b>50 %</b> → cote juste <b>2,00</b>. Si ton
+          opérateur affiche <b>2,10</b>, il te paie <i>au-dessus</i> du prix réel : c’est bon signe.
+        </Example>
       </Section>
 
       <Section id="marches" icon="🧩" title="Les types de paris (marchés)">
@@ -256,6 +268,14 @@ export default function HowItWorks() {
           <Market name="Mi-temps / fin de match" desc="Résultat à la pause combiné au résultat final." />
           <Market name="Buteur" desc="Un joueur marque (à tout moment, premier, dernier…)." />
         </div>
+        <Example>
+          Prenons un <b>Real Madrid 2 – 1 Barcelone</b>. Sur ce seul score, qui gagne quoi ?<br />
+          • 1N2 « 1 » (Real gagne) → <b>gagné</b><br />
+          • Double chance « 1X » → <b>gagné</b><br />
+          • Les deux marquent (Oui) → <b>gagné</b> (2 et 1)<br />
+          • +2,5 buts → <b>gagné</b> (3 buts au total)<br />
+          • Score exact 2-1 → <b>gagné</b> · Handicap Real −1 → <b>remboursé</b> (gagne d’1 seul but)
+        </Example>
       </Section>
 
       <Section id="handicap" icon="⚖️" title="Le handicap asiatique (en détail)">
@@ -270,6 +290,12 @@ export default function HowItWorks() {
           <Market name="Demi-ligne (−0,5, +0,5)" desc="Pas de remboursement possible : c’est gagné ou perdu." ex="−0,5 = le favori doit simplement gagner." />
           <Market name="Quart de ligne (−0,25, −0,75)" desc="La mise est coupée en deux demi-lignes." ex="−0,75 : gagne par 2+ → plein ; par 1 → demi-gain ; sinon perdu. −0,25 : gagne → plein ; nul → demi-perte ; défaite → perdu." />
         </div>
+        <Example>
+          Tu mises <b>10 €</b> sur <b>PSG (−1,5)</b> contre Le Havre à la cote 1,85 :<br />
+          • PSG gagne <b>3-0</b> → écart 3 &gt; 1,5 → <b>gagné</b> (+7,50 €)<br />
+          • PSG gagne <b>2-1</b> → écart 1 &lt; 1,5 → <b>perdu</b> (le score ne suffit pas)<br />
+          C’est plus exigeant qu’un simple « PSG vainqueur », mais mieux payé.
+        </Example>
         <Note>
           Le handicap asiatique est plus « juste » (marge basse) mais plus technique. Débute par
           les demi-lignes, plus simples à comprendre.
@@ -285,13 +311,14 @@ export default function HowItWorks() {
         <Formula>Espérance (EV) par euro = probabilité × cote − 1</Formula>
         <P>Si l’EV est positive, le pari est rentable sur le long terme.</P>
         <Example>
-          Tu estimes une issue à <b>55 %</b> (cote juste 1,82). Ton opérateur propose <b>2,00</b>.
-          EV = 0,55 × 2,00 − 1 = <b>+0,10</b> → <b>+10 % de value</b>. À jouer.
+          OddSight estime <b>Lens vainqueur à 55 %</b> → cote juste 1,82. Ton opérateur affiche
+          <b> 2,00</b>. EV = 0,55 × 2,00 − 1 = <b>+0,10</b> → <b>+10 % de value</b> : à jouer.<br />
+          À l’inverse, s’il affichait <b>1,70</b> (en dessous de 1,82), tu passes : pas de value.
         </Example>
         <Note>
-          La value ne garantit pas de gagner <i>ce</i> pari. C’est la <b>somme</b> de paris de
-          valeur, sur des centaines de matchs, qui paie. Sur peu de paris, le hasard (variance)
-          domine.
+          La value ne garantit pas de gagner <i>ce</i> pari : Lens peut très bien perdre. C’est la
+          <b> somme</b> de paris de valeur, sur des centaines de matchs, qui paie. Sur 5 paris, le
+          hasard (variance) domine encore.
         </Note>
       </Section>
 
@@ -312,6 +339,13 @@ export default function HowItWorks() {
           de remboursement varient selon l’opérateur (souvent : pari annulé si abandon avant la fin
           du 1er set). À vérifier avant de miser.
         </Note>
+        <Example>
+          Un top 5 mondial est donné favori à <b>1,20</b> au 1er tour de Roland-Garros… face à un
+          spécialiste de la terre battue classé 45e. Sur cette surface, l’écart réel est plus faible
+          que ce que dit le classement : la cote de <b>4,50</b> sur l’outsider peut cacher de la
+          value. (Et en 3 sets gagnants d’un ATP normal, la surprise serait encore plus probable
+          qu’en 5 sets à Roland.)
+        </Example>
         <P>
           Dans OddSight, les probabilités tennis s’appuient sur le classement, les points et un Elo
           interne, ajustés au format. La value se niche souvent sur l’<b>outsider</b> quand la cote
@@ -333,9 +367,18 @@ export default function HowItWorks() {
           Bankroll de 200 € · profil équilibré (3 %) → 1 unité = <b>6 €</b>. Tu mises 6 € par pari,
           quelle que soit ton envie du moment.
         </Example>
+        <Example>
+          Deux parieurs, 200 € chacun, enchaînent <b>5 défaites</b> (ça arrive) :<br />
+          • Anna mise en unités (6 €/pari) → il lui reste <b>170 €</b>, elle continue sereinement.<br />
+          • Théo a tout mis sur « un coup sûr » à 100 € puis doublé pour se refaire → <b>0 €</b>.<br />
+          Même malchance, issue opposée : c’est la gestion, pas les pronos.
+        </Example>
         <Sub>Suivre sa rentabilité</Sub>
         <Formula>ROI (yield) = bénéfice net ÷ total misé × 100</Formula>
-        <P>Un yield de <b>+5 %</b> tenu sur la durée est déjà excellent chez les pros.</P>
+        <P>
+          Sur 100 paris de 6 €, si tu es à +36 € de bénéfice, ton yield = 36 ÷ 600 = <b>+6 %</b>.
+          Tenu sur la durée, c’est déjà excellent chez les pros.
+        </P>
         <Note>
           <b>Ne cours jamais après tes pertes.</b> Doubler la mise pour « se refaire » (martingale)
           mène à la ruine : une série de pertes arrive toujours.
@@ -353,8 +396,9 @@ export default function HowItWorks() {
           avec <b>b</b> = cote − 1, <b>p</b> = probabilité réelle, <b>q</b> = 1 − p.
         </P>
         <Example>
-          Cote <b>2,00</b> (b = 1), proba estimée <b>55 %</b> (q = 0,45) → f = (1 × 0,55 − 0,45) ÷ 1
-          = <b>0,10</b> → miser <b>10 %</b> de la bankroll.
+          Tu estimes <b>Monaco vainqueur à 55 %</b>, cote proposée <b>2,00</b> (b = 1, q = 0,45).
+          f = (1 × 0,55 − 0,45) ÷ 1 = <b>0,10</b> → Kelly plein = miser <b>10 %</b> de ta bankroll.
+          En Kelly ½, tu mises <b>5 %</b> — bien plus prudent si ton estimation de 55 % est incertaine.
         </Example>
         <Sub>En pratique : Kelly fractionné</Sub>
         <P>
@@ -375,8 +419,10 @@ export default function HowItWorks() {
         </P>
         <Formula>Cote combinée = cote₁ × cote₂ × … &nbsp;·&nbsp; Proba = proba₁ × proba₂ × …</Formula>
         <Example>
-          3 matchs « sûrs » à <b>1,80</b> chacun → cote combinée 1,80³ = <b>×5,83</b>, mais la
-          probabilité réelle n’est que 0,556³ ≈ <b>17 %</b>. Ça « passe » 1 fois sur 6.
+          Tu combines 3 favoris « sûrs » — <b>PSG, Real, Bayern</b> vainqueurs — à <b>1,80</b>
+          chacun. Cote combinée = 1,80 × 1,80 × 1,80 = <b>×5,83</b> (10 € → 58 €). Alléchant, mais la
+          probabilité réelle est 0,556³ ≈ <b>17 %</b> : il suffit d’<i>un</i> nul surprise pour tout
+          perdre. Ça « passe » environ 1 fois sur 6.
         </Example>
         <P>
           Chaque match ajouté multiplie le gain <i>et</i> divise les chances. C’est pour ça que les
@@ -405,9 +451,10 @@ export default function HowItWorks() {
           sur les cotes du moment — pour sécuriser un gain ou limiter une perte.
         </P>
         <Example>
-          Pari pré-match <b>10 € @ 3,00</b>. À 1-0 pour ton équipe, cash out proposé <b>~18 €</b> :
-          tu peux sécuriser tout de suite, ou laisser courir (gain plein <b>30 €</b> si le score
-          tient).
+          Pré-match, tu mises <b>10 € sur Lille vainqueur @ 3,00</b>. À la 60ᵉ, Lille mène <b>1-0</b>
+          → le cash out proposé monte à <b>~18 €</b>. Deux choix : sécuriser <b>18 €</b> maintenant
+          (+8 € garantis), ou laisser courir pour les <b>30 €</b> pleins… au risque d’une égalisation
+          en fin de match qui te ferait tout perdre.
         </Example>
         <Note>
           Le cash out intègre une <b>marge</b> : encaisser systématiquement rogne ton rendement sur
@@ -424,6 +471,11 @@ export default function HowItWorks() {
           <Market name="Chercher le pari sûr" desc="Il n’existe pas. Même à 90 %, on perd 1 fois sur 10." />
           <Market name="Sur-miser" desc="Mettre 30 % de sa bankroll sur un « coup sûr » : une seule perte et tout s’effondre." />
         </div>
+        <Example>
+          Le piège classique : le PSG « ne peut pas perdre » à 1,25. Tu mets 100 € dessus « pour une
+          fois ». Le PSG fait 1-1 contre un promu (ça arrive 1 fois sur 6-7). Tu as perdu 100 € pour
+          en gagner 25 : le rapport risque/gain n’avait aucun sens.
+        </Example>
       </Section>
 
       <Section id="oddsight" icon="🧭" title="Comment lire OddSight">
@@ -435,6 +487,12 @@ export default function HowItWorks() {
           <Market name="Combinés & Bankroll" desc="Le combiné le plus probable pour viser ×2 / ×3, et une répartition de mise selon ta bankroll et ton profil de risque." />
           <Market name="Mon suivi" desc="Enregistre tes paris pour voir ta courbe de gains, ton taux de réussite et ton ROI réels." />
         </div>
+        <Example>
+          <b>En pratique, de bout en bout :</b> sur la carte Lille – Nice, tu lis « Plus probable
+          <b> Lille · 53 % · Modérée</b> », cote juste <b>1,89</b>. Ton opérateur affiche <b>2,10</b>.
+          Tu vas dans <b>Value & cotes</b>, tu saisis 2,10 → l’appli affiche <b>✓ value +11 %</b>.
+          Tu enregistres le pari dans <b>Mon suivi</b> pour suivre ton ROI réel au fil des semaines.
+        </Example>
         <Note>
           OddSight calcule ses probabilités à partir de stats réelles (Poisson + Dixon-Coles), pas
           d’intuition. Mais aucun modèle ne prédit l’avenir : ce sont des probabilités, pas des
