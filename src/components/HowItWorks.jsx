@@ -77,11 +77,16 @@ function Market({ name, desc, ex }) {
 
 const TOC = [
   { id: 'bases', label: 'Les bases' },
+  { id: 'formats', label: 'Formats de cotes' },
   { id: 'marge', label: 'Marge & cote juste' },
   { id: 'marches', label: 'Types de paris' },
+  { id: 'handicap', label: 'Handicap asiatique' },
   { id: 'value', label: 'La value' },
+  { id: 'tennis', label: 'Value au tennis' },
   { id: 'bankroll', label: 'Bankroll' },
+  { id: 'kelly', label: 'Kelly & staking' },
   { id: 'combines', label: 'Combinés' },
+  { id: 'live', label: 'Live & cash out' },
   { id: 'erreurs', label: 'Erreurs' },
   { id: 'oddsight', label: 'Lire OddSight' },
   { id: 'responsable', label: 'Jeu responsable' },
@@ -107,9 +112,15 @@ const GLOSSARY = [
   ['BTTS', '« Les deux équipes marquent » : Oui / Non.'],
   ['Over / Under', 'Plus / moins de X buts (1,5 · 2,5 · 3,5…).'],
   ['Handicap', 'Avance ou retard fictif de buts donné à une équipe.'],
+  ['Handicap asiatique', 'Handicap en quarts de but qui élimine ou fractionne le nul ; marge plus faible.'],
+  ['Push', 'Égalité avec la ligne de pari : la mise est remboursée.'],
+  ['Cote fractionnelle', 'Format UK (ex. 3/2) : gain net rapporté à la mise.'],
+  ['Moneyline (américaine)', 'Format US : +150 (gain pour 100 misés) ou −200 (mise pour gagner 100).'],
   ['Combiné (parlay)', 'Plusieurs paris en un : les cotes se multiplient, les chances aussi.'],
+  ['Système', 'Combiné partiel (2/3, 3/4…) qui tolère une sélection perdante.'],
+  ['Critère de Kelly', 'Mise proportionnelle à l’avantage : f = (b·p − q) ÷ b.'],
   ['Cash out', 'Clôturer un pari avant la fin pour sécuriser un gain / limiter la perte.'],
-  ['Live', 'Pari pendant le match, cotes qui bougent en temps réel.'],
+  ['Live (in-play)', 'Pari pendant le match, cotes qui bougent en temps réel.'],
   ['Variance', 'Fluctuations dues au hasard sur le court terme.'],
 ]
 
@@ -163,6 +174,27 @@ export default function HowItWorks() {
         />
       </Section>
 
+      <Section id="formats" icon="🔢" title="Les 3 formats de cotes">
+        <P>
+          La même cote s’écrit de trois façons selon les pays. En France, c’est la
+          <b> décimale</b>.
+        </P>
+        <div>
+          <Market name="Décimale (Europe)" desc="Multiplicateur direct. 2,50 = tu récupères 2,5× ta mise." />
+          <Market name="Fractionnelle (UK)" desc="Gain net / mise. 3/2 = tu gagnes 3 pour 2 misés → décimale 2,50." />
+          <Market name="Américaine (moneyline)" desc="+150 = gain pour 100 € misés. −200 = mise à poser pour gagner 100 €." ex="Positif = outsider, négatif = favori." />
+        </div>
+        <Table
+          head={['Décimale', 'Fraction.', 'Améric.', 'Proba']}
+          rows={[
+            ['1,50', '1/2', '−200', '67 %'],
+            ['2,00', '1/1', '+100', '50 %'],
+            ['2,50', '3/2', '+150', '40 %'],
+            ['3,00', '2/1', '+200', '33 %'],
+          ]}
+        />
+      </Section>
+
       <Section id="marge" icon="🏦" title="La marge du bookmaker & la « cote juste »">
         <P>
           Si tu additionnes les probabilités implicites des issues d’un match, tu dépasses 100 %.
@@ -195,6 +227,24 @@ export default function HowItWorks() {
         </div>
       </Section>
 
+      <Section id="handicap" icon="⚖️" title="Le handicap asiatique (en détail)">
+        <P>
+          Le handicap asiatique élimine (ou fractionne) le nul en donnant une avance/un retard de
+          buts, avec des lignes en quarts. Résultat : des cotes proches de 2,00 et une marge plus
+          faible — d’où sa popularité chez les parieurs aguerris.
+        </P>
+        <Sub>Les types de lignes</Sub>
+        <div>
+          <Market name="Ligne entière (−1, +1)" desc="Si l’écart est exactement égal au handicap, la mise est remboursée (push)." ex="−1 sur le favori : gagne par 2+ → gagné ; par 1 → remboursé ; sinon perdu." />
+          <Market name="Demi-ligne (−0,5, +0,5)" desc="Pas de remboursement possible : c’est gagné ou perdu." ex="−0,5 = le favori doit simplement gagner." />
+          <Market name="Quart de ligne (−0,25, −0,75)" desc="La mise est coupée en deux demi-lignes." ex="−0,75 : gagne par 2+ → plein ; par 1 → demi-gain ; sinon perdu. −0,25 : gagne → plein ; nul → demi-perte ; défaite → perdu." />
+        </div>
+        <Note>
+          Le handicap asiatique est plus « juste » (marge basse) mais plus technique. Débute par
+          les demi-lignes, plus simples à comprendre.
+        </Note>
+      </Section>
+
       <Section id="value" icon="📈" title="La value & l’espérance de gain">
         <P>
           Parier sur le favori ne suffit pas : tout le monde le fait et les cotes sont basses.
@@ -212,6 +262,30 @@ export default function HowItWorks() {
           valeur, sur des centaines de matchs, qui paie. Sur peu de paris, le hasard (variance)
           domine.
         </Note>
+      </Section>
+
+      <Section id="tennis" icon="🎾" title="La value au tennis">
+        <P>
+          Le tennis n’a <b>que deux issues</b> (pas de nul) : les cotes sont plus lisibles, mais la
+          value se cache dans les détails.
+        </P>
+        <Sub>Ce qui compte vraiment</Sub>
+        <div>
+          <Market name="La surface" desc="Terre, dur, gazon : un même joueur n’a pas le même niveau selon la surface. Un top mondial peut être vulnérable sur terre." />
+          <Market name="Le format" desc="Best-of-3 (tournois normaux) vs best-of-5 (Grand Chelem masculin) : le favori est plus fiable en 5 sets, la surprise plus dure à créer." />
+          <Market name="Fatigue & calendrier" desc="Matchs enchaînés, long match la veille, décalage horaire : le physique pèse énormément." />
+          <Market name="Historique (H2H)" desc="Certains joueurs en dominent d’autres quel que soit le classement." />
+        </div>
+        <Note>
+          <b>Risque d’abandon :</b> un joueur blessé peut abandonner en cours de match. Les règles
+          de remboursement varient selon l’opérateur (souvent : pari annulé si abandon avant la fin
+          du 1er set). À vérifier avant de miser.
+        </Note>
+        <P>
+          Dans OddSight, les probabilités tennis s’appuient sur le classement, les points et un Elo
+          interne, ajustés au format. La value se niche souvent sur l’<b>outsider</b> quand la cote
+          du favori est gonflée par sa notoriété.
+        </P>
       </Section>
 
       <Section id="bankroll" icon="💰" title="Gérer sa bankroll">
@@ -237,6 +311,32 @@ export default function HowItWorks() {
         </Note>
       </Section>
 
+      <Section id="kelly" icon="🧮" title="Staking avancé : le critère de Kelly">
+        <P>
+          Au-delà de la mise à plat, on peut miser <b>proportionnellement à son avantage</b>. La
+          méthode de référence est le critère de Kelly, qui maximise la croissance de la bankroll
+          sur le long terme.
+        </P>
+        <Formula>fraction = (b × p − q) ÷ b</Formula>
+        <P>
+          avec <b>b</b> = cote − 1, <b>p</b> = probabilité réelle, <b>q</b> = 1 − p.
+        </P>
+        <Example>
+          Cote <b>2,00</b> (b = 1), proba estimée <b>55 %</b> (q = 0,45) → f = (1 × 0,55 − 0,45) ÷ 1
+          = <b>0,10</b> → miser <b>10 %</b> de la bankroll.
+        </Example>
+        <Sub>En pratique : Kelly fractionné</Sub>
+        <P>
+          Kelly « plein » est très volatil et suppose des probabilités parfaites. Comme nos
+          estimations sont incertaines, les pros misent <b>½ ou ¼ de Kelly</b> : presque la même
+          croissance, beaucoup moins de risque.
+        </P>
+        <Note>
+          Kelly n’a de sens que si tu as un <b>vrai edge</b> (de la value). Sans avantage réel, il
+          accélère la ruine. En cas de doute, reste à la mise à plat.
+        </Note>
+      </Section>
+
       <Section id="combines" icon="🧱" title="Les combinés (parlays)">
         <P>
           Un combiné regroupe plusieurs paris : <b>toutes</b> les sélections doivent gagner. Les
@@ -255,6 +355,33 @@ export default function HowItWorks() {
           Les <b>paris systèmes</b> (2/3, 3/4…) permettent de gagner même avec une sélection
           perdante, en échange d’une mise plus élevée.
         </P>
+      </Section>
+
+      <Section id="live" icon="⏱️" title="Le pari live & le cash out">
+        <P>
+          Le <b>live (in-play)</b> consiste à parier pendant le match : les cotes sont recalculées
+          en continu selon le score, le temps qui passe et le momentum.
+        </P>
+        <Sub>Opportunités & pièges</Sub>
+        <P>
+          Bien joué, le live permet de réagir à un match qui ne suit pas le scénario (un favori mené
+          tôt voit sa cote grimper). Mal joué, c’est le royaume des décisions impulsives : cotes qui
+          bougent vite, momentum trompeur, et l’envie de « se refaire » en direct.
+        </P>
+        <Sub>Le cash out</Sub>
+        <P>
+          L’opérateur te propose de <b>clôturer ton pari avant la fin</b> pour un montant calculé
+          sur les cotes du moment — pour sécuriser un gain ou limiter une perte.
+        </P>
+        <Example>
+          Pari pré-match <b>10 € @ 3,00</b>. À 1-0 pour ton équipe, cash out proposé <b>~18 €</b> :
+          tu peux sécuriser tout de suite, ou laisser courir (gain plein <b>30 €</b> si le score
+          tient).
+        </Example>
+        <Note>
+          Le cash out intègre une <b>marge</b> : encaisser systématiquement rogne ton rendement sur
+          la durée. Utilise-le pour gérer un risque ponctuel, pas par réflexe à chaque pari.
+        </Note>
       </Section>
 
       <Section id="erreurs" icon="⚠️" title="Les erreurs classiques">
