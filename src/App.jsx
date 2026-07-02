@@ -56,6 +56,7 @@ const NAV = [
   { id: 'pronos', group: 'Analyser', label: 'Pronostics', icon: Target, title: 'Pronostics', sub: 'Les matchs à venir, analysés par le modèle', sports: ALL },
   { id: 'standings', group: 'Analyser', label: 'Classements', icon: Trophy, title: 'Classements', sub: 'Le classement, avec l’Elo de chaque équipe', sports: ['football'] },
   { id: 'results', group: 'Analyser', label: 'Résultats', icon: ListChecks, title: 'Résultats', sub: 'Tous les matchs déjà joués', sports: ['football'] },
+  { id: 'track', group: 'Analyser', label: 'Track record', icon: HistoryIcon, title: 'Track record', sub: 'La fiabilité du modèle, match par match', sports: ['football'] },
   { id: 'value', group: 'Parier', label: 'Value & cotes', icon: TrendingUp, title: 'Value & cotes', sub: 'Repère les cotes où le marché te sous-estime', sports: ['football', 'tennis'] },
   { id: 'bets', group: 'Parier', label: 'Combinés', icon: Layers, title: 'Combinés', sub: 'Doubler / tripler sa mise, en toute transparence', sports: ['football'] },
   { id: 'bankroll', group: 'Parier', label: 'Bankroll', icon: Wallet, title: 'Bankroll', sub: 'Combien miser selon ton budget', sports: ['football'] },
@@ -284,6 +285,7 @@ export default function App() {
               {tab2 === 'suivi' && <Suivi compId={compId} predictions={data.predictions} />}
               {tab2 === 'standings' && <Standings groups={data.groups} />}
               {tab2 === 'results' && <Results results={data.results} />}
+              {tab2 === 'track' && <History history={data.history} />}
               {tab2 === 'how' && <HowItWorks dataset={data} />}
             </>
           )}

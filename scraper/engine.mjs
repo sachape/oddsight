@@ -10,6 +10,8 @@
 //   7. Finition (timing des buts) .... équipes qui marquent tard
 // puis loi de Poisson + correction Dixon-Coles -> probabilités de chaque score.
 
+import { scoreSet, reliability, fitIsotonic, applyIsotonic } from './metrics.mjs'
+
 const HOSTS = new Set(['United States', 'USA', 'Canada', 'Mexico'])
 
 // Marge bookmaker appliquée aux cotes (overround ~6%) pour des cotes réalistes,
@@ -20,6 +22,16 @@ const bookOdds = (p) => (p > 0 ? Math.round((1 / p / MARGIN) * 100) / 100 : null
 // Poids de l'impact d'un absent selon son poste, sur l'attaque et la défense de son équipe
 const POS_ATT = { FWD: 1.0, MID: 0.6, DEF: 0.15, GK: 0 }
 const POS_DEF = { GK: 1.0, DEF: 1.0, MID: 0.4, FWD: 0.1 }
+
+// Hyperparamètres du modèle, PAR FORMAT (coupe vs championnat : régimes différents).
+// `cup` = réglage historique (Coupe du Monde inchangée). `league` = optimisé sur
+// le log-loss walk-forward (`npm run tune`, validé OOS sur la Ligue 1 2025-26).
+// buildModel sélectionne le profil ; le tuner mute TUNABLE directement.
+const PROFILES = {
+  cup:    { halfLife: 14, koBonus: 1.3, rho: -0.04, supCoef: 0.45, blendK: 3, homeF: 1.12, awayF: 0.9,  momentumW: 0.05, clutchW: 0.04 },
+  league: { halfLife: 60, koBonus: 1.3, rho: 0.0,   supCoef: 0.30, blendK: 3, homeF: 1.05, awayF: 0.95, momentumW: 0.08, clutchW: 0.04 },
+}
+export const TUNABLE = { ...PROFILES.cup } // profil actif (lu par predict/recency)
 
 const round2 = (x) => Math.round(x * 100) / 100
 const pct = (x) => Math.round(x * 1000) / 10
@@ -61,8 +73,8 @@ function parseGames(matches, asOf) {
 // Poids de récence : demi-vie de 14 jours + bonus pour les matchs à élimination directe
 function recencyWeight(date, asOf, knockout) {
   const age = Math.max(0, daysBetween(date, asOf))
-  let w = Math.pow(0.5, age / 14)
-  if (knockout) w *= 1.3
+  let w = Math.pow(0.5, age / TUNABLE.halfLife)
+  if (knockout) w *= TUNABLE.koBonus
   return w
 }
 
@@ -212,7 +224,7 @@ function eloWinProb(eloA, eloB) {
   return 1 / (1 + Math.pow(10, -(eloA - eloB) / 400))
 }
 
-function predict(m, teams, leagueAvg, asOf, format = 'cup') {
+function predict(m, teams, leagueAvg, asOf, format = 'cup', cal = null) {
   const A = teams[m.team1]
   const B = teams[m.team2]
   if (!A || !B) return null
@@ -230,13 +242,13 @@ function predict(m, teams, leagueAvg, asOf, format = 'cup') {
 
   // -- (b) Estimation par l'Elo réel --
   const eloDiff = A.elo - B.elo + homeAdj
-  const sup = clamp((eloDiff / 100) * 0.45, -2.4, 2.4) // suprématie de buts
+  const sup = clamp((eloDiff / 100) * TUNABLE.supCoef, -2.4, 2.4) // suprématie de buts
   let lam1_E = clamp(TG / 2 + sup / 2, 0.15, 5)
   let lam2_E = clamp(TG / 2 - sup / 2, 0.15, 5)
 
   // -- (c) Mélange : plus d'historique tournoi = plus de poids aux stats --
   const nEff = Math.min(A.wsum, B.wsum)
-  const wData = clamp(nEff / (nEff + 3), 0, 0.75)
+  const wData = clamp(nEff / (nEff + TUNABLE.blendK), 0, 0.75)
   let lam1 = wData * lam1_S + (1 - wData) * lam1_E
   let lam2 = wData * lam2_S + (1 - wData) * lam2_E
 
@@ -254,12 +266,12 @@ function predict(m, teams, leagueAvg, asOf, format = 'cup') {
   const fB = restFactor(restB, restA)
 
   // Momentum
-  const mA = 1 + 0.05 * A.momentum
-  const mB = 1 + 0.05 * B.momentum
+  const mA = 1 + TUNABLE.momentumW * A.momentum
+  const mB = 1 + TUNABLE.momentumW * B.momentum
 
   // Finition (marqueur tardif) : légère hausse de la capacité à marquer
-  const cA = 1 + 0.04 * A.clutch
-  const cB = 1 + 0.04 * B.clutch
+  const cA = 1 + TUNABLE.clutchW * A.clutch
+  const cB = 1 + TUNABLE.clutchW * B.clutch
 
   // Disponibilité : attaque réduite par ses propres absents (availAtt),
   // hausse face aux absents défensifs adverses (availDef de l'adversaire)
@@ -267,14 +279,14 @@ function predict(m, teams, leagueAvg, asOf, format = 'cup') {
   const availB = (B.availAtt ?? 1) * (A.availDef ?? 1)
 
   // Avantage du terrain (championnat) : team1 = domicile
-  const homeF = isLeague ? 1.12 : 1
-  const awayF = isLeague ? 0.9 : 1
+  const homeF = isLeague ? TUNABLE.homeF : 1
+  const awayF = isLeague ? TUNABLE.awayF : 1
 
   lam1 = clamp(lam1 * fA * mA * cA * availA * homeF, 0.12, 5.5)
   lam2 = clamp(lam2 * fB * mB * cB * availB * awayF, 0.12, 5.5)
 
   // -- (e) Matrice des scores + correction Dixon-Coles (petits scores/nuls) --
-  const RHO = -0.04
+  const RHO = TUNABLE.rho
   const MAX = 9
   const tau = (i, j) => {
     if (i === 0 && j === 0) return 1 - lam1 * lam2 * RHO
@@ -310,6 +322,15 @@ function predict(m, teams, leagueAvg, asOf, format = 'cup') {
     if (tot > 1.5) over[1.5] += c.p
     if (tot > 2.5) over[2.5] += c.p
     if (tot > 3.5) over[3.5] += c.p
+  }
+
+  // Calibration isotonique du 1N2 (ajustée sur l'historique) : redresse la sur/
+  // sous-confiance. Appliquée AVANT les marchés dérivés (double chance, qualif,
+  // pronostic) pour rester cohérent. BTTS/over/scores restent issus de la grille.
+  if (cal) {
+    const c1 = applyIsotonic(cal, pW1), cX = applyIsotonic(cal, pD), c2 = applyIsotonic(cal, pW2)
+    const s = c1 + cX + c2 || 1
+    pW1 = c1 / s; pD = cX / s; pW2 = c2 / s
   }
 
   const markets = {
@@ -641,7 +662,7 @@ function computeInternalElo(played, teams, format) {
   for (const n in R) if (teams[n]) teams[n].elo = Math.round(R[n])
 }
 
-function backtest({ matches, elo, format = 'cup' }) {
+export function backtest({ matches, elo, format = 'cup' }) {
   // Tous les matchs avec score (chaque prono est rejoué avec uniquement les matchs antérieurs)
   const played = matches
     .filter(hasScore)
@@ -651,6 +672,16 @@ function backtest({ matches, elo, format = 'cup' }) {
   let cR = 0, cB = 0, cO = 0
 
   const noExternalElo = !elo || !Object.keys(elo).length
+  const isLeague = format === 'league'
+
+  // Collectes pour les métriques probabilistes (log-loss / Brier) et la calibration.
+  const modelRows = [] // { probs:[p1,pX,p2], actualIdx }  (modèle, ordre chronologique)
+  const eloRows = []   // baseline Elo seul
+  const baseRows = []  // baseline taux historiques (naïf)
+  const relPairs = []  // { x: proba du pick, y: réussite 0/1 }
+  let n1 = 0, nX = 0, n2 = 0 // compteurs d'issues DÉJÀ vues (base-rate point-in-time)
+
+  const idxOf = (a) => (a === '1' ? 0 : a === 'X' ? 1 : 2)
 
   for (const m of played) {
     const prior = parseGames(matches, m.date) // matchs strictement antérieurs
@@ -667,11 +698,40 @@ function backtest({ matches, elo, format = 'cup' }) {
 
     const [g1, g2] = m.score.ft
     const actual = g1 > g2 ? '1' : g1 < g2 ? '2' : 'X'
+    const ai = idxOf(actual)
+
+    // -- Probabilités normalisées du modèle (fractions) --
+    let mp = [pred.pWin1 / 100, pred.pDraw / 100, pred.pWin2 / 100]
+    const ms = mp[0] + mp[1] + mp[2] || 1
+    mp = mp.map((x) => x / ms)
+    modelRows.push({ probs: mp, actualIdx: ai })
+
+    // -- Baseline « taux historiques » (avant CE match) --
+    const N = n1 + nX + n2
+    const bp = N
+      ? [(n1 + 1) / (N + 3), (nX + 1) / (N + 3), (n2 + 1) / (N + 3)]
+      : [0.4, 0.28, 0.32]
+    const bs = bp[0] + bp[1] + bp[2]
+    baseRows.push({ probs: bp.map((x) => x / bs), actualIdx: ai })
+
+    // -- Baseline « Elo seul » : proba victoire Elo + taux de nul empirique --
+    const eA = teams[m.team1]?.elo ?? 1500
+    const eB = teams[m.team2]?.elo ?? 1500
+    const homeElo = isLeague ? 65 : (HOSTS.has(m.team1) ? 60 : 0) - (HOSTS.has(m.team2) ? 60 : 0)
+    const pElo1 = eloWinProb(eA + homeElo, eB)
+    const pXbase = N ? clamp((nX + 1) / (N + 3), 0.15, 0.35) : 0.27
+    const ep = [(1 - pXbase) * pElo1, pXbase, (1 - pXbase) * (1 - pElo1)]
+    const es = ep[0] + ep[1] + ep[2]
+    eloRows.push({ probs: ep.map((x) => x / es), actualIdx: ai })
+
+    if (actual === '1') n1++; else if (actual === 'X') nX++; else n2++
+
     const probs = [
       { k: '1', p: pred.pWin1 }, { k: 'X', p: pred.pDraw }, { k: '2', p: pred.pWin2 },
     ].sort((a, b) => b.p - a.p)
     const predicted = probs[0].k
     const hitR = predicted === actual
+    relPairs.push({ x: probs[0].p / 100, y: hitR ? 1 : 0 })
 
     const bttsPred = pred.markets.btts.yes >= 50
     const bttsActual = g1 >= 1 && g2 >= 1
@@ -700,13 +760,48 @@ function backtest({ matches, elo, format = 'cup' }) {
   const n = records.length || 1
   const p1 = (x) => Math.round((x / n) * 1000) / 10
   records.reverse() // plus récent d'abord
+
+  // Paires (proba d'issue, réalisée) poolées sur 1/N/2 pour la calibration isotonique.
+  const calPairsFrom = (rows) =>
+    rows.flatMap((r) => r.probs.map((p, i) => ({ x: p, y: i === r.actualIdx ? 1 : 0 })))
+  const applyCal = (cal, row) => {
+    const c = row.probs.map((p) => applyIsotonic(cal, p))
+    const s = c[0] + c[1] + c[2] || 1
+    return { probs: c.map((x) => x / s), actualIdx: row.actualIdx }
+  }
+
+  // Carte finale (tout l'historique) — utilisée pour redresser les prédictions à venir.
+  const calibrationMap = fitIsotonic(calPairsFrom(modelRows))
+
+  // Vérif HONNÊTE : on ajuste la calibration sur 70 % (chrono) et on mesure sur les 30 % suivants.
+  let modelOOS = null, calibratedOOS = null
+  if (modelRows.length >= 30) {
+    const split = Math.floor(modelRows.length * 0.7)
+    const train = modelRows.slice(0, split)
+    const test = modelRows.slice(split)
+    const calT = fitIsotonic(calPairsFrom(train))
+    modelOOS = scoreSet(test)
+    calibratedOOS = scoreSet(test.map((r) => applyCal(calT, r)))
+  }
+
+  // Métriques probabilistes (1N2) : le modèle vs deux baselines. Plus bas = mieux.
+  const metrics = {
+    model: scoreSet(modelRows),
+    baselineElo: scoreSet(eloRows),
+    baselineRate: scoreSet(baseRows),
+    calibration: reliability(relPairs),
+    holdout: { raw: modelOOS, calibrated: calibratedOOS }, // out-of-sample (30 % final)
+  }
+
   return {
     summary: {
       total: records.length,
       result: { correct: cR, pct: p1(cR) },
       btts: { correct: cB, pct: p1(cB) },
       ou25: { correct: cO, pct: p1(cO) },
+      metrics,
     },
+    calibrationMap,
     matches: records,
   }
 }
@@ -717,6 +812,9 @@ export function buildModel({
   matches, trainMatches = [], elo, availability = {}, asOf,
   format = 'cup', maxUpcoming = Infinity,
 }) {
+  // Profil d'hyperparamètres selon le format (coupe vs championnat).
+  Object.assign(TUNABLE, format === 'league' ? PROFILES.league : PROFILES.cup)
+
   const hasTrain = trainMatches.length > 0
   // Joué vs à venir = présence d'un SCORE (pas la date) -> bascule auto dès qu'un
   // résultat est publié par la source.
@@ -788,18 +886,28 @@ export function buildModel({
     )
   }
 
-  // Prédictions = matchs SANS score (à venir)
+  // Track record + métriques + carte de calibration (rejoué point-in-time).
+  const history = backtest({ matches: hasTrain ? trainMatches : matches, elo, format })
+
+  // On n'active la calibration QUE si elle améliore (ou n'aggrave pas) le log-loss
+  // out-of-sample (30 % final). Garantie « pas de régression » de qualité.
+  const ho = history.summary.metrics.holdout
+  const calibrationOn =
+    ho?.raw && ho?.calibrated && ho.calibrated.logLoss <= ho.raw.logLoss + 1e-9
+      ? history.calibrationMap
+      : null
+  history.summary.metrics.calibrationApplied = Boolean(calibrationOn)
+
+  // Prédictions = matchs SANS score (à venir), 1N2 calibré si ça aide
   const upcoming = matches
     .filter((m) => !hasScore(m))
     .sort((a, b) => (a.journee ?? 0) - (b.journee ?? 0) || a.date.localeCompare(b.date))
   const predictions = upcoming
-    .map((m) => predict(m, teams, leagueAvg, asOf, format))
+    .map((m) => predict(m, teams, leagueAvg, asOf, format, calibrationOn))
     .filter(Boolean)
     .slice(0, maxUpcoming)
   const bets = buildBets(predictions, format)
   const valuePicks = buildValuePicks(predictions, format)
-  // Track record : sur les données d'entraînement (saison passée) si fournies
-  const history = backtest({ matches: hasTrain ? trainMatches : matches, elo, format })
 
   const results = displayPlayed
     .sort((a, b) => b.date.localeCompare(a.date))
