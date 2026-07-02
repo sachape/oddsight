@@ -3,30 +3,6 @@ import { flag } from '../flags.js'
 const dateFmt = new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short' })
 const fmtDate = (iso) => dateFmt.format(new Date(iso + 'T12:00:00'))
 
-function StatCard({ label, pct, correct, total, highlight }) {
-  return (
-    <div className="surface surface-hover rounded-2xl p-4 text-center">
-      <div className={`text-3xl font-extrabold tabular-nums ${highlight ? 'text-gradient' : 'text-[#1d1d1f]'}`}>
-        {pct}%
-      </div>
-      <div className="mt-0.5 text-[11px] text-[#6e6e73]">{label}</div>
-      <div className="text-[11px] text-[#86868b]">{correct}/{total} corrects</div>
-    </div>
-  )
-}
-
-function Verdict({ hit }) {
-  return (
-    <span
-      className={`grid h-6 w-6 shrink-0 place-items-center rounded-full text-xs font-bold ${
-        hit ? 'bg-edge-500/15 text-edge-600' : 'bg-rose-500/15 text-rose-600'
-      }`}
-    >
-      {hit ? '✓' : '✗'}
-    </span>
-  )
-}
-
 function QCell({ label, v, strong }) {
   return (
     <div className={`rounded-xl p-2.5 ${strong ? 'bg-edge-500/10 ring-1 ring-edge-500/25' : 'bg-pitch-850'}`}>
@@ -92,56 +68,36 @@ export default function History({ history }) {
 
   return (
     <div className="space-y-5">
-      {/* Score global */}
-      <div className="grid grid-cols-3 gap-3">
-        <StatCard label="Résultat (1N2)" pct={s.result.pct} correct={s.result.correct} total={s.total} highlight />
-        <StatCard label="Les deux marquent" pct={s.btts.pct} correct={s.btts.correct} total={s.total} />
-        <StatCard label="+/−2,5 buts" pct={s.ou25.pct} correct={s.ou25.correct} total={s.total} />
-      </div>
-
       <ModelQuality metrics={s.metrics} />
 
       {/* Méthodologie honnête */}
       <div className="surface rounded-2xl p-4 text-sm leading-relaxed text-[#6e6e73]">
-        <b className="text-edge-600">Méthode (transparente).</b> Chaque match est repronostiqué
-        en n'utilisant <b>que les données disponibles avant le coup d'envoi</b> — aucun résultat
-        futur ne fuite dans le calcul. Le « prono » retenu est l'issue la plus probable du modèle.
+        <b className="text-edge-600">Méthode (transparente).</b> Chaque match passé est
+        repronostiqué en n'utilisant <b>que les données disponibles avant le coup d'envoi</b> —
+        aucun résultat futur ne fuite dans le calcul. On mesure la <b>qualité des probabilités</b>
+        (calibration, log-loss), pas un « taux de réussite » qui serait trompeur.
         <span className="mt-1 block text-xs text-[#86868b]">
-          Réserve : l'Elo utilisé est l'Elo mondial courant (il évolue lentement), ce qui peut
-          très légèrement flatter le score. Sur {s.total} matchs, c'est un track record indicatif,
-          pas une garantie.
+          Ces mesures portent sur {s.total} matchs déjà joués. Aucune prédiction n'est une garantie.
         </span>
       </div>
 
-      {/* Détail match par match */}
+      {/* Matchs analysés — transparence (prono vs résultat), sans notion de « réussite » */}
       <div className="space-y-2">
+        <div className="text-[11px] uppercase tracking-wide text-[#86868b]">
+          Matchs analysés · notre prono vs le résultat
+        </div>
         {history.matches.map((r, i) => (
-          <div key={i} className="surface flex items-center gap-3 rounded-xl px-3 py-2.5">
-            <Verdict hit={r.hit} />
+          <div key={i} className="surface flex items-center gap-3 rounded-xl px-3 py-2.5 text-sm">
             <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-2 text-sm">
-                <span className="truncate text-[#1d1d1f]">
-                  {flag(r.team1)} {r.team1}
-                </span>
+              <div className="flex items-center gap-2">
+                <span className="truncate text-[#1d1d1f]">{flag(r.team1)} {r.team1}</span>
                 <span className="rounded bg-pitch-800 px-1.5 py-0.5 text-xs font-semibold tabular-nums text-[#1d1d1f]">
                   {r.score}
                 </span>
-                <span className="truncate text-[#1d1d1f]">
-                  {r.team2} {flag(r.team2)}
-                </span>
+                <span className="truncate text-[#1d1d1f]">{r.team2} {flag(r.team2)}</span>
               </div>
-              <div className="mt-0.5 flex flex-wrap items-center gap-x-2 gap-y-0.5 text-[11px] text-[#86868b]">
-                <span>{fmtDate(r.date)}</span>
-                <span>·</span>
-                <span>
-                  Prono : <span className={r.hit ? 'text-edge-600' : 'text-[#6e6e73]'}>{r.predLabel}</span> ({r.prob}%)
-                </span>
-                <span className={r.btts.hit ? 'text-edge-600/80' : 'text-[#86868b]'}>
-                  BTTS {r.btts.pred} {r.btts.hit ? '✓' : '✗'}
-                </span>
-                <span className={r.ou25.hit ? 'text-edge-600/80' : 'text-[#86868b]'}>
-                  {r.ou25.pred} {r.ou25.hit ? '✓' : '✗'}
-                </span>
+              <div className="mt-0.5 text-[11px] text-[#86868b]">
+                {fmtDate(r.date)} · notre prono : <span className="text-[#6e6e73]">{r.predLabel}</span> ({r.prob}%)
               </div>
             </div>
           </div>
