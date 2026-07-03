@@ -9,7 +9,7 @@ import { writeFileSync, mkdirSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { buildModel } from './engine.mjs'
-import { fetchMarketOdds } from './market.mjs'
+import { fetchMarketOdds, attachXgProxy } from './market.mjs'
 
 const MARKET_BASE = 'https://www.football-data.co.uk/mmz4281/2526/'
 
@@ -130,6 +130,7 @@ async function main() {
 
   const market = cfg.mkt ? await fetchMarketOdds(MARKET_BASE + cfg.mkt + '.csv', cfg.mktName || {}) : null
   console.log(`✓ ${market?.size || 0} matchs avec cote marché`)
+  if (market) attachXgProxy(trainMatches, market) // proxy xG (tirs cadrés)
 
   const model = buildModel({ matches: fixtures, trainMatches, elo: {}, asOf: ASOF, format: 'league', maxUpcoming: Infinity, market })
   console.log(`✓ ${model.counts.upcoming} pronos · track record ${model.history.summary.result.pct}% (1N2)`)

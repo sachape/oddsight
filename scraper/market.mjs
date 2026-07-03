@@ -35,6 +35,7 @@ export async function fetchMarketOdds(url, nameMap = {}) {
   const idx = (n) => H.indexOf(n)
   const iDate = idx('Date'), iH = idx('HomeTeam'), iA = idx('AwayTeam')
   if (iDate < 0 || iH < 0 || iA < 0) return map
+  const iHST = idx('HST'), iAST = idx('AST') // tirs cadrés (proxy xG)
   const name = (n) => nameMap[n] || n
 
   const pickOdds = (r) => {
@@ -54,7 +55,30 @@ export async function fetchMarketOdds(url, nameMap = {}) {
     const home = name(r[iH]), away = name(r[iA])
     // Dé-marginage proportionnel : probabilités qui somment à 1.
     const s = 1 / o[0] + 1 / o[1] + 1 / o[2]
-    map.set(`${date}|${home}|${away}`, { probs: [1 / o[0] / s, 1 / o[1] / s, 1 / o[2] / s], odds: o })
+    const hst = +r[iHST], ast = +r[iAST]
+    const sot = iHST >= 0 && Number.isFinite(hst) && Number.isFinite(ast) ? [hst, ast] : null
+    map.set(`${date}|${home}|${away}`, { probs: [1 / o[0] / s, 1 / o[1] / s, 1 / o[2] / s], odds: o, sot })
   }
   return map
+}
+
+// Attache un proxy xG (tirs cadrés mis à l'échelle des buts) aux matchs joués,
+// via la Map marché (qui contient `sot`). Modifie en place (m.xg). Le facteur de
+// conversion cale la moyenne des tirs cadrés sur celle des buts (échelle λ correcte).
+export function attachXgProxy(matches, market) {
+  if (!market?.size) return 0
+  let sumG = 0, sumS = 0, matched = 0
+  const key = (m) => `${m.date}|${m.team1}|${m.team2}`
+  for (const m of matches) {
+    const mk = market.get(key(m))
+    if (mk?.sot && m.score?.ft) { sumG += m.score.ft[0] + m.score.ft[1]; sumS += mk.sot[0] + mk.sot[1]; matched++ }
+  }
+  const conv = sumS ? sumG / sumS : 0
+  if (!conv) return 0
+  for (const m of matches) {
+    const mk = market.get(key(m))
+    if (mk?.sot) m.xg = [mk.sot[0] * conv, mk.sot[1] * conv]
+  }
+  console.log(`✓ proxy xG (tirs cadrés) sur ${matched} matchs · conv=${conv.toFixed(3)}`)
+  return matched
 }

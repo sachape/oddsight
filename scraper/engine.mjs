@@ -53,12 +53,15 @@ function gamesFrom(played) {
   const games = []
   for (const m of played) {
     const [g1, g2] = m.score.ft
+    // Force calculée sur le proxy xG (tirs cadrés mis à l'échelle des buts) si
+    // disponible — moins bruité que les buts bruts. Repli sur les buts réels.
+    const [x1, x2] = Array.isArray(m.xg) ? m.xg : [g1, g2]
     const lateOf = (arr) =>
       (arr || []).filter((x) => parseInt(x.minute, 10) >= 75).length
     games.push({
       date: m.date,
       t1: m.team1, t2: m.team2,
-      g1, g2,
+      g1: x1, g2: x2,
       group: m.group || null,
       knockout: !m.group,
       late1: lateOf(m.goals1), late2: lateOf(m.goals2),

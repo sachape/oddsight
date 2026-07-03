@@ -9,7 +9,7 @@ import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { buildModel } from './engine.mjs'
 import { fetchEspnResults } from './espn.mjs'
-import { fetchMarketOdds } from './market.mjs'
+import { fetchMarketOdds, attachXgProxy } from './market.mjs'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 const OUT = resolve(__dirname, '../src/data/ligue1.json')
@@ -161,6 +161,9 @@ async function main() {
   console.log('→ Cotes de clôture (football-data.co.uk)…')
   const market = await fetchMarketOdds(MARKET_URL, { 'Paris SG': 'Paris-SG' })
   console.log(`✓ ${market.size} matchs avec cote marché`)
+
+  // Proxy xG : tirs cadrés mis à l'échelle des buts (force moins bruitée)
+  attachXgProxy(trainMatches, market)
 
   const model = buildModel({
     matches: fixtures, trainMatches, elo: {}, asOf: ASOF, format: 'league', maxUpcoming: Infinity, market,
