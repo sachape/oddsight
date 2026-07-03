@@ -62,10 +62,10 @@ export async function fetchMarketOdds(url, nameMap = {}) {
   return map
 }
 
-// Attache un proxy xG (tirs cadrés mis à l'échelle des buts) aux matchs joués,
-// via la Map marché (qui contient `sot`). Modifie en place (m.xg). Le facteur de
-// conversion cale la moyenne des tirs cadrés sur celle des buts (échelle λ correcte).
-export function attachXgProxy(matches, market) {
+// Attache un proxy xG aux matchs joués : BLEND buts + tirs cadrés (mis à l'échelle
+// des buts). goalWeight=0.5 (validé OOS : meilleur que buts purs ou tirs purs).
+// Modifie en place (m.xg). conv cale la moyenne des tirs cadrés sur celle des buts.
+export function attachXgProxy(matches, market, goalWeight = 0.5) {
   if (!market?.size) return 0
   let sumG = 0, sumS = 0, matched = 0
   const key = (m) => `${m.date}|${m.team1}|${m.team2}`
@@ -75,10 +75,14 @@ export function attachXgProxy(matches, market) {
   }
   const conv = sumS ? sumG / sumS : 0
   if (!conv) return 0
+  const gw = goalWeight, sw = 1 - goalWeight
   for (const m of matches) {
     const mk = market.get(key(m))
-    if (mk?.sot) m.xg = [mk.sot[0] * conv, mk.sot[1] * conv]
+    if (mk?.sot && m.score?.ft) {
+      const [g1, g2] = m.score.ft
+      m.xg = [gw * g1 + sw * mk.sot[0] * conv, gw * g2 + sw * mk.sot[1] * conv]
+    }
   }
-  console.log(`✓ proxy xG (tirs cadrés) sur ${matched} matchs · conv=${conv.toFixed(3)}`)
+  console.log(`✓ proxy xG (blend buts+tirs, gw=${gw}) sur ${matched} matchs · conv=${conv.toFixed(3)}`)
   return matched
 }
