@@ -14,6 +14,8 @@ function QCell({ label, v, strong }) {
   )
 }
 
+const CAL_LABEL = { x12: '1N2', btts: 'BTTS', o15: '+1,5 but', o25: '+2,5 buts', o35: '+3,5 buts' }
+
 // Qualité probabiliste : log-loss vs baselines + courbe de calibration.
 function ModelQuality({ metrics: m }) {
   if (!m?.model) return null
@@ -33,7 +35,10 @@ function ModelQuality({ metrics: m }) {
         {beatsElo
           ? '✓ Le modèle fait aussi bien ou mieux que le simple Elo (le benchmark à battre).'
           : 'Le modèle est proche du simple Elo — marge de progression identifiée.'}
-        {m.calibrationApplied && ' Probabilités recalibrées sur l’historique.'}
+        {m.calibratedMarkets?.length > 0 &&
+          ` Marchés recalibrés sur l’historique : ${m.calibratedMarkets
+            .map((k) => CAL_LABEL[k] || k)
+            .join(', ')}.`}
       </p>
 
       {m.market && (

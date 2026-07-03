@@ -10,7 +10,7 @@
 //   7. Finition (timing des buts) .... équipes qui marquent tard
 // puis loi de Poisson + correction Dixon-Coles -> probabilités de chaque score.
 
-import { scoreSet, reliability, fitIsotonic, applyIsotonic, logLossSample } from './metrics.mjs'
+import { scoreSet, reliability, fitIsotonic, applyIsotonic, logLossSample, gatedIsotonic } from './metrics.mjs'
 
 const HOSTS = new Set(['United States', 'USA', 'Canada', 'Mexico'])
 
@@ -327,14 +327,18 @@ function predict(m, teams, leagueAvg, asOf, format = 'cup', cal = null) {
     if (tot > 3.5) over[3.5] += c.p
   }
 
-  // Calibration isotonique du 1N2 (ajustée sur l'historique) : redresse la sur/
-  // sous-confiance. Appliquée AVANT les marchés dérivés (double chance, qualif,
-  // pronostic) pour rester cohérent. BTTS/over/scores restent issus de la grille.
-  if (cal) {
-    const c1 = applyIsotonic(cal, pW1), cX = applyIsotonic(cal, pD), c2 = applyIsotonic(cal, pW2)
+  // Calibration isotonique (ajustée sur l'historique, gated OOS) : redresse la
+  // sur/sous-confiance de chaque marché. Le 1N2 est calibré AVANT les marchés
+  // dérivés (double chance, qualif, pronostic) pour rester cohérent.
+  if (cal?.x12) {
+    const c1 = applyIsotonic(cal.x12, pW1), cX = applyIsotonic(cal.x12, pD), c2 = applyIsotonic(cal.x12, pW2)
     const s = c1 + cX + c2 || 1
     pW1 = c1 / s; pD = cX / s; pW2 = c2 / s
   }
+  if (cal?.btts) bttsYes = applyIsotonic(cal.btts, bttsYes)
+  if (cal?.o15) over[1.5] = applyIsotonic(cal.o15, over[1.5])
+  if (cal?.o25) over[2.5] = applyIsotonic(cal.o25, over[2.5])
+  if (cal?.o35) over[3.5] = applyIsotonic(cal.o35, over[3.5])
 
   const markets = {
     btts: { yes: pct(bttsYes), no: pct(1 - bttsYes) },
@@ -684,6 +688,8 @@ export function backtest({ matches, elo, format = 'cup', market = null }) {
   const relPairs = []  // { x: proba du pick, y: réussite 0/1 }
   const mktModelRows = [] // modèle, SEULEMENT sur les matchs où on a la cote marché
   const mktRows = []      // marché (cotes de clôture dé-marginées), même sous-ensemble
+  // Paires { x: proba prédite, y: 0/1 } pour la calibration des marchés binaires.
+  const bttsPairs = [], o15Pairs = [], o25Pairs = [], o35Pairs = []
   let n1 = 0, nX = 0, n2 = 0 // compteurs d'issues DÉJÀ vues (base-rate point-in-time)
 
   const idxOf = (a) => (a === '1' ? 0 : a === 'X' ? 1 : 2)
@@ -753,6 +759,13 @@ export function backtest({ matches, elo, format = 'cup', market = null }) {
     const ouActual = g1 + g2 > 2.5
     const hitO = ouPred === ouActual
 
+    // Paires pour la calibration des marchés binaires (chronologique)
+    const tot = g1 + g2
+    bttsPairs.push({ x: pred.markets.btts.yes / 100, y: bttsActual ? 1 : 0 })
+    o15Pairs.push({ x: pred.markets.over['1.5'].over / 100, y: tot > 1.5 ? 1 : 0 })
+    o25Pairs.push({ x: pred.markets.over['2.5'].over / 100, y: tot > 2.5 ? 1 : 0 })
+    o35Pairs.push({ x: pred.markets.over['3.5'].over / 100, y: tot > 3.5 ? 1 : 0 })
+
     if (hitR) cR++
     if (hitB) cB++
     if (hitO) cO++
@@ -782,11 +795,8 @@ export function backtest({ matches, elo, format = 'cup', market = null }) {
     return { probs: c.map((x) => x / s), actualIdx: row.actualIdx }
   }
 
-  // Carte finale (tout l'historique) — utilisée pour redresser les prédictions à venir.
-  const calibrationMap = fitIsotonic(calPairsFrom(modelRows))
-
-  // Vérif HONNÊTE : on ajuste la calibration sur 70 % (chrono) et on mesure sur les 30 % suivants.
-  let modelOOS = null, calibratedOOS = null
+  // Vérif HONNÊTE 1N2 : on ajuste sur 70 % (chrono) et on mesure sur les 30 % suivants.
+  let modelOOS = null, calibratedOOS = null, x12Map = null
   if (modelRows.length >= 30) {
     const split = Math.floor(modelRows.length * 0.7)
     const train = modelRows.slice(0, split)
@@ -794,6 +804,17 @@ export function backtest({ matches, elo, format = 'cup', market = null }) {
     const calT = fitIsotonic(calPairsFrom(train))
     modelOOS = scoreSet(test)
     calibratedOOS = scoreSet(test.map((r) => applyCal(calT, r)))
+    // On ne garde la calibration 1N2 que si elle aide OOS (garantie anti-régression).
+    if (calibratedOOS.logLoss <= modelOOS.logLoss + 1e-9) x12Map = fitIsotonic(calPairsFrom(modelRows))
+  }
+
+  // Cartes de calibration par marché (chacune gated OOS, null si elle n'aide pas).
+  const calibration = {
+    x12: x12Map,
+    btts: gatedIsotonic(bttsPairs),
+    o15: gatedIsotonic(o15Pairs),
+    o25: gatedIsotonic(o25Pairs),
+    o35: gatedIsotonic(o35Pairs),
   }
 
   // Métriques probabilistes (1N2) : le modèle vs deux baselines. Plus bas = mieux.
@@ -836,6 +857,10 @@ export function backtest({ matches, elo, format = 'cup', market = null }) {
     }
   }
 
+  // Marchés effectivement calibrés (pour affichage / transparence)
+  metrics.calibratedMarkets = Object.entries(calibration)
+    .filter(([, v]) => v).map(([k]) => k)
+
   return {
     summary: {
       total: records.length,
@@ -844,7 +869,7 @@ export function backtest({ matches, elo, format = 'cup', market = null }) {
       ou25: { correct: cO, pct: p1(cO) },
       metrics,
     },
-    calibrationMap,
+    calibration,
     matches: records,
   }
 }
@@ -932,21 +957,17 @@ export function buildModel({
   // Track record + métriques + carte de calibration (rejoué point-in-time).
   const history = backtest({ matches: hasTrain ? trainMatches : matches, elo, format, market })
 
-  // On n'active la calibration QUE si elle améliore (ou n'aggrave pas) le log-loss
-  // out-of-sample (30 % final). Garantie « pas de régression » de qualité.
-  const ho = history.summary.metrics.holdout
-  const calibrationOn =
-    ho?.raw && ho?.calibrated && ho.calibrated.logLoss <= ho.raw.logLoss + 1e-9
-      ? history.calibrationMap
-      : null
-  history.summary.metrics.calibrationApplied = Boolean(calibrationOn)
+  // Calibration par marché (chacune déjà gated OOS dans le backtest : une carte
+  // n'existe que si elle améliore le log-loss out-of-sample). Garantie anti-régression.
+  const calibration = history.calibration
+  history.summary.metrics.calibrationApplied = Boolean(calibration?.x12)
 
-  // Prédictions = matchs SANS score (à venir), 1N2 calibré si ça aide
+  // Prédictions = matchs SANS score (à venir), marchés calibrés si ça aide
   const upcoming = matches
     .filter((m) => !hasScore(m))
     .sort((a, b) => (a.journee ?? 0) - (b.journee ?? 0) || a.date.localeCompare(b.date))
   const predictions = upcoming
-    .map((m) => predict(m, teams, leagueAvg, asOf, format, calibrationOn))
+    .map((m) => predict(m, teams, leagueAvg, asOf, format, calibration))
     .filter(Boolean)
     .slice(0, maxUpcoming)
   const bets = buildBets(predictions, format)

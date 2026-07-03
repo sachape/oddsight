@@ -1,13 +1,13 @@
 {
   "tournament": "World Cup 2026",
-  "generatedAt": "2026-07-02T21:46:37.531Z",
-  "asOf": "2026-07-02",
+  "generatedAt": "2026-07-03T09:18:19.327Z",
+  "asOf": "2026-07-03",
   "sources": [
     "openfootball/worldcup.json",
     "ESPN (résultats live)",
     "eloratings.net"
   ],
-  "leagueAvg": 1.44,
+  "leagueAvg": 1.43,
   "format": "cup",
   "teams": {
     "Mexico": {
@@ -20,7 +20,7 @@
       "l": 0,
       "gf": 8,
       "ga": 0,
-      "wsum": 2.7039442504525306,
+      "wsum": 2.573330637166606,
       "lateFor": 1,
       "lateAgainst": 0,
       "lastDate": "2026-06-30",
@@ -30,7 +30,7 @@
       "formStr": "W W W",
       "clutch": 0.13,
       "attAdj": 1.32,
-      "defAdj": 0.5,
+      "defAdj": 0.51,
       "momentum": 0.6,
       "absents": [],
       "availAtt": 1,
@@ -47,7 +47,7 @@
       "l": 2,
       "gf": 2,
       "ga": 4,
-      "wsum": 2.592939449719381,
+      "wsum": 2.467687906347958,
       "lateFor": 1,
       "lateAgainst": 1,
       "lastDate": "2026-06-28",
@@ -56,7 +56,7 @@
       "gapg": 1,
       "formStr": "D W L",
       "clutch": 0.5,
-      "attAdj": 0.68,
+      "attAdj": 0.69,
       "defAdj": 0.8,
       "momentum": 0.28,
       "absents": [],
@@ -74,7 +74,7 @@
       "l": 2,
       "gf": 2,
       "ga": 3,
-      "wsum": 1.5265034869094518,
+      "wsum": 1.4527659695455353,
       "lateFor": 1,
       "lateAgainst": 0,
       "lastDate": "2026-06-24",
@@ -83,7 +83,7 @@
       "gapg": 1,
       "formStr": "W L L",
       "clutch": 0.5,
-      "attAdj": 0.76,
+      "attAdj": 0.77,
       "defAdj": 0.96,
       "momentum": -0.58,
       "absents": [],
@@ -101,7 +101,7 @@
       "l": 2,
       "gf": 2,
       "ga": 6,
-      "wsum": 1.5265034869094518,
+      "wsum": 1.4527659695455353,
       "lateFor": 0,
       "lateAgainst": 3,
       "lastDate": "2026-06-24",
@@ -110,7 +110,7 @@
       "gapg": 2,
       "formStr": "L D L",
       "clutch": 0,
-      "attAdj": 0.83,
+      "attAdj": 0.84,
       "defAdj": 1.21,
       "momentum": -0.47,
       "absents": [],
@@ -128,7 +128,7 @@
       "l": 1,
       "gf": 9,
       "ga": 3,
-      "wsum": 2.6108846314103444,
+      "wsum": 2.484766248783143,
       "lateFor": 5,
       "lateAgainst": 0,
       "lastDate": "2026-06-28",
@@ -137,8 +137,8 @@
       "gapg": 0.75,
       "formStr": "W L W",
       "clutch": 0.56,
-      "attAdj": 1.13,
-      "defAdj": 0.71,
+      "attAdj": 1.17,
+      "defAdj": 0.72,
       "momentum": 0.1,
       "absents": [],
       "availAtt": 1,
@@ -155,7 +155,7 @@
       "l": 2,
       "gf": 5,
       "ga": 8,
-      "wsum": 2.7816523675142206,
+      "wsum": 2.647285075523799,
       "lateFor": 2,
       "lateAgainst": 5,
       "lastDate": "2026-07-01",
@@ -164,8 +164,8 @@
       "gapg": 2,
       "formStr": "L W L",
       "clutch": 0.4,
-      "attAdj": 0.82,
-      "defAdj": 1.08,
+      "attAdj": 0.85,
+      "defAdj": 1.09,
       "momentum": -0.18,
       "absents": [],
       "availAtt": 1,
@@ -182,7 +182,7 @@
       "l": 1,
       "gf": 10,
       "ga": 4,
-      "wsum": 2.8411873717112,
+      "wsum": 2.7039442504525306,
       "lateFor": 2,
       "lateAgainst": 1,
       "lastDate": "2026-07-01",
@@ -191,8 +191,8 @@
       "gapg": 1,
       "formStr": "W L W",
       "clutch": 0.2,
-      "attAdj": 1.44,
-      "defAdj": 0.81,
+      "attAdj": 1.43,
+      "defAdj": 0.82,
       "momentum": 0.22,
       "absents": [],
       "availAtt": 1,
@@ -209,7 +209,7 @@
       "l": 1,
       "gf": 3,
       "ga": 5,
-      "wsum": 2.7245483404184654,
+      "wsum": 2.592939449719381,
       "lateFor": 0,
       "lateAgainst": 1,
       "lastDate": "2026-06-29",
@@ -218,13 +218,13 @@
       "gapg": 1.25,
       "formStr": "W D D",
       "clutch": 0,
-      "attAdj": 0.77,
-      "defAdj": 0.76,
+      "attAdj": 0.78,
+      "defAdj": 0.77,
       "momentum": 0.34,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
-      "eloRank": 21
+      "eloRank": 20
     },
     "Qatar": {
       "name": "Qatar",
@@ -236,7 +236,7 @@
       "l": 2,
       "gf": 2,
       "ga": 10,
-      "wsum": 1.563304687394033,
+      "wsum": 1.4877894936716833,
       "lateFor": 1,
       "lateAgainst": 3,
       "lastDate": "2026-06-24",
@@ -245,8 +245,8 @@
       "gapg": 3.33,
       "formStr": "D L L",
       "clutch": 0.5,
-      "attAdj": 0.83,
-      "defAdj": 1.59,
+      "attAdj": 0.87,
+      "defAdj": 1.55,
       "momentum": -0.06,
       "absents": [],
       "availAtt": 1,
@@ -257,24 +257,24 @@
       "name": "Switzerland",
       "group": "Group B",
       "elo": 1914,
-      "played": 3,
-      "w": 2,
+      "played": 4,
+      "w": 3,
       "d": 1,
       "l": 0,
-      "gf": 7,
+      "gf": 9,
       "ga": 3,
-      "wsum": 1.563304687394033,
+      "wsum": 2.724993192585489,
       "lateFor": 3,
       "lateAgainst": 3,
-      "lastDate": "2026-06-24",
-      "points": 7,
-      "gfpg": 2.33,
-      "gapg": 1,
-      "formStr": "D W W",
-      "clutch": 0.43,
-      "attAdj": 1.36,
-      "defAdj": 0.93,
-      "momentum": 0.12,
+      "lastDate": "2026-07-02",
+      "points": 10,
+      "gfpg": 2.25,
+      "gapg": 0.75,
+      "formStr": "W W W",
+      "clutch": 0.33,
+      "attAdj": 1.3,
+      "defAdj": 0.71,
+      "momentum": 0.56,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
@@ -290,7 +290,7 @@
       "l": 0,
       "gf": 9,
       "ga": 2,
-      "wsum": 2.7092476743417135,
+      "wsum": 2.5783778799763026,
       "lateFor": 1,
       "lateAgainst": 0,
       "lastDate": "2026-06-29",
@@ -317,7 +317,7 @@
       "l": 0,
       "gf": 7,
       "ga": 4,
-      "wsum": 2.7092476743417135,
+      "wsum": 2.5783778799763026,
       "lateFor": 3,
       "lateAgainst": 0,
       "lastDate": "2026-06-29",
@@ -326,13 +326,13 @@
       "gapg": 1,
       "formStr": "W W D",
       "clutch": 0.43,
-      "attAdj": 1.1,
+      "attAdj": 1.11,
       "defAdj": 0.86,
       "momentum": 0.32,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
-      "eloRank": 16
+      "eloRank": 15
     },
     "Haiti": {
       "name": "Haiti",
@@ -344,7 +344,7 @@
       "l": 3,
       "gf": 2,
       "ga": 8,
-      "wsum": 1.5886830067206428,
+      "wsum": 1.5119419171663733,
       "lateFor": 0,
       "lateAgainst": 2,
       "lastDate": "2026-06-24",
@@ -353,7 +353,7 @@
       "gapg": 2.67,
       "formStr": "L L L",
       "clutch": 0,
-      "attAdj": 0.92,
+      "attAdj": 0.93,
       "defAdj": 1.36,
       "momentum": -0.23,
       "absents": [],
@@ -371,7 +371,7 @@
       "l": 2,
       "gf": 1,
       "ga": 4,
-      "wsum": 1.5886830067206428,
+      "wsum": 1.5119419171663733,
       "lateFor": 0,
       "lateAgainst": 0,
       "lastDate": "2026-06-24",
@@ -380,7 +380,7 @@
       "gapg": 1.33,
       "formStr": "W L L",
       "clutch": 0,
-      "attAdj": 0.69,
+      "attAdj": 0.71,
       "defAdj": 0.98,
       "momentum": -0.24,
       "absents": [],
@@ -398,7 +398,7 @@
       "l": 1,
       "gf": 2,
       "ga": 2,
-      "wsum": 1.6228396915910124,
+      "wsum": 1.544448668600415,
       "lateFor": 1,
       "lateAgainst": 0,
       "lastDate": "2026-06-25",
@@ -407,8 +407,8 @@
       "gapg": 0.67,
       "formStr": "W L D",
       "clutch": 0.5,
-      "attAdj": 0.76,
-      "defAdj": 0.76,
+      "attAdj": 0.77,
+      "defAdj": 0.77,
       "momentum": -0.02,
       "absents": [],
       "availAtt": 1,
@@ -425,7 +425,7 @@
       "l": 2,
       "gf": 3,
       "ga": 5,
-      "wsum": 1.6228396915910124,
+      "wsum": 1.544448668600415,
       "lateFor": 1,
       "lateAgainst": 1,
       "lastDate": "2026-06-25",
@@ -435,7 +435,7 @@
       "formStr": "L L W",
       "clutch": 0.33,
       "attAdj": 1.1,
-      "defAdj": 1.1,
+      "defAdj": 1.09,
       "momentum": -0.26,
       "absents": [],
       "availAtt": 1,
@@ -452,7 +452,7 @@
       "l": 1,
       "gf": 11,
       "ga": 5,
-      "wsum": 2.7898838836483435,
+      "wsum": 2.655118969530572,
       "lateFor": 3,
       "lateAgainst": 1,
       "lastDate": "2026-06-29",
@@ -479,7 +479,7 @@
       "l": 2,
       "gf": 1,
       "ga": 9,
-      "wsum": 1.6693192160272727,
+      "wsum": 1.5886830067206428,
       "lateFor": 0,
       "lateAgainst": 2,
       "lastDate": "2026-06-25",
@@ -488,7 +488,7 @@
       "gapg": 3,
       "formStr": "L D L",
       "clutch": 0,
-      "attAdj": 0.69,
+      "attAdj": 0.71,
       "defAdj": 1.26,
       "momentum": 0.11,
       "absents": [],
@@ -506,7 +506,7 @@
       "l": 2,
       "gf": 5,
       "ga": 4,
-      "wsum": 2.8467599795703515,
+      "wsum": 2.7092476743417135,
       "lateFor": 1,
       "lateAgainst": 2,
       "lastDate": "2026-06-30",
@@ -515,8 +515,8 @@
       "gapg": 1,
       "formStr": "L W L",
       "clutch": 0.2,
-      "attAdj": 0.92,
-      "defAdj": 0.82,
+      "attAdj": 0.93,
+      "defAdj": 0.83,
       "momentum": -0.25,
       "absents": [],
       "availAtt": 1,
@@ -533,7 +533,7 @@
       "l": 2,
       "gf": 2,
       "ga": 4,
-      "wsum": 2.8467599795703515,
+      "wsum": 2.7092476743417135,
       "lateFor": 1,
       "lateAgainst": 1,
       "lastDate": "2026-06-30",
@@ -542,7 +542,7 @@
       "gapg": 1,
       "formStr": "D W L",
       "clutch": 0.5,
-      "attAdj": 0.66,
+      "attAdj": 0.68,
       "defAdj": 0.86,
       "momentum": -0.26,
       "absents": [],
@@ -560,7 +560,7 @@
       "l": 0,
       "gf": 11,
       "ga": 5,
-      "wsum": 2.7898838836483435,
+      "wsum": 2.655118969530572,
       "lateFor": 1,
       "lateAgainst": 2,
       "lastDate": "2026-06-29",
@@ -570,7 +570,7 @@
       "formStr": "W W D",
       "clutch": 0.09,
       "attAdj": 1.29,
-      "defAdj": 0.93,
+      "defAdj": 0.94,
       "momentum": 0.03,
       "absents": [],
       "availAtt": 1,
@@ -587,7 +587,7 @@
       "l": 1,
       "gf": 8,
       "ga": 5,
-      "wsum": 2.7898838836483435,
+      "wsum": 2.655118969530572,
       "lateFor": 2,
       "lateAgainst": 1,
       "lastDate": "2026-06-29",
@@ -597,12 +597,12 @@
       "formStr": "W D L",
       "clutch": 0.25,
       "attAdj": 1.11,
-      "defAdj": 0.91,
+      "defAdj": 0.92,
       "momentum": -0.35,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
-      "eloRank": 15
+      "eloRank": 14
     },
     "Sweden": {
       "name": "Sweden",
@@ -614,7 +614,7 @@
       "l": 2,
       "gf": 7,
       "ga": 10,
-      "wsum": 2.8467599795703515,
+      "wsum": 2.7092476743417135,
       "lateFor": 2,
       "lateAgainst": 1,
       "lastDate": "2026-06-30",
@@ -623,7 +623,7 @@
       "gapg": 2.5,
       "formStr": "L D L",
       "clutch": 0.29,
-      "attAdj": 0.85,
+      "attAdj": 0.86,
       "defAdj": 1.23,
       "momentum": -0.05,
       "absents": [],
@@ -641,7 +641,7 @@
       "l": 3,
       "gf": 2,
       "ga": 12,
-      "wsum": 1.6693192160272727,
+      "wsum": 1.5886830067206428,
       "lateFor": 0,
       "lateAgainst": 3,
       "lastDate": "2026-06-25",
@@ -650,8 +650,8 @@
       "gapg": 4,
       "formStr": "L L L",
       "clutch": 0,
-      "attAdj": 0.82,
-      "defAdj": 1.66,
+      "attAdj": 0.83,
+      "defAdj": 1.65,
       "momentum": -0.3,
       "absents": [],
       "availAtt": 1,
@@ -668,7 +668,7 @@
       "l": 0,
       "gf": 8,
       "ga": 4,
-      "wsum": 2.99125194718585,
+      "wsum": 2.8467599795703515,
       "lateFor": 5,
       "lateAgainst": 1,
       "lastDate": "2026-07-01",
@@ -677,8 +677,8 @@
       "gapg": 1,
       "formStr": "D W D",
       "clutch": 0.63,
-      "attAdj": 1.17,
-      "defAdj": 0.84,
+      "attAdj": 1.18,
+      "defAdj": 0.85,
       "momentum": -0.16,
       "absents": [],
       "availAtt": 1,
@@ -695,7 +695,7 @@
       "l": 0,
       "gf": 5,
       "ga": 3,
-      "wsum": 1.7540482482720445,
+      "wsum": 1.6693192160272727,
       "lateFor": 1,
       "lateAgainst": 0,
       "lastDate": "2026-06-26",
@@ -705,7 +705,7 @@
       "formStr": "D W D",
       "clutch": 0.2,
       "attAdj": 1.04,
-      "defAdj": 0.91,
+      "defAdj": 0.92,
       "momentum": 0.29,
       "absents": [],
       "availAtt": 1,
@@ -722,7 +722,7 @@
       "l": 0,
       "gf": 3,
       "ga": 3,
-      "wsum": 1.7540482482720445,
+      "wsum": 1.6693192160272727,
       "lateFor": 0,
       "lateAgainst": 0,
       "lastDate": "2026-06-26",
@@ -731,7 +731,7 @@
       "gapg": 1,
       "formStr": "D D D",
       "clutch": 0,
-      "attAdj": 0.85,
+      "attAdj": 0.86,
       "defAdj": 0.87,
       "momentum": -0.04,
       "absents": [],
@@ -749,7 +749,7 @@
       "l": 2,
       "gf": 4,
       "ga": 10,
-      "wsum": 1.7540482482720445,
+      "wsum": 1.6693192160272727,
       "lateFor": 1,
       "lateAgainst": 3,
       "lastDate": "2026-06-26",
@@ -759,7 +759,7 @@
       "formStr": "D L L",
       "clutch": 0.25,
       "attAdj": 1.05,
-      "defAdj": 1.59,
+      "defAdj": 1.58,
       "momentum": -0.1,
       "absents": [],
       "availAtt": 1,
@@ -769,14 +769,14 @@
     "Spain": {
       "name": "Spain",
       "group": "Group H",
-      "elo": 2144,
+      "elo": 2159,
       "played": 4,
       "w": 3,
       "d": 1,
       "l": 0,
       "gf": 8,
       "ga": 0,
-      "wsum": 3.0540482482720446,
+      "wsum": 2.9065229149410783,
       "lateFor": 1,
       "lateAgainst": 0,
       "lastDate": "2026-07-02",
@@ -785,13 +785,13 @@
       "gapg": 0,
       "formStr": "W W W",
       "clutch": 0.13,
-      "attAdj": 1.26,
-      "defAdj": 0.47,
-      "momentum": 0.25,
+      "attAdj": 1.24,
+      "defAdj": 0.48,
+      "momentum": 0.22,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
-      "eloRank": 2
+      "eloRank": 1
     },
     "Cape Verde": {
       "name": "Cape Verde",
@@ -803,7 +803,7 @@
       "l": 0,
       "gf": 2,
       "ga": 2,
-      "wsum": 1.7540482482720445,
+      "wsum": 1.6693192160272727,
       "lateFor": 0,
       "lateAgainst": 0,
       "lastDate": "2026-06-26",
@@ -812,8 +812,8 @@
       "gapg": 0.67,
       "formStr": "D D D",
       "clutch": 0,
-      "attAdj": 0.81,
-      "defAdj": 0.82,
+      "attAdj": 0.82,
+      "defAdj": 0.83,
       "momentum": 0.38,
       "absents": [],
       "availAtt": 1,
@@ -830,7 +830,7 @@
       "l": 1,
       "gf": 1,
       "ga": 5,
-      "wsum": 1.7540482482720445,
+      "wsum": 1.6693192160272727,
       "lateFor": 0,
       "lateAgainst": 1,
       "lastDate": "2026-06-26",
@@ -839,9 +839,9 @@
       "gapg": 1.67,
       "formStr": "D L D",
       "clutch": 0,
-      "attAdj": 0.69,
-      "defAdj": 1,
-      "momentum": 0.15,
+      "attAdj": 0.7,
+      "defAdj": 1.01,
+      "momentum": 0.16,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
@@ -857,7 +857,7 @@
       "l": 1,
       "gf": 3,
       "ga": 4,
-      "wsum": 1.7540482482720445,
+      "wsum": 1.6693192160272727,
       "lateFor": 1,
       "lateAgainst": 0,
       "lastDate": "2026-06-26",
@@ -868,7 +868,7 @@
       "clutch": 0.33,
       "attAdj": 0.94,
       "defAdj": 1.06,
-      "momentum": -0.46,
+      "momentum": -0.45,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
@@ -884,7 +884,7 @@
       "l": 0,
       "gf": 13,
       "ga": 2,
-      "wsum": 2.982806567345744,
+      "wsum": 2.8387225525111885,
       "lateFor": 3,
       "lateAgainst": 1,
       "lastDate": "2026-06-30",
@@ -894,7 +894,7 @@
       "formStr": "W W W",
       "clutch": 0.23,
       "attAdj": 1.57,
-      "defAdj": 0.58,
+      "defAdj": 0.59,
       "momentum": 0.24,
       "absents": [],
       "availAtt": 1,
@@ -911,7 +911,7 @@
       "l": 2,
       "gf": 10,
       "ga": 8,
-      "wsum": 3.0425695027164705,
+      "wsum": 2.8955986484331966,
       "lateFor": 3,
       "lateAgainst": 5,
       "lastDate": "2026-07-01",
@@ -920,7 +920,7 @@
       "gapg": 2,
       "formStr": "L W D",
       "clutch": 0.3,
-      "attAdj": 1.45,
+      "attAdj": 1.44,
       "defAdj": 1.02,
       "momentum": 0.08,
       "absents": [],
@@ -938,7 +938,7 @@
       "l": 3,
       "gf": 1,
       "ga": 12,
-      "wsum": 1.8053658038026652,
+      "wsum": 1.7181578848901178,
       "lateFor": 0,
       "lateAgainst": 3,
       "lastDate": "2026-06-26",
@@ -947,7 +947,7 @@
       "gapg": 4,
       "formStr": "L L L",
       "clutch": 0,
-      "attAdj": 0.68,
+      "attAdj": 0.69,
       "defAdj": 1.44,
       "momentum": -0.23,
       "absents": [],
@@ -965,7 +965,7 @@
       "l": 1,
       "gf": 10,
       "ga": 8,
-      "wsum": 2.982806567345744,
+      "wsum": 2.8387225525111885,
       "lateFor": 3,
       "lateAgainst": 2,
       "lastDate": "2026-06-30",
@@ -974,7 +974,7 @@
       "gapg": 2,
       "formStr": "W L W",
       "clutch": 0.3,
-      "attAdj": 1.43,
+      "attAdj": 1.42,
       "defAdj": 1.09,
       "momentum": 0.24,
       "absents": [],
@@ -992,7 +992,7 @@
       "l": 0,
       "gf": 8,
       "ga": 1,
-      "wsum": 1.843077841389901,
+      "wsum": 1.7540482482720445,
       "lateFor": 3,
       "lateAgainst": 0,
       "lastDate": "2026-06-27",
@@ -1001,36 +1001,36 @@
       "gapg": 0.33,
       "formStr": "W W W",
       "clutch": 0.38,
-      "attAdj": 1.22,
-      "defAdj": 0.74,
-      "momentum": 0.19,
+      "attAdj": 1.21,
+      "defAdj": 0.75,
+      "momentum": 0.18,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
-      "eloRank": 1
+      "eloRank": 2
     },
     "Algeria": {
       "name": "Algeria",
       "group": "Group J",
       "elo": 1785,
-      "played": 3,
+      "played": 4,
       "w": 1,
       "d": 1,
-      "l": 1,
+      "l": 2,
       "gf": 5,
-      "ga": 7,
-      "wsum": 1.843077841389901,
+      "ga": 9,
+      "wsum": 2.99125194718585,
       "lateFor": 2,
       "lateAgainst": 2,
-      "lastDate": "2026-06-27",
+      "lastDate": "2026-07-02",
       "points": 4,
-      "gfpg": 1.67,
-      "gapg": 2.33,
-      "formStr": "L W D",
+      "gfpg": 1.25,
+      "gapg": 2.25,
+      "formStr": "W D L",
       "clutch": 0.4,
-      "attAdj": 1.05,
-      "defAdj": 1.36,
-      "momentum": 0.2,
+      "attAdj": 0.8,
+      "defAdj": 1.3,
+      "momentum": -0.15,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
@@ -1039,14 +1039,14 @@
     "Austria": {
       "name": "Austria",
       "group": "Group J",
-      "elo": 1836,
+      "elo": 1821,
       "played": 4,
       "w": 1,
       "d": 1,
       "l": 2,
       "gf": 6,
       "ga": 9,
-      "wsum": 3.1430778413899008,
+      "wsum": 2.99125194718585,
       "lateFor": 3,
       "lateAgainst": 3,
       "lastDate": "2026-07-02",
@@ -1055,13 +1055,13 @@
       "gapg": 2.25,
       "formStr": "L D L",
       "clutch": 0.5,
-      "attAdj": 0.82,
-      "defAdj": 1.32,
-      "momentum": -0.25,
+      "attAdj": 0.83,
+      "defAdj": 1.42,
+      "momentum": -0.21,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
-      "eloRank": 20
+      "eloRank": 21
     },
     "Jordan": {
       "name": "Jordan",
@@ -1073,7 +1073,7 @@
       "l": 3,
       "gf": 3,
       "ga": 8,
-      "wsum": 1.843077841389901,
+      "wsum": 1.7540482482720445,
       "lateFor": 0,
       "lateAgainst": 4,
       "lastDate": "2026-06-27",
@@ -1083,7 +1083,7 @@
       "formStr": "L L L",
       "clutch": 0,
       "attAdj": 0.92,
-      "defAdj": 1.38,
+      "defAdj": 1.43,
       "momentum": -0.35,
       "absents": [],
       "availAtt": 1,
@@ -1093,29 +1093,29 @@
     "Portugal": {
       "name": "Portugal",
       "group": "Group K",
-      "elo": 1990,
-      "played": 3,
-      "w": 1,
+      "elo": 2013,
+      "played": 4,
+      "w": 2,
       "d": 2,
       "l": 0,
-      "gf": 6,
-      "ga": 1,
-      "wsum": 1.897000103543156,
-      "lateFor": 1,
+      "gf": 8,
+      "ga": 2,
+      "wsum": 3.0425695027164705,
+      "lateFor": 2,
       "lateAgainst": 0,
-      "lastDate": "2026-06-27",
-      "points": 5,
+      "lastDate": "2026-07-02",
+      "points": 8,
       "gfpg": 2,
-      "gapg": 0.33,
-      "formStr": "D W D",
-      "clutch": 0.17,
-      "attAdj": 0.98,
-      "defAdj": 0.67,
-      "momentum": -0.08,
+      "gapg": 0.5,
+      "formStr": "W D W",
+      "clutch": 0.25,
+      "attAdj": 1.08,
+      "defAdj": 0.66,
+      "momentum": 0.35,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
-      "eloRank": 7
+      "eloRank": 6
     },
     "DR Congo": {
       "name": "DR Congo",
@@ -1127,7 +1127,7 @@
       "l": 2,
       "gf": 5,
       "ga": 5,
-      "wsum": 3.1342038024569616,
+      "wsum": 2.982806567345744,
       "lateFor": 2,
       "lateAgainst": 3,
       "lastDate": "2026-07-01",
@@ -1136,7 +1136,7 @@
       "gapg": 1.25,
       "formStr": "L W L",
       "clutch": 0.4,
-      "attAdj": 0.95,
+      "attAdj": 0.96,
       "defAdj": 0.99,
       "momentum": 0.05,
       "absents": [],
@@ -1154,7 +1154,7 @@
       "l": 3,
       "gf": 2,
       "ga": 11,
-      "wsum": 1.897000103543156,
+      "wsum": 1.8053658038026652,
       "lateFor": 0,
       "lateAgainst": 4,
       "lastDate": "2026-06-27",
@@ -1164,7 +1164,7 @@
       "formStr": "L L L",
       "clutch": 0,
       "attAdj": 0.85,
-      "defAdj": 1.8,
+      "defAdj": 1.73,
       "momentum": -0.45,
       "absents": [],
       "availAtt": 1,
@@ -1181,7 +1181,7 @@
       "l": 0,
       "gf": 4,
       "ga": 1,
-      "wsum": 1.897000103543156,
+      "wsum": 1.8053658038026652,
       "lateFor": 2,
       "lateAgainst": 0,
       "lastDate": "2026-06-27",
@@ -1190,13 +1190,13 @@
       "gapg": 0.33,
       "formStr": "W W D",
       "clutch": 0.5,
-      "attAdj": 0.84,
-      "defAdj": 0.68,
-      "momentum": 0.14,
+      "attAdj": 0.85,
+      "defAdj": 0.69,
+      "momentum": 0.17,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
-      "eloRank": 6
+      "eloRank": 7
     },
     "England": {
       "name": "England",
@@ -1208,7 +1208,7 @@
       "l": 0,
       "gf": 8,
       "ga": 3,
-      "wsum": 3.1342038024569616,
+      "wsum": 2.982806567345744,
       "lateFor": 3,
       "lateAgainst": 0,
       "lastDate": "2026-07-01",
@@ -1217,8 +1217,8 @@
       "gapg": 0.75,
       "formStr": "D W W",
       "clutch": 0.38,
-      "attAdj": 1.25,
-      "defAdj": 0.72,
+      "attAdj": 1.23,
+      "defAdj": 0.73,
       "momentum": -0.04,
       "absents": [],
       "availAtt": 1,
@@ -1228,29 +1228,29 @@
     "Croatia": {
       "name": "Croatia",
       "group": "Group L",
-      "elo": 1905,
-      "played": 3,
+      "elo": 1882,
+      "played": 4,
       "w": 2,
       "d": 0,
-      "l": 1,
-      "gf": 5,
-      "ga": 5,
-      "wsum": 1.897000103543156,
+      "l": 2,
+      "gf": 6,
+      "ga": 7,
+      "wsum": 3.0425695027164705,
       "lateFor": 1,
-      "lateAgainst": 1,
-      "lastDate": "2026-06-27",
+      "lateAgainst": 2,
+      "lastDate": "2026-07-02",
       "points": 6,
-      "gfpg": 1.67,
-      "gapg": 1.67,
-      "formStr": "L W W",
-      "clutch": 0.2,
-      "attAdj": 1.25,
-      "defAdj": 1,
-      "momentum": 0.08,
+      "gfpg": 1.5,
+      "gapg": 1.75,
+      "formStr": "W W L",
+      "clutch": 0.17,
+      "attAdj": 1.21,
+      "defAdj": 1.08,
+      "momentum": -0.12,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
-      "eloRank": 14
+      "eloRank": 16
     },
     "Ghana": {
       "name": "Ghana",
@@ -1262,7 +1262,7 @@
       "l": 1,
       "gf": 2,
       "ga": 2,
-      "wsum": 1.897000103543156,
+      "wsum": 1.8053658038026652,
       "lateFor": 1,
       "lateAgainst": 1,
       "lastDate": "2026-06-27",
@@ -1272,8 +1272,8 @@
       "formStr": "W D L",
       "clutch": 0.5,
       "attAdj": 0.81,
-      "defAdj": 0.79,
-      "momentum": 0.5,
+      "defAdj": 0.81,
+      "momentum": 0.49,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
@@ -1289,7 +1289,7 @@
       "l": 3,
       "gf": 0,
       "ga": 4,
-      "wsum": 1.897000103543156,
+      "wsum": 1.8053658038026652,
       "lateFor": 0,
       "lateAgainst": 1,
       "lastDate": "2026-06-27",
@@ -1298,9 +1298,9 @@
       "gapg": 1.33,
       "formStr": "L L L",
       "clutch": 0,
-      "attAdj": 0.6,
-      "defAdj": 0.97,
-      "momentum": -0.52,
+      "attAdj": 0.61,
+      "defAdj": 0.98,
+      "momentum": -0.54,
       "absents": [],
       "availAtt": 1,
       "availDef": 1,
@@ -1319,7 +1319,7 @@
         "l": 0,
         "gf": 8,
         "ga": 0,
-        "wsum": 2.7039442504525306,
+        "wsum": 2.573330637166606,
         "lateFor": 1,
         "lateAgainst": 0,
         "lastDate": "2026-06-30",
@@ -1329,7 +1329,7 @@
         "formStr": "W W W",
         "clutch": 0.13,
         "attAdj": 1.32,
-        "defAdj": 0.5,
+        "defAdj": 0.51,
         "momentum": 0.6,
         "absents": [],
         "availAtt": 1,
@@ -1346,7 +1346,7 @@
         "l": 2,
         "gf": 2,
         "ga": 4,
-        "wsum": 2.592939449719381,
+        "wsum": 2.467687906347958,
         "lateFor": 1,
         "lateAgainst": 1,
         "lastDate": "2026-06-28",
@@ -1355,7 +1355,7 @@
         "gapg": 1,
         "formStr": "D W L",
         "clutch": 0.5,
-        "attAdj": 0.68,
+        "attAdj": 0.69,
         "defAdj": 0.8,
         "momentum": 0.28,
         "absents": [],
@@ -1373,7 +1373,7 @@
         "l": 2,
         "gf": 2,
         "ga": 3,
-        "wsum": 1.5265034869094518,
+        "wsum": 1.4527659695455353,
         "lateFor": 1,
         "lateAgainst": 0,
         "lastDate": "2026-06-24",
@@ -1382,7 +1382,7 @@
         "gapg": 1,
         "formStr": "W L L",
         "clutch": 0.5,
-        "attAdj": 0.76,
+        "attAdj": 0.77,
         "defAdj": 0.96,
         "momentum": -0.58,
         "absents": [],
@@ -1400,7 +1400,7 @@
         "l": 2,
         "gf": 2,
         "ga": 6,
-        "wsum": 1.5265034869094518,
+        "wsum": 1.4527659695455353,
         "lateFor": 0,
         "lateAgainst": 3,
         "lastDate": "2026-06-24",
@@ -1409,7 +1409,7 @@
         "gapg": 2,
         "formStr": "L D L",
         "clutch": 0,
-        "attAdj": 0.83,
+        "attAdj": 0.84,
         "defAdj": 1.21,
         "momentum": -0.47,
         "absents": [],
@@ -1420,6 +1420,33 @@
     ],
     "Group B": [
       {
+        "name": "Switzerland",
+        "group": "Group B",
+        "elo": 1914,
+        "played": 4,
+        "w": 3,
+        "d": 1,
+        "l": 0,
+        "gf": 9,
+        "ga": 3,
+        "wsum": 2.724993192585489,
+        "lateFor": 3,
+        "lateAgainst": 3,
+        "lastDate": "2026-07-02",
+        "points": 10,
+        "gfpg": 2.25,
+        "gapg": 0.75,
+        "formStr": "W W W",
+        "clutch": 0.33,
+        "attAdj": 1.3,
+        "defAdj": 0.71,
+        "momentum": 0.56,
+        "absents": [],
+        "availAtt": 1,
+        "availDef": 1,
+        "eloRank": 11
+      },
+      {
         "name": "Canada",
         "group": "Group B",
         "elo": 1764,
@@ -1429,7 +1456,7 @@
         "l": 1,
         "gf": 9,
         "ga": 3,
-        "wsum": 2.6108846314103444,
+        "wsum": 2.484766248783143,
         "lateFor": 5,
         "lateAgainst": 0,
         "lastDate": "2026-06-28",
@@ -1438,40 +1465,13 @@
         "gapg": 0.75,
         "formStr": "W L W",
         "clutch": 0.56,
-        "attAdj": 1.13,
-        "defAdj": 0.71,
+        "attAdj": 1.17,
+        "defAdj": 0.72,
         "momentum": 0.1,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
         "eloRank": 26
-      },
-      {
-        "name": "Switzerland",
-        "group": "Group B",
-        "elo": 1914,
-        "played": 3,
-        "w": 2,
-        "d": 1,
-        "l": 0,
-        "gf": 7,
-        "ga": 3,
-        "wsum": 1.563304687394033,
-        "lateFor": 3,
-        "lateAgainst": 3,
-        "lastDate": "2026-06-24",
-        "points": 7,
-        "gfpg": 2.33,
-        "gapg": 1,
-        "formStr": "D W W",
-        "clutch": 0.43,
-        "attAdj": 1.36,
-        "defAdj": 0.93,
-        "momentum": 0.12,
-        "absents": [],
-        "availAtt": 1,
-        "availDef": 1,
-        "eloRank": 11
       },
       {
         "name": "Bosnia & Herzegovina",
@@ -1483,7 +1483,7 @@
         "l": 2,
         "gf": 5,
         "ga": 8,
-        "wsum": 2.7816523675142206,
+        "wsum": 2.647285075523799,
         "lateFor": 2,
         "lateAgainst": 5,
         "lastDate": "2026-07-01",
@@ -1492,8 +1492,8 @@
         "gapg": 2,
         "formStr": "L W L",
         "clutch": 0.4,
-        "attAdj": 0.82,
-        "defAdj": 1.08,
+        "attAdj": 0.85,
+        "defAdj": 1.09,
         "momentum": -0.18,
         "absents": [],
         "availAtt": 1,
@@ -1510,7 +1510,7 @@
         "l": 2,
         "gf": 2,
         "ga": 10,
-        "wsum": 1.563304687394033,
+        "wsum": 1.4877894936716833,
         "lateFor": 1,
         "lateAgainst": 3,
         "lastDate": "2026-06-24",
@@ -1519,8 +1519,8 @@
         "gapg": 3.33,
         "formStr": "D L L",
         "clutch": 0.5,
-        "attAdj": 0.83,
-        "defAdj": 1.59,
+        "attAdj": 0.87,
+        "defAdj": 1.55,
         "momentum": -0.06,
         "absents": [],
         "availAtt": 1,
@@ -1539,7 +1539,7 @@
         "l": 1,
         "gf": 10,
         "ga": 4,
-        "wsum": 2.8411873717112,
+        "wsum": 2.7039442504525306,
         "lateFor": 2,
         "lateAgainst": 1,
         "lastDate": "2026-07-01",
@@ -1548,8 +1548,8 @@
         "gapg": 1,
         "formStr": "W L W",
         "clutch": 0.2,
-        "attAdj": 1.44,
-        "defAdj": 0.81,
+        "attAdj": 1.43,
+        "defAdj": 0.82,
         "momentum": 0.22,
         "absents": [],
         "availAtt": 1,
@@ -1566,7 +1566,7 @@
         "l": 1,
         "gf": 3,
         "ga": 5,
-        "wsum": 2.7245483404184654,
+        "wsum": 2.592939449719381,
         "lateFor": 0,
         "lateAgainst": 1,
         "lastDate": "2026-06-29",
@@ -1575,13 +1575,13 @@
         "gapg": 1.25,
         "formStr": "W D D",
         "clutch": 0,
-        "attAdj": 0.77,
-        "defAdj": 0.76,
+        "attAdj": 0.78,
+        "defAdj": 0.77,
         "momentum": 0.34,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
-        "eloRank": 21
+        "eloRank": 20
       },
       {
         "name": "Australia",
@@ -1593,7 +1593,7 @@
         "l": 1,
         "gf": 2,
         "ga": 2,
-        "wsum": 1.6228396915910124,
+        "wsum": 1.544448668600415,
         "lateFor": 1,
         "lateAgainst": 0,
         "lastDate": "2026-06-25",
@@ -1602,8 +1602,8 @@
         "gapg": 0.67,
         "formStr": "W L D",
         "clutch": 0.5,
-        "attAdj": 0.76,
-        "defAdj": 0.76,
+        "attAdj": 0.77,
+        "defAdj": 0.77,
         "momentum": -0.02,
         "absents": [],
         "availAtt": 1,
@@ -1620,7 +1620,7 @@
         "l": 2,
         "gf": 3,
         "ga": 5,
-        "wsum": 1.6228396915910124,
+        "wsum": 1.544448668600415,
         "lateFor": 1,
         "lateAgainst": 1,
         "lastDate": "2026-06-25",
@@ -1630,7 +1630,7 @@
         "formStr": "L L W",
         "clutch": 0.33,
         "attAdj": 1.1,
-        "defAdj": 1.1,
+        "defAdj": 1.09,
         "momentum": -0.26,
         "absents": [],
         "availAtt": 1,
@@ -1649,7 +1649,7 @@
         "l": 0,
         "gf": 9,
         "ga": 2,
-        "wsum": 2.7092476743417135,
+        "wsum": 2.5783778799763026,
         "lateFor": 1,
         "lateAgainst": 0,
         "lastDate": "2026-06-29",
@@ -1676,7 +1676,7 @@
         "l": 0,
         "gf": 7,
         "ga": 4,
-        "wsum": 2.7092476743417135,
+        "wsum": 2.5783778799763026,
         "lateFor": 3,
         "lateAgainst": 0,
         "lastDate": "2026-06-29",
@@ -1685,13 +1685,13 @@
         "gapg": 1,
         "formStr": "W W D",
         "clutch": 0.43,
-        "attAdj": 1.1,
+        "attAdj": 1.11,
         "defAdj": 0.86,
         "momentum": 0.32,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
-        "eloRank": 16
+        "eloRank": 15
       },
       {
         "name": "Scotland",
@@ -1703,7 +1703,7 @@
         "l": 2,
         "gf": 1,
         "ga": 4,
-        "wsum": 1.5886830067206428,
+        "wsum": 1.5119419171663733,
         "lateFor": 0,
         "lateAgainst": 0,
         "lastDate": "2026-06-24",
@@ -1712,7 +1712,7 @@
         "gapg": 1.33,
         "formStr": "W L L",
         "clutch": 0,
-        "attAdj": 0.69,
+        "attAdj": 0.71,
         "defAdj": 0.98,
         "momentum": -0.24,
         "absents": [],
@@ -1730,7 +1730,7 @@
         "l": 3,
         "gf": 2,
         "ga": 8,
-        "wsum": 1.5886830067206428,
+        "wsum": 1.5119419171663733,
         "lateFor": 0,
         "lateAgainst": 2,
         "lastDate": "2026-06-24",
@@ -1739,7 +1739,7 @@
         "gapg": 2.67,
         "formStr": "L L L",
         "clutch": 0,
-        "attAdj": 0.92,
+        "attAdj": 0.93,
         "defAdj": 1.36,
         "momentum": -0.23,
         "absents": [],
@@ -1759,7 +1759,7 @@
         "l": 1,
         "gf": 11,
         "ga": 5,
-        "wsum": 2.7898838836483435,
+        "wsum": 2.655118969530572,
         "lateFor": 3,
         "lateAgainst": 1,
         "lastDate": "2026-06-29",
@@ -1786,7 +1786,7 @@
         "l": 2,
         "gf": 5,
         "ga": 4,
-        "wsum": 2.8467599795703515,
+        "wsum": 2.7092476743417135,
         "lateFor": 1,
         "lateAgainst": 2,
         "lastDate": "2026-06-30",
@@ -1795,8 +1795,8 @@
         "gapg": 1,
         "formStr": "L W L",
         "clutch": 0.2,
-        "attAdj": 0.92,
-        "defAdj": 0.82,
+        "attAdj": 0.93,
+        "defAdj": 0.83,
         "momentum": -0.25,
         "absents": [],
         "availAtt": 1,
@@ -1813,7 +1813,7 @@
         "l": 2,
         "gf": 2,
         "ga": 4,
-        "wsum": 2.8467599795703515,
+        "wsum": 2.7092476743417135,
         "lateFor": 1,
         "lateAgainst": 1,
         "lastDate": "2026-06-30",
@@ -1822,7 +1822,7 @@
         "gapg": 1,
         "formStr": "D W L",
         "clutch": 0.5,
-        "attAdj": 0.66,
+        "attAdj": 0.68,
         "defAdj": 0.86,
         "momentum": -0.26,
         "absents": [],
@@ -1840,7 +1840,7 @@
         "l": 2,
         "gf": 1,
         "ga": 9,
-        "wsum": 1.6693192160272727,
+        "wsum": 1.5886830067206428,
         "lateFor": 0,
         "lateAgainst": 2,
         "lastDate": "2026-06-25",
@@ -1849,7 +1849,7 @@
         "gapg": 3,
         "formStr": "L D L",
         "clutch": 0,
-        "attAdj": 0.69,
+        "attAdj": 0.71,
         "defAdj": 1.26,
         "momentum": 0.11,
         "absents": [],
@@ -1869,7 +1869,7 @@
         "l": 0,
         "gf": 11,
         "ga": 5,
-        "wsum": 2.7898838836483435,
+        "wsum": 2.655118969530572,
         "lateFor": 1,
         "lateAgainst": 2,
         "lastDate": "2026-06-29",
@@ -1879,7 +1879,7 @@
         "formStr": "W W D",
         "clutch": 0.09,
         "attAdj": 1.29,
-        "defAdj": 0.93,
+        "defAdj": 0.94,
         "momentum": 0.03,
         "absents": [],
         "availAtt": 1,
@@ -1896,7 +1896,7 @@
         "l": 1,
         "gf": 8,
         "ga": 5,
-        "wsum": 2.7898838836483435,
+        "wsum": 2.655118969530572,
         "lateFor": 2,
         "lateAgainst": 1,
         "lastDate": "2026-06-29",
@@ -1906,12 +1906,12 @@
         "formStr": "W D L",
         "clutch": 0.25,
         "attAdj": 1.11,
-        "defAdj": 0.91,
+        "defAdj": 0.92,
         "momentum": -0.35,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
-        "eloRank": 15
+        "eloRank": 14
       },
       {
         "name": "Sweden",
@@ -1923,7 +1923,7 @@
         "l": 2,
         "gf": 7,
         "ga": 10,
-        "wsum": 2.8467599795703515,
+        "wsum": 2.7092476743417135,
         "lateFor": 2,
         "lateAgainst": 1,
         "lastDate": "2026-06-30",
@@ -1932,7 +1932,7 @@
         "gapg": 2.5,
         "formStr": "L D L",
         "clutch": 0.29,
-        "attAdj": 0.85,
+        "attAdj": 0.86,
         "defAdj": 1.23,
         "momentum": -0.05,
         "absents": [],
@@ -1950,7 +1950,7 @@
         "l": 3,
         "gf": 2,
         "ga": 12,
-        "wsum": 1.6693192160272727,
+        "wsum": 1.5886830067206428,
         "lateFor": 0,
         "lateAgainst": 3,
         "lastDate": "2026-06-25",
@@ -1959,8 +1959,8 @@
         "gapg": 4,
         "formStr": "L L L",
         "clutch": 0,
-        "attAdj": 0.82,
-        "defAdj": 1.66,
+        "attAdj": 0.83,
+        "defAdj": 1.65,
         "momentum": -0.3,
         "absents": [],
         "availAtt": 1,
@@ -1979,7 +1979,7 @@
         "l": 0,
         "gf": 8,
         "ga": 4,
-        "wsum": 2.99125194718585,
+        "wsum": 2.8467599795703515,
         "lateFor": 5,
         "lateAgainst": 1,
         "lastDate": "2026-07-01",
@@ -1988,8 +1988,8 @@
         "gapg": 1,
         "formStr": "D W D",
         "clutch": 0.63,
-        "attAdj": 1.17,
-        "defAdj": 0.84,
+        "attAdj": 1.18,
+        "defAdj": 0.85,
         "momentum": -0.16,
         "absents": [],
         "availAtt": 1,
@@ -2006,7 +2006,7 @@
         "l": 0,
         "gf": 5,
         "ga": 3,
-        "wsum": 1.7540482482720445,
+        "wsum": 1.6693192160272727,
         "lateFor": 1,
         "lateAgainst": 0,
         "lastDate": "2026-06-26",
@@ -2016,7 +2016,7 @@
         "formStr": "D W D",
         "clutch": 0.2,
         "attAdj": 1.04,
-        "defAdj": 0.91,
+        "defAdj": 0.92,
         "momentum": 0.29,
         "absents": [],
         "availAtt": 1,
@@ -2033,7 +2033,7 @@
         "l": 0,
         "gf": 3,
         "ga": 3,
-        "wsum": 1.7540482482720445,
+        "wsum": 1.6693192160272727,
         "lateFor": 0,
         "lateAgainst": 0,
         "lastDate": "2026-06-26",
@@ -2042,7 +2042,7 @@
         "gapg": 1,
         "formStr": "D D D",
         "clutch": 0,
-        "attAdj": 0.85,
+        "attAdj": 0.86,
         "defAdj": 0.87,
         "momentum": -0.04,
         "absents": [],
@@ -2060,7 +2060,7 @@
         "l": 2,
         "gf": 4,
         "ga": 10,
-        "wsum": 1.7540482482720445,
+        "wsum": 1.6693192160272727,
         "lateFor": 1,
         "lateAgainst": 3,
         "lastDate": "2026-06-26",
@@ -2070,7 +2070,7 @@
         "formStr": "D L L",
         "clutch": 0.25,
         "attAdj": 1.05,
-        "defAdj": 1.59,
+        "defAdj": 1.58,
         "momentum": -0.1,
         "absents": [],
         "availAtt": 1,
@@ -2082,14 +2082,14 @@
       {
         "name": "Spain",
         "group": "Group H",
-        "elo": 2144,
+        "elo": 2159,
         "played": 4,
         "w": 3,
         "d": 1,
         "l": 0,
         "gf": 8,
         "ga": 0,
-        "wsum": 3.0540482482720446,
+        "wsum": 2.9065229149410783,
         "lateFor": 1,
         "lateAgainst": 0,
         "lastDate": "2026-07-02",
@@ -2098,13 +2098,13 @@
         "gapg": 0,
         "formStr": "W W W",
         "clutch": 0.13,
-        "attAdj": 1.26,
-        "defAdj": 0.47,
-        "momentum": 0.25,
+        "attAdj": 1.24,
+        "defAdj": 0.48,
+        "momentum": 0.22,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
-        "eloRank": 2
+        "eloRank": 1
       },
       {
         "name": "Cape Verde",
@@ -2116,7 +2116,7 @@
         "l": 0,
         "gf": 2,
         "ga": 2,
-        "wsum": 1.7540482482720445,
+        "wsum": 1.6693192160272727,
         "lateFor": 0,
         "lateAgainst": 0,
         "lastDate": "2026-06-26",
@@ -2125,8 +2125,8 @@
         "gapg": 0.67,
         "formStr": "D D D",
         "clutch": 0,
-        "attAdj": 0.81,
-        "defAdj": 0.82,
+        "attAdj": 0.82,
+        "defAdj": 0.83,
         "momentum": 0.38,
         "absents": [],
         "availAtt": 1,
@@ -2143,7 +2143,7 @@
         "l": 1,
         "gf": 3,
         "ga": 4,
-        "wsum": 1.7540482482720445,
+        "wsum": 1.6693192160272727,
         "lateFor": 1,
         "lateAgainst": 0,
         "lastDate": "2026-06-26",
@@ -2154,7 +2154,7 @@
         "clutch": 0.33,
         "attAdj": 0.94,
         "defAdj": 1.06,
-        "momentum": -0.46,
+        "momentum": -0.45,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
@@ -2170,7 +2170,7 @@
         "l": 1,
         "gf": 1,
         "ga": 5,
-        "wsum": 1.7540482482720445,
+        "wsum": 1.6693192160272727,
         "lateFor": 0,
         "lateAgainst": 1,
         "lastDate": "2026-06-26",
@@ -2179,9 +2179,9 @@
         "gapg": 1.67,
         "formStr": "D L D",
         "clutch": 0,
-        "attAdj": 0.69,
-        "defAdj": 1,
-        "momentum": 0.15,
+        "attAdj": 0.7,
+        "defAdj": 1.01,
+        "momentum": 0.16,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
@@ -2199,7 +2199,7 @@
         "l": 0,
         "gf": 13,
         "ga": 2,
-        "wsum": 2.982806567345744,
+        "wsum": 2.8387225525111885,
         "lateFor": 3,
         "lateAgainst": 1,
         "lastDate": "2026-06-30",
@@ -2209,7 +2209,7 @@
         "formStr": "W W W",
         "clutch": 0.23,
         "attAdj": 1.57,
-        "defAdj": 0.58,
+        "defAdj": 0.59,
         "momentum": 0.24,
         "absents": [],
         "availAtt": 1,
@@ -2226,7 +2226,7 @@
         "l": 1,
         "gf": 10,
         "ga": 8,
-        "wsum": 2.982806567345744,
+        "wsum": 2.8387225525111885,
         "lateFor": 3,
         "lateAgainst": 2,
         "lastDate": "2026-06-30",
@@ -2235,7 +2235,7 @@
         "gapg": 2,
         "formStr": "W L W",
         "clutch": 0.3,
-        "attAdj": 1.43,
+        "attAdj": 1.42,
         "defAdj": 1.09,
         "momentum": 0.24,
         "absents": [],
@@ -2253,7 +2253,7 @@
         "l": 2,
         "gf": 10,
         "ga": 8,
-        "wsum": 3.0425695027164705,
+        "wsum": 2.8955986484331966,
         "lateFor": 3,
         "lateAgainst": 5,
         "lastDate": "2026-07-01",
@@ -2262,7 +2262,7 @@
         "gapg": 2,
         "formStr": "L W D",
         "clutch": 0.3,
-        "attAdj": 1.45,
+        "attAdj": 1.44,
         "defAdj": 1.02,
         "momentum": 0.08,
         "absents": [],
@@ -2280,7 +2280,7 @@
         "l": 3,
         "gf": 1,
         "ga": 12,
-        "wsum": 1.8053658038026652,
+        "wsum": 1.7181578848901178,
         "lateFor": 0,
         "lateAgainst": 3,
         "lastDate": "2026-06-26",
@@ -2289,7 +2289,7 @@
         "gapg": 4,
         "formStr": "L L L",
         "clutch": 0,
-        "attAdj": 0.68,
+        "attAdj": 0.69,
         "defAdj": 1.44,
         "momentum": -0.23,
         "absents": [],
@@ -2309,7 +2309,7 @@
         "l": 0,
         "gf": 8,
         "ga": 1,
-        "wsum": 1.843077841389901,
+        "wsum": 1.7540482482720445,
         "lateFor": 3,
         "lateAgainst": 0,
         "lastDate": "2026-06-27",
@@ -2318,52 +2318,25 @@
         "gapg": 0.33,
         "formStr": "W W W",
         "clutch": 0.38,
-        "attAdj": 1.22,
-        "defAdj": 0.74,
-        "momentum": 0.19,
+        "attAdj": 1.21,
+        "defAdj": 0.75,
+        "momentum": 0.18,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
-        "eloRank": 1
-      },
-      {
-        "name": "Algeria",
-        "group": "Group J",
-        "elo": 1785,
-        "played": 3,
-        "w": 1,
-        "d": 1,
-        "l": 1,
-        "gf": 5,
-        "ga": 7,
-        "wsum": 1.843077841389901,
-        "lateFor": 2,
-        "lateAgainst": 2,
-        "lastDate": "2026-06-27",
-        "points": 4,
-        "gfpg": 1.67,
-        "gapg": 2.33,
-        "formStr": "L W D",
-        "clutch": 0.4,
-        "attAdj": 1.05,
-        "defAdj": 1.36,
-        "momentum": 0.2,
-        "absents": [],
-        "availAtt": 1,
-        "availDef": 1,
-        "eloRank": 25
+        "eloRank": 2
       },
       {
         "name": "Austria",
         "group": "Group J",
-        "elo": 1836,
+        "elo": 1821,
         "played": 4,
         "w": 1,
         "d": 1,
         "l": 2,
         "gf": 6,
         "ga": 9,
-        "wsum": 3.1430778413899008,
+        "wsum": 2.99125194718585,
         "lateFor": 3,
         "lateAgainst": 3,
         "lastDate": "2026-07-02",
@@ -2372,13 +2345,40 @@
         "gapg": 2.25,
         "formStr": "L D L",
         "clutch": 0.5,
-        "attAdj": 0.82,
-        "defAdj": 1.32,
-        "momentum": -0.25,
+        "attAdj": 0.83,
+        "defAdj": 1.42,
+        "momentum": -0.21,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
-        "eloRank": 20
+        "eloRank": 21
+      },
+      {
+        "name": "Algeria",
+        "group": "Group J",
+        "elo": 1785,
+        "played": 4,
+        "w": 1,
+        "d": 1,
+        "l": 2,
+        "gf": 5,
+        "ga": 9,
+        "wsum": 2.99125194718585,
+        "lateFor": 2,
+        "lateAgainst": 2,
+        "lastDate": "2026-07-02",
+        "points": 4,
+        "gfpg": 1.25,
+        "gapg": 2.25,
+        "formStr": "W D L",
+        "clutch": 0.4,
+        "attAdj": 0.8,
+        "defAdj": 1.3,
+        "momentum": -0.15,
+        "absents": [],
+        "availAtt": 1,
+        "availDef": 1,
+        "eloRank": 25
       },
       {
         "name": "Jordan",
@@ -2390,7 +2390,7 @@
         "l": 3,
         "gf": 3,
         "ga": 8,
-        "wsum": 1.843077841389901,
+        "wsum": 1.7540482482720445,
         "lateFor": 0,
         "lateAgainst": 4,
         "lastDate": "2026-06-27",
@@ -2400,7 +2400,7 @@
         "formStr": "L L L",
         "clutch": 0,
         "attAdj": 0.92,
-        "defAdj": 1.38,
+        "defAdj": 1.43,
         "momentum": -0.35,
         "absents": [],
         "availAtt": 1,
@@ -2409,6 +2409,33 @@
       }
     ],
     "Group K": [
+      {
+        "name": "Portugal",
+        "group": "Group K",
+        "elo": 2013,
+        "played": 4,
+        "w": 2,
+        "d": 2,
+        "l": 0,
+        "gf": 8,
+        "ga": 2,
+        "wsum": 3.0425695027164705,
+        "lateFor": 2,
+        "lateAgainst": 0,
+        "lastDate": "2026-07-02",
+        "points": 8,
+        "gfpg": 2,
+        "gapg": 0.5,
+        "formStr": "W D W",
+        "clutch": 0.25,
+        "attAdj": 1.08,
+        "defAdj": 0.66,
+        "momentum": 0.35,
+        "absents": [],
+        "availAtt": 1,
+        "availDef": 1,
+        "eloRank": 6
+      },
       {
         "name": "Colombia",
         "group": "Group K",
@@ -2419,7 +2446,7 @@
         "l": 0,
         "gf": 4,
         "ga": 1,
-        "wsum": 1.897000103543156,
+        "wsum": 1.8053658038026652,
         "lateFor": 2,
         "lateAgainst": 0,
         "lastDate": "2026-06-27",
@@ -2428,36 +2455,9 @@
         "gapg": 0.33,
         "formStr": "W W D",
         "clutch": 0.5,
-        "attAdj": 0.84,
-        "defAdj": 0.68,
-        "momentum": 0.14,
-        "absents": [],
-        "availAtt": 1,
-        "availDef": 1,
-        "eloRank": 6
-      },
-      {
-        "name": "Portugal",
-        "group": "Group K",
-        "elo": 1990,
-        "played": 3,
-        "w": 1,
-        "d": 2,
-        "l": 0,
-        "gf": 6,
-        "ga": 1,
-        "wsum": 1.897000103543156,
-        "lateFor": 1,
-        "lateAgainst": 0,
-        "lastDate": "2026-06-27",
-        "points": 5,
-        "gfpg": 2,
-        "gapg": 0.33,
-        "formStr": "D W D",
-        "clutch": 0.17,
-        "attAdj": 0.98,
-        "defAdj": 0.67,
-        "momentum": -0.08,
+        "attAdj": 0.85,
+        "defAdj": 0.69,
+        "momentum": 0.17,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
@@ -2473,7 +2473,7 @@
         "l": 2,
         "gf": 5,
         "ga": 5,
-        "wsum": 3.1342038024569616,
+        "wsum": 2.982806567345744,
         "lateFor": 2,
         "lateAgainst": 3,
         "lastDate": "2026-07-01",
@@ -2482,7 +2482,7 @@
         "gapg": 1.25,
         "formStr": "L W L",
         "clutch": 0.4,
-        "attAdj": 0.95,
+        "attAdj": 0.96,
         "defAdj": 0.99,
         "momentum": 0.05,
         "absents": [],
@@ -2500,7 +2500,7 @@
         "l": 3,
         "gf": 2,
         "ga": 11,
-        "wsum": 1.897000103543156,
+        "wsum": 1.8053658038026652,
         "lateFor": 0,
         "lateAgainst": 4,
         "lastDate": "2026-06-27",
@@ -2510,7 +2510,7 @@
         "formStr": "L L L",
         "clutch": 0,
         "attAdj": 0.85,
-        "defAdj": 1.8,
+        "defAdj": 1.73,
         "momentum": -0.45,
         "absents": [],
         "availAtt": 1,
@@ -2529,7 +2529,7 @@
         "l": 0,
         "gf": 8,
         "ga": 3,
-        "wsum": 3.1342038024569616,
+        "wsum": 2.982806567345744,
         "lateFor": 3,
         "lateAgainst": 0,
         "lastDate": "2026-07-01",
@@ -2538,8 +2538,8 @@
         "gapg": 0.75,
         "formStr": "D W W",
         "clutch": 0.38,
-        "attAdj": 1.25,
-        "defAdj": 0.72,
+        "attAdj": 1.23,
+        "defAdj": 0.73,
         "momentum": -0.04,
         "absents": [],
         "availAtt": 1,
@@ -2549,29 +2549,29 @@
       {
         "name": "Croatia",
         "group": "Group L",
-        "elo": 1905,
-        "played": 3,
+        "elo": 1882,
+        "played": 4,
         "w": 2,
         "d": 0,
-        "l": 1,
-        "gf": 5,
-        "ga": 5,
-        "wsum": 1.897000103543156,
+        "l": 2,
+        "gf": 6,
+        "ga": 7,
+        "wsum": 3.0425695027164705,
         "lateFor": 1,
-        "lateAgainst": 1,
-        "lastDate": "2026-06-27",
+        "lateAgainst": 2,
+        "lastDate": "2026-07-02",
         "points": 6,
-        "gfpg": 1.67,
-        "gapg": 1.67,
-        "formStr": "L W W",
-        "clutch": 0.2,
-        "attAdj": 1.25,
-        "defAdj": 1,
-        "momentum": 0.08,
+        "gfpg": 1.5,
+        "gapg": 1.75,
+        "formStr": "W W L",
+        "clutch": 0.17,
+        "attAdj": 1.21,
+        "defAdj": 1.08,
+        "momentum": -0.12,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
-        "eloRank": 14
+        "eloRank": 16
       },
       {
         "name": "Ghana",
@@ -2583,7 +2583,7 @@
         "l": 1,
         "gf": 2,
         "ga": 2,
-        "wsum": 1.897000103543156,
+        "wsum": 1.8053658038026652,
         "lateFor": 1,
         "lateAgainst": 1,
         "lastDate": "2026-06-27",
@@ -2593,8 +2593,8 @@
         "formStr": "W D L",
         "clutch": 0.5,
         "attAdj": 0.81,
-        "defAdj": 0.79,
-        "momentum": 0.5,
+        "defAdj": 0.81,
+        "momentum": 0.49,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
@@ -2610,7 +2610,7 @@
         "l": 3,
         "gf": 0,
         "ga": 4,
-        "wsum": 1.897000103543156,
+        "wsum": 1.8053658038026652,
         "lateFor": 0,
         "lateAgainst": 1,
         "lastDate": "2026-06-27",
@@ -2619,9 +2619,9 @@
         "gapg": 1.33,
         "formStr": "L L L",
         "clutch": 0,
-        "attAdj": 0.6,
-        "defAdj": 0.97,
-        "momentum": -0.52,
+        "attAdj": 0.61,
+        "defAdj": 0.98,
+        "momentum": -0.54,
         "absents": [],
         "availAtt": 1,
         "availDef": 1,
@@ -2631,300 +2631,6 @@
   },
   "predictions": [
     {
-      "id": "2026-07-02-Portugal-Croatia",
-      "date": "2026-07-02",
-      "round": "Round of 32",
-      "ground": "Toronto",
-      "isKnockout": true,
-      "team1": "Portugal",
-      "team2": "Croatia",
-      "xg1": 1.7,
-      "xg2": 1.17,
-      "pWin1": 35,
-      "pDraw": 32.5,
-      "pWin2": 32.5,
-      "pQual1": 52,
-      "pQual2": 48,
-      "topScores": [
-        {
-          "score": "1-1",
-          "p": 11.8
-        },
-        {
-          "score": "2-1",
-          "p": 9.6
-        },
-        {
-          "score": "1-0",
-          "p": 9.1
-        }
-      ],
-      "odds": {
-        "win1": 2.69,
-        "draw": 2.9,
-        "win2": 2.9
-      },
-      "pick": "Portugal",
-      "pickProb": 52,
-      "confidence": "Faible",
-      "tight": false,
-      "blend": {
-        "data": 5.9,
-        "elo": 94.1
-      },
-      "drivers": [
-        {
-          "label": "Elo mondial",
-          "v1": 1990,
-          "v2": 1905,
-          "betterHigh": true,
-          "favorsPick": true
-        },
-        {
-          "label": "Attaque ajustée",
-          "v1": 0.98,
-          "v2": 1.25,
-          "betterHigh": true,
-          "favorsPick": false
-        },
-        {
-          "label": "Défense ajustée",
-          "v1": 0.67,
-          "v2": 1,
-          "betterHigh": false,
-          "favorsPick": true
-        },
-        {
-          "label": "Repos (jours)",
-          "v1": 5,
-          "v2": 5,
-          "betterHigh": true,
-          "favorsPick": false
-        },
-        {
-          "label": "Momentum",
-          "v1": -0.08,
-          "v2": 0.08,
-          "betterHigh": true,
-          "favorsPick": false
-        },
-        {
-          "label": "Finition tardive",
-          "v1": 0.17,
-          "v2": 0.2,
-          "betterHigh": true,
-          "favorsPick": false
-        }
-      ],
-      "reasons": [
-        "Portugal a un meilleur Elo (1990 vs 1905)"
-      ],
-      "markets": {
-        "btts": {
-          "yes": 56.9,
-          "no": 43.1
-        },
-        "over": {
-          "1.5": {
-            "over": 78.6,
-            "under": 21.4
-          },
-          "2.5": {
-            "over": 54.7,
-            "under": 45.3
-          },
-          "3.5": {
-            "over": 32.3,
-            "under": 67.7
-          }
-        },
-        "doubleChance": {
-          "12": 67.5,
-          "1X": 67.5,
-          "X2": 65
-        },
-        "cleanSheet": {
-          "team1": 31.1,
-          "team2": 18.3
-        },
-        "totalGoals": 2.87
-      },
-      "absents": {
-        "team1": [],
-        "team2": []
-      },
-      "factors": {
-        "form": [
-          "D W D",
-          "L W W"
-        ],
-        "attack": [
-          2,
-          1.67
-        ],
-        "defense": [
-          0.33,
-          1.67
-        ],
-        "elo": [
-          1990,
-          1905
-        ],
-        "rest": [
-          5,
-          5
-        ]
-      }
-    },
-    {
-      "id": "2026-07-02-Switzerland-Algeria",
-      "date": "2026-07-02",
-      "round": "Round of 32",
-      "ground": "Vancouver",
-      "isKnockout": true,
-      "team1": "Switzerland",
-      "team2": "Algeria",
-      "xg1": 1.95,
-      "xg2": 1.02,
-      "pWin1": 47.8,
-      "pDraw": 28.3,
-      "pWin2": 23.9,
-      "pQual1": 62.9,
-      "pQual2": 37.1,
-      "topScores": [
-        {
-          "score": "1-1",
-          "p": 10.7
-        },
-        {
-          "score": "2-1",
-          "p": 9.9
-        },
-        {
-          "score": "2-0",
-          "p": 9.8
-        }
-      ],
-      "odds": {
-        "win1": 1.97,
-        "draw": 3.34,
-        "win2": 3.95
-      },
-      "pick": "Switzerland",
-      "pickProb": 62.9,
-      "confidence": "Modérée",
-      "tight": false,
-      "blend": {
-        "data": 5,
-        "elo": 95
-      },
-      "drivers": [
-        {
-          "label": "Elo mondial",
-          "v1": 1914,
-          "v2": 1785,
-          "betterHigh": true,
-          "favorsPick": true
-        },
-        {
-          "label": "Attaque ajustée",
-          "v1": 1.36,
-          "v2": 1.05,
-          "betterHigh": true,
-          "favorsPick": true
-        },
-        {
-          "label": "Défense ajustée",
-          "v1": 0.93,
-          "v2": 1.36,
-          "betterHigh": false,
-          "favorsPick": true
-        },
-        {
-          "label": "Repos (jours)",
-          "v1": 8,
-          "v2": 5,
-          "betterHigh": true,
-          "favorsPick": true
-        },
-        {
-          "label": "Momentum",
-          "v1": 0.12,
-          "v2": 0.2,
-          "betterHigh": true,
-          "favorsPick": false
-        },
-        {
-          "label": "Finition tardive",
-          "v1": 0.43,
-          "v2": 0.4,
-          "betterHigh": true,
-          "favorsPick": true
-        }
-      ],
-      "reasons": [
-        "Switzerland a un meilleur Elo (1914 vs 1785)",
-        "Switzerland est mieux reposé (8j vs 5j)",
-        "L'attaque de Switzerland cible une défense friable"
-      ],
-      "markets": {
-        "btts": {
-          "yes": 55.2,
-          "no": 44.8
-        },
-        "over": {
-          "1.5": {
-            "over": 80,
-            "under": 20
-          },
-          "2.5": {
-            "over": 56.9,
-            "under": 43.1
-          },
-          "3.5": {
-            "over": 34.5,
-            "under": 65.5
-          }
-        },
-        "doubleChance": {
-          "12": 71.7,
-          "1X": 76.1,
-          "X2": 52.2
-        },
-        "cleanSheet": {
-          "team1": 36.2,
-          "team2": 14.3
-        },
-        "totalGoals": 2.96
-      },
-      "absents": {
-        "team1": [],
-        "team2": []
-      },
-      "factors": {
-        "form": [
-          "D W W",
-          "L W D"
-        ],
-        "attack": [
-          2.33,
-          1.67
-        ],
-        "defense": [
-          1,
-          2.33
-        ],
-        "elo": [
-          1914,
-          1785
-        ],
-        "rest": [
-          8,
-          5
-        ]
-      }
-    },
-    {
       "id": "2026-07-03-Argentina-Cape_Verde",
       "date": "2026-07-03",
       "round": "Round of 32",
@@ -2932,39 +2638,39 @@
       "isKnockout": true,
       "team1": "Argentina",
       "team2": "Cape Verde",
-      "xg1": 2.56,
-      "xg2": 0.28,
-      "pWin1": 89.6,
-      "pDraw": 10.4,
-      "pWin2": 0,
-      "pQual1": 95.6,
-      "pQual2": 4.4,
+      "xg1": 2.55,
+      "xg2": 0.27,
+      "pWin1": 86.4,
+      "pDraw": 11.2,
+      "pWin2": 2.3,
+      "pQual1": 93,
+      "pQual2": 7,
       "topScores": [
         {
           "score": "2-0",
-          "p": 19.2
+          "p": 19.4
         },
         {
           "score": "3-0",
-          "p": 16.3
+          "p": 16.5
         },
         {
           "score": "1-0",
-          "p": 14.8
+          "p": 15
         }
       ],
       "odds": {
-        "win1": 1.05,
-        "draw": 9.03,
-        "win2": null
+        "win1": 1.09,
+        "draw": 8.39,
+        "win2": 40.68
       },
       "pick": "Argentina",
-      "pickProb": 95.6,
+      "pickProb": 93,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
-        "data": 5.5,
-        "elo": 94.5
+        "data": 5.3,
+        "elo": 94.7
       },
       "drivers": [
         {
@@ -2976,15 +2682,15 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 1.22,
-          "v2": 0.81,
+          "v1": 1.21,
+          "v2": 0.82,
           "betterHigh": true,
           "favorsPick": true
         },
         {
           "label": "Défense ajustée",
-          "v1": 0.74,
-          "v2": 0.82,
+          "v1": 0.75,
+          "v2": 0.83,
           "betterHigh": false,
           "favorsPick": true
         },
@@ -2997,7 +2703,7 @@
         },
         {
           "label": "Momentum",
-          "v1": 0.19,
+          "v1": 0.18,
           "v2": 0.38,
           "betterHigh": true,
           "favorsPick": false
@@ -3015,33 +2721,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 22.6,
-          "no": 77.4
+          "yes": 37,
+          "no": 63
         },
         "over": {
           "1.5": {
-            "over": 77.7,
-            "under": 22.3
+            "over": 77.4,
+            "under": 22.6
           },
           "2.5": {
-            "over": 53.8,
-            "under": 46.2
+            "over": 56,
+            "under": 44
           },
           "3.5": {
-            "over": 31.5,
-            "under": 68.5
+            "over": 31.2,
+            "under": 68.8
           }
         },
         "doubleChance": {
-          "12": 89.6,
-          "1X": 100,
-          "X2": 10.4
+          "12": 88.8,
+          "1X": 97.7,
+          "X2": 13.6
         },
         "cleanSheet": {
-          "team1": 75.7,
+          "team1": 76.4,
           "team2": 7.8
         },
-        "totalGoals": 2.83
+        "totalGoals": 2.82
       },
       "absents": {
         "team1": [],
@@ -3080,37 +2786,37 @@
       "team2": "Ghana",
       "xg1": 2.54,
       "xg2": 0.27,
-      "pWin1": 89.6,
-      "pDraw": 10.4,
-      "pWin2": 0,
-      "pQual1": 95.6,
-      "pQual2": 4.4,
+      "pWin1": 86.4,
+      "pDraw": 11.3,
+      "pWin2": 2.3,
+      "pQual1": 93,
+      "pQual2": 7,
       "topScores": [
         {
           "score": "2-0",
-          "p": 19.3
+          "p": 19.5
         },
         {
           "score": "3-0",
-          "p": 16.4
+          "p": 16.5
         },
         {
           "score": "1-0",
-          "p": 15
+          "p": 15.2
         }
       ],
       "odds": {
-        "win1": 1.05,
-        "draw": 9.03,
-        "win2": null
+        "win1": 1.09,
+        "draw": 8.36,
+        "win2": 41.05
       },
       "pick": "Colombia",
-      "pickProb": 95.6,
+      "pickProb": 93,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
-        "data": 5.9,
-        "elo": 94.1
+        "data": 5.7,
+        "elo": 94.3
       },
       "drivers": [
         {
@@ -3122,15 +2828,15 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 0.84,
+          "v1": 0.85,
           "v2": 0.81,
           "betterHigh": true,
           "favorsPick": true
         },
         {
           "label": "Défense ajustée",
-          "v1": 0.68,
-          "v2": 0.79,
+          "v1": 0.69,
+          "v2": 0.81,
           "betterHigh": false,
           "favorsPick": true
         },
@@ -3143,8 +2849,8 @@
         },
         {
           "label": "Momentum",
-          "v1": 0.14,
-          "v2": 0.5,
+          "v1": 0.17,
+          "v2": 0.49,
           "betterHigh": true,
           "favorsPick": false
         },
@@ -3161,33 +2867,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 22.4,
-          "no": 77.6
+          "yes": 37,
+          "no": 63
         },
         "over": {
           "1.5": {
-            "over": 77.4,
-            "under": 22.6
+            "over": 77.2,
+            "under": 22.8
           },
           "2.5": {
-            "over": 53.4,
-            "under": 46.6
+            "over": 56,
+            "under": 44
           },
           "3.5": {
-            "over": 31.2,
-            "under": 68.8
+            "over": 30.9,
+            "under": 69.1
           }
         },
         "doubleChance": {
-          "12": 89.6,
-          "1X": 100,
-          "X2": 10.4
+          "12": 88.7,
+          "1X": 97.7,
+          "X2": 13.6
         },
         "cleanSheet": {
-          "team1": 76,
+          "team1": 76.7,
           "team2": 7.9
         },
-        "totalGoals": 2.82
+        "totalGoals": 2.81
       },
       "absents": {
         "team1": [],
@@ -3224,17 +2930,17 @@
       "isKnockout": true,
       "team1": "Australia",
       "team2": "Egypt",
-      "xg1": 1.61,
-      "xg2": 1.24,
-      "pWin1": 34,
-      "pDraw": 33,
-      "pWin2": 33,
-      "pQual1": 51,
-      "pQual2": 49,
+      "xg1": 1.6,
+      "xg2": 1.23,
+      "pWin1": 45.5,
+      "pDraw": 25.8,
+      "pWin2": 28.7,
+      "pQual1": 58.8,
+      "pQual2": 41.2,
       "topScores": [
         {
           "score": "1-1",
-          "p": 12.1
+          "p": 12.2
         },
         {
           "score": "2-1",
@@ -3246,17 +2952,17 @@
         }
       ],
       "odds": {
-        "win1": 2.77,
-        "draw": 2.86,
-        "win2": 2.86
+        "win1": 2.07,
+        "draw": 3.66,
+        "win2": 3.29
       },
       "pick": "Australia",
-      "pickProb": 51,
-      "confidence": "Faible",
+      "pickProb": 58.8,
+      "confidence": "Modérée",
       "tight": false,
       "blend": {
-        "data": 5.1,
-        "elo": 94.9
+        "data": 4.9,
+        "elo": 95.1
       },
       "drivers": [
         {
@@ -3268,15 +2974,15 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 0.76,
+          "v1": 0.77,
           "v2": 1.04,
           "betterHigh": true,
           "favorsPick": false
         },
         {
           "label": "Défense ajustée",
-          "v1": 0.76,
-          "v2": 0.91,
+          "v1": 0.77,
+          "v2": 0.92,
           "betterHigh": false,
           "favorsPick": true
         },
@@ -3307,33 +3013,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 57.4,
-          "no": 42.6
+          "yes": 69,
+          "no": 31
         },
         "over": {
           "1.5": {
-            "over": 78.3,
-            "under": 21.7
+            "over": 78.1,
+            "under": 21.9
           },
           "2.5": {
-            "over": 54.2,
-            "under": 45.8
+            "over": 56,
+            "under": 44
           },
           "3.5": {
-            "over": 31.9,
-            "under": 68.1
+            "over": 31.6,
+            "under": 68.4
           }
         },
         "doubleChance": {
-          "12": 67,
-          "1X": 67,
-          "X2": 66
+          "12": 74.2,
+          "1X": 71.3,
+          "X2": 54.5
         },
         "cleanSheet": {
-          "team1": 29,
-          "team2": 20
+          "team1": 29.2,
+          "team2": 20.1
         },
-        "totalGoals": 2.85
+        "totalGoals": 2.84
       },
       "absents": {
         "team1": [],
@@ -3370,39 +3076,39 @@
       "isKnockout": true,
       "team1": "Paraguay",
       "team2": "France",
-      "xg1": 0.45,
+      "xg1": 0.44,
       "xg2": 2.37,
-      "pWin1": 0,
-      "pDraw": 10.4,
-      "pWin2": 89.6,
-      "pQual1": 4.4,
-      "pQual2": 95.6,
+      "pWin1": 5,
+      "pDraw": 14.8,
+      "pWin2": 80.2,
+      "pQual1": 11.3,
+      "pQual2": 88.7,
       "topScores": [
         {
           "score": "0-2",
-          "p": 16.7
+          "p": 16.8
         },
         {
           "score": "0-1",
-          "p": 13.8
+          "p": 13.9
         },
         {
           "score": "0-3",
-          "p": 13.2
+          "p": 13.3
         }
       ],
       "odds": {
-        "win1": null,
-        "draw": 9.03,
-        "win2": 1.05
+        "win1": 18.9,
+        "draw": 6.36,
+        "win2": 1.18
       },
       "pick": "France",
-      "pickProb": 95.6,
+      "pickProb": 88.7,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
-        "data": 8.3,
-        "elo": 91.7
+        "data": 8,
+        "elo": 92
       },
       "drivers": [
         {
@@ -3414,15 +3120,15 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 0.77,
+          "v1": 0.78,
           "v2": 1.57,
           "betterHigh": true,
           "favorsPick": true
         },
         {
           "label": "Défense ajustée",
-          "v1": 0.76,
-          "v2": 0.58,
+          "v1": 0.77,
+          "v2": 0.59,
           "betterHigh": false,
           "favorsPick": true
         },
@@ -3453,33 +3159,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 33.3,
-          "no": 66.7
+          "yes": 37,
+          "no": 63
         },
         "over": {
           "1.5": {
-            "over": 77.6,
-            "under": 22.4
+            "over": 77.4,
+            "under": 22.6
           },
           "2.5": {
-            "over": 53.7,
-            "under": 46.3
+            "over": 56,
+            "under": 44
           },
           "3.5": {
-            "over": 31.4,
-            "under": 68.6
+            "over": 31.1,
+            "under": 68.9
           }
         },
         "doubleChance": {
-          "12": 89.6,
-          "1X": 10.4,
-          "X2": 100
+          "12": 85.2,
+          "1X": 19.8,
+          "X2": 95
         },
         "cleanSheet": {
-          "team1": 9.3,
-          "team2": 63.6
+          "team1": 9.4,
+          "team2": 64.1
         },
-        "totalGoals": 2.83
+        "totalGoals": 2.81
       },
       "absents": {
         "team1": [],
@@ -3517,12 +3223,12 @@
       "team1": "Canada",
       "team2": "Morocco",
       "xg1": 1.26,
-      "xg2": 1.59,
-      "pWin1": 33.3,
-      "pDraw": 33.3,
-      "pWin2": 33.3,
-      "pQual1": 49,
-      "pQual2": 51,
+      "xg2": 1.58,
+      "pWin1": 29.7,
+      "pDraw": 25.9,
+      "pWin2": 44.4,
+      "pQual1": 41.9,
+      "pQual2": 58.1,
       "topScores": [
         {
           "score": "1-1",
@@ -3534,21 +3240,21 @@
         },
         {
           "score": "0-1",
-          "p": 8.6
+          "p": 8.7
         }
       ],
       "odds": {
-        "win1": 2.83,
-        "draw": 2.83,
-        "win2": 2.83
+        "win1": 3.17,
+        "draw": 3.65,
+        "win2": 2.12
       },
       "pick": "Morocco",
-      "pickProb": 51,
-      "confidence": "Faible",
+      "pickProb": 58.1,
+      "confidence": "Modérée",
       "tight": false,
       "blend": {
-        "data": 8,
-        "elo": 92
+        "data": 7.6,
+        "elo": 92.4
       },
       "drivers": [
         {
@@ -3560,14 +3266,14 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 1.13,
-          "v2": 1.1,
+          "v1": 1.17,
+          "v2": 1.11,
           "betterHigh": true,
           "favorsPick": false
         },
         {
           "label": "Défense ajustée",
-          "v1": 0.71,
+          "v1": 0.72,
           "v2": 0.86,
           "betterHigh": false,
           "favorsPick": false
@@ -3600,33 +3306,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 57.7,
-          "no": 42.3
+          "yes": 69,
+          "no": 31
         },
         "over": {
           "1.5": {
-            "over": 78.4,
-            "under": 21.6
+            "over": 78.2,
+            "under": 21.8
           },
           "2.5": {
-            "over": 54.3,
-            "under": 45.7
+            "over": 56,
+            "under": 44
           },
           "3.5": {
-            "over": 32,
-            "under": 68
+            "over": 31.8,
+            "under": 68.2
           }
         },
         "doubleChance": {
-          "12": 66.7,
-          "1X": 66.7,
-          "X2": 66.7
+          "12": 74.1,
+          "1X": 55.6,
+          "X2": 70.3
         },
         "cleanSheet": {
-          "team1": 20.4,
-          "team2": 28.3
+          "team1": 20.5,
+          "team2": 28.4
         },
-        "totalGoals": 2.85
+        "totalGoals": 2.84
       },
       "absents": {
         "team1": [],
@@ -3663,13 +3369,13 @@
       "isKnockout": true,
       "team1": "Brazil",
       "team2": "Norway",
-      "xg1": 1.8,
-      "xg2": 1.14,
-      "pWin1": 43.2,
-      "pDraw": 28.4,
-      "pWin2": 28.4,
-      "pQual1": 58.1,
-      "pQual2": 41.9,
+      "xg1": 1.79,
+      "xg2": 1.13,
+      "pWin1": 52.3,
+      "pDraw": 24.3,
+      "pWin2": 23.4,
+      "pQual1": 65,
+      "pQual2": 35,
       "topScores": [
         {
           "score": "1-1",
@@ -3681,21 +3387,21 @@
         },
         {
           "score": "1-0",
-          "p": 8.9
+          "p": 9.1
         }
       ],
       "odds": {
-        "win1": 2.18,
-        "draw": 3.32,
-        "win2": 3.32
+        "win1": 1.8,
+        "draw": 3.88,
+        "win2": 4.03
       },
       "pick": "Brazil",
-      "pickProb": 58.1,
+      "pickProb": 65,
       "confidence": "Modérée",
       "tight": false,
       "blend": {
-        "data": 8.3,
-        "elo": 91.7
+        "data": 7.9,
+        "elo": 92.1
       },
       "drivers": [
         {
@@ -3708,7 +3414,7 @@
         {
           "label": "Attaque ajustée",
           "v1": 1.36,
-          "v2": 1.43,
+          "v2": 1.42,
           "betterHigh": true,
           "favorsPick": false
         },
@@ -3748,33 +3454,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 57.4,
-          "no": 42.6
+          "yes": 69,
+          "no": 31
         },
         "over": {
           "1.5": {
-            "over": 79.8,
-            "under": 20.2
+            "over": 79.5,
+            "under": 20.5
           },
           "2.5": {
-            "over": 56.4,
-            "under": 43.6
+            "over": 56,
+            "under": 44
           },
           "3.5": {
-            "over": 34.1,
-            "under": 65.9
+            "over": 33.6,
+            "under": 66.4
           }
         },
         "doubleChance": {
-          "12": 71.6,
-          "1X": 71.6,
-          "X2": 56.8
+          "12": 75.7,
+          "1X": 76.6,
+          "X2": 47.7
         },
         "cleanSheet": {
-          "team1": 31.9,
-          "team2": 16.5
+          "team1": 32.3,
+          "team2": 16.7
         },
-        "totalGoals": 2.95
+        "totalGoals": 2.92
       },
       "absents": {
         "team1": [],
@@ -3811,17 +3517,17 @@
       "isKnockout": true,
       "team1": "Mexico",
       "team2": "England",
-      "xg1": 1.32,
+      "xg1": 1.31,
       "xg2": 1.51,
-      "pWin1": 33.3,
-      "pDraw": 33.3,
-      "pWin2": 33.3,
-      "pQual1": 49.1,
-      "pQual2": 50.9,
+      "pWin1": 32.4,
+      "pDraw": 26.2,
+      "pWin2": 41.3,
+      "pQual1": 44.9,
+      "pQual2": 55.1,
       "topScores": [
         {
           "score": "1-1",
-          "p": 12.3
+          "p": 12.4
         },
         {
           "score": "1-2",
@@ -3829,21 +3535,21 @@
         },
         {
           "score": "0-1",
-          "p": 8.3
+          "p": 8.4
         }
       ],
       "odds": {
-        "win1": 2.83,
-        "draw": 2.83,
-        "win2": 2.83
+        "win1": 2.91,
+        "draw": 3.6,
+        "win2": 2.28
       },
       "pick": "England",
-      "pickProb": 50.9,
+      "pickProb": 55.1,
       "confidence": "Faible",
       "tight": false,
       "blend": {
-        "data": 8.3,
-        "elo": 91.7
+        "data": 7.9,
+        "elo": 92.1
       },
       "drivers": [
         {
@@ -3856,14 +3562,14 @@
         {
           "label": "Attaque ajustée",
           "v1": 1.32,
-          "v2": 1.25,
+          "v2": 1.23,
           "betterHigh": true,
           "favorsPick": false
         },
         {
           "label": "Défense ajustée",
-          "v1": 0.5,
-          "v2": 0.72,
+          "v1": 0.51,
+          "v2": 0.73,
           "betterHigh": false,
           "favorsPick": false
         },
@@ -3894,33 +3600,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 57.7,
-          "no": 42.3
+          "yes": 69,
+          "no": 31
         },
         "over": {
           "1.5": {
-            "over": 78,
-            "under": 22
+            "over": 77.8,
+            "under": 22.2
           },
           "2.5": {
-            "over": 53.8,
-            "under": 46.2
+            "over": 56,
+            "under": 44
           },
           "3.5": {
-            "over": 31.5,
-            "under": 68.5
+            "over": 31.2,
+            "under": 68.8
           }
         },
         "doubleChance": {
-          "12": 66.7,
-          "1X": 66.7,
-          "X2": 66.7
+          "12": 73.8,
+          "1X": 58.7,
+          "X2": 67.6
         },
         "cleanSheet": {
-          "team1": 22,
-          "team2": 26.8
+          "team1": 22.1,
+          "team2": 27
         },
-        "totalGoals": 2.83
+        "totalGoals": 2.82
       },
       "absents": {
         "team1": [],
@@ -3957,17 +3663,17 @@
       "isKnockout": true,
       "team1": "USA",
       "team2": "Belgium",
-      "xg1": 1.31,
-      "xg2": 1.59,
-      "pWin1": 33.3,
-      "pDraw": 33.3,
-      "pWin2": 33.3,
-      "pQual1": 49.1,
-      "pQual2": 50.9,
+      "xg1": 1.3,
+      "xg2": 1.58,
+      "pWin1": 30.9,
+      "pDraw": 25.7,
+      "pWin2": 43.4,
+      "pQual1": 43,
+      "pQual2": 57,
       "topScores": [
         {
           "score": "1-1",
-          "p": 12
+          "p": 12.1
         },
         {
           "score": "1-2",
@@ -3975,21 +3681,21 @@
         },
         {
           "score": "0-1",
-          "p": 8.1
+          "p": 8.2
         }
       ],
       "odds": {
-        "win1": 2.83,
-        "draw": 2.83,
-        "win2": 2.83
+        "win1": 3.05,
+        "draw": 3.67,
+        "win2": 2.17
       },
       "pick": "Belgium",
-      "pickProb": 50.9,
-      "confidence": "Faible",
+      "pickProb": 57,
+      "confidence": "Modérée",
       "tight": false,
       "blend": {
-        "data": 8.7,
-        "elo": 91.3
+        "data": 8.3,
+        "elo": 91.7
       },
       "drivers": [
         {
@@ -4001,15 +3707,15 @@
         },
         {
           "label": "Attaque ajustée",
-          "v1": 1.44,
-          "v2": 1.17,
+          "v1": 1.43,
+          "v2": 1.18,
           "betterHigh": true,
           "favorsPick": false
         },
         {
           "label": "Défense ajustée",
-          "v1": 0.81,
-          "v2": 0.84,
+          "v1": 0.82,
+          "v2": 0.85,
           "betterHigh": false,
           "favorsPick": false
         },
@@ -4040,33 +3746,33 @@
       ],
       "markets": {
         "btts": {
-          "yes": 58.8,
-          "no": 41.2
+          "yes": 69,
+          "no": 31
         },
         "over": {
           "1.5": {
-            "over": 79.2,
-            "under": 20.8
+            "over": 78.9,
+            "under": 21.1
           },
           "2.5": {
-            "over": 55.5,
-            "under": 44.5
+            "over": 56,
+            "under": 44
           },
           "3.5": {
-            "over": 33.1,
-            "under": 66.9
+            "over": 32.8,
+            "under": 67.2
           }
         },
         "doubleChance": {
-          "12": 66.7,
-          "1X": 66.7,
-          "X2": 66.7
+          "12": 74.3,
+          "1X": 56.6,
+          "X2": 69.1
         },
         "cleanSheet": {
-          "team1": 20.4,
-          "team2": 26.9
+          "team1": 20.5,
+          "team2": 27.1
         },
-        "totalGoals": 2.9
+        "totalGoals": 2.89
       },
       "absents": {
         "team1": [],
@@ -4101,9 +3807,25 @@
       "date": "2026-07-02",
       "round": "Round of 32",
       "group": null,
+      "team1": "Portugal",
+      "team2": "Croatia",
+      "score": "2 - 1"
+    },
+    {
+      "date": "2026-07-02",
+      "round": "Round of 32",
+      "group": null,
       "team1": "Spain",
       "team2": "Austria",
       "score": "3 - 0"
+    },
+    {
+      "date": "2026-07-02",
+      "round": "Round of 32",
+      "group": null,
+      "team1": "Switzerland",
+      "team2": "Algeria",
+      "score": "2 - 0"
     },
     {
       "date": "2026-07-01",
@@ -4778,44 +4500,36 @@
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Argentina se qualifie",
-          "prob": 95.6,
-          "odds": 0.99
+          "prob": 93,
+          "odds": 1.01
         },
         {
           "match": "Colombia – Ghana",
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Colombia se qualifie",
-          "prob": 95.6,
-          "odds": 0.99
+          "prob": 93,
+          "odds": 1.01
         },
         {
           "match": "Paraguay – France",
           "date": "2026-07-04",
           "market": "Qualification",
           "sel": "France se qualifie",
-          "prob": 95.6,
-          "odds": 0.99
-        },
-        {
-          "match": "Switzerland – Algeria",
-          "date": "2026-07-02",
-          "market": "Total buts",
-          "sel": "+1,5 but",
-          "prob": 80,
-          "odds": 1.18
+          "prob": 88.7,
+          "odds": 1.06
         },
         {
           "match": "Brazil – Norway",
           "date": "2026-07-05",
           "market": "Total buts",
           "sel": "+1,5 but",
-          "prob": 79.8,
-          "odds": 1.18
+          "prob": 79.5,
+          "odds": 1.19
         }
       ],
-      "odds": 1.35,
-      "prob": 55.8
+      "odds": 1.29,
+      "prob": 61
     },
     "safe": {
       "legs": [
@@ -4824,44 +4538,44 @@
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Argentina se qualifie",
-          "prob": 95.6,
-          "odds": 0.99
+          "prob": 93,
+          "odds": 1.01
         },
         {
           "match": "Colombia – Ghana",
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Colombia se qualifie",
-          "prob": 95.6,
-          "odds": 0.99
+          "prob": 93,
+          "odds": 1.01
         },
         {
           "match": "Paraguay – France",
           "date": "2026-07-04",
           "market": "Qualification",
           "sel": "France se qualifie",
-          "prob": 95.6,
-          "odds": 0.99
-        },
-        {
-          "match": "Switzerland – Algeria",
-          "date": "2026-07-02",
-          "market": "Qualification",
-          "sel": "Switzerland se qualifie",
-          "prob": 62.9,
-          "odds": 1.5
+          "prob": 88.7,
+          "odds": 1.06
         },
         {
           "match": "Brazil – Norway",
           "date": "2026-07-05",
           "market": "Qualification",
           "sel": "Brazil se qualifie",
-          "prob": 58.1,
-          "odds": 1.62
+          "prob": 65,
+          "odds": 1.45
+        },
+        {
+          "match": "Australia – Egypt",
+          "date": "2026-07-03",
+          "market": "Qualification",
+          "sel": "Australia se qualifie",
+          "prob": 58.8,
+          "odds": 1.6
         }
       ],
-      "odds": 2.36,
-      "prob": 31.9
+      "odds": 2.51,
+      "prob": 29.3
     },
     "bold": {
       "legs": [
@@ -4870,52 +4584,52 @@
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Argentina se qualifie",
-          "prob": 95.6,
-          "odds": 0.99
+          "prob": 93,
+          "odds": 1.01
         },
         {
           "match": "Colombia – Ghana",
           "date": "2026-07-03",
           "market": "Qualification",
           "sel": "Colombia se qualifie",
-          "prob": 95.6,
-          "odds": 0.99
+          "prob": 93,
+          "odds": 1.01
         },
         {
           "match": "Paraguay – France",
           "date": "2026-07-04",
           "market": "Qualification",
           "sel": "France se qualifie",
-          "prob": 95.6,
-          "odds": 0.99
-        },
-        {
-          "match": "Switzerland – Algeria",
-          "date": "2026-07-02",
-          "market": "Qualification",
-          "sel": "Switzerland se qualifie",
-          "prob": 62.9,
-          "odds": 1.5
+          "prob": 88.7,
+          "odds": 1.06
         },
         {
           "match": "Brazil – Norway",
           "date": "2026-07-05",
           "market": "Qualification",
           "sel": "Brazil se qualifie",
-          "prob": 58.1,
-          "odds": 1.62
+          "prob": 65,
+          "odds": 1.45
         },
         {
-          "match": "Portugal – Croatia",
-          "date": "2026-07-02",
+          "match": "Australia – Egypt",
+          "date": "2026-07-03",
           "market": "Qualification",
-          "sel": "Portugal se qualifie",
-          "prob": 52,
-          "odds": 1.81
+          "sel": "Australia se qualifie",
+          "prob": 58.8,
+          "odds": 1.6
+        },
+        {
+          "match": "Canada – Morocco",
+          "date": "2026-07-04",
+          "market": "Qualification",
+          "sel": "Morocco se qualifie",
+          "prob": 58.1,
+          "odds": 1.62
         }
       ],
-      "odds": 4.27,
-      "prob": 16.6
+      "odds": 4.06,
+      "prob": 17
     }
   },
   "valuePicks": {
@@ -4924,24 +4638,24 @@
     "safest": [
       {
         "sel": "Argentina ou nul",
-        "prob": 100,
-        "fairOdds": 1,
+        "prob": 97.7,
+        "fairOdds": 1.02,
         "match": "Argentina – Cape Verde",
         "date": "2026-07-03",
         "round": "Round of 32"
       },
       {
         "sel": "Colombia ou nul",
-        "prob": 100,
-        "fairOdds": 1,
+        "prob": 97.7,
+        "fairOdds": 1.02,
         "match": "Colombia – Ghana",
         "date": "2026-07-03",
         "round": "Round of 32"
       },
       {
         "sel": "nul ou France",
-        "prob": 100,
-        "fairOdds": 1,
+        "prob": 95,
+        "fairOdds": 1.05,
         "match": "Paraguay – France",
         "date": "2026-07-04",
         "round": "Round of 16"
@@ -4950,186 +4664,199 @@
     "balanced": [
       {
         "sel": "+1,5 but",
-        "prob": 80,
-        "fairOdds": 1.25,
-        "match": "Switzerland – Algeria",
-        "date": "2026-07-02",
-        "round": "Round of 32"
-      },
-      {
-        "sel": "+1,5 but",
-        "prob": 79.8,
-        "fairOdds": 1.25,
+        "prob": 79.5,
+        "fairOdds": 1.26,
         "match": "Brazil – Norway",
         "date": "2026-07-05",
         "round": "Round of 16"
       },
       {
         "sel": "+1,5 but",
-        "prob": 79.2,
-        "fairOdds": 1.26,
+        "prob": 78.9,
+        "fairOdds": 1.27,
         "match": "USA – Belgium",
         "date": "2026-07-06",
+        "round": "Round of 16"
+      },
+      {
+        "sel": "+1,5 but",
+        "prob": 78.2,
+        "fairOdds": 1.28,
+        "match": "Canada – Morocco",
+        "date": "2026-07-04",
         "round": "Round of 16"
       }
     ],
     "value": [
       {
-        "sel": "Switzerland qualifié",
-        "prob": 62.9,
-        "fairOdds": 1.59,
-        "match": "Switzerland – Algeria",
-        "date": "2026-07-02",
+        "sel": "Australia qualifié",
+        "prob": 58.8,
+        "fairOdds": 1.7,
+        "match": "Australia – Egypt",
+        "date": "2026-07-03",
         "round": "Round of 32"
       },
       {
-        "sel": "Les deux marquent — Oui",
-        "prob": 58.8,
+        "sel": "Mexico ou nul",
+        "prob": 58.7,
         "fairOdds": 1.7,
-        "match": "USA – Belgium",
-        "date": "2026-07-06",
+        "match": "Mexico – England",
+        "date": "2026-07-05",
         "round": "Round of 16"
       },
       {
-        "sel": "Brazil qualifié",
+        "sel": "Morocco qualifié",
         "prob": 58.1,
         "fairOdds": 1.72,
-        "match": "Brazil – Norway",
-        "date": "2026-07-05",
+        "match": "Canada – Morocco",
+        "date": "2026-07-04",
         "round": "Round of 16"
       }
     ]
   },
   "history": {
     "summary": {
-      "total": 83,
+      "total": 85,
       "result": {
-        "correct": 53,
-        "pct": 63.9
+        "correct": 55,
+        "pct": 64.7
       },
       "btts": {
         "correct": 52,
-        "pct": 62.7
+        "pct": 61.2
       },
       "ou25": {
-        "correct": 44,
-        "pct": 53
+        "correct": 45,
+        "pct": 52.9
       },
       "metrics": {
         "model": {
-          "logLoss": 0.772,
-          "brier": 0.455,
-          "n": 83
+          "logLoss": 0.768,
+          "brier": 0.451,
+          "n": 85
         },
         "baselineElo": {
-          "logLoss": 0.822,
-          "brier": 0.491,
-          "n": 83
+          "logLoss": 0.819,
+          "brier": 0.489,
+          "n": 85
         },
         "baselineRate": {
-          "logLoss": 1.092,
-          "brier": 0.658,
-          "n": 83
+          "logLoss": 1.083,
+          "brier": 0.652,
+          "n": 85
         },
         "calibration": [
           {
             "range": "40-50%",
-            "predicted": 45.5,
+            "predicted": 45.3,
             "observed": 33.3,
             "n": 15
           },
           {
             "range": "50-60%",
-            "predicted": 57,
-            "observed": 54.5,
-            "n": 11
+            "predicted": 56.9,
+            "observed": 58.3,
+            "n": 12
           },
           {
             "range": "60-70%",
             "predicted": 64.6,
-            "observed": 63.6,
-            "n": 11
+            "observed": 69.2,
+            "n": 13
           },
           {
             "range": "70-80%",
-            "predicted": 74.7,
-            "observed": 75,
-            "n": 16
+            "predicted": 74.6,
+            "observed": 78.6,
+            "n": 14
           },
           {
             "range": "80-90%",
             "predicted": 85.5,
-            "observed": 85.2,
-            "n": 27
+            "observed": 82.1,
+            "n": 28
           }
         ],
         "holdout": {
           "raw": {
-            "logLoss": 0.651,
-            "brier": 0.359,
-            "n": 25
+            "logLoss": 0.61,
+            "brier": 0.327,
+            "n": 26
           },
           "calibrated": {
-            "logLoss": 0.651,
-            "brier": 0.363,
-            "n": 25
+            "logLoss": 0.644,
+            "brier": 0.357,
+            "n": 26
           }
         },
         "market": null,
-        "calibrationApplied": true
+        "calibratedMarkets": [
+          "btts",
+          "o25"
+        ],
+        "calibrationApplied": false
       }
     },
-    "calibrationMap": {
-      "xs": [
-        0.012,
-        0.1011011011011011,
-        0.10300000000000001,
-        0.15215215215215214,
-        0.15284715284715283,
-        0.22399999999999998,
-        0.2247752247752248,
-        0.24375624375624377,
-        0.24600000000000002,
-        0.449,
-        0.46399999999999997,
-        0.502,
-        0.548,
-        0.6186186186186187,
-        0.6343656343656344,
-        0.723,
-        0.7262737262737262,
-        0.7762237762237761,
-        0.777,
-        0.873,
-        0.8740000000000001,
-        0.89
-      ],
-      "ys": [
-        0,
-        0,
-        0.1,
-        0.1,
-        0.23076923076923078,
-        0.23076923076923078,
-        0.2727272727272727,
-        0.2727272727272727,
-        0.34782608695652173,
-        0.34782608695652173,
-        0.375,
-        0.375,
-        0.46153846153846156,
-        0.46153846153846156,
-        0.7142857142857143,
-        0.7142857142857143,
-        0.8333333333333334,
-        0.8333333333333334,
-        0.8571428571428571,
-        0.8571428571428571,
-        1,
-        1
-      ]
+    "calibration": {
+      "x12": null,
+      "btts": {
+        "xs": [
+          0.128,
+          0.35,
+          0.36200000000000004,
+          0.455,
+          0.46299999999999997,
+          0.48200000000000004,
+          0.49,
+          0.642
+        ],
+        "ys": [
+          0.37037037037037035,
+          0.37037037037037035,
+          0.38461538461538464,
+          0.38461538461538464,
+          0.6666666666666666,
+          0.6666666666666666,
+          0.6904761904761905,
+          0.6904761904761905
+        ]
+      },
+      "o15": null,
+      "o25": {
+        "xs": [
+          0.419,
+          0.419,
+          0.622
+        ],
+        "ys": [
+          0,
+          0.5595238095238095,
+          0.5595238095238095
+        ]
+      },
+      "o35": null
     },
     "matches": [
+      {
+        "date": "2026-07-02",
+        "group": null,
+        "team1": "Switzerland",
+        "team2": "Algeria",
+        "score": "2 - 0",
+        "predicted": "1",
+        "predLabel": "Switzerland",
+        "prob": 58.2,
+        "actual": "1",
+        "hit": true,
+        "btts": {
+          "pred": "Oui",
+          "hit": false
+        },
+        "ou25": {
+          "pred": "+2,5",
+          "hit": false
+        }
+      },
       {
         "date": "2026-07-02",
         "group": null,
@@ -5138,11 +4865,31 @@
         "score": "3 - 0",
         "predicted": "1",
         "predLabel": "Spain",
-        "prob": 80.6,
+        "prob": 83.9,
         "actual": "1",
         "hit": true,
         "btts": {
           "pred": "Non",
+          "hit": true
+        },
+        "ou25": {
+          "pred": "+2,5",
+          "hit": true
+        }
+      },
+      {
+        "date": "2026-07-02",
+        "group": null,
+        "team1": "Portugal",
+        "team2": "Croatia",
+        "score": "2 - 1",
+        "predicted": "1",
+        "predLabel": "Portugal",
+        "prob": 55.9,
+        "actual": "1",
+        "hit": true,
+        "btts": {
+          "pred": "Oui",
           "hit": true
         },
         "ou25": {
@@ -5358,7 +5105,7 @@
         "score": "2 - 1",
         "predicted": "1",
         "predLabel": "Croatia",
-        "prob": 81.8,
+        "prob": 79.2,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -5416,9 +5163,9 @@
         "team1": "Colombia",
         "team2": "Portugal",
         "score": "0 - 0",
-        "predicted": "1",
-        "predLabel": "Colombia",
-        "prob": 38.8,
+        "predicted": "2",
+        "predLabel": "Portugal",
+        "prob": 38.7,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5458,7 +5205,7 @@
         "score": "3 - 3",
         "predicted": "2",
         "predLabel": "Austria",
-        "prob": 44.5,
+        "prob": 42.3,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -5518,7 +5265,7 @@
         "score": "0 - 1",
         "predicted": "2",
         "predLabel": "Spain",
-        "prob": 79.6,
+        "prob": 81.3,
         "actual": "2",
         "hit": true,
         "btts": {
@@ -5838,12 +5585,12 @@
         "score": "0 - 1",
         "predicted": "2",
         "predLabel": "Croatia",
-        "prob": 72.2,
+        "prob": 69.2,
         "actual": "2",
         "hit": true,
         "btts": {
-          "pred": "Non",
-          "hit": true
+          "pred": "Oui",
+          "hit": false
         },
         "ou25": {
           "pred": "+2,5",
@@ -5898,7 +5645,7 @@
         "score": "5 - 0",
         "predicted": "1",
         "predLabel": "Portugal",
-        "prob": 85.4,
+        "prob": 86.4,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -5938,7 +5685,7 @@
         "score": "2 - 0",
         "predicted": "1",
         "predLabel": "Argentina",
-        "prob": 80.4,
+        "prob": 82.1,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6338,7 +6085,7 @@
         "score": "4 - 2",
         "predicted": "1",
         "predLabel": "England",
-        "prob": 58.1,
+        "prob": 61.4,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6378,7 +6125,7 @@
         "score": "1 - 1",
         "predicted": "1",
         "predLabel": "Portugal",
-        "prob": 77.7,
+        "prob": 80.4,
         "actual": "X",
         "hit": false,
         "btts": {
@@ -6398,7 +6145,7 @@
         "score": "3 - 1",
         "predicted": "1",
         "predLabel": "Austria",
-        "prob": 68.2,
+        "prob": 66,
         "actual": "1",
         "hit": true,
         "btts": {
@@ -6794,7 +6541,7 @@
   },
   "counts": {
     "teams": 48,
-    "played": 83,
-    "upcoming": 10
+    "played": 85,
+    "upcoming": 8
   }
 }

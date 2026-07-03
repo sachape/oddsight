@@ -72,6 +72,29 @@ export function applyIsotonic(cal, x) {
   return ys[ys.length - 1]
 }
 
+// --- Calibration d'un marché BINAIRE (gated out-of-sample) -------------------
+// pairs chronologiques { x: proba prédite du "oui", y: 0/1 réalisé }.
+const clipp = (p) => Math.max(1e-15, Math.min(1 - 1e-15, p))
+export function binLogLoss(pairs, cal = null) {
+  if (!pairs.length) return null
+  let s = 0
+  for (const p of pairs) {
+    const q = cal ? applyIsotonic(cal, p.x) : p.x
+    s += -Math.log(clipp(p.y ? q : 1 - q))
+  }
+  return s / pairs.length
+}
+// Renvoie la carte de calibration (tout l'historique) SEULEMENT si elle améliore
+// le log-loss out-of-sample (30 % final), sinon null → garantie zéro régression.
+export function gatedIsotonic(pairs, minN = 40) {
+  if (pairs.length < minN) return null
+  const split = Math.floor(pairs.length * 0.7)
+  const calT = fitIsotonic(pairs.slice(0, split))
+  const test = pairs.slice(split)
+  if (binLogLoss(test, calT) > binLogLoss(test, null) + 1e-9) return null
+  return fitIsotonic(pairs)
+}
+
 // --- Courbe de fiabilité (reliability diagram) sur le pari conseillé ----------
 // Regroupe (proba du pick, réussite 0/1) par tranche et compare prévu vs observé.
 export function reliability(pairs, edges = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0001]) {
