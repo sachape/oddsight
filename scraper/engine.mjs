@@ -31,8 +31,8 @@ const PROFILES = {
   // cup : peu de matchs/équipe -> la couche stats est bruitée, on s'appuie surtout
   // sur l'Elo (blendK élevé, supCoef fort) et on coupe momentum/finition (net-négatifs).
   // Validé : bat la baseline Elo sur la CM (0.77 vs 0.82), vs 0.85 avant (ablation).
-  cup:    { halfLife: 14, koBonus: 1.3, rho: -0.05, supCoef: 0.65, blendK: 30, homeF: 1.12, awayF: 0.9,  momentumW: 0,    clutchW: 0 },
-  league: { halfLife: 60, koBonus: 1.3, rho: 0.0,   supCoef: 0.30, blendK: 3,  homeF: 1.05, awayF: 0.95, momentumW: 0.08, clutchW: 0.04 },
+  cup:    { halfLife: 14, koBonus: 1.3, rho: -0.05, supCoef: 0.65, blendK: 30, homeF: 1.12, awayF: 0.9,  momentumW: 0,    clutchW: 0,    dispersion: Infinity },
+  league: { halfLife: 60, koBonus: 1.3, rho: 0.0,   supCoef: 0.30, blendK: 3,  homeF: 1.05, awayF: 0.95, momentumW: 0.08, clutchW: 0.04, dispersion: Infinity },
 }
 export const TUNABLE = { ...PROFILES.cup } // profil actif (lu par predict/recency)
 
@@ -43,6 +43,16 @@ const daysBetween = (a, b) => Math.round((new Date(b) - new Date(a)) / 86400000)
 
 function factorial(n) { let r = 1; for (let i = 2; i <= n; i++) r *= i; return r }
 function poisson(k, l) { return (Math.exp(-l) * Math.pow(l, k)) / factorial(k) }
+
+// Loi de comptage des buts : Poisson par défaut, binomiale négative si `disp`
+// est fini (sur-dispersion : variance = μ + μ²/disp > μ). disp→∞ = Poisson.
+function countPmf(k, mean, disp) {
+  if (!Number.isFinite(disp) || disp > 500) return poisson(k, mean)
+  const r = disp, p = r / (r + mean)
+  let coef = 1 // = C(k+r-1, k) = Γ(k+r)/(Γ(r)·k!) sans lgamma (k petit)
+  for (let j = 0; j < k; j++) coef *= (r + j) / (j + 1)
+  return coef * Math.pow(p, r) * Math.pow(1 - p, k)
+}
 
 // --- 1. Extraction des matchs joués -----------------------------------------
 
@@ -301,12 +311,13 @@ function predict(m, teams, leagueAvg, asOf, format = 'cup', cal = null) {
     if (i === 1 && j === 1) return 1 - RHO
     return 1
   }
+  const DISP = TUNABLE.dispersion
   let total = 0
   const grid = []
   for (let i = 0; i <= MAX; i++) {
-    const pi = poisson(i, lam1)
+    const pi = countPmf(i, lam1, DISP)
     for (let j = 0; j <= MAX; j++) {
-      const p = pi * poisson(j, lam2) * tau(i, j)
+      const p = pi * countPmf(j, lam2, DISP) * tau(i, j)
       grid.push({ i, j, p })
       total += p
     }
