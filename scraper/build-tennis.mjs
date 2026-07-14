@@ -1,6 +1,6 @@
-// OddSight — pipeline Tennis (ATP/WTA, tournoi en cours via ESPN)
-// Probabilité de victoire estimée à partir des points de classement (modèle puissance).
-// Pas de nul ; format joueur vs joueur. Surface non modélisée (v1).
+// OddSight — pipeline Tennis (ATP/WTA, tournois en cours via ESPN)
+// Probabilité de victoire = Elo DE LA SURFACE du tournoi (tennisabstract), repli sur
+// l'Elo général puis sur les points de classement. Pas de nul ; joueur vs joueur.
 //
 //   npm run scrape:tennis
 
@@ -56,7 +56,19 @@ function setScores(s, bestOf) {
 
 const norm = (s) => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/&nbsp;/g, ' ').replace(/\s+/g, ' ').trim()
 
-// Elo par surface (tennisabstract) — on récupère le gElo (gazon) par nom de joueur
+// ESPN ne renvoie AUCUNE information de surface. On la déduit du nom du tournoi.
+// Un tournoi inconnu ne se voit PAS attribuer une surface au hasard : on retombe sur
+// l'Elo général. Prédire un match sur terre battue avec l'Elo gazon (ce que faisait
+// la v1, figée sur Wimbledon) fausse le favori dès qu'un spécialiste est impliqué.
+const SURFACES = [
+  [/wimbledon|queen|halle|terra wortmann|eastbourne|hertogenbosch|libema|mallorca|newport|stuttgart open|boss open/i, 'grass'],
+  [/roland.?garros|french open|monte.?carlo|madrid|internazionali|italian open|rome|barcelona|godo|hamburg|bastad|b.?stad|nordea|gstaad|swiss open|umag|croatia open|kitzb|estoril|munich|bavarian|geneva|gonet|lyon|buenos aires|rio open|santiago|c.?rdoba|marrakech|houston|hungarian|bucharest/i, 'clay'],
+  [/australian open|us open|indian wells|bnp paribas open|miami open|cincinnati|canadian|national bank|rogers cup|shanghai|rolex paris|dubai|qatar|doha|acapulco|rotterdam|marseille|basel|swiss indoors|vienna|erste bank|tokyo|beijing|china open|metz|antwerp|stockholm|winston.?salem|atlanta|washington|citi open|los cabos|chengdu|hangzhou|zhuhai|adelaide|brisbane|auckland|montpellier|delray beach|dallas|almaty|astana|nitto atp finals|united cup|hong kong|guadalajara|monterrey|san diego|tokyo|osaka|seoul|ningbo|wuhan/i, 'hard'],
+]
+const surfaceOf = (name) => SURFACES.find(([re]) => re.test(name || ''))?.[1] || null
+
+// Elo par surface (tennisabstract). Colonnes de la table :
+// [eloRank, age, Elo, hEloRank, hElo, cEloRank, cElo, gEloRank, gElo, peakElo, peakMonth]
 async function surfaceElo(tour, map) {
   try {
     const h = await (await fetch(`https://tennisabstract.com/reports/${tour}_elo_ratings.html`, { headers: { 'User-Agent': 'Mozilla/5.0' } })).text()
@@ -66,16 +78,17 @@ async function surfaceElo(tour, map) {
       const name = nameM[1].replace(/&nbsp;/g, ' ').trim()
       const text = row.replace(/<[^>]+>/g, ' ').replace(/&nbsp;/g, ' ')
       const nums = (text.match(/\d+\.\d+|\d+/g) || []).map(Number)
-      // [rank, age, Elo, eloRank, hElo, hRank, cElo, cRank, gElo, ...]
-      if (nums.length < 3) continue
+      if (nums.length < 9) continue
       const elo = nums[2]
-      const gElo = nums.length > 8 ? nums[8] : elo
-      map[norm(name)] = { elo, gElo }
+      map[norm(name)] = { elo, hard: nums[4] || elo, clay: nums[6] || elo, grass: nums[8] || elo }
     }
   } catch (e) {
     console.warn(`  ⚠ Elo ${tour} indisponible (${e.message})`)
   }
 }
+
+// Elo à utiliser pour CE tournoi : celui de la surface si on la connaît, sinon le général.
+const eloFor = (rec, surface) => (rec ? (surface && rec[surface]) || rec.elo : null)
 
 async function rankings(tour, map) {
   const d = await (await fetch(`https://site.api.espn.com/apis/site/v2/sports/tennis/${tour}/rankings`)).json()
@@ -96,86 +109,111 @@ async function main() {
   await rankings('wta', pts)
   console.log(`✓ ${Object.keys(pts).length / 2} joueurs classés`)
 
-  console.log('→ Elo par surface (gazon)…')
+  console.log('→ Elo par surface (dur / terre / gazon)…')
   const elo = {}
   await surfaceElo('atp', elo)
   await surfaceElo('wta', elo)
   console.log(`✓ ${Object.keys(elo).length} joueurs avec Elo`)
 
-  console.log('→ Scoreboard tennis (tournoi en cours)…')
-  const sb = await (await fetch('https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard')).json()
-  const event = sb.events?.[0]
-  if (!event) throw new Error('Aucun tournoi en cours')
+  console.log('→ Scoreboards ATP + WTA (tournois en cours)…')
+  const events = []
+  for (const tour of ['atp', 'wta']) {
+    try {
+      const sb = await (await fetch(`https://site.api.espn.com/apis/site/v2/sports/tennis/${tour}/scoreboard`)).json()
+      for (const e of sb.events || []) if (!events.some((x) => x.id === e.id)) events.push(e)
+    } catch (e) {
+      console.warn(`  ⚠ scoreboard ${tour} indisponible (${e.message})`)
+    }
+  }
+  if (!events.length) throw new Error('Aucun tournoi en cours')
 
   const today = new Date().toISOString().slice(0, 10)
   const predictions = []
-  for (const grp of event.groupings || []) {
-    const cat = grp.grouping?.displayName || ''
-    if (!/Singles/.test(cat)) continue // simples uniquement (pas de double)
-    for (const comp of grp.competitions || []) {
-      const state = comp.status?.type?.state
-      if (state === 'post') continue // déjà joué
-      const day = comp.date?.slice(0, 10)
-      if (day && day < today) continue // match passé (état périmé)
-      const cs = comp.competitors || []
-      if (cs.length !== 2) continue
-      const A = cs[0].athlete, B = cs[1].athlete
-      if (!A?.displayName || !B?.displayName) continue
-      const la = lookup(pts, A), lb = lookup(pts, B)
-      const pa = la?.points || DEFAULT_PTS
-      const pb = lb?.points || DEFAULT_PTS
-      // Modèle principal : Elo gazon (Wimbledon). Repli : points de classement.
-      const ga = elo[norm(A.displayName)]?.gElo
-      const gb = elo[norm(B.displayName)]?.gElo
-      let p1, basis
-      if (ga && gb) {
-        p1 = 1 / (1 + Math.pow(10, (gb - ga) / 400))
-        basis = 'elo'
-      } else {
-        const ea = Math.pow(pa, EXP), eb = Math.pow(pb, EXP)
-        p1 = ea / (ea + eb)
-        basis = 'points'
+  const seen = new Set()
+
+  for (const event of events) {
+    // Surface réelle du tournoi (sinon : Elo général, pas de surface inventée)
+    const surface = surfaceOf(event.name)
+    // Best-of-5 UNIQUEMENT en Grand Chelem masculin (`major`). Ailleurs, 2 sets gagnants.
+    const isMajor = Boolean(event.major)
+    console.log(`  · ${event.name} — surface ${surface || 'inconnue (Elo général)'}${isMajor ? ' · Grand Chelem' : ''}`)
+
+    for (const grp of event.groupings || []) {
+      const cat = grp.grouping?.displayName || ''
+      if (!/Singles/.test(cat)) continue // simples uniquement (pas de double)
+      const women = /women/i.test(cat)
+      const bestOf = isMajor && !women ? 5 : 3
+
+      for (const comp of grp.competitions || []) {
+        const state = comp.status?.type?.state
+        if (state === 'post') continue // déjà joué
+        const day = comp.date?.slice(0, 10)
+        if (day && day < today) continue // match passé (état périmé)
+        if (seen.has(comp.id)) continue
+        const cs = comp.competitors || []
+        if (cs.length !== 2) continue
+        const A = cs[0].athlete, B = cs[1].athlete
+        if (!A?.displayName || !B?.displayName) continue
+        seen.add(comp.id)
+
+        const la = lookup(pts, A), lb = lookup(pts, B)
+        const pa = la?.points || DEFAULT_PTS
+        const pb = lb?.points || DEFAULT_PTS
+        // Modèle principal : Elo de la surface du tournoi. Repli : points de classement.
+        const ea = eloFor(elo[norm(A.displayName)], surface)
+        const eb = eloFor(elo[norm(B.displayName)], surface)
+        let p1, basis
+        if (ea && eb) {
+          p1 = 1 / (1 + Math.pow(10, (eb - ea) / 400))
+          basis = surface ? `elo-${surface}` : 'elo'
+        } else {
+          const qa = Math.pow(pa, EXP), qb = Math.pow(pb, EXP)
+          p1 = qa / (qa + qb)
+          basis = 'points'
+        }
+        const round = comp.round?.displayName || comp.notes?.[0]?.headline || cat
+        const fav1 = p1 >= 0.5
+        const pickProb = Math.max(p1, 1 - p1)
+        const setS = setProbFromMatch(p1, bestOf)
+        const sets = setScores(setS, bestOf)
+        let confidence = 'Serré'
+        if (pickProb >= 0.75) confidence = 'Élevée'
+        else if (pickProb >= 0.62) confidence = 'Modérée'
+        else if (pickProb >= 0.53) confidence = 'Faible'
+        predictions.push({
+          id: comp.id,
+          tournament: event.name,
+          surface,
+          category: cat,
+          round,
+          date: comp.date?.slice(0, 10) || event.date?.slice(0, 10),
+          player1: A.displayName, player2: B.displayName,
+          rank1: la?.rank || null, rank2: lb?.rank || null,
+          pts1: pa, pts2: pb,
+          pWin1: pct(p1), pWin2: pct(1 - p1),
+          pick: fav1 ? A.displayName : B.displayName,
+          pickProb: pct(pickProb),
+          confidence,
+          odds: { win1: round2(1 / p1 / MARGIN), win2: round2(1 / (1 - p1) / MARGIN) },
+          fair: { win1: round2(1 / p1), win2: round2(1 / (1 - p1)) },
+          bestOf,
+          sets,
+          basis,
+        })
       }
-      const round = comp.round?.displayName || comp.notes?.[0]?.headline || cat
-      const fav1 = p1 >= 0.5
-      const pickProb = Math.max(p1, 1 - p1)
-      // Score en sets : Grand Chelem hommes = best-of-5, femmes = best-of-3
-      const bestOf = /women/i.test(cat) ? 3 : 5
-      const setS = setProbFromMatch(p1, bestOf)
-      const sets = setScores(setS, bestOf)
-      let confidence = 'Serré'
-      if (pickProb >= 0.75) confidence = 'Élevée'
-      else if (pickProb >= 0.62) confidence = 'Modérée'
-      else if (pickProb >= 0.53) confidence = 'Faible'
-      predictions.push({
-        id: comp.id,
-        category: cat,
-        round,
-        date: comp.date?.slice(0, 10) || event.date?.slice(0, 10),
-        player1: A.displayName, player2: B.displayName,
-        rank1: la?.rank || null, rank2: lb?.rank || null,
-        pts1: pa, pts2: pb,
-        pWin1: pct(p1), pWin2: pct(1 - p1),
-        pick: fav1 ? A.displayName : B.displayName,
-        pickProb: pct(pickProb),
-        confidence,
-        odds: { win1: round2(1 / p1 / MARGIN), win2: round2(1 / (1 - p1) / MARGIN) },
-        fair: { win1: round2(1 / p1), win2: round2(1 / (1 - p1)) },
-        bestOf,
-        sets,
-        basis,
-      })
     }
   }
   predictions.sort((a, b) => (a.date || '').localeCompare(b.date || ''))
-  console.log(`✓ ${predictions.length} matchs à venir (simples)`)
+  const tournaments = [...new Set(predictions.map((p) => p.tournament))]
+  console.log(`✓ ${predictions.length} matchs à venir (simples) sur ${tournaments.length} tournoi(s)`)
 
   const dataset = {
     sport: 'tennis',
-    tournament: event.name,
+    tournament: tournaments.join(' · ') || events[0].name,
+    tournaments,
     generatedAt: new Date().toISOString(),
     asOf: new Date().toISOString().slice(0, 10),
-    sources: ['ESPN (scoreboard + classements ATP/WTA)'],
+    sources: ['ESPN (scoreboard + classements ATP/WTA)', 'tennisabstract (Elo par surface)'],
     counts: { upcoming: predictions.length },
     predictions,
   }

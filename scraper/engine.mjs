@@ -11,6 +11,7 @@
 // puis loi de Poisson + correction Dixon-Coles -> probabilités de chaque score.
 
 import { scoreSet, reliability, fitIsotonic, applyIsotonic, logLossSample, gatedIsotonic } from './metrics.mjs'
+import { buildEloTimeline } from './elo-timeline.mjs'
 
 const HOSTS = new Set(['United States', 'USA', 'Canada', 'Mexico'])
 
@@ -347,7 +348,13 @@ function predict(m, teams, leagueAvg, asOf, format = 'cup', cal = null) {
   if (cal?.x12) {
     const c1 = applyIsotonic(cal.x12, pW1), cX = applyIsotonic(cal.x12, pD), c2 = applyIsotonic(cal.x12, pW2)
     const s = c1 + cX + c2 || 1
-    pW1 = c1 / s; pD = cX / s; pW2 = c2 / s
+    // Garde-fou : une carte isotonique est monotone, elle ne PEUT pas changer l'ordre
+    // des trois issues... sauf sur un palier, qui les écrase à la même valeur (on se
+    // retrouve alors à 33/33/33 et le favori devient arbitraire). Si l'ordre du modèle
+    // brut n'est pas préservé, la calibration est dégénérée ici : on garde le brut.
+    const raw = [pW1, pD, pW2], calib = [c1 / s, cX / s, c2 / s]
+    const argmax = (a) => a.indexOf(Math.max(...a))
+    if (argmax(calib) === argmax(raw)) { [pW1, pD, pW2] = calib }
   }
   if (cal?.btts) bttsYes = applyIsotonic(cal.btts, bttsYes)
   if (cal?.o15) over[1.5] = applyIsotonic(cal.o15, over[1.5])
@@ -647,8 +654,9 @@ function buildBets(predictions, format) {
 //
 // Pour chaque match joué, on reconstruit l'état du modèle avec UNIQUEMENT les
 // matchs antérieurs (date < date du match) puis on prédit, et on compare au
-// résultat réel. Pas de lookahead sur les résultats. (L'Elo utilisé est l'Elo
-// courant d'eloratings — léger biais, signalé dans l'UI.)
+// résultat réel. Pas de lookahead — y compris sur l'Elo : `eloAt(date)` rend l'Elo
+// tel qu'il était AVANT le match (voir elo-timeline.mjs). Utiliser l'Elo courant
+// d'eloratings serait de la triche : il intègre déjà le résultat qu'on prédit.
 
 function ensureTeam(teams, name, elo) {
   if (teams[name]) return teams[name]
@@ -683,7 +691,7 @@ function computeInternalElo(played, teams, format) {
   for (const n in R) if (teams[n]) teams[n].elo = Math.round(R[n])
 }
 
-export function backtest({ matches, elo, format = 'cup', market = null }) {
+export function backtest({ matches, elo, format = 'cup', market = null, eloAt = null }) {
   // Tous les matchs avec score (chaque prono est rejoué avec uniquement les matchs antérieurs)
   const played = matches
     .filter(hasScore)
@@ -709,14 +717,16 @@ export function backtest({ matches, elo, format = 'cup', market = null }) {
   const idxOf = (a) => (a === '1' ? 0 : a === 'X' ? 1 : 2)
 
   for (const m of played) {
+    // Elo d'AVANT le match (pas celui d'aujourd'hui, qui connaît déjà le résultat)
+    const E = eloAt ? eloAt(m.date) : elo
     const prior = parseGames(matches, m.date) // matchs strictement antérieurs
-    const { teams, leagueAvg } = buildTeams(prior.games, elo, m.date)
+    const { teams, leagueAvg } = buildTeams(prior.games, E, m.date)
     solveStrengths(teams, leagueAvg)
     if (noExternalElo) computeInternalElo(prior.played, teams, format)
-    computeMomentum(teams, elo)
+    computeMomentum(teams, E)
     applyAvailability(teams, {})
-    ensureTeam(teams, m.team1, elo)
-    ensureTeam(teams, m.team2, elo)
+    ensureTeam(teams, m.team1, E)
+    ensureTeam(teams, m.team2, E)
 
     const pred = predict(m, teams, leagueAvg, m.date, format)
     if (!pred) continue
@@ -810,8 +820,11 @@ export function backtest({ matches, elo, format = 'cup', market = null }) {
   }
 
   // Vérif HONNÊTE 1N2 : on ajuste sur 70 % (chrono) et on mesure sur les 30 % suivants.
+  // Seuil à 150 matchs : une isotonique à 3 issues ajustée sur ~100 matchs produit des
+  // paliers énormes (tout 30-55 % écrasé sur une seule valeur) — elle détruit
+  // l'information au lieu de la corriger. Une CM entière ne suffit pas ; une saison oui.
   let modelOOS = null, calibratedOOS = null, x12Map = null
-  if (modelRows.length >= 30) {
+  if (modelRows.length >= 150) {
     const split = Math.floor(modelRows.length * 0.7)
     const train = modelRows.slice(0, split)
     const test = modelRows.slice(split)
@@ -969,7 +982,13 @@ export function buildModel({
   }
 
   // Track record + métriques + carte de calibration (rejoué point-in-time).
-  const history = backtest({ matches: hasTrain ? trainMatches : matches, elo, format, market })
+  // L'Elo aussi est rejoué point-in-time : sinon le backtest « prédirait » chaque
+  // match avec un Elo qui contient déjà son résultat, et toute la mesure serait fausse.
+  const backtestMatches = hasTrain ? trainMatches : matches
+  const history = backtest({
+    matches: backtestMatches, elo, format, market,
+    eloAt: buildEloTimeline(backtestMatches, elo, HOSTS),
+  })
 
   // Calibration par marché (chacune déjà gated OOS dans le backtest : une carte
   // n'existe que si elle améliore le log-loss out-of-sample). Garantie anti-régression.

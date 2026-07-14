@@ -1,6 +1,6 @@
 {
   "tournament": "Premier League 2026-27",
-  "generatedAt": "2026-07-03T16:57:15.448Z",
+  "generatedAt": "2026-07-14T11:47:46.215Z",
   "asOf": "2026-07-01",
   "sources": [
     "openfootball en.1 (entraînement)",
@@ -970,11 +970,11 @@
       "team2": "Coventry",
       "xg1": 2.54,
       "xg2": 0.67,
-      "pWin1": 100,
-      "pDraw": 0,
-      "pWin2": 0,
-      "pQual1": 100,
-      "pQual2": 0,
+      "pWin1": 96.1,
+      "pDraw": 2,
+      "pWin2": 2,
+      "pQual1": 96.1,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -990,12 +990,12 @@
         }
       ],
       "odds": {
-        "win1": 0.94,
-        "draw": null,
-        "win2": null
+        "win1": 0.98,
+        "draw": 48.11,
+        "win2": 48.11
       },
       "pick": "Arsenal",
-      "pickProb": 100,
+      "pickProb": 96.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -1071,9 +1071,9 @@
           }
         },
         "doubleChance": {
-          "12": 100,
-          "1X": 100,
-          "X2": 0
+          "12": 98,
+          "1X": 98,
+          "X2": 3.9
         },
         "cleanSheet": {
           "team1": 51.3,
@@ -1118,11 +1118,11 @@
       "team2": "Man United",
       "xg1": 0.81,
       "xg2": 2.25,
-      "pWin1": 0,
-      "pDraw": 21.2,
-      "pWin2": 78.8,
-      "pQual1": 0,
-      "pQual2": 78.8,
+      "pWin1": 2,
+      "pDraw": 20.8,
+      "pWin2": 77.2,
+      "pQual1": 2,
+      "pQual2": 77.2,
       "topScores": [
         {
           "score": "0-2",
@@ -1138,12 +1138,12 @@
         }
       ],
       "odds": {
-        "win1": null,
-        "draw": 4.46,
-        "win2": 1.2
+        "win1": 47.06,
+        "draw": 4.54,
+        "win2": 1.22
       },
       "pick": "Man United",
-      "pickProb": 78.8,
+      "pickProb": 77.2,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -1219,9 +1219,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.8,
-          "1X": 21.2,
-          "X2": 100
+          "12": 79.2,
+          "1X": 22.8,
+          "X2": 98
         },
         "cleanSheet": {
           "team1": 10.6,
@@ -3463,11 +3463,11 @@
       "team2": "Ipswich",
       "xg1": 2.48,
       "xg2": 0.73,
-      "pWin1": 100,
-      "pDraw": 0,
-      "pWin2": 0,
-      "pQual1": 100,
-      "pQual2": 0,
+      "pWin1": 96.1,
+      "pDraw": 2,
+      "pWin2": 2,
+      "pQual1": 96.1,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -3483,12 +3483,12 @@
         }
       ],
       "odds": {
-        "win1": 0.94,
-        "draw": null,
-        "win2": null
+        "win1": 0.98,
+        "draw": 48.11,
+        "win2": 48.11
       },
       "pick": "Man United",
-      "pickProb": 100,
+      "pickProb": 96.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -3564,9 +3564,9 @@
           }
         },
         "doubleChance": {
-          "12": 100,
-          "1X": 100,
-          "X2": 0
+          "12": 98,
+          "1X": 98,
+          "X2": 3.9
         },
         "cleanSheet": {
           "team1": 48.3,
@@ -3611,11 +3611,11 @@
       "team2": "Fulham",
       "xg1": 1.36,
       "xg2": 1.39,
-      "pWin1": 39,
-      "pDraw": 22,
-      "pWin2": 39,
-      "pQual1": 39,
-      "pQual2": 39,
+      "pWin1": 36.7,
+      "pDraw": 25.5,
+      "pWin2": 37.8,
+      "pQual1": 36.7,
+      "pQual2": 37.8,
       "topScores": [
         {
           "score": "1-1",
@@ -3631,12 +3631,12 @@
         }
       ],
       "odds": {
-        "win1": 2.42,
-        "draw": 4.29,
-        "win2": 2.42
+        "win1": 2.57,
+        "draw": 3.69,
+        "win2": 2.5
       },
-      "pick": "Sunderland ou nul",
-      "pickProb": 61,
+      "pick": "nul ou Fulham",
+      "pickProb": 63.3,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -3649,7 +3649,7 @@
           "v1": 1478,
           "v2": 1488,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
@@ -3663,7 +3663,7 @@
           "v1": 1.06,
           "v2": 0.9,
           "betterHigh": false,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Repos (jours)",
@@ -3677,7 +3677,7 @@
           "v1": 0.49,
           "v2": 0.43,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Finition tardive",
@@ -3688,7 +3688,7 @@
         }
       ],
       "reasons": [
-        "Sunderland est en pleine dynamique (L W W)"
+        "Fulham est en pleine dynamique (L W W)"
       ],
       "markets": {
         "btts": {
@@ -3710,9 +3710,9 @@
           }
         },
         "doubleChance": {
-          "12": 78,
-          "1X": 61,
-          "X2": 61
+          "12": 74.5,
+          "1X": 62.2,
+          "X2": 63.3
         },
         "cleanSheet": {
           "team1": 25,
@@ -3903,11 +3903,11 @@
       "team2": "Chelsea",
       "xg1": 1.96,
       "xg2": 0.85,
-      "pWin1": 68.6,
-      "pDraw": 23.5,
-      "pWin2": 7.9,
-      "pQual1": 68.6,
-      "pQual2": 7.9,
+      "pWin1": 67.9,
+      "pDraw": 23.2,
+      "pWin2": 8.8,
+      "pQual1": 67.9,
+      "pQual2": 8.8,
       "topScores": [
         {
           "score": "1-0",
@@ -3923,12 +3923,12 @@
         }
       ],
       "odds": {
-        "win1": 1.37,
-        "draw": 4.02,
-        "win2": 11.91
+        "win1": 1.39,
+        "draw": 4.06,
+        "win2": 10.68
       },
       "pick": "Arsenal",
-      "pickProb": 68.6,
+      "pickProb": 67.9,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -4003,9 +4003,9 @@
           }
         },
         "doubleChance": {
-          "12": 76.5,
-          "1X": 92.1,
-          "X2": 31.4
+          "12": 76.8,
+          "1X": 91.2,
+          "X2": 32.1
         },
         "cleanSheet": {
           "team1": 42.6,
@@ -4932,11 +4932,11 @@
       "team2": "Coventry",
       "xg1": 2.36,
       "xg2": 0.72,
-      "pWin1": 88.9,
+      "pWin1": 87.1,
       "pDraw": 11.1,
-      "pWin2": 0,
-      "pQual1": 88.9,
-      "pQual2": 0,
+      "pWin2": 1.8,
+      "pQual1": 87.1,
+      "pQual2": 1.8,
       "topScores": [
         {
           "score": "2-0",
@@ -4952,12 +4952,12 @@
         }
       ],
       "odds": {
-        "win1": 1.06,
+        "win1": 1.08,
         "draw": 8.49,
-        "win2": null
+        "win2": 53.07
       },
       "pick": "Man City",
-      "pickProb": 88.9,
+      "pickProb": 87.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -5034,8 +5034,8 @@
         },
         "doubleChance": {
           "12": 88.9,
-          "1X": 100,
-          "X2": 11.1
+          "1X": 98.2,
+          "X2": 12.9
         },
         "cleanSheet": {
           "team1": 48.9,
@@ -10650,11 +10650,11 @@
       "team2": "Ipswich",
       "xg1": 2.36,
       "xg2": 0.72,
-      "pWin1": 88.9,
+      "pWin1": 87.1,
       "pDraw": 11.1,
-      "pWin2": 0,
-      "pQual1": 88.9,
-      "pQual2": 0,
+      "pWin2": 1.8,
+      "pQual1": 87.1,
+      "pQual2": 1.8,
       "topScores": [
         {
           "score": "2-0",
@@ -10670,12 +10670,12 @@
         }
       ],
       "odds": {
-        "win1": 1.06,
+        "win1": 1.08,
         "draw": 8.49,
-        "win2": null
+        "win2": 53.07
       },
       "pick": "Man City",
-      "pickProb": 88.9,
+      "pickProb": 87.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -10752,8 +10752,8 @@
         },
         "doubleChance": {
           "12": 88.9,
-          "1X": 100,
-          "X2": 11.1
+          "1X": 98.2,
+          "X2": 12.9
         },
         "cleanSheet": {
           "team1": 48.9,
@@ -11239,11 +11239,11 @@
       "team2": "Everton",
       "xg1": 2.02,
       "xg2": 0.86,
-      "pWin1": 74.5,
-      "pDraw": 25.5,
-      "pWin2": 0,
-      "pQual1": 74.5,
-      "pQual2": 0,
+      "pWin1": 72.7,
+      "pDraw": 24.9,
+      "pWin2": 2.4,
+      "pQual1": 72.7,
+      "pQual2": 2.4,
       "topScores": [
         {
           "score": "2-0",
@@ -11259,12 +11259,12 @@
         }
       ],
       "odds": {
-        "win1": 1.27,
-        "draw": 3.7,
-        "win2": null
+        "win1": 1.3,
+        "draw": 3.79,
+        "win2": 39.3
       },
       "pick": "Arsenal",
-      "pickProb": 74.5,
+      "pickProb": 72.7,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -11339,9 +11339,9 @@
           }
         },
         "doubleChance": {
-          "12": 74.5,
-          "1X": 100,
-          "X2": 25.5
+          "12": 75.1,
+          "1X": 97.6,
+          "X2": 27.3
         },
         "cleanSheet": {
           "team1": 42.5,
@@ -14171,11 +14171,11 @@
       "team2": "Hull",
       "xg1": 2.54,
       "xg2": 0.67,
-      "pWin1": 100,
-      "pDraw": 0,
-      "pWin2": 0,
-      "pQual1": 100,
-      "pQual2": 0,
+      "pWin1": 96.1,
+      "pDraw": 2,
+      "pWin2": 2,
+      "pQual1": 96.1,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -14191,12 +14191,12 @@
         }
       ],
       "odds": {
-        "win1": 0.94,
-        "draw": null,
-        "win2": null
+        "win1": 0.98,
+        "draw": 48.11,
+        "win2": 48.11
       },
       "pick": "Arsenal",
-      "pickProb": 100,
+      "pickProb": 96.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -14272,9 +14272,9 @@
           }
         },
         "doubleChance": {
-          "12": 100,
-          "1X": 100,
-          "X2": 0
+          "12": 98,
+          "1X": 98,
+          "X2": 3.9
         },
         "cleanSheet": {
           "team1": 51.3,
@@ -19890,11 +19890,11 @@
       "team2": "Fulham",
       "xg1": 1.31,
       "xg2": 1.33,
-      "pWin1": 37.8,
-      "pDraw": 24.4,
-      "pWin2": 37.8,
-      "pQual1": 37.8,
-      "pQual2": 37.8,
+      "pWin1": 36.6,
+      "pDraw": 26.2,
+      "pWin2": 37.3,
+      "pQual1": 36.6,
+      "pQual2": 37.3,
       "topScores": [
         {
           "score": "1-1",
@@ -19910,12 +19910,12 @@
         }
       ],
       "odds": {
-        "win1": 2.5,
-        "draw": 3.87,
-        "win2": 2.5
+        "win1": 2.58,
+        "draw": 3.6,
+        "win2": 2.53
       },
-      "pick": "Tottenham ou nul",
-      "pickProb": 62.2,
+      "pick": "nul ou Fulham",
+      "pickProb": 63.4,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -19928,21 +19928,21 @@
           "v1": 1393,
           "v2": 1488,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
           "v1": 0.9,
           "v2": 0.87,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Défense ajustée",
           "v1": 0.96,
           "v2": 0.9,
           "betterHigh": false,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Repos (jours)",
@@ -19956,7 +19956,7 @@
           "v1": 0.01,
           "v2": 0.43,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Finition tardive",
@@ -19967,7 +19967,8 @@
         }
       ],
       "reasons": [
-        "Tottenham a un meilleur Elo (1393 vs 1488)"
+        "Fulham a un meilleur Elo (1488 vs 1393)",
+        "Fulham est en pleine dynamique (L W W)"
       ],
       "markets": {
         "btts": {
@@ -19989,9 +19990,9 @@
           }
         },
         "doubleChance": {
-          "12": 75.6,
-          "1X": 62.2,
-          "X2": 62.2
+          "12": 73.8,
+          "1X": 62.7,
+          "X2": 63.4
         },
         "cleanSheet": {
           "team1": 26.6,
@@ -20183,11 +20184,11 @@
       "team2": "Hull",
       "xg1": 2.14,
       "xg2": 0.82,
-      "pWin1": 78.4,
-      "pDraw": 21.6,
-      "pWin2": 0,
-      "pQual1": 78.4,
-      "pQual2": 0,
+      "pWin1": 76.8,
+      "pDraw": 21.2,
+      "pWin2": 2,
+      "pQual1": 76.8,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -20203,12 +20204,12 @@
         }
       ],
       "odds": {
-        "win1": 1.2,
-        "draw": 4.36,
-        "win2": null
+        "win1": 1.23,
+        "draw": 4.45,
+        "win2": 46.09
       },
       "pick": "Bournemouth",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -20283,9 +20284,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 100,
-          "X2": 21.6
+          "12": 78.8,
+          "1X": 98,
+          "X2": 23.2
         },
         "cleanSheet": {
           "team1": 44,
@@ -20917,11 +20918,11 @@
       "team2": "Coventry",
       "xg1": 2.48,
       "xg2": 0.73,
-      "pWin1": 100,
-      "pDraw": 0,
-      "pWin2": 0,
-      "pQual1": 100,
-      "pQual2": 0,
+      "pWin1": 96.1,
+      "pDraw": 2,
+      "pWin2": 2,
+      "pQual1": 96.1,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -20937,12 +20938,12 @@
         }
       ],
       "odds": {
-        "win1": 0.94,
-        "draw": null,
-        "win2": null
+        "win1": 0.98,
+        "draw": 48.11,
+        "win2": 48.11
       },
       "pick": "Man United",
-      "pickProb": 100,
+      "pickProb": 96.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -21018,9 +21019,9 @@
           }
         },
         "doubleChance": {
-          "12": 100,
-          "1X": 100,
-          "X2": 0
+          "12": 98,
+          "1X": 98,
+          "X2": 3.9
         },
         "cleanSheet": {
           "team1": 48.3,
@@ -23119,11 +23120,11 @@
       "team2": "Coventry",
       "xg1": 2.14,
       "xg2": 0.82,
-      "pWin1": 78.4,
-      "pDraw": 21.6,
-      "pWin2": 0,
-      "pQual1": 78.4,
-      "pQual2": 0,
+      "pWin1": 76.8,
+      "pDraw": 21.2,
+      "pWin2": 2,
+      "pQual1": 76.8,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -23139,12 +23140,12 @@
         }
       ],
       "odds": {
-        "win1": 1.2,
-        "draw": 4.36,
-        "win2": null
+        "win1": 1.23,
+        "draw": 4.45,
+        "win2": 46.09
       },
       "pick": "Bournemouth",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -23219,9 +23220,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 100,
-          "X2": 21.6
+          "12": 78.8,
+          "1X": 98,
+          "X2": 23.2
         },
         "cleanSheet": {
           "team1": 44,
@@ -23999,11 +24000,11 @@
       "team2": "Hull",
       "xg1": 2.36,
       "xg2": 0.72,
-      "pWin1": 88.9,
+      "pWin1": 87.1,
       "pDraw": 11.1,
-      "pWin2": 0,
-      "pQual1": 88.9,
-      "pQual2": 0,
+      "pWin2": 1.8,
+      "pQual1": 87.1,
+      "pQual2": 1.8,
       "topScores": [
         {
           "score": "2-0",
@@ -24019,12 +24020,12 @@
         }
       ],
       "odds": {
-        "win1": 1.06,
+        "win1": 1.08,
         "draw": 8.49,
-        "win2": null
+        "win2": 53.07
       },
       "pick": "Man City",
-      "pickProb": 88.9,
+      "pickProb": 87.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -24101,8 +24102,8 @@
         },
         "doubleChance": {
           "12": 88.9,
-          "1X": 100,
-          "X2": 11.1
+          "1X": 98.2,
+          "X2": 12.9
         },
         "cleanSheet": {
           "team1": 48.9,
@@ -25027,11 +25028,11 @@
       "team2": "Brighton",
       "xg1": 1.31,
       "xg2": 1.35,
-      "pWin1": 37.8,
-      "pDraw": 24.4,
-      "pWin2": 37.8,
-      "pQual1": 37.8,
-      "pQual2": 37.8,
+      "pWin1": 36,
+      "pDraw": 26.1,
+      "pWin2": 37.9,
+      "pQual1": 36,
+      "pQual2": 37.9,
       "topScores": [
         {
           "score": "1-1",
@@ -25047,12 +25048,12 @@
         }
       ],
       "odds": {
-        "win1": 2.5,
-        "draw": 3.87,
-        "win2": 2.5
+        "win1": 2.62,
+        "draw": 3.62,
+        "win2": 2.49
       },
-      "pick": "Fulham ou nul",
-      "pickProb": 62.2,
+      "pick": "nul ou Brighton",
+      "pickProb": 64,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -25065,21 +25066,21 @@
           "v1": 1488,
           "v2": 1498,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
           "v1": 0.87,
           "v2": 1,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Défense ajustée",
           "v1": 0.9,
           "v2": 0.85,
           "betterHigh": false,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Repos (jours)",
@@ -25093,7 +25094,7 @@
           "v1": 0.43,
           "v2": 0.28,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Finition tardive",
@@ -25104,7 +25105,7 @@
         }
       ],
       "reasons": [
-        "Fulham est en pleine dynamique (L W W)"
+        "Brighton est en pleine dynamique (W W L)"
       ],
       "markets": {
         "btts": {
@@ -25126,9 +25127,9 @@
           }
         },
         "doubleChance": {
-          "12": 75.6,
-          "1X": 62.2,
-          "X2": 62.2
+          "12": 73.9,
+          "1X": 62.1,
+          "X2": 64
         },
         "cleanSheet": {
           "team1": 26,
@@ -27375,11 +27376,11 @@
       "team2": "Ipswich",
       "xg1": 2.54,
       "xg2": 0.67,
-      "pWin1": 100,
-      "pDraw": 0,
-      "pWin2": 0,
-      "pQual1": 100,
-      "pQual2": 0,
+      "pWin1": 96.1,
+      "pDraw": 2,
+      "pWin2": 2,
+      "pQual1": 96.1,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -27395,12 +27396,12 @@
         }
       ],
       "odds": {
-        "win1": 0.94,
-        "draw": null,
-        "win2": null
+        "win1": 0.98,
+        "draw": 48.11,
+        "win2": 48.11
       },
       "pick": "Arsenal",
-      "pickProb": 100,
+      "pickProb": 96.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -27476,9 +27477,9 @@
           }
         },
         "doubleChance": {
-          "12": 100,
-          "1X": 100,
-          "X2": 0
+          "12": 98,
+          "1X": 98,
+          "X2": 3.9
         },
         "cleanSheet": {
           "team1": 51.3,
@@ -27962,11 +27963,11 @@
       "team2": "Newcastle",
       "xg1": 1.51,
       "xg2": 1.53,
-      "pWin1": 39,
-      "pDraw": 22,
-      "pWin2": 39,
-      "pQual1": 39,
-      "pQual2": 39,
+      "pWin1": 37.5,
+      "pDraw": 24.1,
+      "pWin2": 38.4,
+      "pQual1": 37.5,
+      "pQual2": 38.4,
       "topScores": [
         {
           "score": "1-1",
@@ -27982,12 +27983,12 @@
         }
       ],
       "odds": {
-        "win1": 2.42,
-        "draw": 4.29,
-        "win2": 2.42
+        "win1": 2.51,
+        "draw": 3.92,
+        "win2": 2.46
       },
-      "pick": "Chelsea ou nul",
-      "pickProb": 61,
+      "pick": "nul ou Newcastle",
+      "pickProb": 62.5,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -28000,21 +28001,21 @@
           "v1": 1442,
           "v2": 1472,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
           "v1": 0.87,
           "v2": 1.05,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Défense ajustée",
           "v1": 1.04,
           "v2": 1.09,
           "betterHigh": false,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Repos (jours)",
@@ -28028,7 +28029,7 @@
           "v1": 0.15,
           "v2": 0.05,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Finition tardive",
@@ -28039,7 +28040,7 @@
         }
       ],
       "reasons": [
-        "Match serré : léger avantage Chelsea au modèle global"
+        "Match serré : léger avantage Newcastle au modèle global"
       ],
       "markets": {
         "btts": {
@@ -28061,9 +28062,9 @@
           }
         },
         "doubleChance": {
-          "12": 78,
-          "1X": 61,
-          "X2": 61
+          "12": 75.9,
+          "1X": 61.6,
+          "X2": 62.5
         },
         "cleanSheet": {
           "team1": 21.6,
@@ -28841,11 +28842,11 @@
       "team2": "Brentford",
       "xg1": 2.03,
       "xg2": 0.86,
-      "pWin1": 74.5,
-      "pDraw": 25.5,
-      "pWin2": 0,
-      "pQual1": 74.5,
-      "pQual2": 0,
+      "pWin1": 72.7,
+      "pDraw": 24.9,
+      "pWin2": 2.4,
+      "pQual1": 72.7,
+      "pQual2": 2.4,
       "topScores": [
         {
           "score": "2-0",
@@ -28861,12 +28862,12 @@
         }
       ],
       "odds": {
-        "win1": 1.27,
-        "draw": 3.7,
-        "win2": null
+        "win1": 1.3,
+        "draw": 3.79,
+        "win2": 39.3
       },
       "pick": "Arsenal",
-      "pickProb": 74.5,
+      "pickProb": 72.7,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -28941,9 +28942,9 @@
           }
         },
         "doubleChance": {
-          "12": 74.5,
-          "1X": 100,
-          "X2": 25.5
+          "12": 75.1,
+          "1X": 97.6,
+          "X2": 27.3
         },
         "cleanSheet": {
           "team1": 42.5,
@@ -30456,11 +30457,11 @@
       "team2": "Ipswich",
       "xg1": 2.14,
       "xg2": 0.82,
-      "pWin1": 78.4,
-      "pDraw": 21.6,
-      "pWin2": 0,
-      "pQual1": 78.4,
-      "pQual2": 0,
+      "pWin1": 76.8,
+      "pDraw": 21.2,
+      "pWin2": 2,
+      "pQual1": 76.8,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -30476,12 +30477,12 @@
         }
       ],
       "odds": {
-        "win1": 1.2,
-        "draw": 4.36,
-        "win2": null
+        "win1": 1.23,
+        "draw": 4.45,
+        "win2": 46.09
       },
       "pick": "Bournemouth",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -30556,9 +30557,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 100,
-          "X2": 21.6
+          "12": 78.8,
+          "1X": 98,
+          "X2": 23.2
         },
         "cleanSheet": {
           "team1": 44,
@@ -31042,11 +31043,11 @@
       "team2": "Arsenal",
       "xg1": 0.74,
       "xg2": 2.3,
-      "pWin1": 0,
+      "pWin1": 1.8,
       "pDraw": 11.1,
-      "pWin2": 88.9,
-      "pQual1": 0,
-      "pQual2": 88.9,
+      "pWin2": 87.1,
+      "pQual1": 1.8,
+      "pQual2": 87.1,
       "topScores": [
         {
           "score": "0-2",
@@ -31062,12 +31063,12 @@
         }
       ],
       "odds": {
-        "win1": null,
+        "win1": 53.07,
         "draw": 8.49,
-        "win2": 1.06
+        "win2": 1.08
       },
       "pick": "Arsenal",
-      "pickProb": 88.9,
+      "pickProb": 87.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -31144,8 +31145,8 @@
         },
         "doubleChance": {
           "12": 88.9,
-          "1X": 11.1,
-          "X2": 100
+          "1X": 12.9,
+          "X2": 98.2
         },
         "cleanSheet": {
           "team1": 10,
@@ -32067,11 +32068,11 @@
       "team2": "Tottenham",
       "xg1": 1.41,
       "xg2": 1.42,
-      "pWin1": 39,
-      "pDraw": 22,
-      "pWin2": 39,
-      "pQual1": 39,
-      "pQual2": 39,
+      "pWin1": 37.2,
+      "pDraw": 25.2,
+      "pWin2": 37.6,
+      "pQual1": 37.2,
+      "pQual2": 37.6,
       "topScores": [
         {
           "score": "1-1",
@@ -32087,12 +32088,12 @@
         }
       ],
       "odds": {
-        "win1": 2.42,
-        "draw": 4.29,
-        "win2": 2.42
+        "win1": 2.53,
+        "draw": 3.75,
+        "win2": 2.51
       },
-      "pick": "Crystal Palace ou nul",
-      "pickProb": 61,
+      "pick": "nul ou Tottenham",
+      "pickProb": 62.8,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -32105,7 +32106,7 @@
           "v1": 1425,
           "v2": 1393,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Attaque ajustée",
@@ -32119,7 +32120,7 @@
           "v1": 1.12,
           "v2": 0.96,
           "betterHigh": false,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Repos (jours)",
@@ -32133,7 +32134,7 @@
           "v1": -0.13,
           "v2": 0.01,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Finition tardive",
@@ -32144,7 +32145,7 @@
         }
       ],
       "reasons": [
-        "Match serré : léger avantage Crystal Palace au modèle global"
+        "Match serré : léger avantage Tottenham au modèle global"
       ],
       "markets": {
         "btts": {
@@ -32166,9 +32167,9 @@
           }
         },
         "doubleChance": {
-          "12": 78,
-          "1X": 61,
-          "X2": 61
+          "12": 74.8,
+          "1X": 62.4,
+          "X2": 62.8
         },
         "cleanSheet": {
           "team1": 24.3,
@@ -32359,11 +32360,11 @@
       "team2": "Aston Villa",
       "xg1": 1.53,
       "xg2": 1.56,
-      "pWin1": 39,
-      "pDraw": 22,
-      "pWin2": 39,
-      "pQual1": 39,
-      "pQual2": 39,
+      "pWin1": 37.5,
+      "pDraw": 23.9,
+      "pWin2": 38.6,
+      "pQual1": 37.5,
+      "pQual2": 38.6,
       "topScores": [
         {
           "score": "1-1",
@@ -32379,12 +32380,12 @@
         }
       ],
       "odds": {
-        "win1": 2.42,
-        "draw": 4.29,
-        "win2": 2.42
+        "win1": 2.51,
+        "draw": 3.95,
+        "win2": 2.44
       },
-      "pick": "Fulham ou nul",
-      "pickProb": 61,
+      "pick": "nul ou Aston Villa",
+      "pickProb": 62.5,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -32397,21 +32398,21 @@
           "v1": 1488,
           "v2": 1548,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
           "v1": 0.87,
           "v2": 1.13,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Défense ajustée",
           "v1": 0.9,
           "v2": 1.09,
           "betterHigh": false,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Repos (jours)",
@@ -32425,7 +32426,7 @@
           "v1": 0.43,
           "v2": 0.86,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Finition tardive",
@@ -32436,8 +32437,8 @@
         }
       ],
       "reasons": [
-        "Fulham a un meilleur Elo (1488 vs 1548)",
-        "Fulham est en pleine dynamique (L W W)"
+        "Aston Villa a un meilleur Elo (1548 vs 1488)",
+        "Aston Villa est en pleine dynamique (W W W)"
       ],
       "markets": {
         "btts": {
@@ -32459,9 +32460,9 @@
           }
         },
         "doubleChance": {
-          "12": 78,
-          "1X": 61,
-          "X2": 61
+          "12": 76.1,
+          "1X": 61.4,
+          "X2": 62.5
         },
         "cleanSheet": {
           "team1": 21,
@@ -33239,11 +33240,11 @@
       "team2": "Ipswich",
       "xg1": 2.3,
       "xg2": 0.92,
-      "pWin1": 78.4,
-      "pDraw": 21.6,
-      "pWin2": 0,
-      "pQual1": 78.4,
-      "pQual2": 0,
+      "pWin1": 76.8,
+      "pDraw": 21.2,
+      "pWin2": 2,
+      "pQual1": 76.8,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -33259,12 +33260,12 @@
         }
       ],
       "odds": {
-        "win1": 1.2,
-        "draw": 4.36,
-        "win2": null
+        "win1": 1.23,
+        "draw": 4.45,
+        "win2": 46.09
       },
       "pick": "Aston Villa",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -33340,9 +33341,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 100,
-          "X2": 21.6
+          "12": 78.8,
+          "1X": 98,
+          "X2": 23.2
         },
         "cleanSheet": {
           "team1": 39.7,
@@ -34267,11 +34268,11 @@
       "team2": "Arsenal",
       "xg1": 1.29,
       "xg2": 1.32,
-      "pWin1": 37.8,
-      "pDraw": 24.4,
-      "pWin2": 37.8,
-      "pQual1": 37.8,
-      "pQual2": 37.8,
+      "pWin1": 36.3,
+      "pDraw": 26.3,
+      "pWin2": 37.4,
+      "pQual1": 36.3,
+      "pQual2": 37.4,
       "topScores": [
         {
           "score": "1-1",
@@ -34287,12 +34288,12 @@
         }
       ],
       "odds": {
-        "win1": 2.5,
-        "draw": 3.87,
-        "win2": 2.5
+        "win1": 2.6,
+        "draw": 3.59,
+        "win2": 2.52
       },
-      "pick": "Man City ou nul",
-      "pickProb": 62.2,
+      "pick": "nul ou Arsenal",
+      "pickProb": 63.7,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -34305,21 +34306,21 @@
           "v1": 1701,
           "v2": 1736,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
           "v1": 1.25,
           "v2": 1.14,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Défense ajustée",
           "v1": 0.75,
           "v2": 0.64,
           "betterHigh": false,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Repos (jours)",
@@ -34333,7 +34334,7 @@
           "v1": -0.23,
           "v2": 0.41,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Finition tardive",
@@ -34344,7 +34345,7 @@
         }
       ],
       "reasons": [
-        "Match serré : léger avantage Man City au modèle global"
+        "Arsenal est en pleine dynamique (W W W)"
       ],
       "markets": {
         "btts": {
@@ -34366,9 +34367,9 @@
           }
         },
         "doubleChance": {
-          "12": 75.6,
-          "1X": 62.2,
-          "X2": 62.2
+          "12": 73.7,
+          "1X": 62.6,
+          "X2": 63.7
         },
         "cleanSheet": {
           "team1": 26.7,
@@ -36758,11 +36759,11 @@
       "team2": "Nottingham Forest",
       "xg1": 1.4,
       "xg2": 1.42,
-      "pWin1": 39,
-      "pDraw": 22,
-      "pWin2": 39,
-      "pQual1": 39,
-      "pQual2": 39,
+      "pWin1": 37,
+      "pDraw": 25.2,
+      "pWin2": 37.8,
+      "pQual1": 37,
+      "pQual2": 37.8,
       "topScores": [
         {
           "score": "1-1",
@@ -36778,12 +36779,12 @@
         }
       ],
       "odds": {
-        "win1": 2.42,
-        "draw": 4.29,
-        "win2": 2.42
+        "win1": 2.55,
+        "draw": 3.75,
+        "win2": 2.5
       },
-      "pick": "Fulham ou nul",
-      "pickProb": 61,
+      "pick": "nul ou Nottingham Forest",
+      "pickProb": 63,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -36796,21 +36797,21 @@
           "v1": 1488,
           "v2": 1521,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
           "v1": 0.87,
           "v2": 1.1,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Défense ajustée",
           "v1": 0.9,
           "v2": 0.95,
           "betterHigh": false,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Repos (jours)",
@@ -36824,7 +36825,7 @@
           "v1": 0.43,
           "v2": -0.03,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Finition tardive",
@@ -36835,7 +36836,7 @@
         }
       ],
       "reasons": [
-        "Fulham est en pleine dynamique (L W W)"
+        "Match serré : léger avantage Nottingham Forest au modèle global"
       ],
       "markets": {
         "btts": {
@@ -36857,9 +36858,9 @@
           }
         },
         "doubleChance": {
-          "12": 78,
-          "1X": 61,
-          "X2": 61
+          "12": 74.8,
+          "1X": 62.2,
+          "X2": 63
         },
         "cleanSheet": {
           "team1": 24.2,
@@ -37052,11 +37053,11 @@
       "team2": "Arsenal",
       "xg1": 0.74,
       "xg2": 2.3,
-      "pWin1": 0,
+      "pWin1": 1.8,
       "pDraw": 11.1,
-      "pWin2": 88.9,
-      "pQual1": 0,
-      "pQual2": 88.9,
+      "pWin2": 87.1,
+      "pQual1": 1.8,
+      "pQual2": 87.1,
       "topScores": [
         {
           "score": "0-2",
@@ -37072,12 +37073,12 @@
         }
       ],
       "odds": {
-        "win1": null,
+        "win1": 53.07,
         "draw": 8.49,
-        "win2": 1.06
+        "win2": 1.08
       },
       "pick": "Arsenal",
-      "pickProb": 88.9,
+      "pickProb": 87.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -37154,8 +37155,8 @@
         },
         "doubleChance": {
           "12": 88.9,
-          "1X": 11.1,
-          "X2": 100
+          "1X": 12.9,
+          "X2": 98.2
         },
         "cleanSheet": {
           "team1": 10,
@@ -39839,11 +39840,11 @@
       "team2": "Man City",
       "xg1": 0.79,
       "xg2": 2.14,
-      "pWin1": 0,
-      "pDraw": 21.6,
-      "pWin2": 78.4,
-      "pQual1": 0,
-      "pQual2": 78.4,
+      "pWin1": 2,
+      "pDraw": 21.2,
+      "pWin2": 76.8,
+      "pQual1": 2,
+      "pQual2": 76.8,
       "topScores": [
         {
           "score": "0-2",
@@ -39859,12 +39860,12 @@
         }
       ],
       "odds": {
-        "win1": null,
-        "draw": 4.36,
-        "win2": 1.2
+        "win1": 46.09,
+        "draw": 4.45,
+        "win2": 1.23
       },
       "pick": "Man City",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -39940,9 +39941,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 21.6,
-          "X2": 100
+          "12": 78.8,
+          "1X": 23.2,
+          "X2": 98
         },
         "cleanSheet": {
           "team1": 11.8,
@@ -40135,11 +40136,11 @@
       "team2": "Arsenal",
       "xg1": 1.44,
       "xg2": 1.47,
-      "pWin1": 39,
-      "pDraw": 22,
-      "pWin2": 39,
-      "pQual1": 39,
-      "pQual2": 39,
+      "pWin1": 36.9,
+      "pDraw": 24.7,
+      "pWin2": 38.4,
+      "pQual1": 36.9,
+      "pQual2": 38.4,
       "topScores": [
         {
           "score": "1-1",
@@ -40155,12 +40156,12 @@
         }
       ],
       "odds": {
-        "win1": 2.42,
-        "draw": 4.29,
-        "win2": 2.42
+        "win1": 2.56,
+        "draw": 3.82,
+        "win2": 2.46
       },
-      "pick": "Man United ou nul",
-      "pickProb": 61,
+      "pick": "nul ou Arsenal",
+      "pickProb": 63.1,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -40173,21 +40174,21 @@
           "v1": 1691,
           "v2": 1736,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
           "v1": 1.34,
           "v2": 1.14,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Défense ajustée",
           "v1": 0.87,
           "v2": 0.64,
           "betterHigh": false,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Repos (jours)",
@@ -40201,7 +40202,7 @@
           "v1": 0.5,
           "v2": 0.41,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Finition tardive",
@@ -40212,8 +40213,8 @@
         }
       ],
       "reasons": [
-        "Man United a un meilleur Elo (1691 vs 1736)",
-        "Man United est en pleine dynamique (W W W)"
+        "Arsenal a un meilleur Elo (1736 vs 1691)",
+        "Arsenal est en pleine dynamique (W W W)"
       ],
       "markets": {
         "btts": {
@@ -40235,9 +40236,9 @@
           }
         },
         "doubleChance": {
-          "12": 78,
-          "1X": 61,
-          "X2": 61
+          "12": 75.3,
+          "1X": 61.6,
+          "X2": 63.1
         },
         "cleanSheet": {
           "team1": 22.9,
@@ -40574,11 +40575,11 @@
       "team2": "Crystal Palace",
       "xg1": 2.08,
       "xg2": 0.85,
-      "pWin1": 78.4,
-      "pDraw": 21.6,
-      "pWin2": 0,
-      "pQual1": 78.4,
-      "pQual2": 0,
+      "pWin1": 76.8,
+      "pDraw": 21.2,
+      "pWin2": 2,
+      "pQual1": 76.8,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -40594,12 +40595,12 @@
         }
       ],
       "odds": {
-        "win1": 1.2,
-        "draw": 4.36,
-        "win2": null
+        "win1": 1.23,
+        "draw": 4.45,
+        "win2": 46.09
       },
       "pick": "Arsenal",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -40674,9 +40675,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 100,
-          "X2": 21.6
+          "12": 78.8,
+          "1X": 98,
+          "X2": 23.2
         },
         "cleanSheet": {
           "team1": 42.8,
@@ -42041,11 +42042,11 @@
       "team2": "Hull",
       "xg1": 2.3,
       "xg2": 0.92,
-      "pWin1": 78.4,
-      "pDraw": 21.6,
-      "pWin2": 0,
-      "pQual1": 78.4,
-      "pQual2": 0,
+      "pWin1": 76.8,
+      "pDraw": 21.2,
+      "pWin2": 2,
+      "pQual1": 76.8,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -42061,12 +42062,12 @@
         }
       ],
       "odds": {
-        "win1": 1.2,
-        "draw": 4.36,
-        "win2": null
+        "win1": 1.23,
+        "draw": 4.45,
+        "win2": 46.09
       },
       "pick": "Aston Villa",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -42142,9 +42143,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 100,
-          "X2": 21.6
+          "12": 78.8,
+          "1X": 98,
+          "X2": 23.2
         },
         "cleanSheet": {
           "team1": 39.7,
@@ -42482,11 +42483,11 @@
       "team2": "Man City",
       "xg1": 0.79,
       "xg2": 2.14,
-      "pWin1": 0,
-      "pDraw": 21.6,
-      "pWin2": 78.4,
-      "pQual1": 0,
-      "pQual2": 78.4,
+      "pWin1": 2,
+      "pDraw": 21.2,
+      "pWin2": 76.8,
+      "pQual1": 2,
+      "pQual2": 76.8,
       "topScores": [
         {
           "score": "0-2",
@@ -42502,12 +42503,12 @@
         }
       ],
       "odds": {
-        "win1": null,
-        "draw": 4.36,
-        "win2": 1.2
+        "win1": 46.09,
+        "draw": 4.45,
+        "win2": 1.23
       },
       "pick": "Man City",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -42583,9 +42584,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 21.6,
-          "X2": 100
+          "12": 78.8,
+          "1X": 23.2,
+          "X2": 98
         },
         "cleanSheet": {
           "team1": 11.8,
@@ -45417,11 +45418,11 @@
       "team2": "Arsenal",
       "xg1": 0.74,
       "xg2": 2.3,
-      "pWin1": 0,
+      "pWin1": 1.8,
       "pDraw": 11.1,
-      "pWin2": 88.9,
-      "pQual1": 0,
-      "pQual2": 88.9,
+      "pWin2": 87.1,
+      "pQual1": 1.8,
+      "pQual2": 87.1,
       "topScores": [
         {
           "score": "0-2",
@@ -45437,12 +45438,12 @@
         }
       ],
       "odds": {
-        "win1": null,
+        "win1": 53.07,
         "draw": 8.49,
-        "win2": 1.06
+        "win2": 1.08
       },
       "pick": "Arsenal",
-      "pickProb": 88.9,
+      "pickProb": 87.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -45519,8 +45520,8 @@
         },
         "doubleChance": {
           "12": 88.9,
-          "1X": 11.1,
-          "X2": 100
+          "1X": 12.9,
+          "X2": 98.2
         },
         "cleanSheet": {
           "team1": 10,
@@ -46003,11 +46004,11 @@
       "team2": "Hull",
       "xg1": 2.48,
       "xg2": 0.73,
-      "pWin1": 100,
-      "pDraw": 0,
-      "pWin2": 0,
-      "pQual1": 100,
-      "pQual2": 0,
+      "pWin1": 96.1,
+      "pDraw": 2,
+      "pWin2": 2,
+      "pQual1": 96.1,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -46023,12 +46024,12 @@
         }
       ],
       "odds": {
-        "win1": 0.94,
-        "draw": null,
-        "win2": null
+        "win1": 0.98,
+        "draw": 48.11,
+        "win2": 48.11
       },
       "pick": "Man United",
-      "pickProb": 100,
+      "pickProb": 96.1,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -46104,9 +46105,9 @@
           }
         },
         "doubleChance": {
-          "12": 100,
-          "1X": 100,
-          "X2": 0
+          "12": 98,
+          "1X": 98,
+          "X2": 3.9
         },
         "cleanSheet": {
           "team1": 48.3,
@@ -47323,11 +47324,11 @@
       "team2": "Man United",
       "xg1": 0.81,
       "xg2": 2.25,
-      "pWin1": 0,
-      "pDraw": 21.2,
-      "pWin2": 78.8,
-      "pQual1": 0,
-      "pQual2": 78.8,
+      "pWin1": 2,
+      "pDraw": 20.8,
+      "pWin2": 77.2,
+      "pQual1": 2,
+      "pQual2": 77.2,
       "topScores": [
         {
           "score": "0-2",
@@ -47343,12 +47344,12 @@
         }
       ],
       "odds": {
-        "win1": null,
-        "draw": 4.46,
-        "win2": 1.2
+        "win1": 47.06,
+        "draw": 4.54,
+        "win2": 1.22
       },
       "pick": "Man United",
-      "pickProb": 78.8,
+      "pickProb": 77.2,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -47424,9 +47425,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.8,
-          "1X": 21.2,
-          "X2": 100
+          "12": 79.2,
+          "1X": 22.8,
+          "X2": 98
         },
         "cleanSheet": {
           "team1": 10.6,
@@ -47910,11 +47911,11 @@
       "team2": "Coventry",
       "xg1": 2.3,
       "xg2": 0.92,
-      "pWin1": 78.4,
-      "pDraw": 21.6,
-      "pWin2": 0,
-      "pQual1": 78.4,
-      "pQual2": 0,
+      "pWin1": 76.8,
+      "pDraw": 21.2,
+      "pWin2": 2,
+      "pQual1": 76.8,
+      "pQual2": 2,
       "topScores": [
         {
           "score": "2-0",
@@ -47930,12 +47931,12 @@
         }
       ],
       "odds": {
-        "win1": 1.2,
-        "draw": 4.36,
-        "win2": null
+        "win1": 1.23,
+        "draw": 4.45,
+        "win2": 46.09
       },
       "pick": "Aston Villa",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -48011,9 +48012,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 100,
-          "X2": 21.6
+          "12": 78.8,
+          "1X": 98,
+          "X2": 23.2
         },
         "cleanSheet": {
           "team1": 39.7,
@@ -49671,11 +49672,11 @@
       "team2": "Man United",
       "xg1": 0.81,
       "xg2": 2.25,
-      "pWin1": 0,
-      "pDraw": 21.2,
-      "pWin2": 78.8,
-      "pQual1": 0,
-      "pQual2": 78.8,
+      "pWin1": 2,
+      "pDraw": 20.8,
+      "pWin2": 77.2,
+      "pQual1": 2,
+      "pQual2": 77.2,
       "topScores": [
         {
           "score": "0-2",
@@ -49691,12 +49692,12 @@
         }
       ],
       "odds": {
-        "win1": null,
-        "draw": 4.46,
-        "win2": 1.2
+        "win1": 47.06,
+        "draw": 4.54,
+        "win2": 1.22
       },
       "pick": "Man United",
-      "pickProb": 78.8,
+      "pickProb": 77.2,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -49772,9 +49773,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.8,
-          "1X": 21.2,
-          "X2": 100
+          "12": 79.2,
+          "1X": 22.8,
+          "X2": 98
         },
         "cleanSheet": {
           "team1": 10.6,
@@ -53194,11 +53195,11 @@
       "team2": "Man City",
       "xg1": 0.79,
       "xg2": 2.14,
-      "pWin1": 0,
-      "pDraw": 21.6,
-      "pWin2": 78.4,
-      "pQual1": 0,
-      "pQual2": 78.4,
+      "pWin1": 2,
+      "pDraw": 21.2,
+      "pWin2": 76.8,
+      "pQual1": 2,
+      "pQual2": 76.8,
       "topScores": [
         {
           "score": "0-2",
@@ -53214,12 +53215,12 @@
         }
       ],
       "odds": {
-        "win1": null,
-        "draw": 4.36,
-        "win2": 1.2
+        "win1": 46.09,
+        "draw": 4.45,
+        "win2": 1.23
       },
       "pick": "Man City",
-      "pickProb": 78.4,
+      "pickProb": 76.8,
       "confidence": "Élevée",
       "tight": false,
       "blend": {
@@ -53295,9 +53296,9 @@
           }
         },
         "doubleChance": {
-          "12": 78.4,
-          "1X": 21.6,
-          "X2": 100
+          "12": 78.8,
+          "1X": 23.2,
+          "X2": 98
         },
         "cleanSheet": {
           "team1": 11.8,
@@ -55835,11 +55836,11 @@
       "team2": "Leeds",
       "xg1": 1.45,
       "xg2": 1.48,
-      "pWin1": 39,
-      "pDraw": 22,
-      "pWin2": 39,
-      "pQual1": 39,
-      "pQual2": 39,
+      "pWin1": 37,
+      "pDraw": 24.6,
+      "pWin2": 38.3,
+      "pQual1": 37,
+      "pQual2": 38.3,
       "topScores": [
         {
           "score": "1-1",
@@ -55855,12 +55856,12 @@
         }
       ],
       "odds": {
-        "win1": 2.42,
-        "draw": 4.29,
-        "win2": 2.42
+        "win1": 2.55,
+        "draw": 3.83,
+        "win2": 2.46
       },
-      "pick": "Crystal Palace ou nul",
-      "pickProb": 61,
+      "pick": "nul ou Leeds",
+      "pickProb": 63,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -55873,21 +55874,21 @@
           "v1": 1425,
           "v2": 1498,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
           "v1": 0.9,
           "v2": 0.96,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Défense ajustée",
           "v1": 1.12,
           "v2": 1.04,
           "betterHigh": false,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Repos (jours)",
@@ -55901,7 +55902,7 @@
           "v1": -0.13,
           "v2": -0.38,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Finition tardive",
@@ -55912,7 +55913,7 @@
         }
       ],
       "reasons": [
-        "Crystal Palace a un meilleur Elo (1425 vs 1498)"
+        "Leeds a un meilleur Elo (1498 vs 1425)"
       ],
       "markets": {
         "btts": {
@@ -55934,9 +55935,9 @@
           }
         },
         "doubleChance": {
-          "12": 78,
-          "1X": 61,
-          "X2": 61
+          "12": 75.4,
+          "1X": 61.7,
+          "X2": 63
         },
         "cleanSheet": {
           "team1": 22.8,
@@ -56275,11 +56276,11 @@
       "team2": "Bournemouth",
       "xg1": 1.51,
       "xg2": 1.52,
-      "pWin1": 39,
-      "pDraw": 22,
-      "pWin2": 39,
-      "pQual1": 39,
-      "pQual2": 39,
+      "pWin1": 37.6,
+      "pDraw": 24.2,
+      "pWin2": 38.2,
+      "pQual1": 37.6,
+      "pQual2": 38.2,
       "topScores": [
         {
           "score": "1-1",
@@ -56295,12 +56296,12 @@
         }
       ],
       "odds": {
-        "win1": 2.42,
-        "draw": 4.29,
-        "win2": 2.42
+        "win1": 2.51,
+        "draw": 3.9,
+        "win2": 2.47
       },
-      "pick": "Liverpool ou nul",
-      "pickProb": 61,
+      "pick": "nul ou Bournemouth",
+      "pickProb": 62.4,
       "confidence": "Serré",
       "tight": true,
       "blend": {
@@ -56313,7 +56314,7 @@
           "v1": 1528,
           "v2": 1624,
           "betterHigh": true,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Attaque ajustée",
@@ -56327,7 +56328,7 @@
           "v1": 1.03,
           "v2": 0.88,
           "betterHigh": false,
-          "favorsPick": false
+          "favorsPick": true
         },
         {
           "label": "Repos (jours)",
@@ -56341,7 +56342,7 @@
           "v1": -0.04,
           "v2": -0.74,
           "betterHigh": true,
-          "favorsPick": true
+          "favorsPick": false
         },
         {
           "label": "Finition tardive",
@@ -56352,7 +56353,7 @@
         }
       ],
       "reasons": [
-        "Liverpool a un meilleur Elo (1528 vs 1624)"
+        "Bournemouth a un meilleur Elo (1624 vs 1528)"
       ],
       "markets": {
         "btts": {
@@ -56374,9 +56375,9 @@
           }
         },
         "doubleChance": {
-          "12": 78,
-          "1X": 61,
-          "X2": 61
+          "12": 75.8,
+          "1X": 61.8,
+          "X2": 62.4
         },
         "cleanSheet": {
           "team1": 21.9,
@@ -56724,18 +56725,18 @@
             {
               "match": "Arsenal – Coventry",
               "date": "2026-08-21",
-              "market": "Résultat",
-              "sel": "Arsenal gagne",
-              "prob": 100,
-              "odds": 0.94
+              "market": "Double chance",
+              "sel": "Arsenal ou nul",
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Hull – Man United",
               "date": "2026-08-21",
               "market": "Double chance",
               "sel": "nul ou Man United",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Newcastle – Liverpool",
@@ -56762,8 +56763,8 @@
               "odds": 1.17
             }
           ],
-          "odds": 1.32,
-          "prob": 56.3
+          "odds": 1.38,
+          "prob": 54
         },
         "safe": {
           "legs": [
@@ -56772,16 +56773,16 @@
               "date": "2026-08-21",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Hull – Man United",
               "date": "2026-08-21",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 78.8,
-              "odds": 1.2
+              "prob": 77.2,
+              "odds": 1.22
             },
             {
               "match": "Ipswich – Sunderland",
@@ -56800,8 +56801,8 @@
               "odds": 1.72
             }
           ],
-          "odds": 3.08,
-          "prob": 25.7
+          "odds": 3.27,
+          "prob": 24.2
         },
         "bold": {
           "legs": [
@@ -56810,16 +56811,16 @@
               "date": "2026-08-21",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Hull – Man United",
               "date": "2026-08-21",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 78.8,
-              "odds": 1.2
+              "prob": 77.2,
+              "odds": 1.22
             },
             {
               "match": "Ipswich – Sunderland",
@@ -56838,8 +56839,8 @@
               "odds": 1.72
             }
           ],
-          "odds": 3.08,
-          "prob": 25.7
+          "odds": 3.27,
+          "prob": 24.2
         }
       },
       {
@@ -56849,10 +56850,10 @@
             {
               "match": "Man United – Ipswich",
               "date": "2026-08-29",
-              "market": "Résultat",
-              "sel": "Man United gagne",
-              "prob": 100,
-              "odds": 0.94
+              "market": "Double chance",
+              "sel": "Man United ou nul",
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Liverpool – Nottingham Forest",
@@ -56871,8 +56872,8 @@
               "odds": 1.17
             }
           ],
-          "odds": 1.25,
-          "prob": 66.9
+          "odds": 1.28,
+          "prob": 65.6
         },
         "safe": {
           "legs": [
@@ -56881,8 +56882,8 @@
               "date": "2026-08-29",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Crystal Palace – Man City",
@@ -56901,8 +56902,8 @@
               "odds": 1.61
             }
           ],
-          "odds": 2.41,
-          "prob": 34.7
+          "odds": 2.51,
+          "prob": 33.4
         },
         "bold": {
           "legs": [
@@ -56911,8 +56912,8 @@
               "date": "2026-08-29",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Crystal Palace – Man City",
@@ -56939,8 +56940,8 @@
               "odds": 1.72
             }
           ],
-          "odds": 4.14,
-          "prob": 19.1
+          "odds": 4.31,
+          "prob": 18.3
         }
       },
       {
@@ -56952,16 +56953,16 @@
               "date": "2026-09-05",
               "market": "Double chance",
               "sel": "Man City ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98.2,
+              "odds": 0.96
             },
             {
               "match": "Arsenal – Chelsea",
               "date": "2026-09-05",
               "market": "Double chance",
               "sel": "Arsenal ou nul",
-              "prob": 92.1,
-              "odds": 1.02
+              "prob": 91.2,
+              "odds": 1.03
             },
             {
               "match": "Hull – Aston Villa",
@@ -56980,8 +56981,8 @@
               "odds": 1.13
             }
           ],
-          "odds": 1.2,
-          "prob": 65.4
+          "odds": 1.24,
+          "prob": 63.6
         },
         "safe": {
           "legs": [
@@ -56990,16 +56991,16 @@
               "date": "2026-09-05",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Arsenal – Chelsea",
               "date": "2026-09-05",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 68.6,
-              "odds": 1.38
+              "prob": 67.9,
+              "odds": 1.39
             },
             {
               "match": "Hull – Aston Villa",
@@ -57010,8 +57011,8 @@
               "odds": 1.49
             }
           ],
-          "odds": 2.18,
-          "prob": 38.5
+          "odds": 2.24,
+          "prob": 37.4
         },
         "bold": {
           "legs": [
@@ -57020,16 +57021,16 @@
               "date": "2026-09-05",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Arsenal – Chelsea",
               "date": "2026-09-05",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 68.6,
-              "odds": 1.38
+              "prob": 67.9,
+              "odds": 1.39
             },
             {
               "match": "Hull – Aston Villa",
@@ -57048,8 +57049,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 3.47,
-          "prob": 22.9
+          "odds": 3.56,
+          "prob": 22.2
         }
       },
       {
@@ -57292,8 +57293,8 @@
               "date": "2026-10-17",
               "market": "Double chance",
               "sel": "Man City ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98.2,
+              "odds": 0.96
             },
             {
               "match": "Fulham – Hull",
@@ -57320,8 +57321,8 @@
               "odds": 1.13
             }
           ],
-          "odds": 1.26,
-          "prob": 62.7
+          "odds": 1.29,
+          "prob": 61.6
         },
         "safe": {
           "legs": [
@@ -57330,8 +57331,8 @@
               "date": "2026-10-17",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Fulham – Hull",
@@ -57350,8 +57351,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.46,
-          "prob": 34.1
+          "odds": 2.51,
+          "prob": 33.4
         },
         "bold": {
           "legs": [
@@ -57360,8 +57361,8 @@
               "date": "2026-10-17",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Fulham – Hull",
@@ -57388,8 +57389,8 @@
               "odds": 1.61
             }
           ],
-          "odds": 3.96,
-          "prob": 20
+          "odds": 4.04,
+          "prob": 19.6
         }
       },
       {
@@ -57401,8 +57402,8 @@
               "date": "2026-10-24",
               "market": "Double chance",
               "sel": "Arsenal ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 97.6,
+              "odds": 0.97
             },
             {
               "match": "Aston Villa – Man City",
@@ -57421,8 +57422,8 @@
               "odds": 1.14
             }
           ],
-          "odds": 1.21,
-          "prob": 68.8
+          "odds": 1.25,
+          "prob": 67.2
         },
         "safe": {
           "legs": [
@@ -57431,8 +57432,8 @@
               "date": "2026-10-24",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 74.5,
-              "odds": 1.27
+              "prob": 72.7,
+              "odds": 1.3
             },
             {
               "match": "Coventry – Fulham",
@@ -57443,8 +57444,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.02,
-          "prob": 44.3
+          "odds": 2.07,
+          "prob": 43.2
         },
         "bold": {
           "legs": [
@@ -57453,8 +57454,8 @@
               "date": "2026-10-24",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 74.5,
-              "odds": 1.27
+              "prob": 72.7,
+              "odds": 1.3
             },
             {
               "match": "Coventry – Fulham",
@@ -57473,8 +57474,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 3.21,
-          "prob": 26.3
+          "odds": 3.29,
+          "prob": 25.7
         }
       },
       {
@@ -57561,10 +57562,10 @@
             {
               "match": "Arsenal – Hull",
               "date": "2026-11-07",
-              "market": "Résultat",
-              "sel": "Arsenal gagne",
-              "prob": 100,
-              "odds": 0.94
+              "market": "Double chance",
+              "sel": "Arsenal ou nul",
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Man United – Aston Villa",
@@ -57591,8 +57592,8 @@
               "odds": 1.15
             }
           ],
-          "odds": 1.26,
-          "prob": 62.9
+          "odds": 1.29,
+          "prob": 61.7
         },
         "safe": {
           "legs": [
@@ -57601,8 +57602,8 @@
               "date": "2026-11-07",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Ipswich – Bournemouth",
@@ -57621,8 +57622,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.18,
-          "prob": 38.4
+          "odds": 2.27,
+          "prob": 36.9
         },
         "bold": {
           "legs": [
@@ -57631,8 +57632,8 @@
               "date": "2026-11-07",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Ipswich – Bournemouth",
@@ -57659,8 +57660,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 3.47,
-          "prob": 22.8
+          "odds": 3.62,
+          "prob": 21.9
         }
       },
       {
@@ -57903,16 +57904,16 @@
               "date": "2026-12-05",
               "market": "Double chance",
               "sel": "Bournemouth ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Man United – Coventry",
               "date": "2026-12-05",
-              "market": "Résultat",
-              "sel": "Man United gagne",
-              "prob": 100,
-              "odds": 0.94
+              "market": "Double chance",
+              "sel": "Man United ou nul",
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Aston Villa – Crystal Palace",
@@ -57939,8 +57940,8 @@
               "odds": 1.17
             }
           ],
-          "odds": 1.32,
-          "prob": 56.4
+          "odds": 1.38,
+          "prob": 54.2
         },
         "safe": {
           "legs": [
@@ -57949,16 +57950,16 @@
               "date": "2026-12-05",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Bournemouth – Hull",
               "date": "2026-12-05",
               "market": "Résultat",
               "sel": "Bournemouth gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Brentford – Man City",
@@ -57977,8 +57978,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.85,
-          "prob": 27.7
+          "odds": 3.05,
+          "prob": 26
         },
         "bold": {
           "legs": [
@@ -57987,16 +57988,16 @@
               "date": "2026-12-05",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Bournemouth – Hull",
               "date": "2026-12-05",
               "market": "Résultat",
               "sel": "Bournemouth gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Brentford – Man City",
@@ -58013,18 +58014,10 @@
               "sel": "Leeds gagne",
               "prob": 59.4,
               "odds": 1.59
-            },
-            {
-              "match": "Tottenham – Arsenal",
-              "date": "2026-12-05",
-              "market": "Résultat",
-              "sel": "Arsenal gagne",
-              "prob": 59.4,
-              "odds": 1.59
             }
           ],
-          "odds": 4.53,
-          "prob": 16.4
+          "odds": 3.05,
+          "prob": 26
         }
       },
       {
@@ -58109,20 +58102,20 @@
         "secure": {
           "legs": [
             {
-              "match": "Bournemouth – Coventry",
-              "date": "2026-12-19",
-              "market": "Double chance",
-              "sel": "Bournemouth ou nul",
-              "prob": 100,
-              "odds": 0.94
-            },
-            {
               "match": "Man City – Hull",
               "date": "2026-12-19",
               "market": "Double chance",
               "sel": "Man City ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98.2,
+              "odds": 0.96
+            },
+            {
+              "match": "Bournemouth – Coventry",
+              "date": "2026-12-19",
+              "market": "Double chance",
+              "sel": "Bournemouth ou nul",
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Brighton – Ipswich",
@@ -58149,8 +58142,8 @@
               "odds": 1.16
             }
           ],
-          "odds": 1.26,
-          "prob": 58.7
+          "odds": 1.32,
+          "prob": 56.5
         },
         "safe": {
           "legs": [
@@ -58159,16 +58152,16 @@
               "date": "2026-12-19",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Bournemouth – Coventry",
               "date": "2026-12-19",
               "market": "Résultat",
               "sel": "Bournemouth gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Brighton – Ipswich",
@@ -58187,8 +58180,8 @@
               "odds": 1.72
             }
           ],
-          "odds": 3.19,
-          "prob": 24.7
+          "odds": 3.34,
+          "prob": 23.7
         },
         "bold": {
           "legs": [
@@ -58197,16 +58190,16 @@
               "date": "2026-12-19",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Bournemouth – Coventry",
               "date": "2026-12-19",
               "market": "Résultat",
               "sel": "Bournemouth gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Brighton – Ipswich",
@@ -58225,8 +58218,8 @@
               "odds": 1.72
             }
           ],
-          "odds": 3.19,
-          "prob": 24.7
+          "odds": 3.34,
+          "prob": 23.7
         }
       },
       {
@@ -58390,10 +58383,10 @@
             {
               "match": "Arsenal – Ipswich",
               "date": "2027-01-02",
-              "market": "Résultat",
-              "sel": "Arsenal gagne",
-              "prob": 100,
-              "odds": 0.94
+              "market": "Double chance",
+              "sel": "Arsenal ou nul",
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Liverpool – Coventry",
@@ -58420,8 +58413,8 @@
               "odds": 1.13
             }
           ],
-          "odds": 1.26,
-          "prob": 62.5
+          "odds": 1.29,
+          "prob": 61.3
         },
         "safe": {
           "legs": [
@@ -58430,8 +58423,8 @@
               "date": "2027-01-02",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Liverpool – Coventry",
@@ -58450,8 +58443,8 @@
               "odds": 1.46
             }
           ],
-          "odds": 2,
-          "prob": 41.7
+          "odds": 2.09,
+          "prob": 40.1
         },
         "bold": {
           "legs": [
@@ -58460,8 +58453,8 @@
               "date": "2027-01-02",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Liverpool – Coventry",
@@ -58488,8 +58481,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 3.19,
-          "prob": 24.8
+          "odds": 3.32,
+          "prob": 23.8
         }
       },
       {
@@ -58501,8 +58494,8 @@
               "date": "2027-01-06",
               "market": "Double chance",
               "sel": "Arsenal ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 97.6,
+              "odds": 0.97
             },
             {
               "match": "Man United – Newcastle",
@@ -58529,8 +58522,8 @@
               "odds": 1.12
             }
           ],
-          "odds": 1.25,
-          "prob": 63.4
+          "odds": 1.29,
+          "prob": 61.8
         },
         "safe": {
           "legs": [
@@ -58539,8 +58532,8 @@
               "date": "2027-01-06",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 74.5,
-              "odds": 1.27
+              "prob": 72.7,
+              "odds": 1.3
             },
             {
               "match": "Nottingham Forest – Hull",
@@ -58559,8 +58552,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.95,
-          "prob": 28.6
+          "odds": 3.02,
+          "prob": 27.9
         },
         "bold": {
           "legs": [
@@ -58569,8 +58562,8 @@
               "date": "2027-01-06",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 74.5,
-              "odds": 1.27
+              "prob": 72.7,
+              "odds": 1.3
             },
             {
               "match": "Nottingham Forest – Hull",
@@ -58587,18 +58580,10 @@
               "sel": "Man United gagne",
               "prob": 59.4,
               "odds": 1.59
-            },
-            {
-              "match": "Leeds – Man City",
-              "date": "2027-01-06",
-              "market": "Résultat",
-              "sel": "Man City gagne",
-              "prob": 58.5,
-              "odds": 1.61
             }
           ],
-          "odds": 4.75,
-          "prob": 16.7
+          "odds": 3.02,
+          "prob": 27.9
         }
       },
       {
@@ -58606,20 +58591,20 @@
         "secure": {
           "legs": [
             {
-              "match": "Bournemouth – Ipswich",
-              "date": "2027-01-16",
-              "market": "Double chance",
-              "sel": "Bournemouth ou nul",
-              "prob": 100,
-              "odds": 0.94
-            },
-            {
               "match": "Hull – Arsenal",
               "date": "2027-01-16",
               "market": "Double chance",
               "sel": "nul ou Arsenal",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98.2,
+              "odds": 0.96
+            },
+            {
+              "match": "Bournemouth – Ipswich",
+              "date": "2027-01-16",
+              "market": "Double chance",
+              "sel": "Bournemouth ou nul",
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Aston Villa – Man United",
@@ -58646,8 +58631,8 @@
               "odds": 1.18
             }
           ],
-          "odds": 1.28,
-          "prob": 58.1
+          "odds": 1.34,
+          "prob": 55.9
         },
         "safe": {
           "legs": [
@@ -58656,16 +58641,16 @@
               "date": "2027-01-16",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Bournemouth – Ipswich",
               "date": "2027-01-16",
               "market": "Résultat",
               "sel": "Bournemouth gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Man City – Nottingham Forest",
@@ -58676,8 +58661,8 @@
               "odds": 1.61
             }
           ],
-          "odds": 2.05,
-          "prob": 40.8
+          "odds": 2.14,
+          "prob": 39.1
         },
         "bold": {
           "legs": [
@@ -58686,16 +58671,16 @@
               "date": "2027-01-16",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Bournemouth – Ipswich",
               "date": "2027-01-16",
               "market": "Résultat",
               "sel": "Bournemouth gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Man City – Nottingham Forest",
@@ -58714,8 +58699,8 @@
               "odds": 1.72
             }
           ],
-          "odds": 3.52,
-          "prob": 22.4
+          "odds": 3.68,
+          "prob": 21.5
         }
       },
       {
@@ -58804,8 +58789,8 @@
               "date": "2027-01-30",
               "market": "Double chance",
               "sel": "Aston Villa ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Brentford – Man United",
@@ -58824,8 +58809,8 @@
               "odds": 1.15
             }
           ],
-          "odds": 1.22,
-          "prob": 68.8
+          "odds": 1.25,
+          "prob": 67.4
         },
         "safe": {
           "legs": [
@@ -58834,8 +58819,8 @@
               "date": "2027-01-30",
               "market": "Résultat",
               "sel": "Aston Villa gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Brentford – Man United",
@@ -58854,8 +58839,8 @@
               "odds": 1.61
             }
           ],
-          "odds": 3.07,
-          "prob": 27.2
+          "odds": 3.15,
+          "prob": 26.7
         },
         "bold": {
           "legs": [
@@ -58864,8 +58849,8 @@
               "date": "2027-01-30",
               "market": "Résultat",
               "sel": "Aston Villa gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Brentford – Man United",
@@ -58884,8 +58869,8 @@
               "odds": 1.61
             }
           ],
-          "odds": 3.07,
-          "prob": 27.2
+          "odds": 3.15,
+          "prob": 26.7
         }
       },
       {
@@ -58974,8 +58959,8 @@
               "date": "2027-02-10",
               "market": "Double chance",
               "sel": "nul ou Arsenal",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98.2,
+              "odds": 0.96
             },
             {
               "match": "Aston Villa – Bournemouth",
@@ -58994,8 +58979,8 @@
               "odds": 1.15
             }
           ],
-          "odds": 1.23,
-          "prob": 68
+          "odds": 1.26,
+          "prob": 66.8
         },
         "safe": {
           "legs": [
@@ -59004,8 +58989,8 @@
               "date": "2027-02-10",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Coventry – Liverpool",
@@ -59024,8 +59009,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.68,
-          "prob": 31.4
+          "odds": 2.73,
+          "prob": 30.7
         },
         "bold": {
           "legs": [
@@ -59034,8 +59019,8 @@
               "date": "2027-02-10",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Coventry – Liverpool",
@@ -59062,8 +59047,8 @@
               "odds": 1.61
             }
           ],
-          "odds": 4.31,
-          "prob": 18.3
+          "odds": 4.4,
+          "prob": 18
         }
       },
       {
@@ -59152,8 +59137,8 @@
               "date": "2027-02-27",
               "market": "Double chance",
               "sel": "nul ou Man City",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Coventry – Bournemouth",
@@ -59180,8 +59165,8 @@
               "odds": 1.16
             }
           ],
-          "odds": 1.33,
-          "prob": 59.3
+          "odds": 1.36,
+          "prob": 58.1
         },
         "safe": {
           "legs": [
@@ -59190,8 +59175,8 @@
               "date": "2027-02-27",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Coventry – Bournemouth",
@@ -59210,8 +59195,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.79,
-          "prob": 30.1
+          "odds": 2.86,
+          "prob": 29.5
         },
         "bold": {
           "legs": [
@@ -59220,8 +59205,8 @@
               "date": "2027-02-27",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Coventry – Bournemouth",
@@ -59248,8 +59233,8 @@
               "odds": 1.72
             }
           ],
-          "odds": 4.79,
-          "prob": 16.5
+          "odds": 4.91,
+          "prob": 16.2
         }
       },
       {
@@ -59261,8 +59246,8 @@
               "date": "2027-03-03",
               "market": "Double chance",
               "sel": "Arsenal ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Liverpool – Aston Villa",
@@ -59289,8 +59274,8 @@
               "odds": 1.13
             }
           ],
-          "odds": 1.26,
-          "prob": 62.9
+          "odds": 1.29,
+          "prob": 61.7
         },
         "safe": {
           "legs": [
@@ -59299,8 +59284,8 @@
               "date": "2027-03-03",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Man City – Everton",
@@ -59319,8 +59304,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.79,
-          "prob": 30.1
+          "odds": 2.86,
+          "prob": 29.5
         },
         "bold": {
           "legs": [
@@ -59329,8 +59314,8 @@
               "date": "2027-03-03",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Man City – Everton",
@@ -59357,8 +59342,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 4.43,
-          "prob": 17.9
+          "odds": 4.54,
+          "prob": 17.5
         }
       },
       {
@@ -59370,16 +59355,16 @@
               "date": "2027-03-13",
               "market": "Double chance",
               "sel": "Aston Villa ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Coventry – Man City",
               "date": "2027-03-13",
               "market": "Double chance",
               "sel": "nul ou Man City",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Liverpool – Ipswich",
@@ -59406,8 +59391,8 @@
               "odds": 1.16
             }
           ],
-          "odds": 1.22,
-          "prob": 60.9
+          "odds": 1.27,
+          "prob": 58.5
         },
         "safe": {
           "legs": [
@@ -59416,16 +59401,16 @@
               "date": "2027-03-13",
               "market": "Résultat",
               "sel": "Aston Villa gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Coventry – Man City",
               "date": "2027-03-13",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Liverpool – Ipswich",
@@ -59436,8 +59421,8 @@
               "odds": 1.46
             }
           ],
-          "odds": 2.1,
-          "prob": 39.7
+          "odds": 2.21,
+          "prob": 38.1
         },
         "bold": {
           "legs": [
@@ -59446,16 +59431,16 @@
               "date": "2027-03-13",
               "market": "Résultat",
               "sel": "Aston Villa gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Coventry – Man City",
               "date": "2027-03-13",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Liverpool – Ipswich",
@@ -59474,8 +59459,8 @@
               "odds": 1.46
             }
           ],
-          "odds": 3.07,
-          "prob": 25.7
+          "odds": 3.22,
+          "prob": 24.6
         }
       },
       {
@@ -59564,16 +59549,16 @@
               "date": "2027-04-10",
               "market": "Double chance",
               "sel": "nul ou Arsenal",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98.2,
+              "odds": 0.96
             },
             {
               "match": "Man United – Hull",
               "date": "2027-04-10",
-              "market": "Résultat",
-              "sel": "Man United gagne",
-              "prob": 100,
-              "odds": 0.94
+              "market": "Double chance",
+              "sel": "Man United ou nul",
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Sunderland – Ipswich",
@@ -59600,8 +59585,8 @@
               "odds": 1.14
             }
           ],
-          "odds": 1.23,
-          "prob": 60.6
+          "odds": 1.28,
+          "prob": 58.3
         },
         "safe": {
           "legs": [
@@ -59610,16 +59595,16 @@
               "date": "2027-04-10",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Coventry – Arsenal",
               "date": "2027-04-10",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Sunderland – Ipswich",
@@ -59638,8 +59623,8 @@
               "odds": 2.08
             }
           ],
-          "odds": 3.03,
-          "prob": 26.1
+          "odds": 3.21,
+          "prob": 24.5
         },
         "bold": {
           "legs": [
@@ -59648,16 +59633,16 @@
               "date": "2027-04-10",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 96.1,
+              "odds": 0.98
             },
             {
               "match": "Coventry – Arsenal",
               "date": "2027-04-10",
               "market": "Résultat",
               "sel": "Arsenal gagne",
-              "prob": 88.9,
-              "odds": 1.06
+              "prob": 87.1,
+              "odds": 1.08
             },
             {
               "match": "Sunderland – Ipswich",
@@ -59676,8 +59661,8 @@
               "odds": 2.08
             }
           ],
-          "odds": 3.03,
-          "prob": 26.1
+          "odds": 3.21,
+          "prob": 24.5
         }
       },
       {
@@ -59689,8 +59674,8 @@
               "date": "2027-04-17",
               "market": "Double chance",
               "sel": "nul ou Man United",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Man City – Crystal Palace",
@@ -59707,18 +59692,10 @@
               "sel": "+1,5 but",
               "prob": 82.9,
               "odds": 1.14
-            },
-            {
-              "match": "Arsenal – Aston Villa",
-              "date": "2027-04-17",
-              "market": "Total buts",
-              "sel": "+1,5 but",
-              "prob": 81.8,
-              "odds": 1.15
             }
           ],
-          "odds": 1.34,
-          "prob": 58.8
+          "odds": 1.19,
+          "prob": 70.4
         },
         "safe": {
           "legs": [
@@ -59727,8 +59704,8 @@
               "date": "2027-04-17",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 78.8,
-              "odds": 1.2
+              "prob": 77.2,
+              "odds": 1.22
             },
             {
               "match": "Man City – Crystal Palace",
@@ -59747,8 +59724,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.79,
-          "prob": 30.2
+          "odds": 2.83,
+          "prob": 29.6
         },
         "bold": {
           "legs": [
@@ -59757,8 +59734,8 @@
               "date": "2027-04-17",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 78.8,
-              "odds": 1.2
+              "prob": 77.2,
+              "odds": 1.22
             },
             {
               "match": "Man City – Crystal Palace",
@@ -59785,8 +59762,8 @@
               "odds": 1.72
             }
           ],
-          "odds": 4.79,
-          "prob": 16.6
+          "odds": 4.87,
+          "prob": 16.3
         }
       },
       {
@@ -59798,8 +59775,8 @@
               "date": "2027-04-24",
               "market": "Double chance",
               "sel": "Aston Villa ou nul",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Man United – Crystal Palace",
@@ -59816,18 +59793,10 @@
               "sel": "+1,5 but",
               "prob": 81.4,
               "odds": 1.16
-            },
-            {
-              "match": "Newcastle – Ipswich",
-              "date": "2027-04-24",
-              "market": "Total buts",
-              "sel": "+1,5 but",
-              "prob": 81.1,
-              "odds": 1.16
             }
           ],
-          "odds": 1.35,
-          "prob": 58.2
+          "odds": 1.19,
+          "prob": 70.3
         },
         "safe": {
           "legs": [
@@ -59836,8 +59805,8 @@
               "date": "2027-04-24",
               "market": "Résultat",
               "sel": "Aston Villa gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Man United – Crystal Palace",
@@ -59856,8 +59825,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 2.63,
-          "prob": 31.9
+          "odds": 2.7,
+          "prob": 31.2
         },
         "bold": {
           "legs": [
@@ -59866,8 +59835,8 @@
               "date": "2027-04-24",
               "market": "Résultat",
               "sel": "Aston Villa gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Man United – Crystal Palace",
@@ -59894,8 +59863,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 4.19,
-          "prob": 18.9
+          "odds": 4.29,
+          "prob": 18.6
         }
       },
       {
@@ -59907,8 +59876,8 @@
               "date": "2027-05-01",
               "market": "Double chance",
               "sel": "nul ou Man United",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Arsenal – Tottenham",
@@ -59935,8 +59904,8 @@
               "odds": 1.09
             }
           ],
-          "odds": 1.22,
-          "prob": 65.2
+          "odds": 1.24,
+          "prob": 63.9
         },
         "safe": {
           "legs": [
@@ -59945,8 +59914,8 @@
               "date": "2027-05-01",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 78.8,
-              "odds": 1.2
+              "prob": 77.2,
+              "odds": 1.22
             },
             {
               "match": "Arsenal – Tottenham",
@@ -59965,8 +59934,8 @@
               "odds": 1.46
             }
           ],
-          "odds": 2.56,
-          "prob": 32.9
+          "odds": 2.6,
+          "prob": 32.2
         },
         "bold": {
           "legs": [
@@ -59975,8 +59944,8 @@
               "date": "2027-05-01",
               "market": "Résultat",
               "sel": "Man United gagne",
-              "prob": 78.8,
-              "odds": 1.2
+              "prob": 77.2,
+              "odds": 1.22
             },
             {
               "match": "Arsenal – Tottenham",
@@ -60003,8 +59972,8 @@
               "odds": 1.46
             }
           ],
-          "odds": 3.73,
-          "prob": 21.2
+          "odds": 3.8,
+          "prob": 20.8
         }
       },
       {
@@ -60093,8 +60062,8 @@
               "date": "2027-05-15",
               "market": "Double chance",
               "sel": "nul ou Man City",
-              "prob": 100,
-              "odds": 0.94
+              "prob": 98,
+              "odds": 0.96
             },
             {
               "match": "Aston Villa – Newcastle",
@@ -60121,8 +60090,8 @@
               "odds": 1.15
             }
           ],
-          "odds": 1.32,
-          "prob": 60.1
+          "odds": 1.35,
+          "prob": 58.9
         },
         "safe": {
           "legs": [
@@ -60131,8 +60100,8 @@
               "date": "2027-05-15",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Arsenal – Nottingham Forest",
@@ -60151,8 +60120,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 3.03,
-          "prob": 27.7
+          "odds": 3.11,
+          "prob": 27.1
         },
         "bold": {
           "legs": [
@@ -60161,8 +60130,8 @@
               "date": "2027-05-15",
               "market": "Résultat",
               "sel": "Man City gagne",
-              "prob": 78.4,
-              "odds": 1.2
+              "prob": 76.8,
+              "odds": 1.23
             },
             {
               "match": "Arsenal – Nottingham Forest",
@@ -60181,8 +60150,8 @@
               "odds": 1.59
             }
           ],
-          "odds": 3.03,
-          "prob": 27.7
+          "odds": 3.11,
+          "prob": 27.1
         }
       },
       {
@@ -60348,17 +60317,17 @@
         "round": "Journée 1",
         "safest": [
           {
-            "sel": "Arsenal gagne",
-            "prob": 100,
-            "fairOdds": 1,
+            "sel": "Arsenal ou nul",
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Arsenal – Coventry",
             "date": "2026-08-21",
             "round": "Journée 1"
           },
           {
             "sel": "nul ou Man United",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Hull – Man United",
             "date": "2026-08-21",
             "round": "Journée 1"
@@ -60429,9 +60398,9 @@
         "round": "Journée 2",
         "safest": [
           {
-            "sel": "Man United gagne",
-            "prob": 100,
-            "fairOdds": 1,
+            "sel": "Man United ou nul",
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Man United – Ipswich",
             "date": "2026-08-29",
             "round": "Journée 2"
@@ -60511,16 +60480,16 @@
         "safest": [
           {
             "sel": "Man City ou nul",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98.2,
+            "fairOdds": 1.02,
             "match": "Man City – Coventry",
             "date": "2026-09-05",
             "round": "Journée 3"
           },
           {
             "sel": "Arsenal ou nul",
-            "prob": 92.1,
-            "fairOdds": 1.09,
+            "prob": 91.2,
+            "fairOdds": 1.1,
             "match": "Arsenal – Chelsea",
             "date": "2026-09-05",
             "round": "Journée 3"
@@ -60835,8 +60804,8 @@
         "safest": [
           {
             "sel": "Man City ou nul",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98.2,
+            "fairOdds": 1.02,
             "match": "Man City – Ipswich",
             "date": "2026-10-17",
             "round": "Journée 7"
@@ -60916,8 +60885,8 @@
         "safest": [
           {
             "sel": "Arsenal ou nul",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 97.6,
+            "fairOdds": 1.02,
             "match": "Arsenal – Everton",
             "date": "2026-10-24",
             "round": "Journée 8"
@@ -61077,9 +61046,9 @@
         "round": "Journée 10",
         "safest": [
           {
-            "sel": "Arsenal gagne",
-            "prob": 100,
-            "fairOdds": 1,
+            "sel": "Arsenal ou nul",
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Arsenal – Hull",
             "date": "2026-11-07",
             "round": "Journée 10"
@@ -61402,16 +61371,16 @@
         "safest": [
           {
             "sel": "Bournemouth ou nul",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Bournemouth – Hull",
             "date": "2026-12-05",
             "round": "Journée 14"
           },
           {
-            "sel": "Man United gagne",
-            "prob": 100,
-            "fairOdds": 1,
+            "sel": "Man United ou nul",
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Man United – Coventry",
             "date": "2026-12-05",
             "round": "Journée 14"
@@ -61563,18 +61532,18 @@
         "round": "Journée 16",
         "safest": [
           {
-            "sel": "Bournemouth ou nul",
-            "prob": 100,
-            "fairOdds": 1,
-            "match": "Bournemouth – Coventry",
+            "sel": "Man City ou nul",
+            "prob": 98.2,
+            "fairOdds": 1.02,
+            "match": "Man City – Hull",
             "date": "2026-12-19",
             "round": "Journée 16"
           },
           {
-            "sel": "Man City ou nul",
-            "prob": 100,
-            "fairOdds": 1,
-            "match": "Man City – Hull",
+            "sel": "Bournemouth ou nul",
+            "prob": 98,
+            "fairOdds": 1.02,
+            "match": "Bournemouth – Coventry",
             "date": "2026-12-19",
             "round": "Journée 16"
           },
@@ -61704,18 +61673,18 @@
             "round": "Journée 17"
           },
           {
-            "sel": "nul ou Bournemouth",
+            "sel": "nul ou Brighton",
             "prob": 64,
             "fairOdds": 1.56,
-            "match": "Tottenham – Bournemouth",
+            "match": "Fulham – Brighton",
             "date": "2026-12-26",
             "round": "Journée 17"
           },
           {
-            "sel": "Everton ou nul",
-            "prob": 63.7,
-            "fairOdds": 1.57,
-            "match": "Everton – Sunderland",
+            "sel": "nul ou Bournemouth",
+            "prob": 64,
+            "fairOdds": 1.56,
+            "match": "Tottenham – Bournemouth",
             "date": "2026-12-26",
             "round": "Journée 17"
           }
@@ -61806,9 +61775,9 @@
         "round": "Journée 19",
         "safest": [
           {
-            "sel": "Arsenal gagne",
-            "prob": 100,
-            "fairOdds": 1,
+            "sel": "Arsenal ou nul",
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Arsenal – Ipswich",
             "date": "2027-01-02",
             "round": "Journée 19"
@@ -61888,8 +61857,8 @@
         "safest": [
           {
             "sel": "Arsenal ou nul",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 97.6,
+            "fairOdds": 1.02,
             "match": "Arsenal – Brentford",
             "date": "2027-01-06",
             "round": "Journée 20"
@@ -61968,18 +61937,18 @@
         "round": "Journée 21",
         "safest": [
           {
-            "sel": "Bournemouth ou nul",
-            "prob": 100,
-            "fairOdds": 1,
-            "match": "Bournemouth – Ipswich",
+            "sel": "nul ou Arsenal",
+            "prob": 98.2,
+            "fairOdds": 1.02,
+            "match": "Hull – Arsenal",
             "date": "2027-01-16",
             "round": "Journée 21"
           },
           {
-            "sel": "nul ou Arsenal",
-            "prob": 100,
-            "fairOdds": 1,
-            "match": "Hull – Arsenal",
+            "sel": "Bournemouth ou nul",
+            "prob": 98,
+            "fairOdds": 1.02,
+            "match": "Bournemouth – Ipswich",
             "date": "2027-01-16",
             "round": "Journée 21"
           },
@@ -62131,8 +62100,8 @@
         "safest": [
           {
             "sel": "Aston Villa ou nul",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Aston Villa – Ipswich",
             "date": "2027-01-30",
             "round": "Journée 23"
@@ -62293,8 +62262,8 @@
         "safest": [
           {
             "sel": "nul ou Arsenal",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98.2,
+            "fairOdds": 1.02,
             "match": "Ipswich – Arsenal",
             "date": "2027-02-10",
             "round": "Journée 25"
@@ -62360,10 +62329,10 @@
             "round": "Journée 25"
           },
           {
-            "sel": "+2,5 buts",
-            "prob": 61,
-            "fairOdds": 1.64,
-            "match": "Coventry – Liverpool",
+            "sel": "nul ou Nottingham Forest",
+            "prob": 63,
+            "fairOdds": 1.59,
+            "match": "Fulham – Nottingham Forest",
             "date": "2027-02-10",
             "round": "Journée 25"
           }
@@ -62455,8 +62424,8 @@
         "safest": [
           {
             "sel": "nul ou Man City",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Hull – Man City",
             "date": "2027-02-27",
             "round": "Journée 27"
@@ -62536,8 +62505,8 @@
         "safest": [
           {
             "sel": "Arsenal ou nul",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Arsenal – Crystal Palace",
             "date": "2027-03-03",
             "round": "Journée 28"
@@ -62617,16 +62586,16 @@
         "safest": [
           {
             "sel": "Aston Villa ou nul",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Aston Villa – Hull",
             "date": "2027-03-13",
             "round": "Journée 29"
           },
           {
             "sel": "nul ou Man City",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Coventry – Man City",
             "date": "2027-03-13",
             "round": "Journée 29"
@@ -62779,16 +62748,16 @@
         "safest": [
           {
             "sel": "nul ou Arsenal",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98.2,
+            "fairOdds": 1.02,
             "match": "Coventry – Arsenal",
             "date": "2027-04-10",
             "round": "Journée 31"
           },
           {
-            "sel": "Man United gagne",
-            "prob": 100,
-            "fairOdds": 1,
+            "sel": "Man United ou nul",
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Man United – Hull",
             "date": "2027-04-10",
             "round": "Journée 31"
@@ -62860,8 +62829,8 @@
         "safest": [
           {
             "sel": "nul ou Man United",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Ipswich – Man United",
             "date": "2027-04-17",
             "round": "Journée 32"
@@ -62941,8 +62910,8 @@
         "safest": [
           {
             "sel": "Aston Villa ou nul",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Aston Villa – Coventry",
             "date": "2027-04-24",
             "round": "Journée 33"
@@ -63022,8 +62991,8 @@
         "safest": [
           {
             "sel": "nul ou Man United",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Coventry – Man United",
             "date": "2027-05-01",
             "round": "Journée 34"
@@ -63184,8 +63153,8 @@
         "safest": [
           {
             "sel": "nul ou Man City",
-            "prob": 100,
-            "fairOdds": 1,
+            "prob": 98,
+            "fairOdds": 1.02,
             "match": "Ipswich – Man City",
             "date": "2027-05-15",
             "round": "Journée 36"
@@ -63405,18 +63374,18 @@
             "round": "Journée 38"
           },
           {
-            "sel": "Les deux marquent — Oui",
-            "prob": 62.3,
-            "fairOdds": 1.61,
-            "match": "Aston Villa – Tottenham",
+            "sel": "nul ou Leeds",
+            "prob": 63,
+            "fairOdds": 1.59,
+            "match": "Crystal Palace – Leeds",
             "date": "2027-05-30",
             "round": "Journée 38"
           },
           {
-            "sel": "+2,5 buts",
-            "prob": 61,
-            "fairOdds": 1.64,
-            "match": "Coventry – Nottingham Forest",
+            "sel": "nul ou Bournemouth",
+            "prob": 62.4,
+            "fairOdds": 1.6,
+            "match": "Liverpool – Bournemouth",
             "date": "2027-05-30",
             "round": "Journée 38"
           }
@@ -63494,7 +63463,7 @@
             "n": 106
           },
           "calibrated": {
-            "logLoss": 0.985,
+            "logLoss": 0.986,
             "brier": 0.589,
             "n": 106
           }
@@ -63559,8 +63528,8 @@
           0.81
         ],
         "ys": [
-          0,
-          0,
+          0.02,
+          0.02,
           0.125,
           0.125,
           0.2071611253196931,
@@ -63585,8 +63554,8 @@
           0.6060606060606061,
           0.75,
           0.75,
-          1,
-          1
+          0.98,
+          0.98
         ]
       },
       "btts": null,
@@ -63612,7 +63581,7 @@
           0.5652173913043478,
           0.6104417670682731,
           0.6104417670682731,
-          1
+          0.98
         ]
       },
       "o35": {
@@ -63636,7 +63605,7 @@
           0.3333333333333333,
           0.3496932515337423,
           0.3496932515337423,
-          1
+          0.98
         ]
       }
     },

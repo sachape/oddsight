@@ -47,7 +47,7 @@ function TennisCard({ p, index }) {
       style={{ animationDelay: `${Math.min(index * 40, 400)}ms` }}
     >
       <div className="mb-3 flex items-center justify-between text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
-        <span>{p.round}</span>
+        <span>{p.tournament ? `${p.tournament} · ${p.round}` : p.round}</span>
         <span>{p.date ? new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short' }).format(new Date(p.date + 'T12:00:00')) : ''}</span>
       </div>
 

@@ -32,6 +32,13 @@ export function scoreSet(rows) {
 // --- Régression isotonique (Pool Adjacent Violators) -------------------------
 // Ajuste une fonction monotone croissante x(prédit)->y(observé) sur des paires
 // {x, y in [0,1]}. Renvoie des points de rupture pour interpolation linéaire.
+// Les paliers extrêmes de la PAVA valent exactement 0 ou 1 (bloc de y tous nuls /
+// tous à 1). Appliqués tels quels, ils annulent une issue : si elle se produit, le
+// log-loss part à l'infini. On borne donc la sortie — une calibration ne doit jamais
+// affirmer l'impossible sur un échantillon fini.
+const CAL_FLOOR = 0.02
+const CAL_CEIL = 0.98
+
 export function fitIsotonic(points) {
   const pts = points
     .filter((p) => Number.isFinite(p.x) && Number.isFinite(p.y))
@@ -49,9 +56,10 @@ export function fitIsotonic(points) {
     }
   }
   const xs = [], ys = []
+  const bound = (v) => Math.max(CAL_FLOOR, Math.min(CAL_CEIL, v))
   for (const b of blocks) {
-    xs.push(b.xmin); ys.push(b.val)
-    if (b.xmax !== b.xmin) { xs.push(b.xmax); ys.push(b.val) }
+    xs.push(b.xmin); ys.push(bound(b.val))
+    if (b.xmax !== b.xmin) { xs.push(b.xmax); ys.push(bound(b.val)) }
   }
   return { xs, ys }
 }
