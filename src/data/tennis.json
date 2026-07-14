@@ -6,124 +6,28 @@
     "Unicredit Iasi Open",
     "ATV Bancomat Tennis Open",
     "Enka Open",
-    "Generali Open Ladies Kitzbühel",
-    "Nordea Open",
     "EFG Swiss Open Gstaad",
-    "Plava Laguna Croatia Open Umag"
+    "Plava Laguna Croatia Open Umag",
+    "Generali Open Ladies Kitzbühel",
+    "Nordea Open"
   ],
-  "generatedAt": "2026-07-14T12:49:45.527Z",
+  "generatedAt": "2026-07-14T13:18:51.895Z",
   "asOf": "2026-07-14",
   "sources": [
     "ESPN (scoreboard + classements ATP/WTA)",
     "tennisabstract"
   ],
   "eloSource": "tennisabstract",
+  "benchmark": {
+    "model": 0.622,
+    "market": 0.586,
+    "n": 7883,
+    "source": "ATP+WTA 2025-26, cotes de clôture (npm run backtest:tennis)"
+  },
   "counts": {
-    "upcoming": 81
+    "upcoming": 79
   },
   "predictions": [
-    {
-      "id": "178645",
-      "tournament": "Nordea Open",
-      "surface": "clay",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-07-14",
-      "player1": "Grigor Dimitrov",
-      "player2": "Dalibor Svrcina",
-      "rank1": 146,
-      "rank2": 114,
-      "pts1": 407,
-      "pts2": 554,
-      "pWin1": 61.8,
-      "pWin2": 38.2,
-      "pick": "Grigor Dimitrov",
-      "pickProb": 61.8,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 1.53,
-        "win2": 2.47
-      },
-      "fair": {
-        "win1": 1.62,
-        "win2": 2.62
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 33.5,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 28.2,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 20.5,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 17.7,
-          "w": 2
-        }
-      ],
-      "basis": "elo-clay"
-    },
-    {
-      "id": "178652",
-      "tournament": "Nordea Open",
-      "surface": "clay",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-07-14",
-      "player1": "Taro Daniel",
-      "player2": "Botic Van De Zandschulp",
-      "rank1": null,
-      "rank2": 55,
-      "pts1": 250,
-      "pts2": 969,
-      "pWin1": 31,
-      "pWin2": 69,
-      "pick": "Botic Van De Zandschulp",
-      "pickProb": 69,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 3.04,
-        "win2": 1.37
-      },
-      "fair": {
-        "win1": 3.22,
-        "win2": 1.45
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 39.6,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.4,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 17.3,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 13.7,
-          "w": 1
-        }
-      ],
-      "basis": "elo-clay"
-    },
     {
       "id": "178654",
       "tournament": "Nordea Open",
@@ -137,24 +41,24 @@
       "rank2": 75,
       "pts1": 474,
       "pts2": 775,
-      "pWin1": 36.3,
-      "pWin2": 63.7,
+      "pWin1": 36.6,
+      "pWin2": 63.4,
       "pick": "Jan Choinski",
-      "pickProb": 63.7,
+      "pickProb": 63.4,
       "confidence": "Modérée",
       "odds": {
-        "win1": 2.6,
-        "win2": 1.48
+        "win1": 2.58,
+        "win2": 1.49
       },
       "fair": {
-        "win1": 2.75,
-        "win2": 1.57
+        "win1": 2.74,
+        "win2": 1.58
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 35.1,
+          "p": 34.9,
           "w": 2
         },
         {
@@ -164,12 +68,12 @@
         },
         {
           "score": "2-1",
-          "p": 19.7,
+          "p": 19.8,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 16.6,
+          "p": 16.8,
           "w": 1
         }
       ],
@@ -188,39 +92,39 @@
       "rank2": 150,
       "pts1": 250,
       "pts2": 385,
-      "pWin1": 35.1,
-      "pWin2": 64.9,
+      "pWin1": 34.1,
+      "pWin2": 65.9,
       "pick": "Stefano Travaglia",
-      "pickProb": 64.9,
+      "pickProb": 65.9,
       "confidence": "Modérée",
       "odds": {
-        "win1": 2.69,
-        "win2": 1.45
+        "win1": 2.77,
+        "win2": 1.43
       },
       "fair": {
-        "win1": 2.85,
-        "win2": 1.54
+        "win1": 2.93,
+        "win2": 1.52
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 36.1,
+          "p": 36.9,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 28.8,
+          "p": 29,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 19.2,
+          "p": 18.7,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 15.9,
+          "p": 15.4,
           "w": 1
         }
       ],
@@ -239,39 +143,39 @@
       "rank2": 60,
       "pts1": 619,
       "pts2": 924,
-      "pWin1": 38,
-      "pWin2": 62,
+      "pWin1": 40,
+      "pWin2": 60,
       "pick": "Daniel Altmaier",
-      "pickProb": 62,
+      "pickProb": 60,
       "confidence": "Faible",
       "odds": {
-        "win1": 2.48,
-        "win2": 1.52
+        "win1": 2.36,
+        "win2": 1.57
       },
       "fair": {
-        "win1": 2.63,
-        "win2": 1.61
+        "win1": 2.5,
+        "win2": 1.67
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 33.7,
+          "p": 32.2,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 28.3,
+          "p": 27.8,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 20.4,
+          "p": 21.2,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 17.6,
+          "p": 18.7,
           "w": 1
         }
       ],
@@ -290,39 +194,39 @@
       "rank2": 52,
       "pts1": 250,
       "pts2": 970,
-      "pWin1": 12.3,
-      "pWin2": 87.7,
+      "pWin1": 17.5,
+      "pWin2": 82.5,
       "pick": "Nuno Borges",
-      "pickProb": 87.7,
+      "pickProb": 82.5,
       "confidence": "Élevée",
       "odds": {
-        "win1": 7.64,
-        "win2": 1.08
+        "win1": 5.38,
+        "win2": 1.14
       },
       "fair": {
-        "win1": 8.1,
-        "win2": 1.14
+        "win1": 5.71,
+        "win2": 1.21
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 60.9,
+          "p": 53.8,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 26.7,
+          "p": 28.7,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 7.5,
+          "p": 10.4,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 4.8,
+          "p": 7.1,
           "w": 1
         }
       ],
@@ -443,10 +347,10 @@
       "rank2": null,
       "pts1": 706,
       "pts2": 250,
-      "pWin1": 69,
-      "pWin2": 31,
+      "pWin1": 69.1,
+      "pWin2": 30.9,
       "pick": "Quentin Halys",
-      "pickProb": 69,
+      "pickProb": 69.1,
       "confidence": "Modérée",
       "odds": {
         "win1": 1.37,
@@ -454,7 +358,7 @@
       },
       "fair": {
         "win1": 1.45,
-        "win2": 3.23
+        "win2": 3.24
       },
       "bestOf": 3,
       "sets": [
@@ -470,64 +374,13 @@
         },
         {
           "score": "1-2",
-          "p": 17.3,
+          "p": 17.2,
           "w": 2
         },
         {
           "score": "0-2",
           "p": 13.7,
           "w": 2
-        }
-      ],
-      "basis": "elo-clay"
-    },
-    {
-      "id": "178735",
-      "tournament": "EFG Swiss Open Gstaad",
-      "surface": "clay",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-07-14",
-      "player1": "Ignacio Buse",
-      "player2": "Stefanos Tsitsipas",
-      "rank1": 33,
-      "rank2": 85,
-      "pts1": 1413,
-      "pts2": 740,
-      "pWin1": 41.4,
-      "pWin2": 58.6,
-      "pick": "Stefanos Tsitsipas",
-      "pickProb": 58.6,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 2.28,
-        "win2": 1.61
-      },
-      "fair": {
-        "win1": 2.41,
-        "win2": 1.71
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 31.1,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 27.5,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 21.8,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 19.6,
-          "w": 1
         }
       ],
       "basis": "elo-clay"
@@ -584,6 +437,57 @@
       "basis": "points"
     },
     {
+      "id": "178735",
+      "tournament": "EFG Swiss Open Gstaad",
+      "surface": "clay",
+      "category": "Men's Singles",
+      "round": "Round 1",
+      "date": "2026-07-14",
+      "player1": "Ignacio Buse",
+      "player2": "Stefanos Tsitsipas",
+      "rank1": 33,
+      "rank2": 85,
+      "pts1": 1413,
+      "pts2": 740,
+      "pWin1": 45.4,
+      "pWin2": 54.6,
+      "pick": "Stefanos Tsitsipas",
+      "pickProb": 54.6,
+      "confidence": "Faible",
+      "odds": {
+        "win1": 2.08,
+        "win2": 1.73
+      },
+      "fair": {
+        "win1": 2.2,
+        "win2": 1.83
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "0-2",
+          "p": 28.1,
+          "w": 2
+        },
+        {
+          "score": "1-2",
+          "p": 26.4,
+          "w": 2
+        },
+        {
+          "score": "2-1",
+          "p": 23.4,
+          "w": 1
+        },
+        {
+          "score": "2-0",
+          "p": 22,
+          "w": 1
+        }
+      ],
+      "basis": "elo-clay"
+    },
+    {
       "id": "178726",
       "tournament": "EFG Swiss Open Gstaad",
       "surface": "clay",
@@ -596,39 +500,39 @@
       "rank2": 92,
       "pts1": 538,
       "pts2": 700,
-      "pWin1": 34.9,
-      "pWin2": 65.1,
+      "pWin1": 37.1,
+      "pWin2": 62.9,
       "pick": "Jaime Faria",
-      "pickProb": 65.1,
+      "pickProb": 62.9,
       "confidence": "Modérée",
       "odds": {
-        "win1": 2.7,
-        "win2": 1.45
+        "win1": 2.55,
+        "win2": 1.5
       },
       "fair": {
-        "win1": 2.87,
-        "win2": 1.54
+        "win1": 2.7,
+        "win2": 1.59
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 36.3,
+          "p": 34.5,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 28.9,
+          "p": 28.5,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 19.1,
+          "p": 20,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 15.8,
+          "p": 17,
           "w": 1
         }
       ],
@@ -647,39 +551,39 @@
       "rank2": null,
       "pts1": 930,
       "pts2": 250,
-      "pWin1": 87.7,
-      "pWin2": 12.3,
+      "pWin1": 85.3,
+      "pWin2": 14.7,
       "pick": "Camilo Ugo Carabelli",
-      "pickProb": 87.7,
+      "pickProb": 85.3,
       "confidence": "Élevée",
       "odds": {
-        "win1": 1.08,
-        "win2": 7.66
+        "win1": 1.11,
+        "win2": 6.42
       },
       "fair": {
-        "win1": 1.14,
-        "win2": 8.12
+        "win1": 1.17,
+        "win2": 6.81
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "2-0",
-          "p": 61,
+          "p": 57.5,
           "w": 1
         },
         {
           "score": "2-1",
-          "p": 26.7,
+          "p": 27.8,
           "w": 1
         },
         {
           "score": "1-2",
-          "p": 7.5,
+          "p": 8.9,
           "w": 2
         },
         {
           "score": "0-2",
-          "p": 4.8,
+          "p": 5.8,
           "w": 2
         }
       ],
@@ -698,24 +602,24 @@
       "rank2": 101,
       "pts1": 768,
       "pts2": 649,
-      "pWin1": 37.2,
-      "pWin2": 62.8,
+      "pWin1": 37.4,
+      "pWin2": 62.6,
       "pick": "Alex Molcan",
-      "pickProb": 62.8,
+      "pickProb": 62.6,
       "confidence": "Modérée",
       "odds": {
-        "win1": 2.53,
-        "win2": 1.5
+        "win1": 2.52,
+        "win2": 1.51
       },
       "fair": {
-        "win1": 2.68,
-        "win2": 1.59
+        "win1": 2.67,
+        "win2": 1.6
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 34.3,
+          "p": 34.2,
           "w": 2
         },
         {
@@ -725,7 +629,7 @@
         },
         {
           "score": "2-1",
-          "p": 20.1,
+          "p": 20.2,
           "w": 1
         },
         {
@@ -749,39 +653,39 @@
       "rank2": null,
       "pts1": 884,
       "pts2": 250,
-      "pWin1": 82.1,
-      "pWin2": 17.9,
+      "pWin1": 82.7,
+      "pWin2": 17.3,
       "pick": "Pablo Carreno Busta",
-      "pickProb": 82.1,
+      "pickProb": 82.7,
       "confidence": "Élevée",
       "odds": {
-        "win1": 1.15,
-        "win2": 5.27
+        "win1": 1.14,
+        "win2": 5.45
       },
       "fair": {
-        "win1": 1.22,
-        "win2": 5.58
+        "win1": 1.21,
+        "win2": 5.78
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "2-0",
-          "p": 53.3,
+          "p": 54.1,
           "w": 1
         },
         {
           "score": "2-1",
-          "p": 28.8,
+          "p": 28.6,
           "w": 1
         },
         {
           "score": "1-2",
-          "p": 10.6,
+          "p": 10.3,
           "w": 2
         },
         {
           "score": "0-2",
-          "p": 7.3,
+          "p": 7,
           "w": 2
         }
       ],
@@ -800,39 +704,39 @@
       "rank2": null,
       "pts1": 250,
       "pts2": 250,
-      "pWin1": 49,
-      "pWin2": 51,
+      "pWin1": 46.3,
+      "pWin2": 53.7,
       "pick": "Federico Agustin Gomez",
-      "pickProb": 51,
-      "confidence": "Serré",
+      "pickProb": 53.7,
+      "confidence": "Faible",
       "odds": {
-        "win1": 1.92,
-        "win2": 1.85
+        "win1": 2.04,
+        "win2": 1.76
       },
       "fair": {
-        "win1": 2.04,
-        "win2": 1.96
+        "win1": 2.16,
+        "win2": 1.86
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 25.6,
+          "p": 27.5,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 25.3,
+          "p": 26.2,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 24.7,
+          "p": 23.7,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 24.4,
+          "p": 22.6,
           "w": 1
         }
       ],
@@ -902,39 +806,39 @@
       "rank2": null,
       "pts1": 875,
       "pts2": 250,
-      "pWin1": 64.8,
-      "pWin2": 35.2,
+      "pWin1": 63.9,
+      "pWin2": 36.1,
       "pick": "Roman Andres Burruchaga",
-      "pickProb": 64.8,
+      "pickProb": 63.9,
       "confidence": "Modérée",
       "odds": {
-        "win1": 1.46,
-        "win2": 2.68
+        "win1": 1.48,
+        "win2": 2.62
       },
       "fair": {
-        "win1": 1.54,
-        "win2": 2.84
+        "win1": 1.56,
+        "win2": 2.77
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "2-0",
-          "p": 36,
+          "p": 35.3,
           "w": 1
         },
         {
           "score": "2-1",
-          "p": 28.8,
+          "p": 28.7,
           "w": 1
         },
         {
           "score": "1-2",
-          "p": 19.2,
+          "p": 19.6,
           "w": 2
         },
         {
           "score": "0-2",
-          "p": 16,
+          "p": 16.5,
           "w": 2
         }
       ],
@@ -953,39 +857,39 @@
       "rank2": 54,
       "pts1": 250,
       "pts2": 970,
-      "pWin1": 24.2,
-      "pWin2": 75.8,
+      "pWin1": 20,
+      "pWin2": 80,
       "pick": "Fabian Marozsan",
-      "pickProb": 75.8,
+      "pickProb": 80,
       "confidence": "Élevée",
       "odds": {
-        "win1": 3.91,
-        "win2": 1.24
+        "win1": 4.72,
+        "win2": 1.18
       },
       "fair": {
-        "win1": 4.14,
-        "win2": 1.32
+        "win1": 5,
+        "win2": 1.25
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 46.3,
+          "p": 50.8,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 29.6,
+          "p": 29.2,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 13.9,
+          "p": 11.8,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 10.2,
+          "p": 8.2,
           "w": 1
         }
       ],
@@ -1004,24 +908,24 @@
       "rank2": 119,
       "pts1": 1233,
       "pts2": 528,
-      "pWin1": 72.4,
-      "pWin2": 27.6,
+      "pWin1": 73.1,
+      "pWin2": 26.9,
       "pick": "Alexander Blockx",
-      "pickProb": 72.4,
+      "pickProb": 73.1,
       "confidence": "Modérée",
       "odds": {
-        "win1": 1.3,
-        "win2": 3.42
+        "win1": 1.29,
+        "win2": 3.5
       },
       "fair": {
-        "win1": 1.38,
-        "win2": 3.62
+        "win1": 1.37,
+        "win2": 3.71
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "2-0",
-          "p": 42.8,
+          "p": 43.4,
           "w": 1
         },
         {
@@ -1031,12 +935,12 @@
         },
         {
           "score": "1-2",
-          "p": 15.7,
+          "p": 15.3,
           "w": 2
         },
         {
           "score": "0-2",
-          "p": 12,
+          "p": 11.6,
           "w": 2
         }
       ],
@@ -1446,57 +1350,6 @@
           "score": "0-2",
           "p": 19.1,
           "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
-      "id": "179314",
-      "tournament": "Unicredit Iasi Open",
-      "surface": null,
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-07-14",
-      "player1": "Claire Liu",
-      "player2": "Yulia Putintseva",
-      "rank1": 111,
-      "rank2": 82,
-      "pts1": 695,
-      "pts2": 877,
-      "pWin1": 37.8,
-      "pWin2": 62.2,
-      "pick": "Yulia Putintseva",
-      "pickProb": 62.2,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.49,
-        "win2": 1.52
-      },
-      "fair": {
-        "win1": 2.64,
-        "win2": 1.61
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 33.9,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 28.3,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 20.3,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 17.5,
-          "w": 1
         }
       ],
       "basis": "elo"
@@ -2522,108 +2375,6 @@
       "basis": "elo"
     },
     {
-      "id": "179141",
-      "tournament": "Generali Open Ladies Kitzbühel",
-      "surface": "clay",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-07-14",
-      "player1": "Sinja Kraus",
-      "player2": "Caijsa Hennemann",
-      "rank1": 94,
-      "rank2": null,
-      "pts1": 809,
-      "pts2": 250,
-      "pWin1": 71.9,
-      "pWin2": 28.1,
-      "pick": "Sinja Kraus",
-      "pickProb": 71.9,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 1.31,
-        "win2": 3.36
-      },
-      "fair": {
-        "win1": 1.39,
-        "win2": 3.56
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 42.3,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 29.6,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 15.9,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 12.2,
-          "w": 2
-        }
-      ],
-      "basis": "points"
-    },
-    {
-      "id": "179154",
-      "tournament": "Generali Open Ladies Kitzbühel",
-      "surface": "clay",
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-07-14",
-      "player1": "Anna-Lena Friedsam",
-      "player2": "Marina Bassols Ribera",
-      "rank1": null,
-      "rank2": 144,
-      "pts1": 250,
-      "pts2": 542,
-      "pWin1": 35,
-      "pWin2": 65,
-      "pick": "Marina Bassols Ribera",
-      "pickProb": 65,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.7,
-        "win2": 1.45
-      },
-      "fair": {
-        "win1": 2.86,
-        "win2": 1.54
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 36.2,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 28.8,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 19.1,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 15.9,
-          "w": 1
-        }
-      ],
-      "basis": "points"
-    },
-    {
       "id": "179150",
       "tournament": "Generali Open Ladies Kitzbühel",
       "surface": "clay",
@@ -2636,29 +2387,29 @@
       "rank2": null,
       "pts1": 250,
       "pts2": 250,
-      "pWin1": 65.8,
-      "pWin2": 34.2,
+      "pWin1": 65.6,
+      "pWin2": 34.4,
       "pick": "Barbora Palicova",
-      "pickProb": 65.8,
+      "pickProb": 65.6,
       "confidence": "Modérée",
       "odds": {
-        "win1": 1.43,
-        "win2": 2.76
+        "win1": 1.44,
+        "win2": 2.74
       },
       "fair": {
         "win1": 1.52,
-        "win2": 2.92
+        "win2": 2.91
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "2-0",
-          "p": 36.8,
+          "p": 36.7,
           "w": 1
         },
         {
           "score": "2-1",
-          "p": 29,
+          "p": 28.9,
           "w": 1
         },
         {
@@ -2687,39 +2438,39 @@
       "rank2": null,
       "pts1": 250,
       "pts2": 250,
-      "pWin1": 80,
-      "pWin2": 20,
+      "pWin1": 78.4,
+      "pWin2": 21.6,
       "pick": "Laura Samson",
-      "pickProb": 80,
+      "pickProb": 78.4,
       "confidence": "Élevée",
       "odds": {
-        "win1": 1.18,
-        "win2": 4.72
+        "win1": 1.2,
+        "win2": 4.37
       },
       "fair": {
-        "win1": 1.25,
-        "win2": 5
+        "win1": 1.28,
+        "win2": 4.63
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "2-0",
-          "p": 50.8,
+          "p": 49,
           "w": 1
         },
         {
           "score": "2-1",
-          "p": 29.2,
+          "p": 29.4,
           "w": 1
         },
         {
           "score": "1-2",
-          "p": 11.8,
+          "p": 12.6,
           "w": 2
         },
         {
           "score": "0-2",
-          "p": 8.2,
+          "p": 9,
           "w": 2
         }
       ],
@@ -2789,39 +2540,39 @@
       "rank2": null,
       "pts1": 250,
       "pts2": 250,
-      "pWin1": 35.7,
-      "pWin2": 64.3,
+      "pWin1": 37.6,
+      "pWin2": 62.4,
       "pick": "Maria Lourdes Carle",
-      "pickProb": 64.3,
+      "pickProb": 62.4,
       "confidence": "Modérée",
       "odds": {
-        "win1": 2.64,
-        "win2": 1.47
+        "win1": 2.51,
+        "win2": 1.51
       },
       "fair": {
-        "win1": 2.8,
-        "win2": 1.55
+        "win1": 2.66,
+        "win2": 1.6
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 35.6,
+          "p": 34.1,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 28.7,
+          "p": 28.4,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 19.4,
+          "p": 20.2,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 16.3,
+          "p": 17.3,
           "w": 1
         }
       ],
@@ -2840,39 +2591,39 @@
       "rank2": null,
       "pts1": 571,
       "pts2": 250,
-      "pWin1": 86.4,
-      "pWin2": 13.6,
+      "pWin1": 85.7,
+      "pWin2": 14.3,
       "pick": "Jeline Vandromme",
-      "pickProb": 86.4,
+      "pickProb": 85.7,
       "confidence": "Élevée",
       "odds": {
-        "win1": 1.09,
-        "win2": 6.92
+        "win1": 1.1,
+        "win2": 6.61
       },
       "fair": {
-        "win1": 1.16,
-        "win2": 7.34
+        "win1": 1.17,
+        "win2": 7.01
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "2-0",
-          "p": 59,
+          "p": 58.1,
           "w": 1
         },
         {
           "score": "2-1",
-          "p": 27.4,
+          "p": 27.6,
           "w": 1
         },
         {
           "score": "1-2",
-          "p": 8.3,
+          "p": 8.6,
           "w": 2
         },
         {
           "score": "0-2",
-          "p": 5.4,
+          "p": 5.7,
           "w": 2
         }
       ],
@@ -2930,6 +2681,57 @@
       "basis": "points"
     },
     {
+      "id": "178636",
+      "tournament": "Nordea Open",
+      "surface": "clay",
+      "category": "Men's Singles",
+      "round": "Round 2",
+      "date": "2026-07-15",
+      "player1": "Adolfo Daniel Vallejo",
+      "player2": "Botic Van De Zandschulp",
+      "rank1": 71,
+      "rank2": 55,
+      "pts1": 830,
+      "pts2": 969,
+      "pWin1": 45.2,
+      "pWin2": 54.8,
+      "pick": "Botic Van De Zandschulp",
+      "pickProb": 54.8,
+      "confidence": "Faible",
+      "odds": {
+        "win1": 2.09,
+        "win2": 1.72
+      },
+      "fair": {
+        "win1": 2.21,
+        "win2": 1.83
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "0-2",
+          "p": 28.3,
+          "w": 2
+        },
+        {
+          "score": "1-2",
+          "p": 26.5,
+          "w": 2
+        },
+        {
+          "score": "2-1",
+          "p": 23.3,
+          "w": 1
+        },
+        {
+          "score": "2-0",
+          "p": 21.9,
+          "w": 1
+        }
+      ],
+      "basis": "elo-clay"
+    },
+    {
       "id": "178638",
       "tournament": "Nordea Open",
       "surface": "clay",
@@ -2942,39 +2744,39 @@
       "rank2": 31,
       "pts1": 250,
       "pts2": 1438,
-      "pWin1": 16.4,
-      "pWin2": 83.6,
+      "pWin1": 15.6,
+      "pWin2": 84.4,
       "pick": "Alejandro Tabilo",
-      "pickProb": 83.6,
+      "pickProb": 84.4,
       "confidence": "Élevée",
       "odds": {
-        "win1": 5.74,
-        "win2": 1.13
+        "win1": 6.04,
+        "win2": 1.12
       },
       "fair": {
-        "win1": 6.09,
-        "win2": 1.2
+        "win1": 6.4,
+        "win2": 1.19
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 55.2,
+          "p": 56.3,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 28.4,
+          "p": 28.1,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 9.8,
+          "p": 9.4,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 6.6,
+          "p": 6.2,
           "w": 1
         }
       ],
@@ -2993,39 +2795,39 @@
       "rank2": 16,
       "pts1": 459,
       "pts2": 2230,
-      "pWin1": 21.3,
-      "pWin2": 78.7,
+      "pWin1": 20.8,
+      "pWin2": 79.2,
       "pick": "Andrey Rublev",
-      "pickProb": 78.7,
+      "pickProb": 79.2,
       "confidence": "Élevée",
       "odds": {
-        "win1": 4.42,
-        "win2": 1.2
+        "win1": 4.54,
+        "win2": 1.19
       },
       "fair": {
-        "win1": 4.69,
-        "win2": 1.27
+        "win1": 4.82,
+        "win2": 1.26
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 49.3,
+          "p": 49.9,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 29.4,
+          "p": 29.3,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 12.5,
+          "p": 12.2,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 8.9,
+          "p": 8.6,
           "w": 1
         }
       ],
@@ -3044,39 +2846,39 @@
       "rank2": 42,
       "pts1": 743,
       "pts2": 1091,
-      "pWin1": 27.9,
-      "pWin2": 72.1,
+      "pWin1": 29.5,
+      "pWin2": 70.5,
       "pick": "Raphael Collignon",
-      "pickProb": 72.1,
+      "pickProb": 70.5,
       "confidence": "Modérée",
       "odds": {
-        "win1": 3.38,
-        "win2": 1.31
+        "win1": 3.2,
+        "win2": 1.34
       },
       "fair": {
-        "win1": 3.58,
-        "win2": 1.39
+        "win1": 3.39,
+        "win2": 1.42
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 42.5,
+          "p": 41,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 29.6,
+          "p": 29.5,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 15.8,
+          "p": 16.6,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 12.1,
+          "p": 12.9,
           "w": 1
         }
       ],
@@ -3095,24 +2897,24 @@
       "rank2": 28,
       "pts1": 250,
       "pts2": 1683,
-      "pWin1": 26.4,
-      "pWin2": 73.6,
+      "pWin1": 25.2,
+      "pWin2": 74.8,
       "pick": "Arthur Rinderknech",
-      "pickProb": 73.6,
+      "pickProb": 74.8,
       "confidence": "Modérée",
       "odds": {
-        "win1": 3.58,
-        "win2": 1.28
+        "win1": 3.74,
+        "win2": 1.26
       },
       "fair": {
-        "win1": 3.79,
-        "win2": 1.36
+        "win1": 3.97,
+        "win2": 1.34
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 44,
+          "p": 45.2,
           "w": 2
         },
         {
@@ -3122,12 +2924,12 @@
         },
         {
           "score": "2-1",
-          "p": 15,
+          "p": 14.4,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 11.3,
+          "p": 10.7,
           "w": 1
         }
       ],
@@ -3146,40 +2948,40 @@
       "rank2": 51,
       "pts1": 2138,
       "pts2": 974,
-      "pWin1": 42.5,
-      "pWin2": 57.5,
-      "pick": "Yannick Hanfmann",
-      "pickProb": 57.5,
-      "confidence": "Faible",
+      "pWin1": 50.4,
+      "pWin2": 49.6,
+      "pick": "Valentin Vacherot",
+      "pickProb": 50.4,
+      "confidence": "Serré",
       "odds": {
-        "win1": 2.22,
-        "win2": 1.64
+        "win1": 1.87,
+        "win2": 1.9
       },
       "fair": {
-        "win1": 2.35,
-        "win2": 1.74
+        "win1": 1.98,
+        "win2": 2.02
       },
       "bestOf": 3,
       "sets": [
         {
-          "score": "0-2",
-          "p": 30.3,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 27.2,
-          "w": 2
+          "score": "2-0",
+          "p": 25.3,
+          "w": 1
         },
         {
           "score": "2-1",
-          "p": 22.3,
+          "p": 25.1,
           "w": 1
         },
         {
-          "score": "2-0",
-          "p": 20.2,
-          "w": 1
+          "score": "1-2",
+          "p": 24.9,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 24.7,
+          "w": 2
         }
       ],
       "basis": "elo-clay"
@@ -3197,39 +2999,39 @@
       "rank2": 45,
       "pts1": 930,
       "pts2": 1054,
-      "pWin1": 46.4,
-      "pWin2": 53.6,
+      "pWin1": 47.5,
+      "pWin2": 52.5,
       "pick": "Juan Manuel Cerundolo",
-      "pickProb": 53.6,
-      "confidence": "Faible",
+      "pickProb": 52.5,
+      "confidence": "Serré",
       "odds": {
-        "win1": 2.03,
-        "win2": 1.76
+        "win1": 1.99,
+        "win2": 1.8
       },
       "fair": {
-        "win1": 2.16,
-        "win2": 1.86
+        "win1": 2.1,
+        "win2": 1.91
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 27.5,
+          "p": 26.7,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 26.1,
+          "p": 25.8,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 23.7,
+          "p": 24.1,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 22.6,
+          "p": 23.4,
           "w": 1
         }
       ],
@@ -3248,39 +3050,39 @@
       "rank2": 99,
       "pts1": 2160,
       "pts2": 666,
-      "pWin1": 76.2,
-      "pWin2": 23.8,
+      "pWin1": 82.1,
+      "pWin2": 17.9,
       "pick": "Alejandro Davidovich Fokina",
-      "pickProb": 76.2,
+      "pickProb": 82.1,
       "confidence": "Élevée",
       "odds": {
-        "win1": 1.24,
-        "win2": 3.97
+        "win1": 1.15,
+        "win2": 5.28
       },
       "fair": {
-        "win1": 1.31,
-        "win2": 4.2
+        "win1": 1.22,
+        "win2": 5.6
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "2-0",
-          "p": 46.6,
+          "p": 53.4,
           "w": 1
         },
         {
           "score": "2-1",
-          "p": 29.6,
+          "p": 28.8,
           "w": 1
         },
         {
           "score": "1-2",
-          "p": 13.7,
+          "p": 10.6,
           "w": 2
         },
         {
           "score": "0-2",
-          "p": 10.1,
+          "p": 7.3,
           "w": 2
         }
       ],
@@ -3588,6 +3390,57 @@
           "score": "0-2",
           "p": 21.3,
           "w": 2
+        }
+      ],
+      "basis": "elo"
+    },
+    {
+      "id": "179308",
+      "tournament": "Unicredit Iasi Open",
+      "surface": null,
+      "category": "Women's Singles",
+      "round": "Round 2",
+      "date": "2026-07-15",
+      "player1": "Alina Charaeva",
+      "player2": "Yulia Putintseva",
+      "rank1": 118,
+      "rank2": 82,
+      "pts1": 640,
+      "pts2": 877,
+      "pWin1": 35.5,
+      "pWin2": 64.5,
+      "pick": "Yulia Putintseva",
+      "pickProb": 64.5,
+      "confidence": "Modérée",
+      "odds": {
+        "win1": 2.65,
+        "win2": 1.46
+      },
+      "fair": {
+        "win1": 2.81,
+        "win2": 1.55
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "0-2",
+          "p": 35.7,
+          "w": 2
+        },
+        {
+          "score": "1-2",
+          "p": 28.7,
+          "w": 2
+        },
+        {
+          "score": "2-1",
+          "p": 19.4,
+          "w": 1
+        },
+        {
+          "score": "2-0",
+          "p": 16.2,
+          "w": 1
         }
       ],
       "basis": "elo"
@@ -4103,6 +3956,57 @@
       "basis": "points"
     },
     {
+      "id": "179138",
+      "tournament": "Generali Open Ladies Kitzbühel",
+      "surface": "clay",
+      "category": "Women's Singles",
+      "round": "Round 2",
+      "date": "2026-07-15",
+      "player1": "Sinja Kraus",
+      "player2": "Eva Bennemann",
+      "rank1": 94,
+      "rank2": null,
+      "pts1": 809,
+      "pts2": 250,
+      "pWin1": 90,
+      "pWin2": 10,
+      "pick": "Sinja Kraus",
+      "pickProb": 90,
+      "confidence": "Élevée",
+      "odds": {
+        "win1": 1.05,
+        "win2": 9.48
+      },
+      "fair": {
+        "win1": 1.11,
+        "win2": 10.04
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "2-0",
+          "p": 64.7,
+          "w": 1
+        },
+        {
+          "score": "2-1",
+          "p": 25.3,
+          "w": 1
+        },
+        {
+          "score": "1-2",
+          "p": 6.1,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 3.8,
+          "w": 2
+        }
+      ],
+      "basis": "elo-clay"
+    },
+    {
       "id": "179139",
       "tournament": "Generali Open Ladies Kitzbühel",
       "surface": "clay",
@@ -4115,39 +4019,39 @@
       "rank2": null,
       "pts1": 250,
       "pts2": 250,
-      "pWin1": 46.3,
-      "pWin2": 53.7,
+      "pWin1": 43.2,
+      "pWin2": 56.8,
       "pick": "Erika Andreeva",
-      "pickProb": 53.7,
+      "pickProb": 56.8,
       "confidence": "Faible",
       "odds": {
-        "win1": 2.04,
-        "win2": 1.76
+        "win1": 2.18,
+        "win2": 1.66
       },
       "fair": {
-        "win1": 2.16,
-        "win2": 1.86
+        "win1": 2.31,
+        "win2": 1.76
       },
       "bestOf": 3,
       "sets": [
         {
           "score": "0-2",
-          "p": 27.6,
+          "p": 29.7,
           "w": 2
         },
         {
           "score": "1-2",
-          "p": 26.2,
+          "p": 27,
           "w": 2
         },
         {
           "score": "2-1",
-          "p": 23.7,
+          "p": 22.6,
           "w": 1
         },
         {
           "score": "2-0",
-          "p": 22.6,
+          "p": 20.7,
           "w": 1
         }
       ],

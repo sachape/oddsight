@@ -31,16 +31,28 @@ function PlayerRow({ name, prob, oddKey, odds, setOdds }) {
   )
 }
 
-export default function TennisValue({ predictions }) {
+export default function TennisValue({ predictions, benchmark }) {
   const [cat, setCat] = useState('Men')
   const [odds, setOdds] = useState({})
   const list = predictions.filter((p) => p.category.includes(cat))
 
   return (
     <div className="space-y-5">
+      {/* Mesuré sur 7 883 matchs (npm run backtest:tennis) : le marché prédit nettement
+          mieux que nous. Annoncer « pari de valeur » sur la base de notre cote juste
+          serait vendre un edge qu'on n'a pas — on affiche la mesure à la place. */}
+      {benchmark && (
+        <div className="rounded-2xl bg-amber-500/10 p-4 text-sm leading-relaxed text-[#1d1d1f] ring-1 ring-amber-500/25">
+          <b>À lire avant de parier.</b> Mesuré sur {benchmark.n.toLocaleString('fr-FR')} matchs ATP/WTA,{' '}
+          <b>le marché prédit nettement mieux que notre modèle</b> (log-loss {benchmark.market} contre{' '}
+          {benchmark.model}). Un écart repéré ci-dessous est donc plus probablement <b>notre erreur</b>{' '}
+          qu'une erreur du bookmaker.
+        </div>
+      )}
+
       <div className="surface rounded-2xl p-4 text-sm leading-relaxed text-[#1d1d1f]">
-        <b>Trouve la valeur.</b> Saisis la cote de ton opérateur pour un joueur. Si elle dépasse
-        notre <b>cote juste</b>, c'est un <span className="font-semibold text-[#15803d]">pari de valeur</span>.
+        <b>Comparateur de cotes.</b> Saisis la cote de ton opérateur pour un joueur : on l'oppose à
+        notre <b>cote juste</b> (celle qui rendrait le pari neutre) et on affiche l'écart.
       </div>
 
       <div className="flex justify-center gap-2">

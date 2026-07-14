@@ -276,7 +276,7 @@ export default function App() {
 
               {tab2 === 'bets' && <BetBuilder bets={data.bets} />}
               {tab2 === 'value' && comp.sport === 'tennis' && (
-                <TennisValue predictions={data.predictions} />
+                <TennisValue predictions={data.predictions} benchmark={data.benchmark} />
               )}
               {tab2 === 'value' && comp.sport !== 'tennis' && (
                 <ValueBetting

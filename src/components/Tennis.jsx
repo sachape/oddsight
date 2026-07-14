@@ -45,7 +45,13 @@ function SurfaceTag({ surface, basis }) {
       </span>
     )
   }
-  return <span className="ml-2 normal-case text-[#86868b]">· Elo {SURFACE_FR[surface]}</span>
+  // L'Elo pur de la surface est trop bruité (mesuré : pire que l'Elo général). On corrige
+  // l'Elo général de 25 % par celui de la surface — le libellé doit dire ça, pas autre chose.
+  return (
+    <span className="ml-2 normal-case text-[#86868b]" title="Elo général corrigé à 25 % par l'Elo de la surface (poids mesuré sur 7 883 matchs)">
+      · Elo ajusté {SURFACE_FR[surface]}
+    </span>
+  )
 }
 
 function TennisCard({ p, index }) {

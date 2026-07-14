@@ -15,7 +15,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tune:cup": "node scraper/tune.mjs cup"
+    "tune:cup": "node scraper/tune.mjs cup",
+    "backtest:tennis": "node scraper/backtest-tennis.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

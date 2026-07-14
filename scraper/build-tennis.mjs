@@ -1,6 +1,7 @@
 // OddSight — pipeline Tennis (ATP/WTA, tournois en cours via ESPN)
-// Probabilité de victoire = Elo DE LA SURFACE du tournoi (tennisabstract), repli sur
-// l'Elo général puis sur les points de classement. Pas de nul ; joueur vs joueur.
+// Probabilité de victoire = Elo général corrigé à 25 % par l'Elo de la surface du tournoi
+// (poids MESURÉ, cf. `npm run backtest:tennis` et le commentaire sur SURFACE_W).
+// Repli : Elo général, puis points de classement. Pas de nul ; joueur vs joueur.
 //
 //   npm run scrape:tennis
 
@@ -123,8 +124,32 @@ async function loadElo() {
   return { elo: {}, source: 'points de classement (Elo indisponible)', n: 0 }
 }
 
-// Elo à utiliser pour CE tournoi : celui de la surface si on la connaît, sinon le général.
-const eloFor = (rec, surface) => (rec ? (surface && rec[surface]) || rec.elo : null)
+// Elo à utiliser pour CE tournoi. MESURÉ (`npm run backtest:tennis`, 7 883 matchs
+// ATP+WTA 2025-26, ratings point-in-time, bootstrap apparié) :
+//
+//   Elo général            0.626
+//   Elo surface PUR        0.638   → significativement PIRE (+0.011, IC [0.005, 0.018])
+//   Mixte 25 % surface     0.622   → significativement MIEUX (−0.005, IC [−0.006, −0.003])
+//
+// L'Elo d'une surface seule est trop bruité (chaque joueur n'a qu'une fraction de ses
+// matchs dessus). La surface porte un vrai signal, mais faible : elle CORRIGE l'Elo
+// général, elle ne le remplace pas. D'où un poids de 25 %, et non 100 %.
+const SURFACE_W = 0.25
+
+// Résultat du même backtest, face aux cotes de clôture. Le marché est LOIN devant : une
+// « value » détectée en tennis est donc, encore plus qu'au foot, notre propre erreur.
+// C'est une mesure, pas une opinion — on l'embarque dans le dataset pour que l'UI le dise.
+// À rafraîchir avec `npm run backtest:tennis`.
+const BENCHMARK = {
+  model: 0.622, market: 0.586, n: 7883,
+  source: 'ATP+WTA 2025-26, cotes de clôture (npm run backtest:tennis)',
+}
+
+const eloFor = (rec, surface) => {
+  if (!rec) return null
+  if (!surface || !rec[surface]) return rec.elo // surface inconnue → Elo général, pas de supposition
+  return SURFACE_W * rec[surface] + (1 - SURFACE_W) * rec.elo
+}
 
 async function rankings(tour, map) {
   const d = await (await fetch(`https://site.api.espn.com/apis/site/v2/sports/tennis/${tour}/rankings`)).json()
@@ -203,7 +228,7 @@ async function main() {
         let p1, basis
         if (ea && eb) {
           p1 = 1 / (1 + Math.pow(10, (eb - ea) / 400))
-          basis = surface ? `elo-${surface}` : 'elo'
+          basis = surface ? `elo-${surface}` : 'elo'  // Elo général corrigé à 25 % par la surface
         } else {
           const qa = Math.pow(pa, EXP), qb = Math.pow(pb, EXP)
           p1 = qa / (qa + qb)
@@ -267,6 +292,7 @@ async function main() {
     asOf: new Date().toISOString().slice(0, 10),
     sources: ['ESPN (scoreboard + classements ATP/WTA)', eloSource],
     eloSource,
+    benchmark: BENCHMARK,
     counts: { upcoming: predictions.length },
     predictions,
   }
