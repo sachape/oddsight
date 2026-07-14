@@ -4,7 +4,7 @@
 //
 //   npm run scrape:tennis
 
-import { writeFileSync, mkdirSync } from 'node:fs'
+import { writeFileSync, mkdirSync, readFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -72,7 +72,9 @@ const PLACEHOLDER = /^(tbd|bye|qualifier|q\d*|winner of|loser of)\b/i
 
 // Elo par surface (tennisabstract). Colonnes de la table :
 // [eloRank, age, Elo, hEloRank, hElo, cEloRank, cElo, gEloRank, gElo, peakElo, peakMonth]
+// Renvoie le nombre de joueurs lus (0 = source inutilisable, voir le cache plus bas).
 async function surfaceElo(tour, map) {
+  let n = 0
   try {
     const h = await (await fetch(`https://tennisabstract.com/reports/${tour}_elo_ratings.html`, { headers: { 'User-Agent': 'Mozilla/5.0' } })).text()
     for (const row of h.match(/<tr[\s\S]*?<\/tr>/g) || []) {
@@ -84,10 +86,41 @@ async function surfaceElo(tour, map) {
       if (nums.length < 9) continue
       const elo = nums[2]
       map[norm(name)] = { elo, hard: nums[4] || elo, clay: nums[6] || elo, grass: nums[8] || elo }
+      n++
     }
   } catch (e) {
     console.warn(`  ⚠ Elo ${tour} indisponible (${e.message})`)
   }
+  return n
+}
+
+// tennisabstract est bloqué depuis les runners GitHub : la page revient sans tableau,
+// SANS lever d'erreur → on se retrouvait avec 0 joueur et tous les pronos calculés au
+// repli « points de classement », bien plus faible, sans que rien ne le signale.
+// Même parade que pour l'Elo foot : dernier Elo connu versionné dans le repo.
+const ELO_CACHE = resolve(__dirname, 'tennis-elo-cache.json')
+const MIN_PLAYERS = 200
+
+async function loadElo() {
+  const map = {}
+  const n = (await surfaceElo('atp', map)) + (await surfaceElo('wta', map))
+  if (n >= MIN_PLAYERS) {
+    try {
+      writeFileSync(ELO_CACHE, JSON.stringify({ fetchedAt: new Date().toISOString(), elo: map }))
+    } catch { /* cache non écrivable (CI) : sans conséquence */ }
+    return { elo: map, source: 'tennisabstract', n }
+  }
+  console.warn(`  ⚠ tennisabstract inexploitable (${n} joueurs)`)
+  try {
+    const c = JSON.parse(readFileSync(ELO_CACHE, 'utf-8'))
+    const cn = Object.keys(c.elo || {}).length
+    if (cn >= MIN_PLAYERS) {
+      console.warn(`  → repli sur le cache Elo du ${c.fetchedAt} (${cn} joueurs)`)
+      return { elo: c.elo, source: `cache tennisabstract (${c.fetchedAt})`, n: cn }
+    }
+  } catch { /* pas de cache */ }
+  console.warn('  → aucun cache : repli sur les points de classement (modèle dégradé)')
+  return { elo: {}, source: 'points de classement (Elo indisponible)', n: 0 }
 }
 
 // Elo à utiliser pour CE tournoi : celui de la surface si on la connaît, sinon le général.
@@ -113,10 +146,8 @@ async function main() {
   console.log(`✓ ${Object.keys(pts).length / 2} joueurs classés`)
 
   console.log('→ Elo par surface (dur / terre / gazon)…')
-  const elo = {}
-  await surfaceElo('atp', elo)
-  await surfaceElo('wta', elo)
-  console.log(`✓ ${Object.keys(elo).length} joueurs avec Elo`)
+  const { elo, source: eloSource } = await loadElo()
+  console.log(`✓ ${Object.keys(elo).length} joueurs avec Elo [${eloSource}]`)
 
   console.log('→ Scoreboards ATP + WTA (tournois en cours)…')
   const events = []
@@ -224,7 +255,8 @@ async function main() {
     tournaments,
     generatedAt: new Date().toISOString(),
     asOf: new Date().toISOString().slice(0, 10),
-    sources: ['ESPN (scoreboard + classements ATP/WTA)', 'tennisabstract (Elo par surface)'],
+    sources: ['ESPN (scoreboard + classements ATP/WTA)', eloSource],
+    eloSource,
     counts: { upcoming: predictions.length },
     predictions,
   }
