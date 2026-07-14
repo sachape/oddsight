@@ -3,7 +3,7 @@
 //  - eloratings.net : Elo mondial actuel de chaque nation (force de base / historique)
 //  - availability.json : flux blessures/suspensions (éditable / API live)
 
-import { readFileSync } from 'node:fs'
+import { readFileSync, writeFileSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -35,9 +35,16 @@ export async function fetchMatches() {
   return { name: data.name, matches: data.matches || [] }
 }
 
-// Renvoie { "France": 2123, ... } pour les 48 équipes.
-// Fail-soft : si eloratings est injoignable (anti-bot/HTTP), on renvoie {} et le
-// moteur retombe sur l'Elo interne (engine.mjs) — le pipeline ne meurt pas pour ça.
+// Dernier Elo connu, versionné dans le repo. eloratings tombe régulièrement (≈1 run
+// sur 4 en CI). Sans ce cache, `fetchElo` renvoyait {} et le moteur basculait EN
+// SILENCE sur l'Elo interne : un modèle totalement différent (tout le monde à 1500,
+// seuls les matchs du tournoi comptent). Le profil coupe s'appuyant à ~90 % sur l'Elo,
+// le favori pouvait s'inverser d'une heure à l'autre selon qu'eloratings répondait.
+// Un Elo vieux de quelques heures est incomparablement meilleur que pas d'Elo du tout.
+const ELO_CACHE = resolve(__dirname, 'elo-cache.json')
+const MIN_TEAMS = 40 // en dessous, la réponse est tronquée : on ne s'en sert pas
+
+// Renvoie { elo: { "France": 2163, ... }, source, fetchedAt }.
 export async function fetchElo() {
   try {
     const res = await fetch(ELO_TSV, {
@@ -58,10 +65,24 @@ export async function fetchElo() {
     for (const [team, code] of Object.entries(ELO_CODE)) {
       if (byCode[code] != null) byTeam[team] = byCode[code]
     }
-    return byTeam
+    if (Object.keys(byTeam).length < MIN_TEAMS) throw new Error(`${Object.keys(byTeam).length} équipes seulement`)
+    const fetchedAt = new Date().toISOString()
+    try {
+      writeFileSync(ELO_CACHE, JSON.stringify({ fetchedAt, elo: byTeam }, null, 2))
+    } catch { /* cache non écrivable (CI) : sans conséquence */ }
+    return { elo: byTeam, source: 'eloratings.net', fetchedAt }
   } catch (e) {
-    console.warn(`⚠ eloratings indisponible (${e.message}) — repli sur l'Elo interne`)
-    return {}
+    console.warn(`⚠ eloratings indisponible (${e.message})`)
+    try {
+      const cached = JSON.parse(readFileSync(ELO_CACHE, 'utf-8'))
+      const n = Object.keys(cached.elo || {}).length
+      if (n >= MIN_TEAMS) {
+        console.warn(`  → repli sur le cache Elo du ${cached.fetchedAt} (${n} équipes)`)
+        return { elo: cached.elo, source: `cache eloratings (${cached.fetchedAt})`, fetchedAt: cached.fetchedAt }
+      }
+    } catch { /* pas de cache */ }
+    console.warn('  → aucun cache : repli sur l\'Elo interne (modèle dégradé)')
+    return { elo: {}, source: 'Elo interne (eloratings ET cache indisponibles)', fetchedAt: null }
   }
 }
 

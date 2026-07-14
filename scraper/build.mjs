@@ -58,7 +58,8 @@ async function injectEspnResults(matches, asOf) {
 
 async function main() {
   console.log('→ Scraping openfootball + eloratings.net …')
-  const [{ name, matches }, elo] = await Promise.all([fetchMatches(), fetchElo()])
+  const [{ name, matches }, eloRes] = await Promise.all([fetchMatches(), fetchElo()])
+  const { elo, source: eloSource } = eloRes
 
   // Blessures/suspensions : API-Football si clé présente, sinon fichier local
   let availability
@@ -71,7 +72,7 @@ async function main() {
   }
   if (!availability) { availability = loadAvailability(); availSource = 'availability.json' }
   const nAbsents = Object.values(availability).reduce((s, a) => s + a.length, 0)
-  console.log(`✓ ${matches.length} matchs · Elo ${Object.keys(elo).length} équipes · ${nAbsents} absents [${availSource}]`)
+  console.log(`✓ ${matches.length} matchs · Elo ${Object.keys(elo).length} équipes [${eloSource}] · ${nAbsents} absents [${availSource}]`)
 
   const injected = await injectEspnResults(matches, ASOF)
   console.log(`✓ ${injected} résultats ESPN injectés (en complément d'openfootball)`)
@@ -86,7 +87,8 @@ async function main() {
     tournament: name || 'World Cup 2026',
     generatedAt: new Date().toISOString(),
     asOf: ASOF,
-    sources: ['openfootball/worldcup.json', 'ESPN (résultats live)', 'eloratings.net'],
+    sources: ['openfootball/worldcup.json', 'ESPN (résultats live)', eloSource],
+    eloSource,
     ...model,
   }
 

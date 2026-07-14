@@ -1,12 +1,13 @@
 {
   "tournament": "World Cup 2026",
-  "generatedAt": "2026-07-14T11:47:08.840Z",
+  "generatedAt": "2026-07-14T12:20:54.519Z",
   "asOf": "2026-07-14",
   "sources": [
     "openfootball/worldcup.json",
     "ESPN (résultats live)",
     "eloratings.net"
   ],
+  "eloSource": "eloratings.net",
   "leagueAvg": 1.37,
   "format": "cup",
   "teams": {
