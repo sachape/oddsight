@@ -25,6 +25,29 @@ function Player({ name, rank, side }) {
   )
 }
 
+// Sur quoi repose CE prono. L'Elo d'un joueur change beaucoup d'une surface à l'autre :
+// quand on ne connaît pas la surface du tournoi, on utilise l'Elo général plutôt que d'en
+// supposer une — et on le dit, au lieu de laisser croire à une précision qu'on n'a pas.
+const SURFACE_FR = { clay: 'terre battue', grass: 'gazon', hard: 'dur' }
+
+function SurfaceTag({ surface, basis }) {
+  if (basis === 'points') {
+    return (
+      <span className="ml-2 normal-case text-[#c1751c]" title="Joueur absent du classement Elo : estimation par les points ATP/WTA, moins fiable">
+        · points de classement
+      </span>
+    )
+  }
+  if (!surface) {
+    return (
+      <span className="ml-2 normal-case text-[#86868b]" title="Surface du tournoi inconnue : Elo général plutôt qu'une surface supposée">
+        · Elo général (surface inconnue)
+      </span>
+    )
+  }
+  return <span className="ml-2 normal-case text-[#86868b]">· Elo {SURFACE_FR[surface]}</span>
+}
+
 function TennisCard({ p, index }) {
   const w1 = p.pick === p.player1
   // Marchés dérivés de la distribution des scores en sets
@@ -47,7 +70,10 @@ function TennisCard({ p, index }) {
       style={{ animationDelay: `${Math.min(index * 40, 400)}ms` }}
     >
       <div className="mb-3 flex items-center justify-between text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
-        <span>{p.tournament ? `${p.tournament} · ${p.round}` : p.round}</span>
+        <span>
+          {p.tournament ? `${p.tournament} · ${p.round}` : p.round}
+          <SurfaceTag surface={p.surface} basis={p.basis} />
+        </span>
         <span>{p.date ? new Intl.DateTimeFormat('fr-FR', { day: 'numeric', month: 'short' }).format(new Date(p.date + 'T12:00:00')) : ''}</span>
       </div>
 

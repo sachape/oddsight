@@ -245,6 +245,16 @@ async function main() {
   const counts = {}
   for (const p of predictions) counts[p.tournament] = (counts[p.tournament] || 0) + 1
   const tournaments = Object.keys(counts).sort((a, b) => counts[b] - counts[a])
+
+  // ESPN n'expose la surface nulle part (ni event, ni tournament, ni venue : vérifié).
+  // La table SURFACES est donc la seule source. On NE DEVINE PAS les tournois absents —
+  // ils tournent à l'Elo général, et l'UI le dit. Ce log sert à étendre la table
+  // sciemment, tournoi par tournoi, plutôt qu'au jugé.
+  const unknown = tournaments.filter((t) => !surfaceOf(t))
+  if (unknown.length) {
+    console.log(`\n  ℹ surface inconnue (Elo général) pour ${unknown.length} tournoi(s) :`)
+    for (const t of unknown) console.log(`      « ${t} » — à ajouter à SURFACES si la surface est vérifiée`)
+  }
   console.log(`✓ ${predictions.length} matchs à venir (simples) sur ${tournaments.length} tournoi(s)`)
 
   const dataset = {
