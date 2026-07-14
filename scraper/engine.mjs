@@ -859,9 +859,16 @@ export function backtest({ matches, elo, format = 'cup', market = null, eloAt = 
     vsElo: pairedBootstrap(modelRows, eloRows),
     calibration: reliability(relPairs),
     holdout: { raw: modelOOS, calibrated: calibratedOOS }, // out-of-sample (30 % final)
-    // Modèle vs marché SUR LE MÊME sous-ensemble (comparaison honnête) :
+    // Modèle vs marché SUR LE MÊME sous-ensemble (comparaison honnête), avec test de
+    // significativité : c'est LA question du produit. Si le marché bat le modèle, alors
+    // une « value » détectée par le scanner est plus probablement notre erreur que celle
+    // du bookmaker — et il faut le dire à l'utilisateur, pas lui vendre un edge.
     market: mktRows.length >= 20
-      ? { model: scoreSet(mktModelRows), market: scoreSet(mktRows) }
+      ? {
+          model: scoreSet(mktModelRows),
+          market: scoreSet(mktRows),
+          vs: pairedBootstrap(mktModelRows, mktRows),
+        }
       : null,
   }
 

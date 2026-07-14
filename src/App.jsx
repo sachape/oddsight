@@ -279,7 +279,11 @@ export default function App() {
                 <TennisValue predictions={data.predictions} />
               )}
               {tab2 === 'value' && comp.sport !== 'tennis' && (
-                <ValueBetting predictions={data.predictions} valuePicks={data.valuePicks} />
+                <ValueBetting
+                  predictions={data.predictions}
+                  valuePicks={data.valuePicks}
+                  market={data.history?.summary?.metrics?.market}
+                />
               )}
               {tab2 === 'bankroll' && <Bankroll valuePicks={data.valuePicks} />}
               {tab2 === 'suivi' && <Suivi compId={compId} predictions={data.predictions} />}

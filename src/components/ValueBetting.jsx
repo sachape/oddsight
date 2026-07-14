@@ -37,8 +37,11 @@ function Verdict({ prob, input }) {
   const edge = Math.round(ev * 1000) / 10
   if (ev > 0.005) {
     return (
-      <span className="rounded-full bg-edge-500/15 px-2.5 py-1 text-xs font-semibold text-edge-600 ring-1 ring-edge-500/30">
-        ✓ Value +{edge}%
+      <span
+        className="rounded-full bg-edge-500/15 px-2.5 py-1 text-xs font-semibold text-edge-600 ring-1 ring-edge-500/30"
+        title="Espérance positive selon NOTRE probabilité — pas une value confirmée par le marché"
+      >
+        +{edge}% <span className="font-normal opacity-70">selon le modèle</span>
       </span>
     )
   }
@@ -112,20 +115,44 @@ function Recommendations({ picks }) {
         />
         <PickColumn
           picks={picks.value}
-          role="💰 Top 3 — Vraie value (+ risque)"
+          role="💰 Top 3 — Cote élevée (+ risque)"
           accent="text-amber-600"
           ring="ring-1 ring-amber-400/20"
-          note="Cote plus élevée, moins probable — là où le marché offre le plus de valeur."
+          // Ancien libellé : « Vraie value — là où le marché offre le plus de valeur ».
+          // C'était faux : aucune cote de marché n'entre dans ce calcul, la « cote juste »
+          // est dérivée de notre propre probabilité. On ne sélectionne ici qu'une plage de
+          // cotes. La value ne peut se juger qu'en comparant à une cote réelle (scanner).
+          note="Cote plus élevée, donc moins probable. Ce n'est pas une value : pour le savoir, compare à la cote de ton opérateur dans le scanner ci-dessous."
         />
       </div>
       <p className="mt-2 text-center text-[11px] text-[#86868b]">
-        « ≥ » = cote juste : si ton opérateur propose une cote au-dessus, c'est un pari de valeur.
+        « ≥ » = cote juste : au-dessus, le pari devient rentable <i>si notre probabilité est la bonne</i>.
       </p>
     </div>
   )
 }
 
-export default function ValueBetting({ predictions, valuePicks }) {
+// Le scanner ne vaut que si notre modèle bat le bookmaker. On l'a mesuré sur les cotes
+// de clôture réelles (bootstrap apparié) : il ne le bat nulle part. On l'affiche —
+// « meilleur que le marché » est la promesse du produit, ne pas la tenir doit se voir.
+// On ne masque l'encart que si le modèle bat réellement le marché (verdict 'better').
+function MarketWarning({ market }) {
+  const v = market?.vs
+  if (!v || v.verdict === 'better') return null
+  const worse = v.verdict === 'worse'
+  return (
+    <div className="rounded-2xl bg-amber-500/10 p-4 text-sm leading-relaxed text-[#1d1d1f] ring-1 ring-amber-500/25">
+      <b>À lire avant de parier.</b> Sur les {v.n} matchs où l’on dispose des cotes de clôture
+      réelles, notre modèle {worse ? <b>prédit moins bien que le marché</b> : <b>ne fait pas mieux que le marché</b>}{' '}
+      (log-loss {market.model.logLoss} contre {market.market.logLoss}). Une « value » signalée par le
+      scanner est donc {worse ? 'plus probablement ' : 'au moins autant '}
+      <b>notre erreur</b> qu’une erreur du bookmaker. Sers-t’en pour comprendre un match, pas comme
+      une stratégie gagnante.
+    </div>
+  )
+}
+
+export default function ValueBetting({ predictions, valuePicks, market }) {
   const [ri, setRi] = useState(0)
   const [odds, setOdds] = useState({})
   const [openId, setOpenId] = useState(null)
@@ -155,9 +182,11 @@ export default function ValueBetting({ predictions, valuePicks }) {
 
       <Recommendations picks={curPicks} />
 
+      <MarketWarning market={market} />
+
       <div className="surface rounded-2xl p-4 text-sm leading-relaxed text-[#1d1d1f]">
-        <b>Scanner de value.</b> Saisis les cotes de ton opérateur : dès qu'une cote dépasse
-        notre <b>cote juste</b>, c'est un <span className="font-semibold text-[#15803d]">pari de valeur</span>.
+        <b>Scanner de cotes.</b> Saisis les cotes de ton opérateur : on compare sa cote à notre{' '}
+        <b>cote juste</b> (celle qui rendrait le pari neutre) et on affiche l'écart.
         Clique un match pour voir tous les marchés.
       </div>
 

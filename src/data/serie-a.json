@@ -1,6 +1,6 @@
 {
   "tournament": "Serie A 2026-27",
-  "generatedAt": "2026-07-14T12:45:16.199Z",
+  "generatedAt": "2026-07-14T12:47:41.474Z",
   "asOf": "2026-07-01",
   "sources": [
     "openfootball it.1 (entraînement)",
@@ -64337,7 +64337,7 @@
         },
         "vsElo": {
           "diff": -0.003,
-          "lo": -0.022,
+          "lo": -0.021,
           "hi": 0.016,
           "n": 344,
           "verdict": "tie"
@@ -64390,6 +64390,13 @@
             "logLoss": 0.95,
             "brier": 0.561,
             "n": 344
+          },
+          "vs": {
+            "diff": 0.03,
+            "lo": 0.002,
+            "hi": 0.057,
+            "n": 344,
+            "verdict": "worse"
           },
           "blend": {
             "w": 0.05,
