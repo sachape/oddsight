@@ -138,8 +138,10 @@ export default function Tennis({ data }) {
   return (
     <div>
       <div className="surface mb-6 rounded-2xl p-4 text-sm leading-relaxed text-[#1d1d1f]">
-        🎾 <b>{data.tournament}</b> — probabilité de victoire, score en sets, nombre de sets et
-        chance pour l’outsider de prendre un set. Pas de nul : un seul vainqueur.
+        🎾 <b>{data.tournament}</b>
+        {data.tournaments?.length > 1 && ` + ${data.tournaments.length - 1} autre${data.tournaments.length > 2 ? 's' : ''} tournoi${data.tournaments.length > 2 ? 's' : ''} en cours`}
+        {' '}— probabilité de victoire, score en sets, nombre de sets et chance pour l’outsider de
+        prendre un set. Pas de nul : un seul vainqueur.
       </div>
 
       <div className="mb-5 flex justify-center gap-2">

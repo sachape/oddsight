@@ -67,6 +67,9 @@ const SURFACES = [
 ]
 const surfaceOf = (name) => SURFACES.find(([re]) => re.test(name || ''))?.[1] || null
 
+// Emplacements de tableau non encore attribués (tours suivants, qualifications).
+const PLACEHOLDER = /^(tbd|bye|qualifier|q\d*|winner of|loser of)\b/i
+
 // Elo par surface (tennisabstract). Colonnes de la table :
 // [eloRank, age, Elo, hEloRank, hElo, cEloRank, cElo, gEloRank, gElo, peakElo, peakMonth]
 async function surfaceElo(tour, map) {
@@ -154,6 +157,10 @@ async function main() {
         if (cs.length !== 2) continue
         const A = cs[0].athlete, B = cs[1].athlete
         if (!A?.displayName || !B?.displayName) continue
+        // Les tours suivants (quarts, demies, finale) existent déjà dans le tableau
+        // ESPN avec des emplacements vides. Prédire contre un « TBD » n'a aucun sens :
+        // on n'affiche un match que quand les DEUX joueurs sont connus.
+        if (PLACEHOLDER.test(A.displayName) || PLACEHOLDER.test(B.displayName)) continue
         seen.add(comp.id)
 
         const la = lookup(pts, A), lb = lookup(pts, B)
@@ -204,12 +211,16 @@ async function main() {
     }
   }
   predictions.sort((a, b) => (a.date || '').localeCompare(b.date || ''))
-  const tournaments = [...new Set(predictions.map((p) => p.tournament))]
+  const counts = {}
+  for (const p of predictions) counts[p.tournament] = (counts[p.tournament] || 0) + 1
+  const tournaments = Object.keys(counts).sort((a, b) => counts[b] - counts[a])
   console.log(`✓ ${predictions.length} matchs à venir (simples) sur ${tournaments.length} tournoi(s)`)
 
   const dataset = {
     sport: 'tennis',
-    tournament: tournaments.join(' · ') || events[0].name,
+    // Le tournoi « principal » = celui qui a le plus d'affiches (en-tête de la page) ;
+    // chaque prono porte le sien, la liste complète est dans `tournaments`.
+    tournament: tournaments[0] || events[0].name,
     tournaments,
     generatedAt: new Date().toISOString(),
     asOf: new Date().toISOString().slice(0, 10),
