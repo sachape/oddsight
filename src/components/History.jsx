@@ -19,7 +19,15 @@ const CAL_LABEL = { x12: '1N2', btts: 'BTTS', o15: '+1,5 but', o25: '+2,5 buts',
 // Qualité probabiliste : log-loss vs baselines + courbe de calibration.
 function ModelQuality({ metrics: m }) {
   if (!m?.model) return null
-  const beatsElo = m.baselineElo?.logLoss != null && m.model.logLoss <= m.baselineElo.logLoss
+  // Verdict statistique (bootstrap apparié, IC 95 %) et non « le chiffre est plus bas » :
+  // sur 100 à 380 matchs, 0,01 de log-loss d'écart est du bruit. On ne prétend battre
+  // l'Elo que si l'intervalle de confiance le dit.
+  const v = m.vsElo
+  const VERDICT = {
+    better: '✓ Le modèle bat le simple Elo (le benchmark à battre), écart statistiquement établi.',
+    worse: '⚠ Le modèle fait moins bien que le simple Elo sur cet historique.',
+    tie: 'Le modèle fait jeu égal avec le simple Elo : sur ce nombre de matchs, l’écart n’est pas distinguable du hasard. Les couches ajoutées (attaque/défense, forme, Poisson) ne prouvent pas encore leur valeur.',
+  }
   return (
     <div className="surface rounded-2xl p-4">
       <div className="mb-2 flex items-center justify-between">
@@ -32,9 +40,8 @@ function ModelQuality({ metrics: m }) {
         <QCell label="Naïf" v={m.baselineRate?.logLoss} />
       </div>
       <p className="mt-2 text-[11px] leading-relaxed text-[#6e6e73]">
-        {beatsElo
-          ? '✓ Le modèle fait aussi bien ou mieux que le simple Elo (le benchmark à battre).'
-          : 'Le modèle est proche du simple Elo — marge de progression identifiée.'}
+        {VERDICT[v?.verdict] || 'Le modèle est proche du simple Elo — marge de progression identifiée.'}
+        {v && ` (écart ${v.diff > 0 ? '+' : ''}${v.diff}, IC 95 % : ${v.lo} à ${v.hi}, sur ${v.n} matchs.)`}
         {m.calibratedMarkets?.length > 0 &&
           ` Marchés recalibrés sur l’historique : ${m.calibratedMarkets
             .map((k) => CAL_LABEL[k] || k)

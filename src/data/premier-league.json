@@ -1,6 +1,6 @@
 {
   "tournament": "Premier League 2026-27",
-  "generatedAt": "2026-07-14T11:47:46.215Z",
+  "generatedAt": "2026-07-14T12:45:00.915Z",
   "asOf": "2026-07-01",
   "sources": [
     "openfootball en.1 (entraînement)",
@@ -63423,6 +63423,13 @@
           "logLoss": 1.068,
           "brier": 0.646,
           "n": 353
+        },
+        "vsElo": {
+          "diff": 0.001,
+          "lo": -0.021,
+          "hi": 0.024,
+          "n": 353,
+          "verdict": "tie"
         },
         "calibration": [
           {

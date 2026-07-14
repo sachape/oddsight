@@ -10,7 +10,7 @@
 //   7. Finition (timing des buts) .... équipes qui marquent tard
 // puis loi de Poisson + correction Dixon-Coles -> probabilités de chaque score.
 
-import { scoreSet, reliability, fitIsotonic, applyIsotonic, logLossSample, gatedIsotonic } from './metrics.mjs'
+import { scoreSet, reliability, fitIsotonic, applyIsotonic, logLossSample, gatedIsotonic, pairedBootstrap } from './metrics.mjs'
 import { buildEloTimeline } from './elo-timeline.mjs'
 
 const HOSTS = new Set(['United States', 'USA', 'Canada', 'Mexico'])
@@ -28,7 +28,7 @@ const POS_DEF = { GK: 1.0, DEF: 1.0, MID: 0.4, FWD: 0.1 }
 // `cup` = réglage historique (Coupe du Monde inchangée). `league` = optimisé sur
 // le log-loss walk-forward (`npm run tune`, validé OOS sur la Ligue 1 2025-26).
 // buildModel sélectionne le profil ; le tuner mute TUNABLE directement.
-const PROFILES = {
+export const PROFILES = {
   // cup : peu de matchs/équipe -> la couche stats est bruitée, on s'appuie surtout
   // sur l'Elo (blendK élevé, supCoef fort) et on coupe momentum/finition (net-négatifs).
   // Validé : bat la baseline Elo sur la CM (0.77 vs 0.82), vs 0.85 avant (ablation).
@@ -819,20 +819,25 @@ export function backtest({ matches, elo, format = 'cup', market = null, eloAt = 
     return { probs: c.map((x) => x / s), actualIdx: row.actualIdx }
   }
 
-  // Vérif HONNÊTE 1N2 : on ajuste sur 70 % (chrono) et on mesure sur les 30 % suivants.
-  // Seuil à 150 matchs : une isotonique à 3 issues ajustée sur ~100 matchs produit des
-  // paliers énormes (tout 30-55 % écrasé sur une seule valeur) — elle détruit
-  // l'information au lieu de la corriger. Une CM entière ne suffit pas ; une saison oui.
+  // Holdout OOS : on mesure le modèle sur les 30 % de matchs les plus récents.
+  // C'est la métrique que le tuner optimise — elle doit exister dès qu'il y a de quoi
+  // la calculer (30 matchs), indépendamment de la question de la calibration.
   let modelOOS = null, calibratedOOS = null, x12Map = null
-  if (modelRows.length >= 150) {
+  if (modelRows.length >= 30) {
     const split = Math.floor(modelRows.length * 0.7)
     const train = modelRows.slice(0, split)
     const test = modelRows.slice(split)
-    const calT = fitIsotonic(calPairsFrom(train))
     modelOOS = scoreSet(test)
-    calibratedOOS = scoreSet(test.map((r) => applyCal(calT, r)))
-    // On ne garde la calibration 1N2 que si elle aide OOS (garantie anti-régression).
-    if (calibratedOOS.logLoss <= modelOOS.logLoss + 1e-9) x12Map = fitIsotonic(calPairsFrom(modelRows))
+
+    // Calibration 1N2 : seuil séparé, à 150 matchs. Une isotonique à 3 issues ajustée
+    // sur ~100 matchs produit des paliers énormes (tout 30-55 % écrasé sur une seule
+    // valeur) : elle détruit l'information au lieu de la corriger. Une CM entière ne
+    // suffit pas ; une saison oui. Et on ne la garde que si elle aide OOS.
+    if (modelRows.length >= 150) {
+      const calT = fitIsotonic(calPairsFrom(train))
+      calibratedOOS = scoreSet(test.map((r) => applyCal(calT, r)))
+      if (calibratedOOS.logLoss <= modelOOS.logLoss + 1e-9) x12Map = fitIsotonic(calPairsFrom(modelRows))
+    }
   }
 
   // Cartes de calibration par marché (chacune gated OOS, null si elle n'aide pas).
@@ -849,6 +854,9 @@ export function backtest({ matches, elo, format = 'cup', market = null, eloAt = 
     model: scoreSet(modelRows),
     baselineElo: scoreSet(eloRows),
     baselineRate: scoreSet(baseRows),
+    // L'écart avec l'Elo est-il significatif ? (bootstrap apparié, IC 95 %)
+    // Sans ça, l'UI annonçait « le modèle bat l'Elo » pour 0,001 de log-loss d'écart.
+    vsElo: pairedBootstrap(modelRows, eloRows),
     calibration: reliability(relPairs),
     holdout: { raw: modelOOS, calibrated: calibratedOOS }, // out-of-sample (30 % final)
     // Modèle vs marché SUR LE MÊME sous-ensemble (comparaison honnête) :
@@ -898,6 +906,9 @@ export function backtest({ matches, elo, format = 'cup', market = null, eloAt = 
     },
     calibration,
     matches: records,
+    // Probabilités match par match, pour les tests statistiques du tuner (bootstrap).
+    // Retiré du dataset par buildModel : inutile au navigateur.
+    rows: { model: modelRows, elo: eloRows },
   }
 }
 
@@ -985,7 +996,7 @@ export function buildModel({
   // L'Elo aussi est rejoué point-in-time : sinon le backtest « prédirait » chaque
   // match avec un Elo qui contient déjà son résultat, et toute la mesure serait fausse.
   const backtestMatches = hasTrain ? trainMatches : matches
-  const history = backtest({
+  const { rows: _rows, ...history } = backtest({
     matches: backtestMatches, elo, format, market,
     eloAt: buildEloTimeline(backtestMatches, elo, HOSTS),
   })

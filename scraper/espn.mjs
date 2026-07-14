@@ -48,6 +48,45 @@ function* segments(from, to, days = 60) {
 // Renvoie [{ date, home, away, ft:[hg,ag], live }] — noms d'équipes ESPN bruts.
 // Par défaut, seulement les matchs terminés (state === 'post'). includeLive=true
 // ajoute les matchs en cours (state === 'in') avec le score courant.
+// Noms ESPN -> noms du dataset CM ; le reste est identique.
+const ESPN_MAP = {
+  'Congo DR': 'DR Congo', 'Bosnia-Herzegovina': 'Bosnia & Herzegovina',
+  'Czechia': 'Czech Republic', 'Türkiye': 'Turkey', 'United States': 'USA',
+}
+const espnName = (n) => ESPN_MAP[n] || n
+const hasScore = (m) => m.score && Array.isArray(m.score.ft)
+
+// Injecte les scores ESPN sur les matchs encore sans score (openfootball est souvent
+// en retard). Terrain neutre -> appariement par PAIRE non ordonnée + réorientation du
+// score. Modifie `matches` en place, renvoie le nombre de résultats injectés.
+// Partagé entre le pipeline (build.mjs) et le tuner, pour qu'ils voient la même chose.
+export async function injectEspnResults(matches, asOf, league = 'fifa.world') {
+  let results
+  try {
+    results = await fetchEspnResults({ league, from: '2026-06-01', to: asOf })
+  } catch (e) {
+    console.warn(`  ⚠ ESPN indisponible (${e.message}) — résultats live ignorés`)
+    return 0
+  }
+  const idx = new Map()
+  for (const r of results) {
+    const h = espnName(r.home), a = espnName(r.away)
+    const key = [h, a].sort().join('|')
+    if (!idx.has(key)) idx.set(key, [])
+    idx.get(key).push({ h, ft: r.ft, date: r.date })
+  }
+  let injected = 0
+  for (const m of matches) {
+    if (hasScore(m)) continue
+    const cands = idx.get([m.team1, m.team2].sort().join('|'))
+    if (!cands?.length) continue
+    const r = cands.find((c) => c.date === m.date) || cands[0]
+    m.score = { ft: r.h === m.team1 ? r.ft : [r.ft[1], r.ft[0]] }
+    injected++
+  }
+  return injected
+}
+
 export async function fetchEspnResults({ league, from, to, includeLive = false }) {
   const out = []
   const seen = new Set()

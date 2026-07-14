@@ -1,6 +1,6 @@
 {
   "tournament": "World Cup 2026",
-  "generatedAt": "2026-07-14T12:20:54.519Z",
+  "generatedAt": "2026-07-14T12:44:26.262Z",
   "asOf": "2026-07-14",
   "sources": [
     "openfootball/worldcup.json",
@@ -3870,6 +3870,13 @@
           "brier": 0.664,
           "n": 100
         },
+        "vsElo": {
+          "diff": 0.004,
+          "lo": -0.07,
+          "hi": 0.083,
+          "n": 100,
+          "verdict": "tie"
+        },
         "calibration": [
           {
             "range": "40-50%",
@@ -3903,7 +3910,11 @@
           }
         ],
         "holdout": {
-          "raw": null,
+          "raw": {
+            "logLoss": 0.783,
+            "brier": 0.461,
+            "n": 30
+          },
           "calibrated": null
         },
         "market": null,

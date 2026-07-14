@@ -103,6 +103,35 @@ export function gatedIsotonic(pairs, minN = 40) {
   return fitIsotonic(pairs)
 }
 
+// --- Modèle vs baseline : l'écart est-il réel ou du bruit ? -------------------
+// Bootstrap APPARIÉ sur le log-loss : on rééchantillonne les mêmes matchs pour les
+// deux modèles, ce qui isole l'écart de la difficulté des matchs tirés. Sur ~100
+// matchs, un écart de log-loss de 0,01 est parfaitement compatible avec le hasard :
+// sans intervalle de confiance, on « valide » des améliorations qui n'existent pas.
+// Renvoie { diff, lo, hi, verdict } — diff < 0 = le modèle fait mieux.
+export function pairedBootstrap(rowsA, rowsB, iters = 2000) {
+  const n = Math.min(rowsA.length, rowsB.length)
+  if (n < 20) return null
+  const la = rowsA.map((r) => logLossSample(r.probs[r.actualIdx]))
+  const lb = rowsB.map((r) => logLossSample(r.probs[r.actualIdx]))
+  const mean = (f) => { let s = 0; for (let i = 0; i < n; i++) s += f(i); return s / n }
+  const diff = mean((i) => la[i] - lb[i])
+  const draws = []
+  for (let b = 0; b < iters; b++) {
+    let s = 0
+    for (let i = 0; i < n; i++) { const j = (Math.random() * n) | 0; s += la[j] - lb[j] }
+    draws.push(s / n)
+  }
+  draws.sort((x, y) => x - y)
+  const lo = draws[Math.floor(iters * 0.025)]
+  const hi = draws[Math.floor(iters * 0.975)]
+  const r3 = (x) => Math.round(x * 1000) / 1000
+  return {
+    diff: r3(diff), lo: r3(lo), hi: r3(hi), n,
+    verdict: hi < 0 ? 'better' : lo > 0 ? 'worse' : 'tie', // 'tie' = indistinguable du bruit
+  }
+}
+
 // --- Courbe de fiabilité (reliability diagram) sur le pari conseillé ----------
 // Regroupe (proba du pick, réussite 0/1) par tranche et compare prévu vs observé.
 export function reliability(pairs, edges = [0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0001]) {

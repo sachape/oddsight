@@ -11,7 +11,7 @@
     "EFG Swiss Open Gstaad",
     "Plava Laguna Croatia Open Umag"
   ],
-  "generatedAt": "2026-07-14T12:29:14.483Z",
+  "generatedAt": "2026-07-14T12:45:17.151Z",
   "asOf": "2026-07-14",
   "sources": [
     "ESPN (scoreboard + classements ATP/WTA)",
@@ -22,57 +22,6 @@
     "upcoming": 81
   },
   "predictions": [
-    {
-      "id": "178653",
-      "tournament": "Nordea Open",
-      "surface": "clay",
-      "category": "Men's Singles",
-      "round": "Round 1",
-      "date": "2026-07-14",
-      "player1": "Lautaro Midon",
-      "player2": "Facundo Diaz Acosta",
-      "rank1": null,
-      "rank2": 110,
-      "pts1": 250,
-      "pts2": 604,
-      "pWin1": 24.7,
-      "pWin2": 75.3,
-      "pick": "Facundo Diaz Acosta",
-      "pickProb": 75.3,
-      "confidence": "Élevée",
-      "odds": {
-        "win1": 3.82,
-        "win2": 1.25
-      },
-      "fair": {
-        "win1": 4.05,
-        "win2": 1.33
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 45.7,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.6,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 14.2,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 10.5,
-          "w": 1
-        }
-      ],
-      "basis": "elo-clay"
-    },
     {
       "id": "178645",
       "tournament": "Nordea Open",
@@ -2216,57 +2165,6 @@
       "basis": "elo"
     },
     {
-      "id": "179176",
-      "tournament": "Enka Open",
-      "surface": null,
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-07-14",
-      "player1": "Lucie Havlickova",
-      "player2": "Harmony Tan",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 33.3,
-      "pWin2": 66.7,
-      "pick": "Harmony Tan",
-      "pickProb": 66.7,
-      "confidence": "Modérée",
-      "odds": {
-        "win1": 2.83,
-        "win2": 1.41
-      },
-      "fair": {
-        "win1": 3,
-        "win2": 1.5
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "0-2",
-          "p": 37.6,
-          "w": 2
-        },
-        {
-          "score": "1-2",
-          "p": 29.1,
-          "w": 2
-        },
-        {
-          "score": "2-1",
-          "p": 18.3,
-          "w": 1
-        },
-        {
-          "score": "2-0",
-          "p": 15,
-          "w": 1
-        }
-      ],
-      "basis": "elo"
-    },
-    {
       "id": "179189",
       "tournament": "Enka Open",
       "surface": null,
@@ -2369,57 +2267,6 @@
       "basis": "points"
     },
     {
-      "id": "179198",
-      "tournament": "Enka Open",
-      "surface": null,
-      "category": "Women's Singles",
-      "round": "Round 1",
-      "date": "2026-07-14",
-      "player1": "Vendula Valdmannova",
-      "player2": "Ayla Aksu",
-      "rank1": null,
-      "rank2": null,
-      "pts1": 250,
-      "pts2": 250,
-      "pWin1": 57.9,
-      "pWin2": 42.1,
-      "pick": "Vendula Valdmannova",
-      "pickProb": 57.9,
-      "confidence": "Faible",
-      "odds": {
-        "win1": 1.63,
-        "win2": 2.24
-      },
-      "fair": {
-        "win1": 1.73,
-        "win2": 2.37
-      },
-      "bestOf": 3,
-      "sets": [
-        {
-          "score": "2-0",
-          "p": 30.5,
-          "w": 1
-        },
-        {
-          "score": "2-1",
-          "p": 27.3,
-          "w": 1
-        },
-        {
-          "score": "1-2",
-          "p": 22.1,
-          "w": 2
-        },
-        {
-          "score": "0-2",
-          "p": 20,
-          "w": 2
-        }
-      ],
-      "basis": "elo"
-    },
-    {
       "id": "179177",
       "tournament": "Enka Open",
       "surface": null,
@@ -2469,6 +2316,57 @@
         }
       ],
       "basis": "points"
+    },
+    {
+      "id": "179198",
+      "tournament": "Enka Open",
+      "surface": null,
+      "category": "Women's Singles",
+      "round": "Round 1",
+      "date": "2026-07-14",
+      "player1": "Vendula Valdmannova",
+      "player2": "Ayla Aksu",
+      "rank1": null,
+      "rank2": null,
+      "pts1": 250,
+      "pts2": 250,
+      "pWin1": 57.9,
+      "pWin2": 42.1,
+      "pick": "Vendula Valdmannova",
+      "pickProb": 57.9,
+      "confidence": "Faible",
+      "odds": {
+        "win1": 1.63,
+        "win2": 2.24
+      },
+      "fair": {
+        "win1": 1.73,
+        "win2": 2.37
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "2-0",
+          "p": 30.5,
+          "w": 1
+        },
+        {
+          "score": "2-1",
+          "p": 27.3,
+          "w": 1
+        },
+        {
+          "score": "1-2",
+          "p": 22.1,
+          "w": 2
+        },
+        {
+          "score": "0-2",
+          "p": 20,
+          "w": 2
+        }
+      ],
+      "basis": "elo"
     },
     {
       "id": "179196",
@@ -3081,6 +2979,57 @@
         }
       ],
       "basis": "points"
+    },
+    {
+      "id": "178638",
+      "tournament": "Nordea Open",
+      "surface": "clay",
+      "category": "Men's Singles",
+      "round": "Round 2",
+      "date": "2026-07-15",
+      "player1": "Lautaro Midon",
+      "player2": "Alejandro Tabilo",
+      "rank1": null,
+      "rank2": 31,
+      "pts1": 250,
+      "pts2": 1438,
+      "pWin1": 16.4,
+      "pWin2": 83.6,
+      "pick": "Alejandro Tabilo",
+      "pickProb": 83.6,
+      "confidence": "Élevée",
+      "odds": {
+        "win1": 5.74,
+        "win2": 1.13
+      },
+      "fair": {
+        "win1": 6.09,
+        "win2": 1.2
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "0-2",
+          "p": 55.2,
+          "w": 2
+        },
+        {
+          "score": "1-2",
+          "p": 28.4,
+          "w": 2
+        },
+        {
+          "score": "2-1",
+          "p": 9.8,
+          "w": 1
+        },
+        {
+          "score": "2-0",
+          "p": 6.6,
+          "w": 1
+        }
+      ],
+      "basis": "elo-clay"
     },
     {
       "id": "178641",
@@ -4050,6 +3999,57 @@
         }
       ],
       "basis": "points"
+    },
+    {
+      "id": "179191",
+      "tournament": "Enka Open",
+      "surface": null,
+      "category": "Women's Singles",
+      "round": "Round 2",
+      "date": "2026-07-15",
+      "player1": "Anastasia Gasanova",
+      "player2": "Harmony Tan",
+      "rank1": null,
+      "rank2": null,
+      "pts1": 250,
+      "pts2": 250,
+      "pWin1": 46.4,
+      "pWin2": 53.6,
+      "pick": "Harmony Tan",
+      "pickProb": 53.6,
+      "confidence": "Faible",
+      "odds": {
+        "win1": 2.03,
+        "win2": 1.76
+      },
+      "fair": {
+        "win1": 2.15,
+        "win2": 1.87
+      },
+      "bestOf": 3,
+      "sets": [
+        {
+          "score": "0-2",
+          "p": 27.4,
+          "w": 2
+        },
+        {
+          "score": "1-2",
+          "p": 26.1,
+          "w": 2
+        },
+        {
+          "score": "2-1",
+          "p": 23.8,
+          "w": 1
+        },
+        {
+          "score": "2-0",
+          "p": 22.7,
+          "w": 1
+        }
+      ],
+      "basis": "elo"
     },
     {
       "id": "179147",
