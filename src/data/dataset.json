@@ -1,6 +1,6 @@
 {
   "tournament": "World Cup 2026",
-  "generatedAt": "2026-07-14T12:44:26.262Z",
+  "generatedAt": "2026-07-14T12:52:40.206Z",
   "asOf": "2026-07-14",
   "sources": [
     "openfootball/worldcup.json",
@@ -3872,8 +3872,8 @@
         },
         "vsElo": {
           "diff": 0.004,
-          "lo": -0.07,
-          "hi": 0.083,
+          "lo": -0.069,
+          "hi": 0.079,
           "n": 100,
           "verdict": "tie"
         },

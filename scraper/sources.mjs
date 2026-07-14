@@ -43,6 +43,7 @@ export async function fetchMatches() {
 // Un Elo vieux de quelques heures est incomparablement meilleur que pas d'Elo du tout.
 const ELO_CACHE = resolve(__dirname, 'elo-cache.json')
 const MIN_TEAMS = 40 // en dessous, la réponse est tronquée : on ne s'en sert pas
+const STALE_HOURS = 72 // au-delà, le cache a probablement raté des matchs
 
 // Renvoie { elo: { "France": 2163, ... }, source, fetchedAt }.
 export async function fetchElo() {
@@ -77,8 +78,19 @@ export async function fetchElo() {
       const cached = JSON.parse(readFileSync(ELO_CACHE, 'utf-8'))
       const n = Object.keys(cached.elo || {}).length
       if (n >= MIN_TEAMS) {
-        console.warn(`  → repli sur le cache Elo du ${cached.fetchedAt} (${n} équipes)`)
-        return { elo: cached.elo, source: `cache eloratings (${cached.fetchedAt})`, fetchedAt: cached.fetchedAt }
+        // Un cache d'un jour est inoffensif (l'Elo bouge de ~100 pts sur un tournoi
+        // entier). Un cache d'une semaine, non : pendant une CM il a raté des matchs
+        // entiers. On le dit fort, sinon la dégradation passe inaperçue.
+        const hours = (Date.now() - new Date(cached.fetchedAt)) / 3600000
+        const stale = hours > STALE_HOURS
+        console.warn(`  → repli sur le cache Elo du ${cached.fetchedAt} (${n} équipes, ${Math.round(hours)} h)`)
+        if (stale) console.warn(`  ⚠⚠ CACHE PÉRIMÉ (> ${STALE_HOURS} h) — eloratings est down depuis trop longtemps`)
+        return {
+          elo: cached.elo,
+          source: `cache eloratings du ${cached.fetchedAt.slice(0, 10)}${stale ? ' (PÉRIMÉ)' : ''}`,
+          fetchedAt: cached.fetchedAt,
+          stale,
+        }
       }
     } catch { /* pas de cache */ }
     console.warn('  → aucun cache : repli sur l\'Elo interne (modèle dégradé)')

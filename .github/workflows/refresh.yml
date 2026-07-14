@@ -9,6 +9,16 @@ on:
     - cron: '0 * * * *'   # toutes les heures, à l'heure pile (UTC)
   workflow_dispatch: {}   # bouton « Run workflow » pour lancer à la main
 
+# Un seul run à la fois. Sans ça, deux runs qui se chevauchent déploient dans un ordre
+# imprévisible : c'est déjà arrivé (un run cron a écrasé un déploiement plus récent avec
+# des données calculées SANS Elo). Le dernier lancé gagne, les précédents sont annulés.
+concurrency:
+  group: refresh
+  cancel-in-progress: true
+
+permissions:
+  contents: write   # pour recommiter les caches Elo rafraîchis
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
@@ -35,6 +45,24 @@ jobs:
         continue-on-error: true
       - run: npm run scrape:tennis   # Tennis
         continue-on-error: true
+
+      # eloratings tombe ~1 run sur 4, et tennisabstract bloque les runners GitHub en
+      # permanence. Les scrapers retombent alors sur un cache Elo versionné. Sans cette
+      # étape, ce cache ne se rafraîchirait QUE depuis un poste local : il vieillirait en
+      # silence. Ici, tout scrape qui a réussi à joindre la source le remet à jour.
+      - name: Recommit les caches Elo rafraîchis
+        continue-on-error: true
+        run: |
+          git config user.name  'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add scraper/elo-cache.json scraper/tennis-elo-cache.json
+          if git diff --staged --quiet; then
+            echo "caches Elo inchangés — rien à commiter"
+          else
+            git commit -m 'chore: rafraîchit le cache Elo [auto]'
+            git pull --rebase --autostash origin main
+            git push origin HEAD:main
+          fi
 
       - uses: superfly/flyctl-actions/setup-flyctl@master
       - run: flyctl deploy --remote-only
