@@ -200,11 +200,37 @@ function ComingSoon({ comp }) {
   )
 }
 
+const isCompId = (id) => COMPETITIONS.some((c) => c.id === id)
+// Compétition initiale = celle du hash de l'URL si valide (liens partageables /
+// deep-link), sinon Ligue 1.
+const initialCompId = () => {
+  const h = typeof window !== 'undefined' ? window.location.hash.slice(1) : ''
+  return isCompId(h) ? h : 'ligue1'
+}
+
 export default function App() {
-  const [compId, setCompId] = useState('ligue1')
+  const [compId, setCompId] = useState(initialCompId)
   const [tab, setTab] = useState('pronos')
   const comp = getCompetition(compId)
   const { data, loading } = useCompetitionData(comp)
+
+  // URL ↔ compétition. La navigation se fait par état React : sans ça, l'URL n'est
+  // jamais mise à jour et un hash périmé (ex. #tennis laissé par le guide) reste
+  // affiché même sur une autre compète. On garde donc le hash synchro (replaceState
+  // pour ne pas polluer l'historique) et on suit précédent/suivant du navigateur.
+  useEffect(() => {
+    if (window.location.hash.slice(1) !== compId) {
+      window.history.replaceState(null, '', `#${compId}`)
+    }
+  }, [compId])
+  useEffect(() => {
+    const onHash = () => {
+      const h = window.location.hash.slice(1)
+      if (isCompId(h)) setCompId(h)
+    }
+    window.addEventListener('hashchange', onHash)
+    return () => window.removeEventListener('hashchange', onHash)
+  }, [])
   // Onglet effectif : si l'onglet courant n'existe pas pour ce sport, on retombe sur Pronostics
   const tabItem = NAV.find((n) => n.id === tab)
   const tab2 = tabItem && tabItem.sports.includes(comp.sport) ? tab : 'pronos'
