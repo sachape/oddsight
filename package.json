@@ -10,12 +10,14 @@
     "scrape:ligue1": "node scraper/build-ligue1.mjs",
     "scrape:pl": "node scraper/build-league.mjs pl",
     "scrape:sa": "node scraper/build-league.mjs sa",
+    "scrape:mls": "node scraper/build-mls.mjs",
     "scrape:tennis": "node scraper/build-tennis.mjs",
     "tune": "node scraper/tune.mjs",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
     "tune:cup": "node scraper/tune.mjs cup",
+    "tune:mls": "node scraper/tune.mjs mls",
     "backtest:tennis": "node scraper/backtest-tennis.mjs"
   },
   "dependencies": {

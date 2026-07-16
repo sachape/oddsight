@@ -17,6 +17,7 @@ import { backtest, TUNABLE, PROFILES } from './engine.mjs'
 import { buildEloTimeline } from './elo-timeline.mjs'
 import { fetchMatches, fetchElo } from './sources.mjs'
 import { injectEspnResults } from './espn.mjs'
+import { fetchMlsSeason } from './mls-source.mjs'
 
 const UA = 'Mozilla/5.0'
 const L1 = 'https://raw.githubusercontent.com/openfootball/football.json/master/2025-26/fr.1.json'
@@ -52,6 +53,13 @@ async function loadLeague() {
   const short = (n) => NAME_MAP[n] || n
   const matches = (tr.matches || []).map((m) => ({ ...m, team1: short(m.team1), team2: short(m.team2) }))
   return { matches, elo: {}, eloAt: null, format: 'league', label: 'Ligue 1 2025-26' }
+}
+
+async function loadMls() {
+  // Saison MLS en cours (une seule saison, pas de trainMatches) : les matchs joués
+  // servent au backtest walk-forward exactement comme pour la CM.
+  const { matches } = await fetchMlsSeason({ asOf: new Date().toISOString().slice(0, 10) })
+  return { matches, elo: {}, eloAt: null, format: 'league', profile: 'mls', label: 'MLS (saison en cours)' }
 }
 
 async function loadCup() {
@@ -96,9 +104,10 @@ function bootstrapDiff(modelLL, eloLL, iters = 4000) {
 const r3 = (x) => Math.round(x * 1000) / 1000
 
 async function main() {
-  const target = process.argv[2] === 'cup' ? 'cup' : 'league'
+  const arg = process.argv[2]
+  const target = arg === 'cup' ? 'cup' : arg === 'mls' ? 'mls' : 'league'
   console.log(`→ Cible : profil ${target}\n`)
-  const t = target === 'cup' ? await loadCup() : await loadLeague()
+  const t = target === 'cup' ? await loadCup() : target === 'mls' ? await loadMls() : await loadLeague()
   const played = t.matches.filter((m) => m.score?.ft).length
   console.log(`✓ ${t.label} — ${played} matchs joués\n`)
 

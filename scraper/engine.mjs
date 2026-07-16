@@ -34,6 +34,14 @@ export const PROFILES = {
   // Validé : bat la baseline Elo sur la CM (0.77 vs 0.82), vs 0.85 avant (ablation).
   cup:    { halfLife: 14, koBonus: 1.3, rho: -0.05, supCoef: 0.65, blendK: 30, homeF: 1.12, awayF: 0.9,  momentumW: 0,    clutchW: 0,    dispersion: Infinity },
   league: { halfLife: 60, koBonus: 1.3, rho: 0.0,   supCoef: 0.30, blendK: 3,  homeF: 1.05, awayF: 0.95, momentumW: 0.08, clutchW: 0.04, dispersion: Infinity },
+  // mls : championnat en saison unique (aucun historique inter-saison), plus d'équipes
+  // et calendrier déséquilibré. Calé par le tuner (npm run tune:mls) sur la saison en
+  // cours. vs `league` : blendK 3→20 (s'appuyer davantage sur l'Elo, comme le profil
+  // coupe — calendrier déséquilibré, peu de matchs/équipe), homeF 1.05→1.1 (avantage
+  // domicile MLS fort : gros déplacements/fuseaux), halfLife 60→10 (forme récente),
+  // rho -0.12. Gain OOS −3,5 % (1.098→1.06), confirmé walk-forward (1.062→1.044,
+  // repasse au niveau baseline Elo).
+  mls:    { halfLife: 10, koBonus: 1.0, rho: -0.12, supCoef: 0.30, blendK: 20, homeF: 1.1,  awayF: 0.95, momentumW: 0.08, clutchW: 0.04, dispersion: Infinity },
 }
 export const TUNABLE = { ...PROFILES.cup } // profil actif (lu par predict/recency)
 
@@ -923,10 +931,11 @@ export function backtest({ matches, elo, format = 'cup', market = null, eloAt = 
 
 export function buildModel({
   matches, trainMatches = [], elo, availability = {}, asOf,
-  format = 'cup', maxUpcoming = Infinity, market = null,
+  format = 'cup', maxUpcoming = Infinity, market = null, profile = null,
 }) {
-  // Profil d'hyperparamètres selon le format (coupe vs championnat).
-  Object.assign(TUNABLE, format === 'league' ? PROFILES.league : PROFILES.cup)
+  // Profil d'hyperparamètres : `profile` explicite (ex. 'mls') sinon d'après le
+  // format (coupe vs championnat).
+  Object.assign(TUNABLE, PROFILES[profile] || (format === 'league' ? PROFILES.league : PROFILES.cup))
 
   const hasTrain = trainMatches.length > 0
   // Joué vs à venir = présence d'un SCORE (pas la date) -> bascule auto dès qu'un
