@@ -43,6 +43,8 @@ jobs:
         continue-on-error: true
       - run: npm run scrape:sa       # Serie A
         continue-on-error: true
+      - run: npm run scrape:mls      # MLS
+        continue-on-error: true
       - run: npm run scrape:tennis   # Tennis
         continue-on-error: true
 

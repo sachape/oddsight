@@ -21,6 +21,7 @@ export const COMPETITIONS = [
     id: 'ligue2', sport: 'football', name: 'Ligue 2', short: 'Ligue 2', status: 'soon',
     note: 'Même moteur que la Ligue 1 — à brancher.', load: null,
   },
+  { id: 'mls', sport: 'football', name: 'MLS', short: 'MLS', status: 'live', load: () => import('./data/mls.json') },
   { id: 'wc2026', sport: 'football', name: 'Coupe du Monde 2026', short: 'CM 2026', status: 'live', load: () => import('./data/dataset.json') },
   {
     id: 'nba', sport: 'basket', name: 'NBA', short: 'NBA', status: 'soon',
