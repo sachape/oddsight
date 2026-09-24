@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-09-24T07:14:02.296Z",
+  "fetchedAt": "2026-09-24T13:14:31.208Z",
   "elo": {
     "Algeria": 1756,
     "Argentina": 2173,
@@ -25,12 +25,12 @@
     "Iran": 1764,
     "Iraq": 1556,
     "Ivory Coast": 1728,
-    "Japan": 1888,
+    "Japan": 1897,
     "Jordan": 1628,
     "Mexico": 1913,
     "Morocco": 1901,
     "Netherlands": 1971,
-    "New Zealand": 1534,
+    "New Zealand": 1531,
     "Norway": 1952,
     "Panama": 1658,
     "Paraguay": 1814,
@@ -47,7 +47,7 @@
     "Tunisia": 1562,
     "Turkey": 1852,
     "USA": 1746,
-    "Uruguay": 1841,
+    "Uruguay": 1832,
     "Uzbekistan": 1631
   }
 }
